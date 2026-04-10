@@ -15,10 +15,9 @@ import {
 const BRAND_NAME    = "Sergei · AI Consult"  // TODO: замени на свой бренд
 const YOUR_NAME     = "Sergei"
 const CONTACT_EMAIL = "acrashik@gmail.com"
-const LINKEDIN_URL  = "https://linkedin.com/in/YOUR_PROFILE" // TODO: вставь ссылку
-const FORMSPREE_ID  = "YOUR_FORMSPREE_ID"   // TODO: formspree.io → создай форму → вставь ID
-// TODO: YouTube/Loom embed URL для видео
-const VIDEO_EMBED_URL = "" // напр. "https://www.youtube.com/embed/XXXX"
+const LINKEDIN_URL  = "https://www.linkedin.com/in/sergei-zahharenko/"
+const FORMSPREE_ID  = "mdapryan"
+const VIDEO_EMBED_URL = "https://www.youtube.com/embed/3TzsLcU5748"
 // ─────────────────────────────────────────────────────────────────────────────
 
 type Lang = 'en' | 'ru'
