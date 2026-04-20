@@ -12,7 +12,8 @@ import {
 // ─────────────────────────────────────────────────────────────────────────────
 // КОНФИГУРАЦИЯ
 // ─────────────────────────────────────────────────────────────────────────────
-const BRAND_NAME    = "Sergei · AI Consult"  // TODO: замени на свой бренд
+const BRAND_NAME    = "EvoCraft"
+const BRAND_TAGLINE = { en: "Crafting your AI evolution", ru: "Крафтим AI-эволюцию", et: "Loome AI-evolutsiooni" }
 const YOUR_NAME     = "Sergei"
 const CONTACT_EMAIL = "acrashik@gmail.com"
 const LINKEDIN_URL  = "https://www.linkedin.com/in/sergei-zahharenko/"
@@ -612,7 +613,7 @@ function PrivacyPolicyModal({ onClose }: { onClose: () => void }) {
         <div className="text-slate-300 text-sm space-y-5 leading-relaxed">
           <p className="text-slate-500 italic">Последнее обновление: апрель 2026 г.</p>
           {[
-            { title: "1. Кто мы", body: `${BRAND_NAME} — индивидуальный консультант по AI-автоматизации, Таллин, Эстония. Контакт: ${CONTACT_EMAIL}` },
+            { title: "1. Кто мы", body: `${BRAND_NAME} (${BRAND_TAGLINE.ru}) — индивидуальный консультант по AI-автоматизации, Таллин, Эстония. Контакт: ${CONTACT_EMAIL}` },
             { title: "2. Какие данные мы собираем", body: "Через контактную форму: имя, email, компания, описание задачи. Через cookies (при согласии): анонимная аналитика." },
             { title: "3. Для чего используем данные", body: "Только для ответа на ваш запрос. Не передаём третьим лицам, не используем для рекламы." },
             { title: "4. Правовая основа (GDPR)", body: "Обработка на основании согласия (ст. 6(1)(a) GDPR) и законного интереса (ст. 6(1)(f) GDPR)." },
@@ -774,7 +775,10 @@ function App() {
       {/* NAV */}
       <nav className="sticky top-0 z-40 bg-slate-950/90 backdrop-blur border-b border-slate-800">
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
-          <span className="font-bold text-coffee">{BRAND_NAME}</span>
+          <div className="flex items-center gap-2">
+            <span className="font-bold text-coffee">{BRAND_NAME}</span>
+            <span className="hidden sm:inline text-slate-500 text-xs font-normal">— {BRAND_TAGLINE[lang === 'ru' ? 'ru' : 'en']}</span>
+          </div>
           <div className="flex items-center gap-3">
             {/* Language switcher */}
             <div className="flex bg-slate-800 border border-slate-700 rounded-lg overflow-hidden text-xs font-semibold">
@@ -809,6 +813,7 @@ function App() {
               <span key={t} className="bg-slate-800 border border-slate-700 text-slate-300 text-xs font-medium px-3 py-1 rounded-full">{t}</span>
             ))}
           </motion.div>
+          <motion.p variants={fadeUp} className="text-coffee/80 text-sm font-semibold uppercase tracking-widest mb-4">{BRAND_TAGLINE[lang === 'ru' ? 'ru' : 'en']}</motion.p>
           <motion.h1 variants={fadeUp} className="text-4xl md:text-6xl font-extrabold leading-tight mb-5 text-white">
             {s.heroH1a}{' '}<span className="text-coffee">{s.heroH1b}</span>
           </motion.h1>
@@ -1067,7 +1072,7 @@ function App() {
       {/* FOOTER */}
       <footer className="bg-slate-950 border-t border-slate-800 py-8 px-6">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span className="text-slate-500 text-sm">© 2026 {BRAND_NAME} · Tallinn, Estonia</span>
+          <span className="text-slate-500 text-sm">© 2026 {BRAND_NAME} · {BRAND_TAGLINE[lang === 'ru' ? 'ru' : 'en']} · Tallinn, Estonia</span>
           <div className="flex items-center gap-5 flex-wrap justify-center">
             <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer"
               className="text-slate-400 hover:text-coffee transition-colors flex items-center gap-1.5 text-sm">
