@@ -5,8 +5,8 @@ import {
   Mail, Linkedin, FileText, ArrowRight,
   Zap, TrendingUp, Building2, DollarSign,
   X, Shield, Send, User, Loader2,
-  Play, Quote, Clock, Users, Euro,
-  ChevronRight, Calculator
+  Play, Clock, Users, Euro,
+  ChevronRight, Calculator, Calendar, MessageCircle, Lightbulb, Target
 } from 'lucide-react'
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -253,90 +253,112 @@ function CaseStudies({ lang }: { lang: Lang }) {
   )
 }
 
-// ── Отзывы ────────────────────────────────────────────────────────────────────
-function Testimonials({ lang }: { lang: Lang }) {
+// ── AI-Клуб ─────────────────────────────────────────────────────────────────
+function AIClub({ lang }: { lang: Lang }) {
   const isRu = lang === 'ru'
 
-  // TODO: замени placeholder-тексты на реальные отзывы клиентов
-  const testimonials = isRu ? [
-    {
-      quote: "Благодаря AI-автоматизации мы сократили время обработки заявок с 4 часов до 15 минут. Это кардинально изменило нашу операционную эффективность.",
-      name: "[Имя клиента]",
-      title: "[Должность]",
-      company: "[Компания, Таллин]",
-      initials: "?",
-    },
-    {
-      quote: "Ожидал долгого внедрения и технических проблем — получил работающую систему за 3 недели. Теперь отчёты генерируются автоматически каждое утро.",
-      name: "[Имя клиента]",
-      title: "[Должность]",
-      company: "[Компания, Эстония]",
-      initials: "?",
-    },
-    {
-      quote: "Инвестиция окупилась в первый же месяц. AI-калькулятор на сайте работает круглосуточно и конвертирует лучше, чем наши менеджеры по продажам.",
-      name: "[Имя клиента]",
-      title: "[Должность]",
-      company: "[Компания, Эстония]",
-      initials: "?",
-    },
+  const pillars = isRu ? [
+    { icon: <Lightbulb size={24} className="text-coffee" />, title: 'Практика, а не теория', desc: 'Разбираем реальные кейсы участников и пробуем инструменты прямо на встрече.' },
+    { icon: <Users size={24} className="text-coffee" />, title: 'Среда единомышленников', desc: '12–20 владельцев бизнеса, которые уже внедряют ИИ и делятся опытом.' },
+    { icon: <Zap size={24} className="text-coffee" />, title: 'Экономия месяцев', desc: 'Узнайте за вечер то, до чего другие доходили неделями проб и ошибок.' },
   ] : [
-    {
-      quote: "Thanks to AI automation, we cut request processing time from 4 hours to 15 minutes. It completely transformed our operational efficiency.",
-      name: "[Client Name]",
-      title: "[Job Title]",
-      company: "[Company, Tallinn]",
-      initials: "?",
-    },
-    {
-      quote: "I expected a long implementation with technical issues — instead I got a working system in 3 weeks. Reports now generate automatically every morning.",
-      name: "[Client Name]",
-      title: "[Job Title]",
-      company: "[Company, Estonia]",
-      initials: "?",
-    },
-    {
-      quote: "The investment paid off in the first month. The AI calculator on our site works 24/7 and converts better than our sales managers did.",
-      name: "[Client Name]",
-      title: "[Job Title]",
-      company: "[Company, Estonia]",
-      initials: "?",
-    },
+    { icon: <Lightbulb size={24} className="text-coffee" />, title: 'Practice, Not Theory', desc: 'We break down real participant cases and try tools hands-on at every meetup.' },
+    { icon: <Users size={24} className="text-coffee" />, title: 'Peer Network', desc: '12–20 business owners who are already adopting AI and sharing what works.' },
+    { icon: <Zap size={24} className="text-coffee" />, title: 'Save Months of Trial & Error', desc: 'Learn in one evening what others figured out over weeks of experimenting.' },
   ]
 
+  const timeline = isRu ? [
+    { time: '18:30', label: 'Нетворкинг', icon: <MessageCircle size={16} /> },
+    { time: '18:50', label: 'AI-дайджест', icon: <Zap size={16} /> },
+    { time: '19:00', label: 'Кейс участника', icon: <Target size={16} /> },
+    { time: '19:30', label: 'Мини-воркшоп', icon: <Lightbulb size={16} /> },
+    { time: '20:00', label: 'Мастермайнд', icon: <Users size={16} /> },
+    { time: '20:45', label: 'Нетворкинг', icon: <MessageCircle size={16} /> },
+  ] : [
+    { time: '18:30', label: 'Networking', icon: <MessageCircle size={16} /> },
+    { time: '18:50', label: 'AI Digest', icon: <Zap size={16} /> },
+    { time: '19:00', label: 'Member Case', icon: <Target size={16} /> },
+    { time: '19:30', label: 'Mini Workshop', icon: <Lightbulb size={16} /> },
+    { time: '20:00', label: 'Mastermind', icon: <Users size={16} /> },
+    { time: '20:45', label: 'Networking', icon: <MessageCircle size={16} /> },
+  ]
+
+  // Ближайшая встреча — обновлять вручную
+  const nextMeetup = { date: isRu ? '20 мая 2026' : 'May 20, 2026', spotsLeft: 12, totalSpots: 20 }
+
   return (
-    <Section dark id="testimonials">
-      <SectionHeader
-        title={isRu ? "Что говорят клиенты" : "What Clients Say"}
-        sub={isRu ? "TODO: замени заглушки на реальные отзывы" : "TODO: replace placeholders with real client quotes"}
-      />
-      <motion.div className="grid md:grid-cols-3 gap-6" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-        {testimonials.map((t, i) => (
-          <motion.div key={i} variants={fadeUp}
-            className="bg-slate-800 border border-slate-700 border-dashed rounded-2xl p-6 flex flex-col relative">
-            {/* Заглушка-пометка */}
-            <div className="absolute top-3 right-3 bg-coffee/20 border border-coffee/30 rounded-lg px-2 py-0.5">
-              <span className="text-coffee text-xs font-medium">Placeholder</span>
-            </div>
+    <Section id="club">
+      <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <SectionHeader
+          title={isRu ? 'AI-клуб для бизнеса в Таллинне' : 'AI Business Club in Tallinn'}
+          sub={isRu ? 'Внедрять ИИ в одиночку можно. Но вместе — быстрее в разы.' : 'You can adopt AI alone. But together — it\'s exponentially faster.'}
+        />
 
-            <Quote size={24} className="text-coffee/40 mb-4 flex-shrink-0" />
-            <p className="text-slate-300 text-sm leading-relaxed flex-1 italic mb-5">"{t.quote}"</p>
+        {/* 3 Pillars */}
+        <motion.div className="grid md:grid-cols-3 gap-6 mb-12" variants={stagger}>
+          {pillars.map((p, i) => (
+            <motion.div key={i} variants={fadeUp}
+              className="bg-slate-900 border border-slate-700 rounded-2xl p-6 hover:border-coffee/40 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-coffee/15 border border-coffee/30 flex items-center justify-center mb-4">
+                {p.icon}
+              </div>
+              <h3 className="text-white font-bold text-lg mb-2">{p.title}</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">{p.desc}</p>
+            </motion.div>
+          ))}
+        </motion.div>
 
-            <div className="flex items-center gap-3 border-t border-slate-700 pt-4">
-              <div className="w-10 h-10 rounded-full bg-slate-700 border border-slate-600 flex items-center justify-center flex-shrink-0">
-                <User size={18} className="text-slate-400" />
+        {/* Meeting Timeline */}
+        <motion.div variants={fadeUp} className="mb-12">
+          <h3 className="text-white font-bold text-xl text-center mb-6">
+            {isRu ? 'Формат встречи (2.5 часа)' : 'Meetup Format (2.5 hours)'}
+          </h3>
+          <div className="flex flex-wrap justify-center gap-2">
+            {timeline.map((t, i) => (
+              <div key={i} className="flex items-center">
+                <div className="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 flex items-center gap-3">
+                  <span className="text-coffee font-mono text-xs font-bold">{t.time}</span>
+                  <span className="text-coffee/60">{t.icon}</span>
+                  <span className="text-slate-300 text-sm font-medium">{t.label}</span>
+                </div>
+                {i < timeline.length - 1 && (
+                  <ChevronRight size={16} className="text-slate-600 mx-1 flex-shrink-0 hidden sm:block" />
+                )}
               </div>
-              <div>
-                <p className="text-white font-semibold text-sm">{t.name}</p>
-                <p className="text-slate-500 text-xs">{t.title} · {t.company}</p>
-              </div>
-            </div>
-          </motion.div>
-        ))}
+            ))}
+          </div>
+        </motion.div>
+
+        {/* CTA Card */}
+        <motion.div variants={fadeUp}
+          className="bg-gradient-to-br from-coffee/15 to-coffee/5 border border-coffee/30 rounded-2xl p-8 text-center max-w-2xl mx-auto">
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <Calendar size={20} className="text-coffee" />
+            <span className="text-white font-bold text-lg">
+              {isRu ? 'Ближайшая встреча:' : 'Next meetup:'} {nextMeetup.date}
+            </span>
+          </div>
+          <p className="text-slate-400 text-sm mb-5">
+            {isRu
+              ? `Осталось ${nextMeetup.spotsLeft} из ${nextMeetup.totalSpots} мест · Первая встреча бесплатно`
+              : `${nextMeetup.spotsLeft} of ${nextMeetup.totalSpots} spots left · First meetup is free`}
+          </p>
+          <a href="#contact"
+            className="inline-flex items-center gap-2 bg-coffee hover:bg-coffee/80 text-white px-8 py-3.5 rounded-2xl font-bold transition-colors">
+            {isRu ? 'Записаться на встречу' : 'Join the Meetup'} <ArrowRight size={18} />
+          </a>
+          <p className="text-slate-500 text-xs mt-4">
+            📍 {isRu ? 'Таллинн · Каждый 3-й вторник месяца · 18:30–21:00' : 'Tallinn · Every 3rd Tuesday · 18:30–21:00'}
+          </p>
+        </motion.div>
       </motion.div>
     </Section>
   )
 }
+
+// ── Отзывы (скрыты до появления реальных) ────────────────────────────────────
+// TODO: раскомментировать и заполнить реальными отзывами участников клуба
+// function Testimonials({ lang }: { lang: Lang }) { ... }
 
 // ── ROI Калькулятор ───────────────────────────────────────────────────────────
 function ROICalculator({ lang }: { lang: Lang }) {
@@ -659,12 +681,13 @@ function App() {
     heroTags:      isRu
       ? ['AI-интеграции для финтех', 'Автоматизация производства', 'Full-stack + AI экспертиза']
       : ['Fintech AI integrations', 'Manufacturing automation', 'Full-stack + AI expertise'],
-    heroH1a:       isRu ? "Интеллект дешевеет."         : "Intelligence Is Becoming Cheap.",
-    heroH1b:       isRu ? "Компании без AI проигрывают конкурентам." : "Companies Without AI Will Become Uncompetitive.",
+    heroH1a:       isRu ? "Интеллект стал дешёвым."      : "Intelligence Has Become Cheap.",
+    heroH1b:       isRu ? "Ваш бизнес уже использует это?" : "Is Your Business Using It Yet?",
     heroP:         isRu
-      ? "Помогаю бизнесу внедрять AI-автоматизацию и агентов — сокращать операционные расходы, ускорять процессы и побеждать в новой экономике."
-      : "I help businesses integrate AI automation and AI agents to reduce operational costs, accelerate processes, and win in the new economy.",
+      ? "Помогаем малому и среднему бизнесу внедрять ИИ — от первого аудита до полной трансформации. Сокращайте расходы, ускоряйте процессы и побеждайте в новой экономике."
+      : "We help small and medium businesses adopt AI — from the first audit to full transformation. Cut costs, accelerate processes, and win in the new economy.",
     heroCta:       isRu ? "Записаться на AI-аудит"      : "Book AI Audit",
+    heroClub:      isRu ? "Прийти на встречу клуба"     : "Join AI Club Meetup",
     heroHow:       isRu ? "Как это работает"             : "How it works",
     heroLocation:  isRu ? "Таллин, Эстония 🇪🇪"         : "Tallinn, Estonia 🇪🇪",
     ecoTitle:      isRu ? "Мы входим в самую быструю экономическую трансформацию в истории" : "We Are Entering the Fastest Economic Transformation in History",
@@ -717,10 +740,12 @@ function App() {
     svcTitle:      isRu ? "Услуги" : "Services",
     svcSub:        isRu ? "Выбери подходящий формат сотрудничества." : "Choose the right engagement level for your business.",
     svcPkgs:       isRu ? [
+      { title: 'AI-клуб', price: '0–50 €/мес.', items: ['Ежемесячные встречи в Таллинне', 'Закрытый чат участников', 'AI-дайджест и воркшопы'], highlight: false, isClub: true },
       { title: 'AI-аудит', price: '300–1 000 €', items: ['Анализ бизнес-процессов', 'Карта AI-возможностей', 'Дорожная карта автоматизации'], highlight: false },
       { title: 'AI-автоматизация', price: '3 000 €+', items: ['Автоматизация рабочих процессов', 'AI-интеграции', 'Оптимизация процессов'], highlight: true },
       { title: 'AI-трансформация', price: 'Индивидуально', items: ['Стратегия автоматизации', 'Интеграция нескольких систем', 'Долгосрочная оптимизация'], highlight: false },
     ] : [
+      { title: 'AI Club', price: '€0–50/mo', items: ['Monthly meetups in Tallinn', 'Private member chat', 'AI digest & workshops'], highlight: false, isClub: true },
       { title: 'AI Audit', price: '300–1,000 €', items: ['Business process analysis', 'AI opportunity mapping', 'Automation strategy roadmap'], highlight: false },
       { title: 'AI Automation', price: '3,000 €+', items: ['Workflow automation', 'AI integrations', 'Process optimization'], highlight: true },
       { title: 'AI Transformation', price: 'Custom', items: ['Automation strategy', 'Multiple system integrations', 'Long-term optimization'], highlight: false },
@@ -772,6 +797,16 @@ function App() {
         {showPrivacy && <PrivacyPolicyModal onClose={() => setShowPrivacy(false)} />}
       </AnimatePresence>
 
+      {/* MEETUP BANNER */}
+      <div className="bg-coffee/90 text-white text-center py-2 px-4 text-sm font-medium">
+        <a href="#club" className="inline-flex items-center gap-2 hover:underline">
+          <Calendar size={14} />
+          {isRu
+            ? 'Следующая встреча AI-клуба: 20 мая, Таллинн — Записаться бесплатно →'
+            : 'Next AI Club meetup: May 20, Tallinn — Join for free →'}
+        </a>
+      </div>
+
       {/* NAV */}
       <nav className="sticky top-0 z-40 bg-slate-950/90 backdrop-blur border-b border-slate-800">
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
@@ -822,8 +857,8 @@ function App() {
             <a href="#contact" className="bg-coffee hover:bg-coffee/80 text-white px-7 py-3.5 rounded-2xl font-bold transition-colors inline-flex items-center gap-2 justify-center">
               {s.heroCta} <ArrowRight size={18} />
             </a>
-            <a href="#process" className="border border-slate-600 hover:border-slate-400 text-slate-300 px-7 py-3.5 rounded-2xl font-semibold transition-colors">
-              {s.heroHow}
+            <a href="#club" className="border border-coffee/50 hover:border-coffee text-coffee hover:bg-coffee/10 px-7 py-3.5 rounded-2xl font-semibold transition-colors inline-flex items-center gap-2 justify-center">
+              <Calendar size={18} /> {s.heroClub}
             </a>
           </motion.div>
         </motion.div>
@@ -945,6 +980,9 @@ function App() {
         </motion.div>
       </Section>
 
+      {/* 8.5. AI CLUB */}
+      <AIClub lang={lang} />
+
       {/* 9. PROCESS */}
       <Section dark id="process">
         <SectionHeader title={s.procTitle} />
@@ -978,12 +1016,13 @@ function App() {
       {/* 11. SERVICES */}
       <Section dark id="services">
         <SectionHeader title={s.svcTitle} sub={s.svcSub} />
-        <motion.div className="grid md:grid-cols-3 gap-6" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-          {s.svcPkgs.map(pkg => (
-            <motion.div key={pkg.title} variants={fadeUp} className={`rounded-2xl p-6 border flex flex-col ${pkg.highlight ? 'bg-coffee/10 border-coffee' : 'bg-slate-800 border-slate-700'}`}>
+        <motion.div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+          {s.svcPkgs.map((pkg: { title: string; price: string; items: string[]; highlight: boolean; isClub?: boolean }) => (
+            <motion.div key={pkg.title} variants={fadeUp} className={`rounded-2xl p-6 border flex flex-col ${pkg.highlight ? 'bg-coffee/10 border-coffee' : pkg.isClub ? 'bg-slate-800 border-coffee/30' : 'bg-slate-800 border-slate-700'}`}>
               {pkg.highlight && <span className="self-start bg-coffee text-white text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wide">{isRu ? "Популярный" : "Most Popular"}</span>}
-              <h3 className="text-xl font-bold text-white mb-1">{pkg.title}</h3>
-              <div className="text-2xl font-extrabold text-coffee my-3">{pkg.price}</div>
+              {pkg.isClub && <span className="self-start bg-sage-green/20 text-sage-green text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wide">{isRu ? "Старт" : "Start Here"}</span>}
+              <h3 className="text-lg font-bold text-white mb-1">{pkg.title}</h3>
+              <div className="text-xl font-extrabold text-coffee my-3">{pkg.price}</div>
               <ul className="space-y-2 mb-6 flex-1">
                 {pkg.items.map(i => (
                   <li key={i} className="flex items-center gap-2 text-slate-300 text-sm">
@@ -991,8 +1030,8 @@ function App() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className={`text-center py-3 rounded-xl font-semibold transition-colors text-sm ${pkg.highlight ? 'bg-coffee hover:bg-coffee/80 text-white' : 'border border-slate-600 hover:border-slate-400 text-slate-300'}`}>
-                {s.svcGetStarted}
+              <a href={pkg.isClub ? '#club' : '#contact'} className={`text-center py-3 rounded-xl font-semibold transition-colors text-sm ${pkg.highlight ? 'bg-coffee hover:bg-coffee/80 text-white' : 'border border-slate-600 hover:border-slate-400 text-slate-300'}`}>
+                {pkg.isClub ? (isRu ? 'Подробнее' : 'Learn More') : s.svcGetStarted}
               </a>
             </motion.div>
           ))}
@@ -1002,8 +1041,7 @@ function App() {
       {/* 12. CASE STUDIES */}
       <CaseStudies lang={lang} />
 
-      {/* 13. TESTIMONIALS */}
-      <Testimonials lang={lang} />
+      {/* 13. TESTIMONIALS — скрыты до появления реальных отзывов */}
 
       {/* 14. ROI CALCULATOR */}
       <ROICalculator lang={lang} />
