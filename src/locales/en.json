@@ -42,6 +42,8 @@
     "companyA": "Company A",
     "companyB": "Company B",
     "payroll": "Annual payroll:",
+    "payrollA": "5,000,000 €",
+    "payrollB": "300,000 €",
     "companyBNote": "AI automation handles most operational work.",
     "question": "Both companies deliver the same service. Which company wins the market over time?",
     "note": "Companies that automate processes will outperform competitors every single month."
