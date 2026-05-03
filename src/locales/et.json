@@ -88,6 +88,8 @@
     "nextDate": "20. mai 2026",
     "spots": "{{left}}/{{total}} kohta jäänud · Esimene kohtumine on tasuta",
     "cta": "Registreeru kohtumisele",
+    "learnMore": "Loe lähemalt",
+    "backToHome": "Tagasi avalehele",
     "location": "Tallinn · Iga 3. teisipäev · 18:30–21:00"
   },
   "process": {

@@ -14,19 +14,14 @@ import { PrivacyPolicyModal } from './components/layout/PrivacyPolicyModal'
 // Sections
 import { Hero } from './components/sections/Hero'
 import { VideoSection } from './components/sections/VideoSection'
-import { EconomicShift } from './components/sections/EconomicShift'
-import { NewReality } from './components/sections/NewReality'
-import { Competition } from './components/sections/Competition'
-import { History } from './components/sections/History'
-import { AIToday } from './components/sections/AIToday'
 import { Applications } from './components/sections/Applications'
-import { AIClub } from './components/sections/AIClub'
 import { Process } from './components/sections/Process'
-import { CoreIdea } from './components/sections/CoreIdea'
+
 import { Services } from './components/sections/Services'
 import { CaseStudies } from './components/sections/CaseStudies'
 import { ROICalculator } from './components/sections/ROICalculator'
 import { About } from './components/sections/About'
+import { AIClub } from './components/sections/AIClub'
 import { FAQ } from './components/sections/FAQ'
 import { Contact } from './components/sections/Contact'
 
@@ -80,22 +75,15 @@ export default function App() {
 
       <MeetupBanner />
       <Nav />
-
       <Hero />
       <VideoSection />
-      <EconomicShift />
-      <NewReality />
-      <Competition />
-      <History />
-      <AIToday />
       <Applications />
-      <AIClub />
       <Process />
-      <CoreIdea />
       <Services />
       <CaseStudies />
       <ROICalculator />
       <About />
+      <AIClub />
       <FAQ />
       <Contact />
 

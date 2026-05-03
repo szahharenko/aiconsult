@@ -90,6 +90,8 @@
     "nextDate": "May 20, 2026",
     "spots": "{{left}} of {{total}} spots left · First meetup is free",
     "cta": "Join the Meetup",
+    "learnMore": "Learn More",
+    "backToHome": "Back to home",
     "location": "Tallinn · Every 3rd Tuesday · 18:30–21:00"
   },
   "process": {

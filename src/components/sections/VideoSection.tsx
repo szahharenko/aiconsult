@@ -13,7 +13,7 @@ export function VideoSection() {
     <Section id="video">
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
         <SectionHeader
-          title={t('video.title')}
+          title={t('competition.title')}
           sub={t('video.sub')}
         />
         <motion.div variants={fadeUp}>
