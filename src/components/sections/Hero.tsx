@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Calendar } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { fadeUp, stagger } from '../../animations'
-import { BRAND_NAME } from '../../config'
 
 export function Hero() {
   const { t } = useTranslation()

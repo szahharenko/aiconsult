@@ -15,8 +15,6 @@ const metricIcons = [
   [<Bot size={16} className="text-coffee" />, <TrendingUp size={16} className="text-sage-green" />, <Clock size={16} className="text-blue-400" />],
 ]
 
-const caseColors = ['coffee', 'sage-green', 'blue']
-
 interface CaseData {
   badge: string
   title: string
