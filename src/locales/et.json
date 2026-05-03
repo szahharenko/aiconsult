@@ -40,6 +40,8 @@
     "companyA": "Ettevõte A",
     "companyB": "Ettevõte B",
     "payroll": "Aastane palgafond:",
+    "payrollA": "5 000 000 €",
+    "payrollB": "300 000 €",
     "companyBNote": "AI-automatiseerimine teeb suurema osa operatiivsest tööst.",
     "question": "Mõlemad ettevõtted pakuvad sama teenust. Kumb võidab turu aja jooksul?",
     "note": "Ettevõtted, kes automatiseerivad protsesse, edastavad konkurente iga kuu."
