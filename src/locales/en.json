@@ -1,0 +1,248 @@
+{
+  "brandTagline": "Crafting your AI evolution",
+  "nav": {
+    "cta": "Book AI Audit"
+  },
+  "meetupBanner": "Next AI Club meetup: May 20, Tallinn — Join for free →",
+  "hero": {
+    "location": "Tallinn, Estonia 🇪🇪",
+    "tags": ["Fintech AI integrations", "Manufacturing automation", "Full-stack + AI expertise"],
+    "h1a": "Intelligence Has Become Cheap.",
+    "h1b": "Is Your Business Using It Yet?",
+    "p": "We help small and medium businesses adopt AI — from the first audit to full transformation. Cut costs, accelerate processes, and win in the new economy.",
+    "cta": "Book AI Audit",
+    "club": "Join AI Club Meetup",
+    "how": "How it works"
+  },
+  "video": {
+    "title": "Watch How I Help Businesses Implement AI",
+    "sub": "2 minutes — see if this is right for your business",
+    "placeholder": "Your intro video goes here",
+    "placeholderSub": "Record a 2–3 min intro and paste your YouTube or Loom URL into VIDEO_EMBED_URL at the top of the file"
+  },
+  "eco": {
+    "title": "We Are Entering the Fastest Economic Transformation in History",
+    "p1": "Artificial intelligence is beginning to automate human cognitive work. For decades the main constraint in business was human intelligence and time. ",
+    "strong": "That constraint is disappearing.",
+    "p2": "The cost of intelligence is collapsing. But these resources are not getting cheaper:",
+    "resources": ["Land", "Energy", "Raw materials", "Human attention"],
+    "p3a": "The companies that win in the next decade will combine ",
+    "p3b": "cheap intelligence",
+    "p3c": " with real-world assets and processes."
+  },
+  "reality": {
+    "title": "Companies Are Starting To Appear Without Employees",
+    "listLabel": "AI agents are already capable of managing:",
+    "list": ["Email", "Calendars", "Online purchases", "Scheduling", "Communications"],
+    "cardP1": "Some agents perform tasks their creators never explicitly programmed.",
+    "cardP2": "This is not just a technology shift.\nIt is a new economic model."
+  },
+  "competition": {
+    "title": "The Biggest Risk Today Is Not Using AI",
+    "companyA": "Company A",
+    "companyB": "Company B",
+    "payroll": "Annual payroll:",
+    "companyBNote": "AI automation handles most operational work.",
+    "question": "Both companies deliver the same service. Which company wins the market over time?",
+    "note": "Companies that automate processes will outperform competitors every single month."
+  },
+  "history": {
+    "title": "Every Technological Revolution Makes Resources Cheaper",
+    "p1a": "When clothing production became cheap, people didn't buy the same amount at lower prices. ",
+    "p1b": "They bought far more clothing.",
+    "p2a": "The same pattern applies to intelligence. When intelligence becomes cheap, we don't simply do the same work for less money — ",
+    "p2b": "we do dramatically more work and innovation.",
+    "p3": "The result historically has always been economic expansion."
+  },
+  "today": {
+    "title": "AI Can Already Do In Hours What Took Weeks",
+    "cards": ["Analyze complex datasets", "Generate software code", "Process documents", "Automate communication", "Produce analytics reports", "Coordinate workflows"],
+    "note": "Tasks that previously required 2–4 weeks of human effort can now be completed in a few hours."
+  },
+  "applications": {
+    "title": "Where AI Creates Immediate Business Value",
+    "sub": "Processes ready for automation — and the results companies typically see.",
+    "autoTitle": "AI can automate",
+    "autoItems": ["Customer Support", "Email Processing", "Document Generation", "CRM Updates", "Data Analysis", "Sales Workflows", "Marketing Operations", "Internal Reporting"],
+    "resultsTitle": "Results companies typically see",
+    "resultItems": ["Lower operational costs", "Faster execution", "Fewer manual tasks", "Higher productivity"]
+  },
+  "club": {
+    "title": "AI Business Club in Tallinn",
+    "sub": "You can adopt AI alone. But together — it's exponentially faster.",
+    "pillars": [
+      { "title": "Practice, Not Theory", "desc": "We break down real participant cases and try tools hands-on at every meetup." },
+      { "title": "Peer Network", "desc": "12–20 business owners who are already adopting AI and sharing what works." },
+      { "title": "Save Months of Trial & Error", "desc": "Learn in one evening what others figured out over weeks of experimenting." }
+    ],
+    "formatTitle": "Meetup Format (2.5 hours)",
+    "timeline": [
+      { "time": "18:30", "label": "Networking" },
+      { "time": "18:50", "label": "AI Digest" },
+      { "time": "19:00", "label": "Member Case" },
+      { "time": "19:30", "label": "Mini Workshop" },
+      { "time": "20:00", "label": "Mastermind" },
+      { "time": "20:45", "label": "Networking" }
+    ],
+    "nextMeetup": "Next meetup:",
+    "nextDate": "May 20, 2026",
+    "spots": "{{left}} of {{total}} spots left · First meetup is free",
+    "cta": "Join the Meetup",
+    "location": "Tallinn · Every 3rd Tuesday · 18:30–21:00"
+  },
+  "process": {
+    "title": "How AI Automation Is Implemented",
+    "steps": [
+      { "step": "01", "title": "AI Audit", "desc": "Analyze company processes and identify automation opportunities." },
+      { "step": "02", "title": "AI Roadmap", "desc": "Design a practical AI integration strategy." },
+      { "step": "03", "title": "Development", "desc": "Build AI automation, agents, and integrations." },
+      { "step": "04", "title": "Deployment", "desc": "Launch the system and onboard the team." }
+    ]
+  },
+  "core": {
+    "title": "Intelligence Is Becoming Cheap. Value Moves To The Physical World.",
+    "p1": "In the next decade most digital intelligence will become abundant. Real competitive advantage belongs to companies that combine:",
+    "items": ["Cheap intelligence", "Real assets", "Real processes", "Real customer attention"],
+    "p2": "AI automation lets companies scale operations while keeping teams small and efficient."
+  },
+  "services": {
+    "title": "Services",
+    "sub": "Choose the right engagement level for your business.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "popular": "Most Popular",
+    "startHere": "Start Here",
+    "packages": [
+      { "title": "AI Club", "price": "€0–50/mo", "items": ["Monthly meetups in Tallinn", "Private member chat", "AI digest & workshops"], "isClub": true },
+      { "title": "AI Audit", "price": "300–1,000 €", "items": ["Business process analysis", "AI opportunity mapping", "Automation strategy roadmap"] },
+      { "title": "AI Automation", "price": "3,000 €+", "items": ["Workflow automation", "AI integrations", "Process optimization"], "highlight": true },
+      { "title": "AI Transformation", "price": "Custom", "items": ["Automation strategy", "Multiple system integrations", "Long-term optimization"] }
+    ]
+  },
+  "cases": {
+    "title": "Real Results",
+    "sub": "Anonymized cases from Estonian SMB — real problems, real numbers",
+    "problem": "Problem",
+    "solution": "Solution",
+    "allAnonymized": "All cases anonymized at client request",
+    "getSimilar": "Get similar results",
+    "items": [
+      {
+        "badge": "E-commerce · Tallinn",
+        "title": "Online Clothing Store",
+        "problem": "4 hours daily spent on manually handling orders, returns, and repetitive customer inquiries.",
+        "solution": "AI customer support agent + automated returns processing via CRM integration.",
+        "metrics": [
+          { "value": "3.5 h/day", "label": "saved" },
+          { "value": "2 min", "label": "response time (was 4h)" },
+          { "value": "~€1,400", "label": "saved per month" }
+        ]
+      },
+      {
+        "badge": "Accounting · Estonia",
+        "title": "Accounting Firm",
+        "problem": "8-person team spent 2 days per month manually generating reports for 40+ clients.",
+        "solution": "Automated report generation from Google Sheets + scheduled client delivery.",
+        "metrics": [
+          { "value": "3 hours", "label": "instead of 2 days" },
+          { "value": "+15 clients", "label": "without new hires" },
+          { "value": "+37%", "label": "revenue growth" }
+        ]
+      },
+      {
+        "badge": "Manufacturing · Estonia",
+        "title": "Furniture Manufacturer",
+        "problem": "150+ monthly price quote requests — each requiring 30–40 minutes of a manager's time.",
+        "solution": "AI pricing calculator on website + automatic lead transfer to CRM.",
+        "metrics": [
+          { "value": "80%", "label": "requests automated" },
+          { "value": "+23%", "label": "conversion to sale" },
+          { "value": "60 h/mo", "label": "freed up" }
+        ]
+      }
+    ]
+  },
+  "roi": {
+    "title": "ROI Calculator",
+    "sub": "Estimate your potential savings from AI automation",
+    "employees": "Employees",
+    "salary": "Avg salary (€/mo)",
+    "hours": "Hours/day on routine",
+    "hourUnit": "h",
+    "automating": "Automating ~60% of routine tasks:",
+    "monthly": "savings / month",
+    "annual": "savings / year",
+    "freed": "hours/year freed",
+    "estimate": "Estimate only. Precise numbers — in a personal AI audit.",
+    "getCta": "Get a precise estimate"
+  },
+  "about": {
+    "title": "Why Work With Me",
+    "role": "AI Automation Consultant",
+    "items": [
+      "Full-stack developer with deep AI integration experience",
+      "Built and integrated AI solutions in real production systems",
+      "Background in fintech and manufacturing workflows",
+      "Focus on measurable business outcomes and ROI"
+    ],
+    "card": "Not just impressive demos — practical automation that creates measurable ROI across fintech, manufacturing, and SaaS businesses in Estonia and the Baltic region."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "How long does implementation take?", "a": "Typical AI automation projects take 2–6 weeks depending on complexity." },
+      { "q": "Do we need new infrastructure?", "a": "Most AI solutions integrate with existing tools — CRM, APIs, databases, and communication platforms." },
+      { "q": "What technologies are used?", "a": "Modern AI APIs, automation platforms, backend integrations, and custom agent systems." },
+      { "q": "Is this relevant for small businesses?", "a": "Yes. Small teams benefit the most — automation dramatically increases their operational capacity." }
+    ]
+  },
+  "contact": {
+    "title": "Discover How AI Can Automate Your Business",
+    "sub": "Book an AI audit to identify:",
+    "items": ["Which processes can be automated", "Potential cost reductions", "The highest-impact AI opportunities"],
+    "form": {
+      "name": "Name *",
+      "namePh": "Your name",
+      "email": "Email *",
+      "company": "Company",
+      "companyPh": "Company name",
+      "size": "Team size",
+      "sizePh": "Select",
+      "interest": "What do you want to automate?",
+      "interestPh": "Select",
+      "opts": ["Customer support", "Document processing", "Analytics & reports", "Sales & CRM", "Other"],
+      "msg": "Message",
+      "msgPh": "Tell me about your challenge...",
+      "err": "Submission error. Write directly:",
+      "btn": "Book AI Audit",
+      "note": "Reply within 24 hours · No spam",
+      "sent": "Request sent!",
+      "sentSub": "I'll get back to you within 24 hours.",
+      "sending": "Sending..."
+    }
+  },
+  "footer": {
+    "privacy": "Privacy Policy"
+  },
+  "cookie": {
+    "text": "This site uses cookies for analytics.",
+    "privacyLink": "Privacy Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: April 2026",
+    "ok": "Got it",
+    "sections": [
+      { "title": "1. Who we are", "body": "EvoCraft (Crafting your AI evolution) — independent AI automation consultant, Tallinn, Estonia. Contact: acrashik@gmail.com" },
+      { "title": "2. What data we collect", "body": "Via contact form: name, email, company, task description. Via cookies (with consent): anonymous analytics." },
+      { "title": "3. How we use data", "body": "Only to respond to your inquiry. We do not share with third parties or use for advertising." },
+      { "title": "4. Legal basis (GDPR)", "body": "Processing based on consent (Art. 6(1)(a) GDPR) and legitimate interest (Art. 6(1)(f) GDPR)." },
+      { "title": "5. Retention", "body": "Form data — no more than 2 years. Deletion on request at any time." },
+      { "title": "6. Your rights", "body": "Access, correction, deletion, portability, withdrawal of consent. Contact: acrashik@gmail.com" },
+      { "title": "7. Cookies", "body": "Used only after your explicit consent. Withdrawal — via banner or clearing cookies." },
+      { "title": "8. Supervisory authority", "body": "Andmekaitse Inspektsioon (Estonian Data Protection Inspectorate): aki.ee" }
+    ]
+  }
+}
