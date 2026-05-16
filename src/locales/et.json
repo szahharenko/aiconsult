@@ -1,142 +1,95 @@
 {
-  "brandTagline": "Loome AI-evolutsiooni",
-  "nav": { "cta": "Broneeri AI-audit" },
-  "meetupBanner": "Järgmine AI-klubi kohtumine: 20. mai, Tallinn — Registreeru tasuta →",
+  "brandTagline": "AI ilma bullshitita",
+  "nav": { "cta": "Räägi minuga" },
+  "meetupBanner": "Järgmine AI Dinner · 12. juuni · Tallinn — kutsega →",
   "hero": {
     "location": "Tallinn, Eesti 🇪🇪",
-    "tags": ["Fintechi AI-integratsioonid", "Tootmise automatiseerimine", "Full-stack + AI ekspertiis"],
-    "h1a": "Intelligentsus on muutunud odavaks.",
-    "h1b": "Kas sinu ettevõte juba kasutab seda?",
-    "p": "Aitame väikestel ja keskmistel ettevõtetel AI-d juurutada — esimesest auditist täieliku transformatsioonini. Vähenda kulusid, kiirenda protsesse ja võida uues majanduses.",
-    "cta": "Broneeri AI-audit",
-    "club": "Liitu AI-klubi kohtumisega",
+    "tags": ["AI Dinner · igakuiselt", "1-1 koolitus", "Juurutamine"],
+    "h1a": "AI ilma bullshitita.",
+    "h1b": "Praktika, koolitus, konsultatsioon.",
+    "p": "Vaikne AI-praktika Tallinnas — kogukonna üritused ettevõtjatele ja AI-praktikutele, isiklik koolitus ja valitud konsultatsioon. Osa Undercover'ist.",
+    "cta": "Räägi minuga",
+    "club": "Järgmine üritus",
     "how": "Kuidas see töötab"
   },
-  "video": {
-    "title": "Vaata, kuidas aitan ettevõtetel AI-d juurutada",
-    "sub": "2 minutit — vaata, kas see sobib sinu ettevõttele",
-    "placeholder": "Siia tuleb sinu tutvustusvideo",
-    "placeholderSub": "Salvesta 2–3 min tutvustus ja kleebi YouTube'i või Loomi link faili alguses olevasse VIDEO_EMBED_URL muutujasse"
-  },
-  "eco": {
-    "title": "Me astume ajaloo kiireimasse majanduslikku transformatsiooni",
-    "p1": "Tehisintellekt hakkab automatiseerima inimese kognitiivset tööd. Aastakümneid oli äri peamine piirang inimese intellekt ja aeg. ",
-    "strong": "See piirang on kadumas.",
-    "p2": "Intelligentsuse hind langeb. Kuid need ressursid ei muutu odavamaks:",
-    "resources": ["Maa", "Energia", "Toormaterjalid", "Inimeste tähelepanu"],
-    "p3a": "Ettevõtted, kes võidavad järgmisel kümnendil, ühendavad ",
-    "p3b": "odava intelligentsuse",
-    "p3c": " reaalsete varade ja protsessidega."
-  },
-  "reality": {
-    "title": "Ilmuvad ettevõtted, millel pole töötajaid",
-    "listLabel": "AI-agendid suudavad juba hallata:",
-    "list": ["Email", "Kalendrid", "Veebioste", "Ajakava", "Kommunikatsiooni"],
-    "cardP1": "Mõned agendid täidavad ülesandeid, mida nende loojad kunagi otseselt ei programmeerinud.",
-    "cardP2": "See ei ole lihtsalt tehnoloogiline muutus.\nSee on uus majandusmudel."
-  },
-  "competition": {
-    "title": "Suurim risk täna on AI-d mitte kasutada",
-    "companyA": "Ettevõte A",
-    "companyB": "Ettevõte B",
-    "payroll": "Aastane palgafond:",
-    "payrollA": "5 000 000 €",
-    "payrollB": "300 000 €",
-    "companyBNote": "AI-automatiseerimine teeb suurema osa operatiivsest tööst.",
-    "question": "Mõlemad ettevõtted pakuvad sama teenust. Kumb võidab turu aja jooksul?",
-    "note": "Ettevõtted, kes automatiseerivad protsesse, edastavad konkurente iga kuu."
-  },
-  "history": {
-    "title": "Iga tehnoloogiline revolutsioon muudab ressursid odavamaks",
-    "p1a": "Kui rõivatootmine muutus odavaks, ei ostnud inimesed sama kogust madalama hinnaga. ",
-    "p1b": "Nad ostsid palju rohkem rõivaid.",
-    "p2a": "Sama muster kehtib intelligentsuse kohta. Kui intelligentsus muutub odavaks, me ei tee lihtsalt sama tööd väiksema raha eest — ",
-    "p2b": "me teeme dramaatiliselt rohkem tööd ja innovatsiooni.",
-    "p3": "Ajalooliselt on tulemus alati olnud majanduskasv."
-  },
-  "today": {
-    "title": "AI suudab juba tundidega teha seda, mis varem võttis nädalaid",
-    "cards": ["Analüüsida keerulisi andmestikke", "Genereerida tarkvarakoodi", "Töödelda dokumente", "Automatiseerida kommunikatsiooni", "Koostada analüüsiraporteid", "Koordineerida töövooge"],
-    "note": "Ülesanded, mis varem nõudsid 2–4 nädalat inimtööd, saab nüüd tehtud mõne tunniga."
-  },
-  "applications": {
-    "title": "Kus AI loob kohest äriväärtust",
-    "sub": "Automatiseerimiseks valmis protsessid — ja tulemused, mida ettevõtted tavaliselt näevad.",
-    "autoTitle": "AI suudab automatiseerida",
-    "autoItems": ["Klienditugi", "Emailide töötlemine", "Dokumentide genereerimine", "CRM-i uuendamine", "Andmeanalüüs", "Müügiprotsessid", "Turundusoperatsioonid", "Sisearuandlus"],
-    "resultsTitle": "Tulemused, mida ettevõtted tavaliselt näevad",
-    "resultItems": ["Madalamad tegevuskulud", "Kiirem täitmine", "Vähem manuaalseid ülesandeid", "Kõrgem tootlikkus"]
-  },
-  "club": {
-    "title": "AI äriklubi Tallinnas",
-    "sub": "AI-d saab juurutada üksi. Kuid koos — see on kordades kiirem.",
-    "pillars": [
-      { "title": "Praktika, mitte teooria", "desc": "Analüüsime osalejate reaalseid juhtumeid ja proovime tööriistu igal kohtumisel." },
-      { "title": "Võrgustik", "desc": "12–20 ettevõtte omanikku, kes juba juurutavad AI-d ja jagavad kogemusi." },
-      { "title": "Säästa kuid katsetamist", "desc": "Õpi ühe õhtuga seda, mille teised avastasid nädalate jooksul." }
-    ],
-    "formatTitle": "Kohtumise formaat (2,5 tundi)",
-    "timeline": [
-      { "time": "18:30", "label": "Võrgustumine" },
-      { "time": "18:50", "label": "AI ülevaade" },
-      { "time": "19:00", "label": "Liikme juhtum" },
-      { "time": "19:30", "label": "Mini-töötuba" },
-      { "time": "20:00", "label": "Mastermind" },
-      { "time": "20:45", "label": "Võrgustumine" }
-    ],
-    "nextMeetup": "Järgmine kohtumine:",
-    "nextDate": "20. mai 2026",
-    "spots": "{{left}}/{{total}} kohta jäänud · Esimene kohtumine on tasuta",
-    "cta": "Registreeru kohtumisele",
-    "learnMore": "Loe lähemalt",
-    "backToHome": "Tagasi avalehele",
-    "location": "Tallinn · Iga 3. teisipäev · 18:30–21:00"
-  },
-  "process": {
-    "title": "Kuidas AI-automatiseerimist juurutatakse",
-    "steps": [
-      { "step": "01", "title": "AI-audit", "desc": "Analüüsime ettevõtte protsesse ja tuvastame automatiseerimisvõimalused." },
-      { "step": "02", "title": "AI-teekond", "desc": "Koostame praktilise AI-integratsioonistrateegia." },
-      { "step": "03", "title": "Arendus", "desc": "Ehitame AI-automatiseerimise, agendid ja integratsioonid." },
-      { "step": "04", "title": "Käivitamine", "desc": "Käivitame süsteemi ja koolitame meeskonna." }
+  "manifest": {
+    "title": "Mis see on. Mis ei ole.",
+    "principles": [
+      { "title": "Praktika, mitte pitchid.", "body": "Tõelised probleemid, tõelised juurutamised. Ei slaide 'transformatsioonist'." },
+      { "title": "Off the record.", "body": "Mis ruumis öeldakse, jääb ruumi. Ei LinkedIn-postitusi. Ei pressi." },
+      { "title": "Praktikud, mitte influencerid.", "body": "Kutsume neid, kes tegelikult ehitavad — mitte neid, kes sellest säutsuvad." }
     ]
   },
-  "core": {
-    "title": "Intelligentsus muutub odavaks. Väärtus liigub füüsilisse maailma.",
-    "p1": "Järgmisel kümnendil muutub enamik digitaalset intelligentsust külluslikuks. Tõeline konkurentsieelis kuulub ettevõtetele, kes ühendavad:",
-    "items": ["Odav intelligentsus", "Reaalsed varad", "Reaalsed protsessid", "Klientide tähelepanu"],
-    "p2": "AI-automatiseerimine võimaldab ettevõtetel operatsioone skaleerida, hoides meeskonnad väikesed ja tõhusad."
+  "community": {
+    "title": "Mis siin toimub",
+    "sub": "Kolm ruumi. Vali endale sobiv.",
+    "formats": [
+      { "title": "AI Dinner", "cadence": "Igakuiselt · Kutsega", "body": "12 inimest. Üks teema. Chatham House. Ei slaide. Söögiga.", "cta": "Esita avaldus" },
+      { "title": "AI Clinic", "cadence": "Iga 2 nädala tagant", "body": "Ettevõte tuleb tegeliku probleemiga. 5–8 praktikut töötavad sellega 90 minutit.", "cta": "Too probleem" },
+      { "title": "Friday Demo", "cadence": "Iga 2 nädala tagant · Avatud", "body": "Kolm 10-minutilist demo asjadest, mis tootmises töötavad. Pärast joogid.", "cta": "Registreeri" }
+    ],
+    "allEvents": "Kõik üritused"
+  },
+  "club": {
+    "title": "AI Dinner",
+    "sub": "12 inimest. Üks teema. Chatham House. Ei slaide. Söögiga.",
+    "pillars": [
+      { "title": "Praktika, mitte teooria", "desc": "Toome tegelikud probleemid, millega inimesed praegu maadlevad — mitte slaide sellest, mida AI 2030. aastal teeb." },
+      { "title": "Off the record", "desc": "Mis ruumis öeldakse, jääb ruumi. Ei pressi, ei LinkedIn-postitusi, ei salvestusi." },
+      { "title": "Tõelised praktikud", "desc": "Pool ruumist juurutab AI-d tootmisesse igal nädalal. Teine pool on siin, et neilt midagi küsida." }
+    ],
+    "formatTitle": "Kuidas õhtu kulgeb",
+    "timeline": [
+      { "time": "18:30", "label": "Saabumise joogid" },
+      { "time": "19:00", "label": "Tervitus ja teema" },
+      { "time": "19:15", "label": "Õhtusöök" },
+      { "time": "20:00", "label": "Avatud arutelu" },
+      { "time": "21:30", "label": "Kohv ja küsimused" },
+      { "time": "22:00", "label": "Lõpetus" }
+    ],
+    "nextMeetup": "Järgmine õhtusöök:",
+    "nextDate": "12. juuni 2026",
+    "spots": "{{left}} / {{total}} kohta · Esita avaldus",
+    "cta": "Esita avaldus",
+    "learnMore": "Loe lähemalt",
+    "backToHome": "Tagasi avalehele",
+    "location": "Tallinn · Igakuiselt · Kutsega"
+  },
+  "process": {
+    "title": "Kuidas me koos töötame",
+    "steps": [
+      { "step": "01", "title": "Räägime", "desc": "30-minutiline kõne. Mida sa tegelikult teha tahad? Mida oled proovinud? Kus on kinni jäänud?" },
+      { "step": "02", "title": "Kaardistus", "desc": "Kirjutan, mida ma teeksin, mida ei, ja kui palju see maksab. Sina otsustad, kas lähme edasi." },
+      { "step": "03", "title": "Teeme", "desc": "Juurutamine, koolitus või mõlemad. Töösessioonid sinu või su meeskonnaga. Alati tegelikel töövoogudel." },
+      { "step": "04", "title": "Üleandmine", "desc": "Sinu ja meeskonna oma. Salvestused, dokumendid ja kuu järelhooldust kaasas." }
+    ]
   },
   "services": {
-    "title": "Teenused",
-    "sub": "Vali oma ettevõttele sobiv koostöövorm.",
-    "getStarted": "Alusta",
-    "learnMore": "Loe lähemalt",
-    "popular": "Populaarseim",
-    "startHere": "Alusta siit",
-    "packages": [
-      { "title": "AI-klubi", "price": "0–50 €/kuu", "items": ["Igakuised kohtumised Tallinnas", "Privaatne liikmete vestlus", "AI ülevaade ja töötoad"], "isClub": true },
-      { "title": "AI-audit", "price": "300–1 000 €", "items": ["Äriprotsesside analüüs", "AI-võimaluste kaardistamine", "Automatiseerimise strateegia teekond"] },
-      { "title": "AI-automatiseerimine", "price": "3 000 €+", "items": ["Töövoogude automatiseerimine", "AI-integratsioonid", "Protsesside optimeerimine"], "highlight": true },
-      { "title": "AI-transformatsioon", "price": "Individuaalne", "items": ["Automatiseerimise strateegia", "Mitme süsteemi integratsioon", "Pikaajaline optimeerimine"] }
+    "title": "Mida ma teen",
+    "sub": "Kolm viisi koos töötamiseks.",
+    "popular": "Kõige küsitavam",
+    "lines": [
+      { "title": "Membership", "price": "Alates 50 €/kuu", "items": ["Juurdepääs kõikidele üritustele", "Liikmete kanal", "Kvartali kohtumise kutse"], "cta": "Vaata üritusi" },
+      { "title": "1-1 koolitus", "price": "Alates 200 €/tund", "items": ["Õpime sinu päris töövoogudel", "AI tööriistad, agendid, integratsioonid", "Salvestused sinu meeskonnale"], "cta": "Võta ühendust", "highlight": true },
+      { "title": "Konsultatsioon", "price": "Alates 3 000 €", "items": ["AI audit ja teekond", "Töövoogude automatiseerimine", "Integratsioonid ja üleandmine"], "cta": "Võta ühendust" }
     ]
   },
   "cases": {
-    "title": "Reaalsed tulemused",
-    "sub": "Anonüümitud juhtumid Eesti VKE-dest — tõelised probleemid, tõelised numbrid",
+    "title": "Kuidas see praktikas välja näeb",
+    "sub": "Paar projekti, kliendi soovil anonüümitud. Tõelised probleemid, tõelised numbrid.",
     "problem": "Probleem",
     "solution": "Lahendus",
     "allAnonymized": "Kõik juhtumid on kliendi soovil anonüümitud",
-    "getSimilar": "Saa sarnaseid tulemusi",
+    "getSimilar": "Räägime sinu juhtumist",
     "items": [
       {
         "badge": "E-kaubandus · Tallinn",
         "title": "Rõivaste veebipood",
         "problem": "4 tundi päevas kulus tellimuste, tagastuste ja korduvate kliendipäringute käsitsi töötlemisele.",
-        "solution": "AI-klienditugiagent + automaatne tagastuste töötlemine CRM-i integratsiooni kaudu.",
+        "solution": "Assistent korduvate küsimuste jaoks pluss tagastuste voog CRM-i ühendatuna.",
         "metrics": [
           { "value": "3,5 t/päev", "label": "säästetud" },
-          { "value": "2 min", "label": "vastamisaeg (oli 4 t)" },
+          { "value": "2 min", "label": "vastus (oli 4 t)" },
           { "value": "~1 400 €", "label": "säästetud kuus" }
         ]
       },
@@ -144,7 +97,7 @@
         "badge": "Raamatupidamine · Eesti",
         "title": "Raamatupidamisettevõte",
         "problem": "8-liikmeline meeskond kulutas 2 päeva kuus aruannete käsitsi koostamisele 40+ kliendile.",
-        "solution": "Automaatne aruannete genereerimine Google Sheets'ist + ajastatud saatmine klientidele.",
+        "solution": "Aruanded genereeritakse Google Sheets'ist ajakava järgi ja saadetakse igale kliendile automaatselt.",
         "metrics": [
           { "value": "3 tundi", "label": "2 päeva asemel" },
           { "value": "+15 klienti", "label": "ilma uute palkamisteta" },
@@ -155,7 +108,7 @@
         "badge": "Tootmine · Eesti",
         "title": "Mööblitootja",
         "problem": "150+ hinnapäringut kuus — igaüks nõudis juhilt 30–40 minutit.",
-        "solution": "AI-hinnakalkulaator veebilehel + automaatne liidide edastamine CRM-i.",
+        "solution": "Hinnakalkulaator veebilehel, liidid lähevad otse CRM-i.",
         "metrics": [
           { "value": "80%", "label": "päringuid automatiseeritud" },
           { "value": "+23%", "label": "konversioon müügiks" },
@@ -165,8 +118,8 @@
     ]
   },
   "roi": {
-    "title": "ROI kalkulaator",
-    "sub": "Hinda oma potentsiaalset kokkuhoidu AI-automatiseerimisest",
+    "title": "Toores arvutus",
+    "sub": "Mida rutiini automatiseerimine võiks säästa — umbkaudne hinnang.",
     "employees": "Töötajaid",
     "salary": "Keskm. palk (€/kuu)",
     "hours": "Tundi/päev rutiinile",
@@ -175,33 +128,33 @@
     "monthly": "kokkuhoid / kuu",
     "annual": "kokkuhoid / aasta",
     "freed": "tundi/aastas vabastatud",
-    "estimate": "Ainult hinnang. Täpsed numbrid — isiklikul AI-auditil.",
-    "getCta": "Saa täpne hinnang"
+    "estimate": "Toores hinnang. Tõelised numbrid tulevad vestluses.",
+    "getCta": "Räägime sinu numbritest"
   },
   "about": {
-    "title": "Miks töötada minuga",
-    "role": "AI-automatiseerimise konsultant",
+    "title": "Kes seda veab",
+    "role": "Praktik, koolitaja, vahel ka konsultant",
     "items": [
-      "Full-stack arendaja sügava AI-integratsiooni kogemusega",
-      "Ehitanud ja integreerinud AI-lahendusi reaalsetes tootmissüsteemides",
-      "Taust fintechi ja tootmise töövoogudes",
-      "Fookus mõõdetavatel äritulemuste ja ROI-l"
+      "Full-stack arendaja. Juurutan AI-d tootmisesse alates GPT-3 ajast.",
+      "Ehitanud ja integreerinud AI-d tegelikesse tootmissüsteemidesse — mitte demosid.",
+      "Taust fintechis ja tootmises. Igavad valdkonnad, kus loetakse raha.",
+      "Vene, eesti, inglise keel. Tallinnas alates 2019."
     ],
-    "card": "Mitte lihtsalt muljetavaldavad demod — praktiline automatiseerimine, mis loob mõõdetavat ROI-d fintechi, tootmise ja SaaS-ettevõtete jaoks Eestis ja Balti regioonis."
+    "card": "Veedan Undercover Vibe'i (kontorid) ja Undercover AI-d (see siin). Mõlemad on sama mõte: vaikne koht inimestele, kes tegelikult midagi ehitavad."
   },
   "faq": {
-    "title": "Korduma kippuvad küsimused",
+    "title": "Mida inimesed küsivad",
     "items": [
-      { "q": "Kui kaua juurutamine kestab?", "a": "Tüüpilised AI-automatiseerimise projektid võtavad 2–6 nädalat sõltuvalt keerukusest." },
-      { "q": "Kas vajame uut infrastruktuuri?", "a": "Enamik AI-lahendusi integreeritakse olemasolevate tööriistadega — CRM, API-d, andmebaasid ja kommunikatsiooniplatvormid." },
-      { "q": "Milliseid tehnoloogiaid kasutatakse?", "a": "Kaasaegsed AI API-d, automatiseerimisplatvormid, taustaintegratsioonid ja kohandatud agendisüsteemid." },
-      { "q": "Kas see on asjakohane väikeettevõtetele?", "a": "Jah. Väikesed meeskonnad saavad kõige rohkem kasu — automatiseerimine suurendab dramaatiliselt nende tegevusvõimekust." }
+      { "q": "Kas saan üritustele tulla ilma liikme olemata?", "a": "Friday Demo on avatud RSVP-ga. AI Clinic ja Dinner on avalduse alusel — kirjuta, vaatame, kas sobid mõnda lähenevasse formaati." },
+      { "q": "Mis siis, kui ma alles alustan AI-ga?", "a": "1-1 koolitus on sinu jaoks. Alustame sinu päris töövoogudest, mitte sellest 'mis on AI'. Eeltingimusi pole peale tegeliku probleemi." },
+      { "q": "Kas teete ettevõtetele AI-konsultatsiooni?", "a": "Jah, valikuliselt. Võtan korraga 3–4 projekti, et neid korralikult teha. Kui sobime, on esimene kõne tasuta ja otsekohene." },
+      { "q": "Mida sa EI tee?", "a": "Häkatone, hüpe-kõnesid, turunduslikke 'AI-strateegia' esitlusi, üldist '10 promptu, mis muudavad sinu elu' sisu. Kui kirjas on 'transformatsiooniline teekond' — ma ei vasta." }
     ]
   },
   "contact": {
-    "title": "Avasta, kuidas AI saab sinu ettevõtet automatiseerida",
-    "sub": "Broneeri AI-audit, et tuvastada:",
-    "items": ["Milliseid protsesse saab automatiseerida", "Potentsiaalne kulude vähenemine", "Suurima mõjuga AI-võimalused"],
+    "title": "Räägi, mis sul mõttes on",
+    "sub": "Loen kõike. Vastan 24 tunni jooksul.",
+    "items": ["Liikmesus ja üritused", "1-1 koolitus", "Konsultatsioon"],
     "form": {
       "name": "Nimi *",
       "namePh": "Sinu nimi",
@@ -210,17 +163,17 @@
       "companyPh": "Ettevõtte nimi",
       "size": "Meeskonna suurus",
       "sizePh": "Vali",
-      "interest": "Mida soovid automatiseerida?",
+      "interest": "Millest jutt?",
       "interestPh": "Vali",
-      "opts": ["Klienditugi", "Dokumentide töötlemine", "Analüütika ja aruanded", "Müük ja CRM", "Muu"],
+      "opts": ["Liikmesus / üritused", "1-1 koolitus", "Konsultatsioon", "Lihtsalt tere", "Muu"],
       "msg": "Sõnum",
-      "msgPh": "Räägi oma väljakutsest...",
+      "msgPh": "Mida sa püüad teha…",
       "err": "Saatmise viga. Kirjuta otse:",
-      "btn": "Broneeri AI-audit",
+      "btn": "Saada",
       "note": "Vastus 24 tunni jooksul · Spämmi ei saada",
-      "sent": "Päring saadetud!",
+      "sent": "Saadetud.",
       "sentSub": "Vastan sulle 24 tunni jooksul.",
-      "sending": "Saatmine..."
+      "sending": "Saatmine…"
     }
   },
   "footer": {
@@ -237,7 +190,7 @@
     "updated": "Viimati uuendatud: aprill 2026",
     "ok": "Selge",
     "sections": [
-      { "title": "1. Kes me oleme", "body": "EvoCraft (Loome AI-evolutsiooni) — sõltumatu AI-automatiseerimise konsultant, Tallinn, Eesti. Kontakt: acrashik@gmail.com" },
+      { "title": "1. Kes me oleme", "body": "Undercover AI — AI praktika, personaalne koolitus ja konsultatsioon. Veab Sergei Zahharenko. Osa Undercoveri projektist, Tallinn, Eesti. Kontakt: acrashik@gmail.com" },
       { "title": "2. Milliseid andmeid kogume", "body": "Kontaktivormi kaudu: nimi, email, ettevõte, ülesande kirjeldus. Küpsiste kaudu (nõusolekul): anonüümne analüütika." },
       { "title": "3. Kuidas andmeid kasutame", "body": "Ainult teie päringule vastamiseks. Me ei jaga kolmandate osapooltega ega kasuta reklaamiks." },
       { "title": "4. Õiguslik alus (GDPR)", "body": "Töötlemine põhineb nõusolekul (art. 6(1)(a) GDPR) ja õigustatud huvil (art. 6(1)(f) GDPR)." },

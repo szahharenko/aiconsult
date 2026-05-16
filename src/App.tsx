@@ -13,15 +13,13 @@ import { PrivacyPolicyModal } from './components/layout/PrivacyPolicyModal'
 
 // Sections
 import { Hero } from './components/sections/Hero'
-import { VideoSection } from './components/sections/VideoSection'
-import { Applications } from './components/sections/Applications'
-import { Process } from './components/sections/Process'
-
+import { Manifest } from './components/sections/Manifest'
+import { Community } from './components/sections/Community'
 import { Services } from './components/sections/Services'
+import { Process } from './components/sections/Process'
 import { CaseStudies } from './components/sections/CaseStudies'
 import { ROICalculator } from './components/sections/ROICalculator'
 import { About } from './components/sections/About'
-import { AIClub } from './components/sections/AIClub'
 import { FAQ } from './components/sections/FAQ'
 import { Contact } from './components/sections/Contact'
 
@@ -76,14 +74,13 @@ export default function App() {
       <MeetupBanner />
       <Nav />
       <Hero />
-      <VideoSection />
-      <Applications />
-      <Process />
+      <Manifest />
+      <Community />
       <Services />
+      <Process />
       <CaseStudies />
       <ROICalculator />
       <About />
-      <AIClub />
       <FAQ />
       <Contact />
 

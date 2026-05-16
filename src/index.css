@@ -1,12 +1,23 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+/* Enable the `dark:` variant via a `.dark` class on the html element. */
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-cream: #F5F5DC;
   --color-coffee: #6F4E37;
   --color-sage-green: #8A9A5B;
   --color-charcoal: #36454F;
+  /* Deep olive — Undercover AI sub-brand accent, borrowed from the
+   * parent brand's mobile menu (undercover.ee). Reserved for AI-line
+   * signals like the meetup banner, event markers, and technical chips. */
+  --color-olive: #333F33;
   --font-sans: "Inter", sans-serif;
+  /* Technical accent font — applied to numbers, step labels, event times,
+   * prices. Adds a precise, practitioner-y texture without affecting body
+   * copy. Use sparingly via the `font-mono` utility. */
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
 }
@@ -15,9 +26,64 @@
   box-sizing: border-box;
 }
 
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html.dark body {
   background-color: #0f172a;
   color: #f1f5f9;
+}
+
+/*
+ * Light theme (default): invert the entire slate scale so that all existing
+ * `bg-slate-9xx`, `text-slate-3xx`, `border-slate-7xx` etc. utilities flip
+ * to a light palette without touching the markup. Tailwind v4 generates
+ * these utilities as `var(--color-slate-XXX)`, so redefining the variables
+ * is enough.
+ */
+html:not(.dark) {
+  --color-slate-50: #020617;
+  --color-slate-100: #0f172a;
+  --color-slate-200: #1e293b;
+  --color-slate-300: #334155;
+  --color-slate-400: #475569;
+  --color-slate-500: #64748b;
+  --color-slate-600: #94a3b8;
+  --color-slate-700: #cbd5e1;
+  --color-slate-800: #e2e8f0;
+  --color-slate-900: #f1f5f9;
+  --color-slate-950: #f8fafc;
+
+  /* `text-white` is widely used for headings — flip it to near-black in light
+   * mode so they remain readable on the now-light backgrounds. */
+  --color-white: #0f172a;
+}
+
+/* Restore real white inside coffee- and olive-colored elements (CTAs / pills /
+ * AI-line banners), where the label is supposed to stay white regardless of
+ * theme. */
+html:not(.dark) [class*="bg-coffee"],
+html:not(.dark) [class*="bg-olive"] {
+  --color-white: #ffffff;
+}
+
+/* Smooth theme switch on common color-bearing utilities. */
+[class*="bg-slate-"],
+[class*="border-slate-"],
+[class*="text-slate-"],
+[class*="bg-gradient-"] {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }

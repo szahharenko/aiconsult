@@ -1,152 +1,105 @@
 {
-  "brandTagline": "Crafting your AI evolution",
+  "brandTagline": "AI without the bullshit",
   "nav": {
-    "cta": "Book AI Audit"
+    "cta": "Talk to me"
   },
-  "meetupBanner": "Next AI Club meetup: May 20, Tallinn — Join for free →",
+  "meetupBanner": "Next AI Dinner · June 12 · Tallinn — by invitation →",
   "hero": {
     "location": "Tallinn, Estonia 🇪🇪",
-    "tags": ["Fintech AI integrations", "Manufacturing automation", "Full-stack + AI expertise"],
-    "h1a": "Intelligence Has Become Cheap.",
-    "h1b": "Is Your Business Using It Yet?",
-    "p": "We help small and medium businesses adopt AI — from the first audit to full transformation. Cut costs, accelerate processes, and win in the new economy.",
-    "cta": "Book AI Audit",
-    "club": "Join AI Club Meetup",
+    "tags": ["AI Dinner · monthly", "1-on-1 Training", "Implementation"],
+    "h1a": "AI without the bullshit.",
+    "h1b": "Practice, training, consulting.",
+    "p": "A quiet AI practice in Tallinn — community events for entrepreneurs and AI practitioners, 1-on-1 training, and selective consulting. Part of Undercover.",
+    "cta": "Talk to me",
+    "club": "Next event",
     "how": "How it works"
   },
-  "video": {
-    "title": "Watch How I Help Businesses Implement AI",
-    "sub": "2 minutes — see if this is right for your business",
-    "placeholder": "Your intro video goes here",
-    "placeholderSub": "Record a 2–3 min intro and paste your YouTube or Loom URL into VIDEO_EMBED_URL at the top of the file"
-  },
-  "eco": {
-    "title": "We Are Entering the Fastest Economic Transformation in History",
-    "p1": "Artificial intelligence is beginning to automate human cognitive work. For decades the main constraint in business was human intelligence and time. ",
-    "strong": "That constraint is disappearing.",
-    "p2": "The cost of intelligence is collapsing. But these resources are not getting cheaper:",
-    "resources": ["Land", "Energy", "Raw materials", "Human attention"],
-    "p3a": "The companies that win in the next decade will combine ",
-    "p3b": "cheap intelligence",
-    "p3c": " with real-world assets and processes."
-  },
-  "reality": {
-    "title": "Companies Are Starting To Appear Without Employees",
-    "listLabel": "AI agents are already capable of managing:",
-    "list": ["Email", "Calendars", "Online purchases", "Scheduling", "Communications"],
-    "cardP1": "Some agents perform tasks their creators never explicitly programmed.",
-    "cardP2": "This is not just a technology shift.\nIt is a new economic model."
-  },
-  "competition": {
-    "title": "The Biggest Risk Today Is Not Using AI",
-    "companyA": "Company A",
-    "companyB": "Company B",
-    "payroll": "Annual payroll:",
-    "payrollA": "5,000,000 €",
-    "payrollB": "300,000 €",
-    "companyBNote": "AI automation handles most operational work.",
-    "question": "Both companies deliver the same service. Which company wins the market over time?",
-    "note": "Companies that automate processes will outperform competitors every single month."
-  },
-  "history": {
-    "title": "Every Technological Revolution Makes Resources Cheaper",
-    "p1a": "When clothing production became cheap, people didn't buy the same amount at lower prices. ",
-    "p1b": "They bought far more clothing.",
-    "p2a": "The same pattern applies to intelligence. When intelligence becomes cheap, we don't simply do the same work for less money — ",
-    "p2b": "we do dramatically more work and innovation.",
-    "p3": "The result historically has always been economic expansion."
-  },
-  "today": {
-    "title": "AI Can Already Do In Hours What Took Weeks",
-    "cards": ["Analyze complex datasets", "Generate software code", "Process documents", "Automate communication", "Produce analytics reports", "Coordinate workflows"],
-    "note": "Tasks that previously required 2–4 weeks of human effort can now be completed in a few hours."
-  },
-  "applications": {
-    "title": "Where AI Creates Immediate Business Value",
-    "sub": "Processes ready for automation — and the results companies typically see.",
-    "autoTitle": "AI can automate",
-    "autoItems": ["Customer Support", "Email Processing", "Document Generation", "CRM Updates", "Data Analysis", "Sales Workflows", "Marketing Operations", "Internal Reporting"],
-    "resultsTitle": "Results companies typically see",
-    "resultItems": ["Lower operational costs", "Faster execution", "Fewer manual tasks", "Higher productivity"]
-  },
-  "club": {
-    "title": "AI Business Club in Tallinn",
-    "sub": "You can adopt AI alone. But together — it's exponentially faster.",
-    "pillars": [
-      { "title": "Practice, Not Theory", "desc": "We break down real participant cases and try tools hands-on at every meetup." },
-      { "title": "Peer Network", "desc": "12–20 business owners who are already adopting AI and sharing what works." },
-      { "title": "Save Months of Trial & Error", "desc": "Learn in one evening what others figured out over weeks of experimenting." }
-    ],
-    "formatTitle": "Meetup Format (2.5 hours)",
-    "timeline": [
-      { "time": "18:30", "label": "Networking" },
-      { "time": "18:50", "label": "AI Digest" },
-      { "time": "19:00", "label": "Member Case" },
-      { "time": "19:30", "label": "Mini Workshop" },
-      { "time": "20:00", "label": "Mastermind" },
-      { "time": "20:45", "label": "Networking" }
-    ],
-    "nextMeetup": "Next meetup:",
-    "nextDate": "May 20, 2026",
-    "spots": "{{left}} of {{total}} spots left · First meetup is free",
-    "cta": "Join the Meetup",
-    "learnMore": "Learn More",
-    "backToHome": "Back to home",
-    "location": "Tallinn · Every 3rd Tuesday · 18:30–21:00"
-  },
-  "process": {
-    "title": "How AI Automation Is Implemented",
-    "steps": [
-      { "step": "01", "title": "AI Audit", "desc": "Analyze company processes and identify automation opportunities." },
-      { "step": "02", "title": "AI Roadmap", "desc": "Design a practical AI integration strategy." },
-      { "step": "03", "title": "Development", "desc": "Build AI automation, agents, and integrations." },
-      { "step": "04", "title": "Deployment", "desc": "Launch the system and onboard the team." }
+  "manifest": {
+    "title": "What this is. What it isn't.",
+    "principles": [
+      { "title": "Practice, not pitches.", "body": "Real problems, real implementations. No slides about 'transformation'." },
+      { "title": "Off the record.", "body": "What's said in the room stays in the room. No LinkedIn posts. No press." },
+      { "title": "Practitioners, not influencers.", "body": "We invite people who actually ship — not people who write threads about it." }
     ]
   },
-  "core": {
-    "title": "Intelligence Is Becoming Cheap. Value Moves To The Physical World.",
-    "p1": "In the next decade most digital intelligence will become abundant. Real competitive advantage belongs to companies that combine:",
-    "items": ["Cheap intelligence", "Real assets", "Real processes", "Real customer attention"],
-    "p2": "AI automation lets companies scale operations while keeping teams small and efficient."
+  "community": {
+    "title": "What happens here",
+    "sub": "Three rooms. Pick the one you fit.",
+    "formats": [
+      { "title": "AI Dinner", "cadence": "Monthly · By invitation", "body": "12 people. One topic. Chatham House. No slides. With food.", "cta": "Apply" },
+      { "title": "AI Clinic", "cadence": "Every 2 weeks", "body": "A company brings a real problem. 5–8 practitioners work it for 90 minutes.", "cta": "Bring a problem" },
+      { "title": "Friday Demo", "cadence": "Every 2 weeks · Open", "body": "Three 10-minute demos of things that work in production. Drinks after.", "cta": "RSVP" }
+    ],
+    "allEvents": "All events"
+  },
+  "club": {
+    "title": "AI Dinner",
+    "sub": "12 people. One topic. Chatham House. No slides. With food.",
+    "pillars": [
+      { "title": "Practice, not theory", "desc": "We bring real cases people are wrestling with right now — not slideshows about what AI will do in 2030." },
+      { "title": "Off the record", "desc": "What's said in the room stays in the room. No press, no LinkedIn posts, no recordings." },
+      { "title": "Real practitioners", "desc": "Half the room ships AI in production every week. The other half is here to ask them anything." }
+    ],
+    "formatTitle": "How the evening runs",
+    "timeline": [
+      { "time": "18:30", "label": "Arrival drinks" },
+      { "time": "19:00", "label": "Welcome & topic" },
+      { "time": "19:15", "label": "Dinner served" },
+      { "time": "20:00", "label": "Open discussion" },
+      { "time": "21:30", "label": "Coffee & questions" },
+      { "time": "22:00", "label": "Close" }
+    ],
+    "nextMeetup": "Next dinner:",
+    "nextDate": "June 12, 2026",
+    "spots": "{{left}} of {{total}} seats · Apply to attend",
+    "cta": "Apply",
+    "learnMore": "Learn more",
+    "backToHome": "Back to home",
+    "location": "Tallinn · Monthly · By invitation"
+  },
+  "process": {
+    "title": "How we work together",
+    "steps": [
+      { "step": "01", "title": "Talk", "desc": "A 30-minute call. What are you actually trying to do? What have you tried? Where is it stuck?" },
+      { "step": "02", "title": "Map", "desc": "I write up what I'd do, what I wouldn't, and what it costs. You decide if we keep going." },
+      { "step": "03", "title": "Build", "desc": "Implementation, training, or both. Working sessions with you or your team. Always on real workflows." },
+      { "step": "04", "title": "Hand-off", "desc": "You and your team own the result. Recordings, docs, and a month of follow-up included." }
+    ]
   },
   "services": {
-    "title": "Services",
-    "sub": "Choose the right engagement level for your business.",
-    "getStarted": "Get Started",
-    "learnMore": "Learn More",
-    "popular": "Most Popular",
-    "startHere": "Start Here",
-    "packages": [
-      { "title": "AI Club", "price": "€0–50/mo", "items": ["Monthly meetups in Tallinn", "Private member chat", "AI digest & workshops"], "isClub": true },
-      { "title": "AI Audit", "price": "300–1,000 €", "items": ["Business process analysis", "AI opportunity mapping", "Automation strategy roadmap"] },
-      { "title": "AI Automation", "price": "3,000 €+", "items": ["Workflow automation", "AI integrations", "Process optimization"], "highlight": true },
-      { "title": "AI Transformation", "price": "Custom", "items": ["Automation strategy", "Multiple system integrations", "Long-term optimization"] }
+    "title": "What I do",
+    "sub": "Three ways we can work together.",
+    "popular": "Most asked",
+    "lines": [
+      { "title": "Membership", "price": "From €50/mo", "items": ["Access to all events", "Member channel", "Quarterly retreat invite"], "cta": "See events" },
+      { "title": "1-on-1 Training", "price": "From €200/h", "items": ["Built around your real workflows", "AI tools, agents, integrations", "Recordings for your team"], "cta": "Get in touch", "highlight": true },
+      { "title": "Consulting", "price": "From €3,000", "items": ["AI audit & roadmap", "Workflow automation builds", "Integrations and hand-off"], "cta": "Get in touch" }
     ]
   },
   "cases": {
-    "title": "Real Results",
-    "sub": "Anonymized cases from Estonian SMB — real problems, real numbers",
+    "title": "What this looks like in practice",
+    "sub": "A few engagements, anonymized at clients' request. Real problems, real numbers.",
     "problem": "Problem",
     "solution": "Solution",
     "allAnonymized": "All cases anonymized at client request",
-    "getSimilar": "Get similar results",
+    "getSimilar": "Talk about your case",
     "items": [
       {
         "badge": "E-commerce · Tallinn",
         "title": "Online Clothing Store",
-        "problem": "4 hours daily spent on manually handling orders, returns, and repetitive customer inquiries.",
-        "solution": "AI customer support agent + automated returns processing via CRM integration.",
+        "problem": "4 hours daily on orders, returns, and the same customer questions over and over.",
+        "solution": "A support assistant for the repetitive questions plus a return flow wired into the CRM.",
         "metrics": [
           { "value": "3.5 h/day", "label": "saved" },
-          { "value": "2 min", "label": "response time (was 4h)" },
+          { "value": "2 min", "label": "response (was 4 h)" },
           { "value": "~€1,400", "label": "saved per month" }
         ]
       },
       {
         "badge": "Accounting · Estonia",
         "title": "Accounting Firm",
-        "problem": "8-person team spent 2 days per month manually generating reports for 40+ clients.",
-        "solution": "Automated report generation from Google Sheets + scheduled client delivery.",
+        "problem": "An 8-person team spent two days every month building reports for 40+ clients by hand.",
+        "solution": "Reports generated from Google Sheets on a schedule, delivered to each client automatically.",
         "metrics": [
           { "value": "3 hours", "label": "instead of 2 days" },
           { "value": "+15 clients", "label": "without new hires" },
@@ -156,8 +109,8 @@
       {
         "badge": "Manufacturing · Estonia",
         "title": "Furniture Manufacturer",
-        "problem": "150+ monthly price quote requests — each requiring 30–40 minutes of a manager's time.",
-        "solution": "AI pricing calculator on website + automatic lead transfer to CRM.",
+        "problem": "150+ price quote requests a month, 30–40 minutes of a manager's time each.",
+        "solution": "A pricing calculator on the website, leads pushed straight into the CRM.",
         "metrics": [
           { "value": "80%", "label": "requests automated" },
           { "value": "+23%", "label": "conversion to sale" },
@@ -167,8 +120,8 @@
     ]
   },
   "roi": {
-    "title": "ROI Calculator",
-    "sub": "Estimate your potential savings from AI automation",
+    "title": "Rough math",
+    "sub": "What automating routine work might save you — back-of-envelope estimate.",
     "employees": "Employees",
     "salary": "Avg salary (€/mo)",
     "hours": "Hours/day on routine",
@@ -177,33 +130,33 @@
     "monthly": "savings / month",
     "annual": "savings / year",
     "freed": "hours/year freed",
-    "estimate": "Estimate only. Precise numbers — in a personal AI audit.",
-    "getCta": "Get a precise estimate"
+    "estimate": "A rough estimate. Real numbers come out of a conversation.",
+    "getCta": "Talk through your numbers"
   },
   "about": {
-    "title": "Why Work With Me",
-    "role": "AI Automation Consultant",
+    "title": "Who's running this",
+    "role": "Practitioner, trainer, occasional consultant",
     "items": [
-      "Full-stack developer with deep AI integration experience",
-      "Built and integrated AI solutions in real production systems",
-      "Background in fintech and manufacturing workflows",
-      "Focus on measurable business outcomes and ROI"
+      "Full-stack developer. Been shipping AI in production since GPT-3.",
+      "Built and integrated AI into real production systems — not demos.",
+      "Background in fintech and manufacturing. Boring industries that pay attention to ROI.",
+      "Russian, Estonian, English. Based in Tallinn since 2019."
     ],
-    "card": "Not just impressive demos — practical automation that creates measurable ROI across fintech, manufacturing, and SaaS businesses in Estonia and the Baltic region."
+    "card": "I run Undercover Vibe (the coworking) and Undercover AI (this). Both are the same idea: a quiet place for people who actually build things."
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "Things people ask",
     "items": [
-      { "q": "How long does implementation take?", "a": "Typical AI automation projects take 2–6 weeks depending on complexity." },
-      { "q": "Do we need new infrastructure?", "a": "Most AI solutions integrate with existing tools — CRM, APIs, databases, and communication platforms." },
-      { "q": "What technologies are used?", "a": "Modern AI APIs, automation platforms, backend integrations, and custom agent systems." },
-      { "q": "Is this relevant for small businesses?", "a": "Yes. Small teams benefit the most — automation dramatically increases their operational capacity." }
+      { "q": "Can I attend events without being a member?", "a": "Friday Demo is open with RSVP. AI Clinic and Dinner are by application — drop a line and we'll see if you fit a coming format." },
+      { "q": "What if I'm just starting with AI?", "a": "1-on-1 training is the answer. We start from your real workflows, not 'what is AI'. No prerequisites except a real problem." },
+      { "q": "Do you do AI consulting for companies?", "a": "Yes — selectively. I take 3–4 engagements at a time so I can do them properly. If we're a fit, the first call is free and direct." },
+      { "q": "What do you NOT do?", "a": "Hackathons, hype keynotes, 'AI strategy' decks for marketing, '10 prompts that will change your life' content. If your email mentions 'transformational journey', I won't reply." }
     ]
   },
   "contact": {
-    "title": "Discover How AI Can Automate Your Business",
-    "sub": "Book an AI audit to identify:",
-    "items": ["Which processes can be automated", "Potential cost reductions", "The highest-impact AI opportunities"],
+    "title": "Tell me what's on your mind",
+    "sub": "I read everything. Reply within 24 hours.",
+    "items": ["Membership and events questions", "1-on-1 training requests", "Consulting inquiries"],
     "form": {
       "name": "Name *",
       "namePh": "Your name",
@@ -212,17 +165,17 @@
       "companyPh": "Company name",
       "size": "Team size",
       "sizePh": "Select",
-      "interest": "What do you want to automate?",
+      "interest": "What's this about?",
       "interestPh": "Select",
-      "opts": ["Customer support", "Document processing", "Analytics & reports", "Sales & CRM", "Other"],
+      "opts": ["Membership / events", "1-on-1 training", "Consulting", "Just saying hi", "Other"],
       "msg": "Message",
-      "msgPh": "Tell me about your challenge...",
+      "msgPh": "What you're trying to do…",
       "err": "Submission error. Write directly:",
-      "btn": "Book AI Audit",
+      "btn": "Send",
       "note": "Reply within 24 hours · No spam",
-      "sent": "Request sent!",
+      "sent": "Sent.",
       "sentSub": "I'll get back to you within 24 hours.",
-      "sending": "Sending..."
+      "sending": "Sending…"
     }
   },
   "footer": {
@@ -239,7 +192,7 @@
     "updated": "Last updated: April 2026",
     "ok": "Got it",
     "sections": [
-      { "title": "1. Who we are", "body": "EvoCraft (Crafting your AI evolution) — independent AI automation consultant, Tallinn, Estonia. Contact: acrashik@gmail.com" },
+      { "title": "1. Who we are", "body": "Undercover AI — AI practice room, personal training, and consulting. Run by Sergei Zahharenko. Part of Undercover, Tallinn, Estonia. Contact: acrashik@gmail.com" },
       { "title": "2. What data we collect", "body": "Via contact form: name, email, company, task description. Via cookies (with consent): anonymous analytics." },
       { "title": "3. How we use data", "body": "Only to respond to your inquiry. We do not share with third parties or use for advertising." },
       { "title": "4. Legal basis (GDPR)", "body": "Processing based on consent (Art. 6(1)(a) GDPR) and legitimate interest (Art. 6(1)(f) GDPR)." },

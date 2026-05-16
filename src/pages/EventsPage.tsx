@@ -24,7 +24,7 @@ const timelineIcons = [
   <MessageCircle size={16} />,
 ]
 
-export default function AIClubPage() {
+export default function EventsPage() {
   const { lang } = useParams<{ lang: string }>()
   const navigate = useNavigate()
   const { t, i18n } = useTranslation()
@@ -32,7 +32,7 @@ export default function AIClubPage() {
   useEffect(() => {
     const validLang = SUPPORTED_LANGS.includes(lang as Lang) ? (lang as Lang) : DEFAULT_LANG
     if (validLang !== lang) {
-      navigate(`/${validLang}/club`, { replace: true })
+      navigate(`/${validLang}/events`, { replace: true })
       return
     }
     if (i18n.language !== validLang) {
@@ -46,6 +46,9 @@ export default function AIClubPage() {
 
   const pillars = t('club.pillars', { returnObjects: true }) as { title: string; desc: string }[]
   const timeline = t('club.timeline', { returnObjects: true }) as { time: string; label: string }[]
+  // TODO: source these from a real backend or CMS — currently static
+  const SPOTS_TOTAL = 20
+  const SPOTS_LEFT = 6
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans">
@@ -138,7 +141,7 @@ export default function AIClubPage() {
               </span>
             </div>
             <p className="text-slate-400 text-sm mb-5">
-              {t('club.spots')}
+              {t('club.spots', { left: SPOTS_LEFT, total: SPOTS_TOTAL })}
             </p>
             <a
               href={`/${lang || 'en'}#contact`}

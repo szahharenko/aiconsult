@@ -1,10 +1,11 @@
-export const BRAND_NAME = "EvoCraft"
+export const BRAND_NAME = "Undercover AI"
 export const BRAND_TAGLINE_KEY = "brandTagline"
+export const PARENT_BRAND = "Undercover"
+export const PARENT_URL = "https://undercover.ee"
 export const YOUR_NAME = "Sergei"
 export const CONTACT_EMAIL = "acrashik@gmail.com"
 export const LINKEDIN_URL = "https://www.linkedin.com/in/sergei-zahharenko/"
 export const FORMSPREE_ID = "mdapryan"
-export const VIDEO_EMBED_URL = "https://www.youtube.com/embed/3TzsLcU5748"
 export const SUPPORTED_LANGS = ['en', 'ru', 'et'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
 export const DEFAULT_LANG: Lang = 'en'

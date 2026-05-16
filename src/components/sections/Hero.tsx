@@ -28,7 +28,7 @@ export function Hero() {
           <a href="#contact" className="bg-coffee hover:bg-coffee/80 text-white px-7 py-3.5 rounded-2xl font-bold transition-colors inline-flex items-center gap-2 justify-center">
             {t('hero.cta')} <ArrowRight size={18} />
           </a>
-          <a href="#club" className="border border-coffee/50 hover:border-coffee text-coffee hover:bg-coffee/10 px-7 py-3.5 rounded-2xl font-semibold transition-colors inline-flex items-center gap-2 justify-center">
+          <a href="#community" className="border border-coffee/50 hover:border-coffee text-coffee hover:bg-coffee/10 px-7 py-3.5 rounded-2xl font-semibold transition-colors inline-flex items-center gap-2 justify-center">
             <Calendar size={18} /> {t('hero.club')}
           </a>
         </motion.div>

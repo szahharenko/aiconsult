@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EvoCraft — Crafting your AI evolution</title>
-    <meta name="description" content="EvoCraft — AI automation consulting in Tallinn, Estonia. Crafting your AI evolution." />
+    <title>Undercover AI — The quiet AI room in Tallinn</title>
+    <meta name="description" content="Undercover AI — AI practice room, personal training and consulting in Tallinn, Estonia. Part of Undercover, the clubhouse for entrepreneurs." />
+    <script>
+      // Apply persisted theme before React mounts to avoid a flash.
+      // Default is light — only dark needs the class.
+      (function () {
+        try {
+          if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) { /* ignore */ }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

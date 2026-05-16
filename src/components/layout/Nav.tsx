@@ -1,11 +1,14 @@
+import { Sun, Moon } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate, useParams } from 'react-router-dom'
 import { BRAND_NAME, SUPPORTED_LANGS, type Lang } from '../../config'
+import { useTheme } from '../../contexts/ThemeContext'
 
 export function Nav() {
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()
   const { lang } = useParams<{ lang: string }>()
+  const { theme, toggleTheme } = useTheme()
 
   const switchLang = (newLang: Lang) => {
     i18n.changeLanguage(newLang)
@@ -20,6 +23,15 @@ export function Nav() {
           <span className="hidden sm:inline text-slate-500 text-xs font-normal">— {t('brandTagline')}</span>
         </div>
         <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+            title={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+            className="p-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-coffee hover:border-coffee/50 transition-colors"
+          >
+            {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+          </button>
           <div className="flex bg-slate-800 border border-slate-700 rounded-lg overflow-hidden text-xs font-semibold">
             {SUPPORTED_LANGS.map(l => (
               <button key={l} onClick={() => switchLang(l)}
