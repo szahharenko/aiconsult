@@ -1,13 +1,13 @@
 {
   "brandTagline": "AI ilma bullshitita",
   "nav": { "cta": "Räägi minuga" },
-  "meetupBanner": "Järgmine AI Clinic · Tallinn — kutsega →",
+  "meetupBanner": "Järgmine AI Clinic · Tallinn - kutsega →",
   "hero": {
     "location": "Tallinn, Eesti 🇪🇪",
     "tags": ["AI Clinic · igakuiselt", "1-1 koolitus", "Juurutamine"],
     "h1a": "AI ilma bullshitita.",
     "h1b": "Praktika, koolitus, konsultatsioon.",
-    "p": "Vaikne AI-praktika Tallinnas — kogukonna üritused ettevõtjatele ja AI-praktikutele, isiklik koolitus ja valitud konsultatsioon. @ Undercover'ist.",
+    "p": "Vaikne AI-praktika Tallinnas - kogukonna üritused ettevõtjatele ja AI-praktikutele, isiklik koolitus ja valitud konsultatsioon. @ Undercover'ist.",
     "cta": "Räägi minuga",
     "club": "Järgmine üritus",
     "how": "Kuidas see töötab"
@@ -17,7 +17,7 @@
     "principles": [
       { "title": "Praktika, mitte pitchid.", "body": "Tõelised probleemid, tõelised juurutamised. Ei slaide 'transformatsioonist'." },
       { "title": "Off the record.", "body": "Mis ruumis öeldakse, jääb ruumi. Ei LinkedIn-postitusi. Ei pressi." },
-      { "title": "Praktikud, mitte influencerid.", "body": "Kutsume neid, kes tegelikult ehitavad — mitte neid, kes sellest säutsuvad." }
+      { "title": "Praktikud, mitte influencerid.", "body": "Kutsume neid, kes tegelikult ehitavad - mitte neid, kes sellest säutsuvad." }
     ]
   },
   "community": {
@@ -33,7 +33,7 @@
     "title": "AI Clinic",
     "sub": "8–12 inimest. Ettevõte tuleb tegeliku probleemiga. Praktikud töötavad sellega 90 minutit. Chatham House. Ei slaide.",
     "pillars": [
-      { "title": "Praktika, mitte teooria", "desc": "Toome tegelikud probleemid, millega inimesed praegu maadlevad — mitte slaide sellest, mida AI 2030. aastal teeb." },
+      { "title": "Praktika, mitte teooria", "desc": "Toome tegelikud probleemid, millega inimesed praegu maadlevad - mitte slaide sellest, mida AI 2030. aastal teeb." },
       { "title": "Off the record", "desc": "Mis ruumis öeldakse, jääb ruumi. Ei pressi, ei LinkedIn-postitusi, ei salvestusi." },
       { "title": "Tõelised praktikud", "desc": "Pool ruumist juurutab AI-d tootmisesse igal nädalal. Teine pool on siin, et neilt midagi küsida." }
     ],
@@ -106,7 +106,7 @@
       {
         "badge": "Tootmine · Eesti",
         "title": "Mööblitootja",
-        "problem": "150+ hinnapäringut kuus — igaüks nõudis juhilt 30–40 minutit.",
+        "problem": "150+ hinnapäringut kuus - igaüks nõudis juhilt 30–40 minutit.",
         "solution": "Hinnakalkulaator veebilehel, liidid lähevad otse CRM-i.",
         "metrics": [
           { "value": "80%", "label": "päringuid automatiseeritud" },
@@ -118,7 +118,7 @@
   },
   "roi": {
     "title": "Toores arvutus",
-    "sub": "Mida rutiini automatiseerimine võiks säästa — umbkaudne hinnang.",
+    "sub": "Mida rutiini automatiseerimine võiks säästa - umbkaudne hinnang.",
     "employees": "Töötajaid",
     "salary": "Keskm. palk (€/kuu)",
     "hours": "Tundi/päev rutiinile",
@@ -135,13 +135,13 @@
     "role": "Praktik, koolitaja, vahel ka konsultant",
     "items": [
       "Full-stack arendaja. Juurutan AI-d tootmisesse alates GPT-3 ajast.",
-      "Ehitanud ja integreerinud AI-d tegelikesse tootmissüsteemidesse — mitte demosid.",
+      "Ehitanud ja integreerinud AI-d tegelikesse tootmissüsteemidesse - mitte demosid.",
       "Taust fintechis ja tootmises. Igavad valdkonnad, kus loetakse raha.",
       "Vene, eesti, inglise keel. Tallinnas."
     ],
     "cardTitle": "Miks just praegu",
     "cardItems": [
-      "Iga oluline tehnoloogia — kirjast internetini — on muutnud mitte ainult tööriistu, vaid ka inimese rolli töös ja otsuste tegemisel.",
+      "Iga oluline tehnoloogia - kirjast internetini - on muutnud mitte ainult tööriistu, vaid ka inimese rolli töös ja otsuste tegemisel.",
       "AI on esimene tehnoloogia, mis ei lihtsalt täida käske, vaid osaleb mõtlemises. See nihutab väärtuse keskpunkti: info omamiselt selle suunamise oskuseni.",
       "Konkurentsieelis liigub neilt, kes teavad vastust, nendele, kes oskavad esitada õige küsimuse ja tulemust hinnata.",
       "Tänane ülesanne pole tehnoloogiale järele jõuda, vaid kokku panna protsessid ja kompetentsid uue 'inimene + AI' tööloogika järgi."
@@ -150,10 +150,10 @@
   "faq": {
     "title": "Mida inimesed küsivad",
     "items": [
-      { "q": "Kas saan üritustele tulla ilma liikme olemata?", "a": "Friday Demo on avatud RSVP-ga. AI Clinic on avalduse alusel — kirjuta, vaatame, kas sobid mõnda lähenevasse sessiooni." },
+      { "q": "Kas saan üritustele tulla ilma liikme olemata?", "a": "Friday Demo on avatud RSVP-ga. AI Clinic on avalduse alusel - kirjuta, vaatame, kas sobid mõnda lähenevasse sessiooni." },
       { "q": "Mis siis, kui ma alles alustan AI-ga?", "a": "1-1 koolitus on sinu jaoks. Alustame sinu päris töövoogudest, mitte sellest 'mis on AI'. Eeltingimusi pole peale tegeliku probleemi." },
       { "q": "Kas teete ettevõtetele AI-konsultatsiooni?", "a": "Jah, valikuliselt. Võtan korraga 3–4 projekti, et neid korralikult teha. Kui sobime, on esimene kõne tasuta ja otsekohene." },
-      { "q": "Mida sa EI tee?", "a": "Häkatone, hüpe-kõnesid, turunduslikke 'AI-strateegia' esitlusi, üldist '10 promptu, mis muudavad sinu elu' sisu. Kui kirjas on 'transformatsiooniline teekond' — ma ei vasta." }
+      { "q": "Mida sa EI tee?", "a": "Häkatone, hüpe-kõnesid, turunduslikke 'AI-strateegia' esitlusi, üldist '10 promptu, mis muudavad sinu elu' sisu. Kui kirjas on 'transformatsiooniline teekond' - ma ei vasta." }
     ]
   },
   "contact": {
@@ -195,13 +195,13 @@
     "updated": "Viimati uuendatud: aprill 2026",
     "ok": "Selge",
     "sections": [
-      { "title": "1. Kes me oleme", "body": "Undercover AI — AI praktika, personaalne koolitus ja konsultatsioon. Veab Sergei Zahharenko. Osa Undercoveri projektist, Tallinn, Eesti. Kontakt: acrashik@gmail.com" },
+      { "title": "1. Kes me oleme", "body": "Undercover AI - AI praktika, personaalne koolitus ja konsultatsioon. Veab Sergei Zahharenko. Osa Undercoveri projektist, Tallinn, Eesti. Kontakt: acrashik@gmail.com" },
       { "title": "2. Milliseid andmeid kogume", "body": "Kontaktivormi kaudu: nimi, email, ettevõte, ülesande kirjeldus. Küpsiste kaudu (nõusolekul): anonüümne analüütika." },
       { "title": "3. Kuidas andmeid kasutame", "body": "Ainult teie päringule vastamiseks. Me ei jaga kolmandate osapooltega ega kasuta reklaamiks." },
       { "title": "4. Õiguslik alus (GDPR)", "body": "Töötlemine põhineb nõusolekul (art. 6(1)(a) GDPR) ja õigustatud huvil (art. 6(1)(f) GDPR)." },
-      { "title": "5. Säilitamine", "body": "Vormiandmed — mitte rohkem kui 2 aastat. Kustutamine nõudmisel igal ajal." },
+      { "title": "5. Säilitamine", "body": "Vormiandmed - mitte rohkem kui 2 aastat. Kustutamine nõudmisel igal ajal." },
       { "title": "6. Teie õigused", "body": "Juurdepääs, parandamine, kustutamine, ülekantavus, nõusoleku tagasivõtmine. Kontakt: acrashik@gmail.com" },
-      { "title": "7. Küpsised", "body": "Kasutatakse ainult pärast teie selgesõnalist nõusolekut. Tagasivõtmine — bänneri kaudu või küpsiste kustutamisega." },
+      { "title": "7. Küpsised", "body": "Kasutatakse ainult pärast teie selgesõnalist nõusolekut. Tagasivõtmine - bänneri kaudu või küpsiste kustutamisega." },
       { "title": "8. Järelevalveasutus", "body": "Andmekaitse Inspektsioon (Eesti andmekaitse järelevalveasutus): aki.ee" }
     ]
   }

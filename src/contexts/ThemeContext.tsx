@@ -26,7 +26,7 @@ function getInitialTheme(): Theme {
     const stored = window.localStorage.getItem(STORAGE_KEY)
     if (stored === 'light' || stored === 'dark') return stored
   } catch {
-    /* ignore — localStorage may be blocked */
+    /* ignore - localStorage may be blocked */
   }
   return DEFAULT_THEME
 }

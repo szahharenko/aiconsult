@@ -46,7 +46,7 @@ export default function EventsPage() {
 
   const pillars = t('club.pillars', { returnObjects: true }) as { title: string; desc: string }[]
   const timeline = t('club.timeline', { returnObjects: true }) as { time: string; label: string }[]
-  // TODO: source these from a real backend or CMS — currently static
+  // TODO: source these from a real backend or CMS - currently static
   const SPOTS_TOTAL = 20
   const SPOTS_LEFT = 6
 

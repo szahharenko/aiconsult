@@ -3,13 +3,13 @@
   "nav": {
     "cta": "Talk to me"
   },
-  "meetupBanner": "Next AI Clinic · Tallinn — by invitation →",
+  "meetupBanner": "Next AI Clinic · Tallinn - by invitation →",
   "hero": {
     "location": "Tallinn, Estonia 🇪🇪",
     "tags": ["AI Clinic · monthly", "1-on-1 Training", "Implementation"],
     "h1a": "AI without the bullshit.",
     "h1b": "Practice, training, consulting.",
-    "p": "A quiet AI practice in Tallinn — community events for entrepreneurs and AI practitioners, 1-on-1 training, and selective consulting. @ Undercover.",
+    "p": "A quiet AI practice in Tallinn - community events for entrepreneurs and AI practitioners, 1-on-1 training, and selective consulting. @ Undercover.",
     "cta": "Talk to me",
     "club": "Next event",
     "how": "How it works"
@@ -19,7 +19,7 @@
     "principles": [
       { "title": "Practice, not pitches.", "body": "Real problems, real implementations. No slides about 'transformation'." },
       { "title": "Off the record.", "body": "What's said in the room stays in the room. No LinkedIn posts. No press." },
-      { "title": "Practitioners, not influencers.", "body": "We invite people who actually ship — not people who write threads about it." }
+      { "title": "Practitioners, not influencers.", "body": "We invite people who actually ship - not people who write threads about it." }
     ]
   },
   "community": {
@@ -35,7 +35,7 @@
     "title": "AI Clinic",
     "sub": "8–12 people. A company brings a real problem. Practitioners work it for 90 minutes. Chatham House. No slides.",
     "pillars": [
-      { "title": "Practice, not theory", "desc": "We bring real cases people are wrestling with right now — not slideshows about what AI will do in 2030." },
+      { "title": "Practice, not theory", "desc": "We bring real cases people are wrestling with right now - not slideshows about what AI will do in 2030." },
       { "title": "Off the record", "desc": "What's said in the room stays in the room. No press, no LinkedIn posts, no recordings." },
       { "title": "Real practitioners", "desc": "Half the room ships AI in production every week. The other half is here to ask them anything." }
     ],
@@ -120,7 +120,7 @@
   },
   "roi": {
     "title": "Rough math",
-    "sub": "What automating routine work might save you — back-of-envelope estimate.",
+    "sub": "What automating routine work might save you - back-of-envelope estimate.",
     "employees": "Employees",
     "salary": "Avg salary (€/mo)",
     "hours": "Hours/day on routine",
@@ -137,24 +137,24 @@
     "role": "Practitioner, trainer, occasional consultant",
     "items": [
       "Full-stack developer. Been shipping AI in production since GPT-3.",
-      "Built and integrated AI into real production systems — not demos.",
+      "Built and integrated AI into real production systems - not demos.",
       "Background in fintech and manufacturing. Boring industries that pay attention to ROI.",
       "Russian, Estonian, English. Based in Tallinn."
     ],
     "cardTitle": "Why now",
     "cardItems": [
-      "Every major technology — from writing to the internet — has changed not just the tools we use, but the role humans play in work and decision-making.",
-      "AI is the first technology that doesn't just execute commands — it participates in reasoning. That shifts the center of value: from owning information to knowing how to direct it.",
+      "Every major technology - from writing to the internet - has changed not just the tools we use, but the role humans play in work and decision-making.",
+      "AI is the first technology that doesn't just execute commands - it participates in reasoning. That shifts the center of value: from owning information to knowing how to direct it.",
       "Competitive advantage moves from those who know the answer to those who can ask the right question and judge the result.",
-      "The task today isn't to catch up with the technology — it's to redesign processes and skills around a new logic of work: 'human + AI'."
+      "The task today isn't to catch up with the technology - it's to redesign processes and skills around a new logic of work: 'human + AI'."
     ]
   },
   "faq": {
     "title": "Things people ask",
     "items": [
-      { "q": "Can I attend events without being a member?", "a": "Friday Demo is open with RSVP. AI Clinic is by application — drop a line and we'll see if you fit a coming session." },
+      { "q": "Can I attend events without being a member?", "a": "Friday Demo is open with RSVP. AI Clinic is by application - drop a line and we'll see if you fit a coming session." },
       { "q": "What if I'm just starting with AI?", "a": "1-on-1 training is the answer. We start from your real workflows, not 'what is AI'. No prerequisites except a real problem." },
-      { "q": "Do you do AI consulting for companies?", "a": "Yes — selectively. I take 3–4 engagements at a time so I can do them properly. If we're a fit, the first call is free and direct." },
+      { "q": "Do you do AI consulting for companies?", "a": "Yes - selectively. I take 3–4 engagements at a time so I can do them properly. If we're a fit, the first call is free and direct." },
       { "q": "What do you NOT do?", "a": "Hackathons, hype keynotes, 'AI strategy' decks for marketing, '10 prompts that will change your life' content. If your email mentions 'transformational journey', I won't reply." }
     ]
   },
@@ -197,13 +197,13 @@
     "updated": "Last updated: April 2026",
     "ok": "Got it",
     "sections": [
-      { "title": "1. Who we are", "body": "Undercover AI — AI practice room, personal training, and consulting. Run by Sergei Zahharenko. Part of Undercover, Tallinn, Estonia. Contact: acrashik@gmail.com" },
+      { "title": "1. Who we are", "body": "Undercover AI - AI practice room, personal training, and consulting. Run by Sergei Zahharenko. Part of Undercover, Tallinn, Estonia. Contact: acrashik@gmail.com" },
       { "title": "2. What data we collect", "body": "Via contact form: name, email, company, task description. Via cookies (with consent): anonymous analytics." },
       { "title": "3. How we use data", "body": "Only to respond to your inquiry. We do not share with third parties or use for advertising." },
       { "title": "4. Legal basis (GDPR)", "body": "Processing based on consent (Art. 6(1)(a) GDPR) and legitimate interest (Art. 6(1)(f) GDPR)." },
-      { "title": "5. Retention", "body": "Form data — no more than 2 years. Deletion on request at any time." },
+      { "title": "5. Retention", "body": "Form data - no more than 2 years. Deletion on request at any time." },
       { "title": "6. Your rights", "body": "Access, correction, deletion, portability, withdrawal of consent. Contact: acrashik@gmail.com" },
-      { "title": "7. Cookies", "body": "Used only after your explicit consent. Withdrawal — via banner or clearing cookies." },
+      { "title": "7. Cookies", "body": "Used only after your explicit consent. Withdrawal - via banner or clearing cookies." },
       { "title": "8. Supervisory authority", "body": "Andmekaitse Inspektsioon (Estonian Data Protection Inspectorate): aki.ee" }
     ]
   }

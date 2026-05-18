@@ -9,12 +9,12 @@
   --color-coffee: #6F4E37;
   --color-sage-green: #8A9A5B;
   --color-charcoal: #36454F;
-  /* Deep olive — Undercover AI sub-brand accent, borrowed from the
+  /* Deep olive - Undercover AI sub-brand accent, borrowed from the
    * parent brand's mobile menu (undercover.ee). Reserved for AI-line
    * signals like the meetup banner, event markers, and technical chips. */
   --color-olive: #333F33;
   --font-sans: "Inter", sans-serif;
-  /* Technical accent font — applied to numbers, step labels, event times,
+  /* Technical accent font - applied to numbers, step labels, event times,
    * prices. Adds a precise, practitioner-y texture without affecting body
    * copy. Use sparingly via the `font-mono` utility. */
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -67,7 +67,7 @@ html:not(.dark) {
   --color-slate-900: #f1f5f9;
   --color-slate-950: #f8fafc;
 
-  /* `text-white` is widely used for headings — flip it to near-black in light
+  /* `text-white` is widely used for headings - flip it to near-black in light
    * mode so they remain readable on the now-light backgrounds. */
   --color-white: #0f172a;
 }
