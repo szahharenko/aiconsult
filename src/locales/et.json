@@ -1,13 +1,13 @@
 {
   "brandTagline": "AI ilma bullshitita",
   "nav": { "cta": "Räägi minuga" },
-  "meetupBanner": "Järgmine AI Dinner · 12. juuni · Tallinn — kutsega →",
+  "meetupBanner": "Järgmine AI Clinic · Tallinn — kutsega →",
   "hero": {
     "location": "Tallinn, Eesti 🇪🇪",
-    "tags": ["AI Dinner · igakuiselt", "1-1 koolitus", "Juurutamine"],
+    "tags": ["AI Clinic · igakuiselt", "1-1 koolitus", "Juurutamine"],
     "h1a": "AI ilma bullshitita.",
     "h1b": "Praktika, koolitus, konsultatsioon.",
-    "p": "Vaikne AI-praktika Tallinnas — kogukonna üritused ettevõtjatele ja AI-praktikutele, isiklik koolitus ja valitud konsultatsioon. Osa Undercover'ist.",
+    "p": "Vaikne AI-praktika Tallinnas — kogukonna üritused ettevõtjatele ja AI-praktikutele, isiklik koolitus ja valitud konsultatsioon. @ Undercover'ist.",
     "cta": "Räägi minuga",
     "club": "Järgmine üritus",
     "how": "Kuidas see töötab"
@@ -22,33 +22,32 @@
   },
   "community": {
     "title": "Mis siin toimub",
-    "sub": "Kolm ruumi. Vali endale sobiv.",
+    "sub": "Kaks ruumi. Vali endale sobiv.",
     "formats": [
-      { "title": "AI Dinner", "cadence": "Igakuiselt · Kutsega", "body": "12 inimest. Üks teema. Chatham House. Ei slaide. Söögiga.", "cta": "Esita avaldus" },
-      { "title": "AI Clinic", "cadence": "Iga 2 nädala tagant", "body": "Ettevõte tuleb tegeliku probleemiga. 5–8 praktikut töötavad sellega 90 minutit.", "cta": "Too probleem" },
-      { "title": "Friday Demo", "cadence": "Iga 2 nädala tagant · Avatud", "body": "Kolm 10-minutilist demo asjadest, mis tootmises töötavad. Pärast joogid.", "cta": "Registreeri" }
+      { "title": "AI Clinic", "cadence": "Igakuiselt · Kutsega", "body": "8–12 inimest. Ettevõte tuleb tegeliku probleemiga. Praktikud töötavad sellega 90 minutit. Chatham House. Ei slaide.", "cta": "Too probleem" },
+      { "title": "Friday Demo", "cadence": "Igakuiselt · Avatud", "body": "Kolm 10-minutilist demo asjadest, mis tootmises töötavad. Pärast joogid.", "cta": "Registreeri" }
     ],
     "allEvents": "Kõik üritused"
   },
   "club": {
-    "title": "AI Dinner",
-    "sub": "12 inimest. Üks teema. Chatham House. Ei slaide. Söögiga.",
+    "title": "AI Clinic",
+    "sub": "8–12 inimest. Ettevõte tuleb tegeliku probleemiga. Praktikud töötavad sellega 90 minutit. Chatham House. Ei slaide.",
     "pillars": [
       { "title": "Praktika, mitte teooria", "desc": "Toome tegelikud probleemid, millega inimesed praegu maadlevad — mitte slaide sellest, mida AI 2030. aastal teeb." },
       { "title": "Off the record", "desc": "Mis ruumis öeldakse, jääb ruumi. Ei pressi, ei LinkedIn-postitusi, ei salvestusi." },
       { "title": "Tõelised praktikud", "desc": "Pool ruumist juurutab AI-d tootmisesse igal nädalal. Teine pool on siin, et neilt midagi küsida." }
     ],
-    "formatTitle": "Kuidas õhtu kulgeb",
+    "formatTitle": "Kuidas sessioon kulgeb",
     "timeline": [
       { "time": "18:30", "label": "Saabumise joogid" },
-      { "time": "19:00", "label": "Tervitus ja teema" },
-      { "time": "19:15", "label": "Õhtusöök" },
+      { "time": "19:00", "label": "Tervitus ja probleemi tutvustus" },
+      { "time": "19:15", "label": "Probleemi lahkamine" },
       { "time": "20:00", "label": "Avatud arutelu" },
-      { "time": "21:30", "label": "Kohv ja küsimused" },
+      { "time": "21:30", "label": "Kohv ja järgmised sammud" },
       { "time": "22:00", "label": "Lõpetus" }
     ],
-    "nextMeetup": "Järgmine õhtusöök:",
-    "nextDate": "12. juuni 2026",
+    "nextMeetup": "Järgmine sessioon:",
+    "nextDate": "Tulekul",
     "spots": "{{left}} / {{total}} kohta · Esita avaldus",
     "cta": "Esita avaldus",
     "learnMore": "Loe lähemalt",
@@ -145,7 +144,7 @@
   "faq": {
     "title": "Mida inimesed küsivad",
     "items": [
-      { "q": "Kas saan üritustele tulla ilma liikme olemata?", "a": "Friday Demo on avatud RSVP-ga. AI Clinic ja Dinner on avalduse alusel — kirjuta, vaatame, kas sobid mõnda lähenevasse formaati." },
+      { "q": "Kas saan üritustele tulla ilma liikme olemata?", "a": "Friday Demo on avatud RSVP-ga. AI Clinic on avalduse alusel — kirjuta, vaatame, kas sobid mõnda lähenevasse sessiooni." },
       { "q": "Mis siis, kui ma alles alustan AI-ga?", "a": "1-1 koolitus on sinu jaoks. Alustame sinu päris töövoogudest, mitte sellest 'mis on AI'. Eeltingimusi pole peale tegeliku probleemi." },
       { "q": "Kas teete ettevõtetele AI-konsultatsiooni?", "a": "Jah, valikuliselt. Võtan korraga 3–4 projekti, et neid korralikult teha. Kui sobime, on esimene kõne tasuta ja otsekohene." },
       { "q": "Mida sa EI tee?", "a": "Häkatone, hüpe-kõnesid, turunduslikke 'AI-strateegia' esitlusi, üldist '10 promptu, mis muudavad sinu elu' sisu. Kui kirjas on 'transformatsiooniline teekond' — ma ei vasta." }

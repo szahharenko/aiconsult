@@ -33,7 +33,7 @@ export function Services() {
       >
         {lines.map((line, i) => (
           <motion.div
-            key={line.title}
+            key={i}
             variants={fadeUp}
             className={`rounded-2xl p-6 border flex flex-col ${
               line.highlight

@@ -12,9 +12,9 @@ export function About() {
 
   return (
     <Section id="about">
+      <h2 className="text-3xl font-bold text-white mb-5">{t('about.title')}</h2>
       <motion.div className="grid md:grid-cols-2 gap-10 items-start" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
         <motion.div variants={fadeUp}>
-          <h2 className="text-3xl font-bold text-white mb-5">{t('about.title')}</h2>
           <div className="flex items-center gap-4 mb-6 bg-slate-900 border border-slate-700 rounded-2xl p-4">
             <PhotoPlaceholder />
             <div>

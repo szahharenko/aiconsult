@@ -20,7 +20,7 @@ export function Manifest() {
       >
         {principles.map((p, i) => (
           <motion.div
-            key={p.title}
+            key={i}
             variants={fadeUp}
             className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-olive/40 transition-colors"
           >

@@ -3,13 +3,13 @@
   "nav": {
     "cta": "Talk to me"
   },
-  "meetupBanner": "Next AI Dinner · June 12 · Tallinn — by invitation →",
+  "meetupBanner": "Next AI Clinic · Tallinn — by invitation →",
   "hero": {
     "location": "Tallinn, Estonia 🇪🇪",
-    "tags": ["AI Dinner · monthly", "1-on-1 Training", "Implementation"],
+    "tags": ["AI Clinic · monthly", "1-on-1 Training", "Implementation"],
     "h1a": "AI without the bullshit.",
     "h1b": "Practice, training, consulting.",
-    "p": "A quiet AI practice in Tallinn — community events for entrepreneurs and AI practitioners, 1-on-1 training, and selective consulting. Part of Undercover.",
+    "p": "A quiet AI practice in Tallinn — community events for entrepreneurs and AI practitioners, 1-on-1 training, and selective consulting. @ Undercover.",
     "cta": "Talk to me",
     "club": "Next event",
     "how": "How it works"
@@ -24,33 +24,32 @@
   },
   "community": {
     "title": "What happens here",
-    "sub": "Three rooms. Pick the one you fit.",
+    "sub": "Two rooms. Pick the one you fit.",
     "formats": [
-      { "title": "AI Dinner", "cadence": "Monthly · By invitation", "body": "12 people. One topic. Chatham House. No slides. With food.", "cta": "Apply" },
-      { "title": "AI Clinic", "cadence": "Every 2 weeks", "body": "A company brings a real problem. 5–8 practitioners work it for 90 minutes.", "cta": "Bring a problem" },
-      { "title": "Friday Demo", "cadence": "Every 2 weeks · Open", "body": "Three 10-minute demos of things that work in production. Drinks after.", "cta": "RSVP" }
+      { "title": "AI Clinic", "cadence": "Monthly · By invitation", "body": "8–12 people. A company brings a real problem. Practitioners work it for 90 minutes. Chatham House. No slides.", "cta": "Bring a problem" },
+      { "title": "Friday Demo", "cadence": "Monthly · Open", "body": "Three 10-minute demos of things that work in production. Drinks after.", "cta": "RSVP" }
     ],
     "allEvents": "All events"
   },
   "club": {
-    "title": "AI Dinner",
-    "sub": "12 people. One topic. Chatham House. No slides. With food.",
+    "title": "AI Clinic",
+    "sub": "8–12 people. A company brings a real problem. Practitioners work it for 90 minutes. Chatham House. No slides.",
     "pillars": [
       { "title": "Practice, not theory", "desc": "We bring real cases people are wrestling with right now — not slideshows about what AI will do in 2030." },
       { "title": "Off the record", "desc": "What's said in the room stays in the room. No press, no LinkedIn posts, no recordings." },
       { "title": "Real practitioners", "desc": "Half the room ships AI in production every week. The other half is here to ask them anything." }
     ],
-    "formatTitle": "How the evening runs",
+    "formatTitle": "How the session runs",
     "timeline": [
       { "time": "18:30", "label": "Arrival drinks" },
-      { "time": "19:00", "label": "Welcome & topic" },
-      { "time": "19:15", "label": "Dinner served" },
+      { "time": "19:00", "label": "Welcome & problem briefing" },
+      { "time": "19:15", "label": "Working the problem" },
       { "time": "20:00", "label": "Open discussion" },
-      { "time": "21:30", "label": "Coffee & questions" },
+      { "time": "21:30", "label": "Coffee & next steps" },
       { "time": "22:00", "label": "Close" }
     ],
-    "nextMeetup": "Next dinner:",
-    "nextDate": "June 12, 2026",
+    "nextMeetup": "Next session:",
+    "nextDate": "TBA",
     "spots": "{{left}} of {{total}} seats · Apply to attend",
     "cta": "Apply",
     "learnMore": "Learn more",
@@ -147,7 +146,7 @@
   "faq": {
     "title": "Things people ask",
     "items": [
-      { "q": "Can I attend events without being a member?", "a": "Friday Demo is open with RSVP. AI Clinic and Dinner are by application — drop a line and we'll see if you fit a coming format." },
+      { "q": "Can I attend events without being a member?", "a": "Friday Demo is open with RSVP. AI Clinic is by application — drop a line and we'll see if you fit a coming session." },
       { "q": "What if I'm just starting with AI?", "a": "1-on-1 training is the answer. We start from your real workflows, not 'what is AI'. No prerequisites except a real problem." },
       { "q": "Do you do AI consulting for companies?", "a": "Yes — selectively. I take 3–4 engagements at a time so I can do them properly. If we're a fit, the first call is free and direct." },
       { "q": "What do you NOT do?", "a": "Hackathons, hype keynotes, 'AI strategy' decks for marketing, '10 prompts that will change your life' content. If your email mentions 'transformational journey', I won't reply." }

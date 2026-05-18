@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, UtensilsCrossed, Stethoscope, Presentation } from 'lucide-react'
+import { ArrowRight, Stethoscope, Presentation } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useParams, Link } from 'react-router-dom'
 import { fadeUp, stagger } from '../../animations'
@@ -9,7 +9,6 @@ import { SectionHeader } from '../ui/SectionHeader'
 type Format = { title: string; cadence: string; body: string; cta: string }
 
 const formatIcons = [
-  <UtensilsCrossed size={22} className="text-coffee" />,
   <Stethoscope size={22} className="text-coffee" />,
   <Presentation size={22} className="text-coffee" />,
 ]
@@ -23,7 +22,7 @@ export function Community() {
     <Section dark id="community">
       <SectionHeader title={t('community.title')} sub={t('community.sub')} />
       <motion.div
-        className="grid md:grid-cols-3 gap-5"
+        className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -31,7 +30,7 @@ export function Community() {
       >
         {formats.map((f, i) => (
           <motion.div
-            key={f.title}
+            key={i}
             variants={fadeUp}
             className="bg-slate-800 border border-slate-700 rounded-2xl p-6 flex flex-col hover:border-coffee/40 transition-colors"
           >
