@@ -137,9 +137,15 @@
       "Full-stack arendaja. Juurutan AI-d tootmisesse alates GPT-3 ajast.",
       "Ehitanud ja integreerinud AI-d tegelikesse tootmissüsteemidesse — mitte demosid.",
       "Taust fintechis ja tootmises. Igavad valdkonnad, kus loetakse raha.",
-      "Vene, eesti, inglise keel. Tallinnas alates 2019."
+      "Vene, eesti, inglise keel. Tallinnas."
     ],
-    "card": "Veedan Undercover Vibe'i (kontorid) ja Undercover AI-d (see siin). Mõlemad on sama mõte: vaikne koht inimestele, kes tegelikult midagi ehitavad."
+    "cardTitle": "Miks just praegu",
+    "cardItems": [
+      "Iga oluline tehnoloogia — kirjast internetini — on muutnud mitte ainult tööriistu, vaid ka inimese rolli töös ja otsuste tegemisel.",
+      "AI on esimene tehnoloogia, mis ei lihtsalt täida käske, vaid osaleb mõtlemises. See nihutab väärtuse keskpunkti: info omamiselt selle suunamise oskuseni.",
+      "Konkurentsieelis liigub neilt, kes teavad vastust, nendele, kes oskavad esitada õige küsimuse ja tulemust hinnata.",
+      "Tänane ülesanne pole tehnoloogiale järele jõuda, vaid kokku panna protsessid ja kompetentsid uue 'inimene + AI' tööloogika järgi."
+    ]
   },
   "faq": {
     "title": "Mida inimesed küsivad",

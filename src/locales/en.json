@@ -139,9 +139,15 @@
       "Full-stack developer. Been shipping AI in production since GPT-3.",
       "Built and integrated AI into real production systems — not demos.",
       "Background in fintech and manufacturing. Boring industries that pay attention to ROI.",
-      "Russian, Estonian, English. Based in Tallinn since 2019."
+      "Russian, Estonian, English. Based in Tallinn."
     ],
-    "card": "I run Undercover Vibe (the coworking) and Undercover AI (this). Both are the same idea: a quiet place for people who actually build things."
+    "cardTitle": "Why now",
+    "cardItems": [
+      "Every major technology — from writing to the internet — has changed not just the tools we use, but the role humans play in work and decision-making.",
+      "AI is the first technology that doesn't just execute commands — it participates in reasoning. That shifts the center of value: from owning information to knowing how to direct it.",
+      "Competitive advantage moves from those who know the answer to those who can ask the right question and judge the result.",
+      "The task today isn't to catch up with the technology — it's to redesign processes and skills around a new logic of work: 'human + AI'."
+    ]
   },
   "faq": {
     "title": "Things people ask",

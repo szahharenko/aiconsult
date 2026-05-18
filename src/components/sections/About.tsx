@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { TrendingUp } from 'lucide-react'
+import { TrendingUp, Sparkles } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { fadeUp, stagger } from '../../animations'
 import { YOUR_NAME } from '../../config'
@@ -9,6 +9,7 @@ import { PhotoPlaceholder } from '../ui/PhotoPlaceholder'
 export function About() {
   const { t } = useTranslation()
   const items = t('about.items', { returnObjects: true }) as string[]
+  const cardItems = t('about.cardItems', { returnObjects: true }) as string[]
 
   return (
     <Section id="about">
@@ -32,7 +33,15 @@ export function About() {
           </ul>
         </motion.div>
         <motion.div variants={fadeUp} className="bg-slate-900 border border-slate-700 rounded-2xl p-7 text-slate-300 leading-relaxed">
-          {t('about.card')}
+          <h3 className="text-white font-bold text-lg mb-4">{t('about.cardTitle')}</h3>
+          <ul className="space-y-3">
+            {cardItems.map(item => (
+              <li key={item} className="flex items-start gap-3">
+                <Sparkles size={17} className="text-coffee flex-shrink-0 mt-1" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </motion.div>
       </motion.div>
     </Section>
