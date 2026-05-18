@@ -46,7 +46,7 @@ export function Services() {
                 {t('services.popular')}
               </span>
             )}
-            <h3 className="text-lg font-bold text-white mb-1">{line.title}</h3>
+            <h3 className="text-lg font-bold mb-1">{line.title}</h3>
             <div className="text-xl font-extrabold text-coffee font-mono my-3">{line.price}</div>
             <ul className="space-y-2 mb-6 flex-1">
               {line.items.map(item => (

@@ -41,11 +41,9 @@ export function Nav() {
             }`}
           />
           <span
-            className={`hidden sm:inline text-slate-500 font-normal transition-all duration-300 ${
-              scrolled ? 'text-[11px] opacity-70' : 'text-xs'
-            }`}
+            className={`hidden sm:inline text-slate-500 font-normal transition-all duration-300`}
           >
-            - {t('brandTagline')}
+          {t('brandTagline')}
           </span>
         </div>
         <div className="flex items-center gap-3">

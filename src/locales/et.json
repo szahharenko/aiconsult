@@ -73,6 +73,47 @@
       { "title": "Konsultatsioon", "price": "Alates 3 000 €", "items": ["AI audit ja teekond", "Töövoogude automatiseerimine", "Integratsioonid ja üleandmine"], "cta": "Võta ühendust" }
     ]
   },
+  "funding": {
+    "title": "EIS toetused AI-le ja automatiseerimisele",
+    "sub": "Eesti kaasrahastab tööd, mida me niikuinii teeme. Aktiivsed meetmed 2026 jaoks.",
+    "linkLabel": "Loe lähemalt eis.ee",
+    "disclaimer": "Tingimused muutuvad. Kontrolli eis.ee enne taotlemist. Põhinõue: Eesti juriidiline isik, 2 aasta keskmine müügitulu ≥ 50 000 €.",
+    "grants": [
+      {
+        "title": "Valmis tarkvara kasutuselevõtt",
+        "amount": "kuni 5 000 €",
+        "timing": "Avatud · alates 4. märts 2026",
+        "fit": "Valmis SaaS-tööriistade ost ja integreerimine: CRM, assistendid, agendid, raamatupidamine. Kiireim meede — hea esimene samm alustajatele.",
+        "url": "https://eis.ee/en/"
+      },
+      {
+        "title": "Protsesside automatiseerimine",
+        "amount": "kuni 150 000 €",
+        "timing": "Avatud · alates 30. märts 2026",
+        "fit": "Kohandatud arendus: AI-agendid, back-office'i automatiseerimine, andmeteenused. Enamik meie reaalselt tehtud AI-projektidest mahub siia.",
+        "url": "https://eis.ee/en/"
+      },
+      {
+        "title": "Digitaliseerimise teekaart",
+        "amount": "kuni 10 000 €",
+        "timing": "Avatud aastaringselt",
+        "fit": "Väike toetus digiteekonna kaardistamiseks koos konsultandiga. Puhas sisenemispunkt — pärast on lihtsam suurematele meetmetele taotleda.",
+        "url": "https://eis.ee/en/services/digital-roadmap/"
+      },
+      {
+        "title": "Rakendusuuringud",
+        "amount": "250 000 – 2 000 000 €",
+        "timing": "Tsükliline · järgmine voor 2027 alguses",
+        "fit": "R&D-projektidele: oma mudel, kohandatud ML-süsteemid, uurimispartner. Taotlus nõuab ettevalmistust — alusta 2–3 kuud enne tähtaega.",
+        "url": "https://eis.ee/en/services/programme-for-applied-research/"
+      }
+    ],
+    "help": {
+      "title": "Aitan taotlusega",
+      "body": "Pool tööst on AI-projekti sõnastamine nii, et see vastaks EIS-i kriteeriumitele. Kuulub konsultatsiooni hulka.",
+      "cta": "Arutame taotlust"
+    }
+  },
   "cases": {
     "title": "Kuidas see praktikas välja näeb",
     "sub": "Paar projekti, kliendi soovil anonüümitud. Tõelised probleemid, tõelised numbrid.",

@@ -24,7 +24,7 @@
   },
   "community": {
     "title": "What happens here",
-    "sub": "Two rooms. Pick the one you fit.",
+    "sub": "Two paths. Pick yours.",
     "formats": [
       { "title": "AI Clinic", "cadence": "Monthly · By invitation", "body": "8–12 people. A company brings a real problem. Practitioners work it for 90 minutes. Chatham House. No slides.", "cta": "Bring a problem" },
       { "title": "Friday Demo", "cadence": "Monthly · Open", "body": "Three 10-minute demos of things that work in production. Drinks after.", "cta": "RSVP" }
@@ -74,6 +74,47 @@
       { "title": "1-on-1 Training", "price": "From €200/h", "items": ["Built around your real workflows", "AI tools, agents, integrations", "Recordings for your team"], "cta": "Get in touch", "highlight": true },
       { "title": "Consulting", "price": "From €3,000", "items": ["AI audit & roadmap", "Workflow automation builds", "Integrations and hand-off"], "cta": "Get in touch" }
     ]
+  },
+  "funding": {
+    "title": "EIS grants for AI and automation",
+    "sub": "Estonia co-funds the work we already do. Active programmes for 2026.",
+    "linkLabel": "Read more on eis.ee",
+    "disclaimer": "Terms change. Check eis.ee before applying. Baseline requirement: Estonian legal entity, 2-year average revenue ≥ €50,000.",
+    "grants": [
+      {
+        "title": "Off-the-shelf software adoption",
+        "amount": "up to €5,000",
+        "timing": "Open · since March 4, 2026",
+        "fit": "Buying and integrating ready SaaS tools: CRM, assistants, agents, bookkeeping. The fastest measure — a good first step if you're starting out.",
+        "url": "https://eis.ee/en/"
+      },
+      {
+        "title": "Process automation",
+        "amount": "up to €150,000",
+        "timing": "Open · since March 30, 2026",
+        "fit": "Custom builds: AI agents, back-office automation, data services. Most of the AI projects we actually deliver fit here.",
+        "url": "https://eis.ee/en/"
+      },
+      {
+        "title": "Digitalisation roadmap",
+        "amount": "up to €10,000",
+        "timing": "Open year-round",
+        "fit": "A small grant for drafting a digital roadmap with a consultant. A clean entry point — easier to apply for the bigger measures afterwards.",
+        "url": "https://eis.ee/en/services/digital-roadmap/"
+      },
+      {
+        "title": "Applied research",
+        "amount": "€250,000 – €2,000,000",
+        "timing": "Cyclical · next round early 2027",
+        "fit": "For R&D projects: your own model, custom ML systems, research partner. Applications take prep — start 2–3 months before the deadline.",
+        "url": "https://eis.ee/en/services/programme-for-applied-research/"
+      }
+    ],
+    "help": {
+      "title": "I can help you apply",
+      "body": "Half the work is framing the AI project so it fits EIS criteria. Comes as part of consulting.",
+      "cta": "Talk through your application"
+    }
   },
   "cases": {
     "title": "What this looks like in practice",

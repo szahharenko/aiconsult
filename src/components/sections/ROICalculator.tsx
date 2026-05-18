@@ -76,16 +76,16 @@ export function ROICalculator() {
             <p className="text-slate-400 text-sm text-center mb-4">
               {t('roi.automating')}
             </p>
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-coffee/20">
+              <div className="py-3 md:py-0">
                 <p className="text-coffee font-extrabold text-2xl md:text-3xl">{fmt(monthlySavings)} &euro;</p>
                 <p className="text-slate-400 text-xs mt-1">{t('roi.monthly')}</p>
               </div>
-              <div className="border-x border-coffee/20">
+              <div className="py-3 md:py-0">
                 <p className="text-coffee font-extrabold text-2xl md:text-3xl">{fmt(annualSavings)} &euro;</p>
                 <p className="text-slate-400 text-xs mt-1">{t('roi.annual')}</p>
               </div>
-              <div>
+              <div className="py-3 md:py-0">
                 <p className="text-coffee font-extrabold text-2xl md:text-3xl">{fmt(hoursFreed)}</p>
                 <p className="text-slate-400 text-xs mt-1">{t('roi.freed')}</p>
               </div>

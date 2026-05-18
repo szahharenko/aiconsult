@@ -16,6 +16,7 @@ import { Hero } from './components/sections/Hero'
 import { Manifest } from './components/sections/Manifest'
 import { Community } from './components/sections/Community'
 import { Services } from './components/sections/Services'
+import { AIFunding } from './components/sections/AIFunding'
 import { Process } from './components/sections/Process'
 import { CaseStudies } from './components/sections/CaseStudies'
 import { ROICalculator } from './components/sections/ROICalculator'
@@ -77,6 +78,7 @@ export default function App() {
       <Manifest />
       <Community />
       <Services />
+      <AIFunding />
       <Process />
       <CaseStudies />
       <ROICalculator />
