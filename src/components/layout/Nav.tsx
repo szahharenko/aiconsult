@@ -37,7 +37,7 @@ export function Nav() {
             src={logoUrl}
             alt={BRAND_NAME}
             className={`rounded-full object-contain transition-all duration-300 ${
-              scrolled ? 'h-8 w-8 opacity-90' : 'h-34 w-34'
+              scrolled ? 'h-8 w-8 opacity-90' : 'h-26 w-26'
             }`}
           />
           <span
