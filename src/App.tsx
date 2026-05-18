@@ -18,6 +18,7 @@ import { Community } from './components/sections/Community'
 import { Services } from './components/sections/Services'
 import { AIFunding } from './components/sections/AIFunding'
 import { Process } from './components/sections/Process'
+import { OurClients } from './components/sections/OurClients'
 import { CaseStudies } from './components/sections/CaseStudies'
 import { ROICalculator } from './components/sections/ROICalculator'
 import { About } from './components/sections/About'
@@ -80,6 +81,7 @@ export default function App() {
       <Services />
       <AIFunding />
       <Process />
+      <OurClients />
       <CaseStudies />
       <ROICalculator />
       <About />

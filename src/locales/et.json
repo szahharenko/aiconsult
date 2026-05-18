@@ -114,6 +114,10 @@
       "cta": "Arutame taotlust"
     }
   },
+  "clients": {
+    "title": "Meie kliendid",
+    "sub": "Mõned ettevõtted, kellega oleme koos töötanud."
+  },
   "cases": {
     "title": "Kuidas see praktikas välja näeb",
     "sub": "Paar projekti, kliendi soovil anonüümitud. Tõelised probleemid, tõelised numbrid.",

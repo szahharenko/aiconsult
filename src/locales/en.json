@@ -116,6 +116,10 @@
       "cta": "Talk through your application"
     }
   },
+  "clients": {
+    "title": "Our clients",
+    "sub": "A few of the companies we've worked with."
+  },
   "cases": {
     "title": "What this looks like in practice",
     "sub": "A few engagements, anonymized at clients' request. Real problems, real numbers.",
