@@ -74,7 +74,30 @@ function renderInline(s: string): string {
 }
 
 function markdownToHtml(md: string): string {
-  const escaped = escapeHtml(md.replace(/\r\n/g, '\n'))
+  // Pre-process step 1: the API sometimes returns the markdown with JSON-style
+  // escape sequences still literal in the string (e.g. \\n instead of an actual
+  // newline, \\" instead of a quote). Detect that case and unescape, but only
+  // for the common JSON escapes — we don't want to mangle legitimate backslashes.
+  let pre = md
+  // unescape \\\\ last so the others don't double-process it
+  pre = pre.replace(/\\r\\n/g, '\n')
+  pre = pre.replace(/\\n/g, '\n')
+  pre = pre.replace(/\\r/g, '\n')
+  pre = pre.replace(/\\t/g, '\t')
+  pre = pre.replace(/\\"/g, '"')
+  pre = pre.replace(/\\'/g, "'")
+  pre = pre.replace(/\\\\/g, '\\')
+
+  // Normalize CRLF that may now exist as real characters.
+  pre = pre.replace(/\r\n/g, '\n')
+
+  // Pre-process step 2: handle the case where an entire markdown table got
+  // flattened onto a single line. Insert newlines before each new row by
+  // detecting the ` | |` pattern (closing pipe of one row immediately followed
+  // by opening pipe of the next row, separated by whitespace).
+  pre = pre.replace(/\|\s+\|/g, (m) => (m.includes('\n') ? m : '|\n|'))
+
+  const escaped = escapeHtml(pre)
   const lines = escaped.split('\n')
 
   let html = ''
@@ -94,8 +117,74 @@ function markdownToHtml(md: string): string {
     if (inOl) { html += '</ol>'; inOl = false }
   }
 
-  for (const raw of lines) {
+  const isTableRow = (s: string) => /^\s*\|.*\|\s*$/.test(s)
+  const splitRow = (s: string): string[] => {
+    let row = s.trim()
+    if (row.startsWith('|')) row = row.slice(1)
+    if (row.endsWith('|')) row = row.slice(0, -1)
+    return row.split('|').map(c => c.trim())
+  }
+  const isSeparatorRow = (s: string): boolean => {
+    if (!isTableRow(s)) return false
+    return splitRow(s).every(c => /^:?-{2,}:?$/.test(c))
+  }
+  const parseAlignments = (s: string): ('left' | 'right' | 'center' | null)[] => {
+    return splitRow(s).map(c => {
+      const left = c.startsWith(':')
+      const right = c.endsWith(':')
+      if (left && right) return 'center'
+      if (right) return 'right'
+      if (left) return 'left'
+      return null
+    })
+  }
+
+  for (let i = 0; i < lines.length; i++) {
+    const raw = lines[i]
     const line = raw.trimEnd()
+
+    // Detect markdown table: header row + separator row
+    if (
+      isTableRow(line) &&
+      i + 1 < lines.length &&
+      isSeparatorRow(lines[i + 1])
+    ) {
+      flushPara(); closeLists()
+      const headers = splitRow(line)
+      const aligns = parseAlignments(lines[i + 1])
+      i += 2
+      const rows: string[][] = []
+      while (i < lines.length && isTableRow(lines[i])) {
+        rows.push(splitRow(lines[i]))
+        i++
+      }
+      i-- // back off so outer loop's i++ lands on the next non-table line
+
+      const alignClass = (idx: number) => {
+        const a = aligns[idx]
+        if (a === 'right') return 'text-right'
+        if (a === 'center') return 'text-center'
+        return 'text-left'
+      }
+
+      html += '<div class="overflow-x-auto my-5 rounded-xl border border-slate-700">'
+      html += '<table class="w-full text-sm border-collapse">'
+      html += '<thead class="bg-slate-800/60"><tr>'
+      headers.forEach((h, hi) => {
+        html += `<th class="${alignClass(hi)} px-3 py-2 text-white font-semibold border-b border-slate-700 whitespace-nowrap">${renderInline(h)}</th>`
+      })
+      html += '</tr></thead><tbody>'
+      rows.forEach((r, ri) => {
+        const zebra = ri % 2 === 1 ? 'bg-slate-900/40' : ''
+        html += `<tr class="${zebra} border-t border-slate-800">`
+        r.forEach((c, ci) => {
+          html += `<td class="${alignClass(ci)} px-3 py-2 text-slate-300 align-top">${renderInline(c)}</td>`
+        })
+        html += '</tr>'
+      })
+      html += '</tbody></table></div>'
+      continue
+    }
 
     if (!line.trim()) {
       flushPara()
@@ -198,7 +287,7 @@ function VerdictModal({ data, onClose, closeLabel }: VerdictModalProps) {
         className="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8"
         onClick={e => e.stopPropagation()}
       >
-        <div className="flex items-start justify-between gap-4 mb-5 sticky top-0 -mt-6 sm:-mt-8 pt-6 sm:pt-8 -mx-6 sm:-mx-8 px-6 sm:px-8 pb-3 bg-slate-900 border-b border-slate-800 z-10">
+        <div className="flex items-start justify-between gap-4 mb-5 pb-4 border-b border-slate-800">
           <div className="min-w-0">
             <h2 className="text-xl sm:text-2xl font-bold text-white leading-tight break-words">
               {data.company_name}
