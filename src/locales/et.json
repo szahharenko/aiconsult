@@ -1,10 +1,16 @@
 {
   "brandTagline": "AI ilma bullshitita",
-  "nav": { "cta": "Räägi minuga" },
+  "nav": {
+    "cta": "Räägi minuga"
+  },
   "meetupBanner": "Järgmine AI Clinic · Tallinn - kutsega →",
   "hero": {
     "location": "Tallinn, Eesti 🇪🇪",
-    "tags": ["AI Clinic · igakuiselt", "1-1 koolitus", "Juurutamine"],
+    "tags": [
+      "AI Clinic · igakuiselt",
+      "1-1 koolitus",
+      "Juurutamine"
+    ],
     "h1a": "AI ilma bullshitita.",
     "h1b": "Praktika, koolitus, konsultatsioon.",
     "p": "Vaikne AI-praktika Tallinnas - kogukonna üritused ettevõtjatele ja AI-praktikutele, isiklik koolitus ja valitud konsultatsioon. @ Undercover'ist.",
@@ -15,17 +21,36 @@
   "manifest": {
     "title": "Mis see on. Mis ei ole.",
     "principles": [
-      { "title": "Praktika, mitte pitchid.", "body": "Tõelised probleemid, tõelised juurutamised. Ei slaide 'transformatsioonist'." },
-      { "title": "Off the record.", "body": "Mis ruumis öeldakse, jääb ruumi. Ei LinkedIn-postitusi. Ei pressi." },
-      { "title": "Praktikud, mitte influencerid.", "body": "Kutsume neid, kes tegelikult ehitavad - mitte neid, kes sellest säutsuvad." }
+      {
+        "title": "Praktika, mitte pitchid.",
+        "body": "Tõelised probleemid, tõelised juurutamised. Ei slaide 'transformatsioonist'."
+      },
+      {
+        "title": "Off the record.",
+        "body": "Mis ruumis öeldakse, jääb ruumi. Ei LinkedIn-postitusi. Ei pressi."
+      },
+      {
+        "title": "Praktikud, mitte influencerid.",
+        "body": "Kutsume neid, kes tegelikult ehitavad - mitte neid, kes sellest säutsuvad."
+      }
     ]
   },
   "community": {
     "title": "Mis siin toimub",
     "sub": "Kaks ruumi. Vali endale sobiv.",
     "formats": [
-      { "title": "AI Clinic", "cadence": "Igakuiselt · Kutsega", "body": "8–12 inimest. Ettevõte tuleb tegeliku probleemiga. Praktikud töötavad sellega 90 minutit. Chatham House. Ei slaide.", "cta": "Too probleem" },
-      { "title": "Friday Demo", "cadence": "Igakuiselt · Avatud", "body": "Kolm 10-minutilist demo asjadest, mis tootmises töötavad. Pärast joogid.", "cta": "Registreeri" }
+      {
+        "title": "AI Clinic",
+        "cadence": "Igakuiselt · Kutsega",
+        "body": "8–12 inimest. Ettevõte tuleb tegeliku probleemiga. Praktikud töötavad sellega 90 minutit. Chatham House. Ei slaide.",
+        "cta": "Too probleem"
+      },
+      {
+        "title": "Friday Demo",
+        "cadence": "Igakuiselt · Avatud",
+        "body": "Kolm 10-minutilist demo asjadest, mis tootmises töötavad. Pärast joogid.",
+        "cta": "Registreeri"
+      }
     ],
     "allEvents": "Kõik üritused"
   },
@@ -33,18 +58,45 @@
     "title": "AI Clinic",
     "sub": "8–12 inimest. Ettevõte tuleb tegeliku probleemiga. Praktikud töötavad sellega 90 minutit. Chatham House. Ei slaide.",
     "pillars": [
-      { "title": "Praktika, mitte teooria", "desc": "Toome tegelikud probleemid, millega inimesed praegu maadlevad - mitte slaide sellest, mida AI 2030. aastal teeb." },
-      { "title": "Off the record", "desc": "Mis ruumis öeldakse, jääb ruumi. Ei pressi, ei LinkedIn-postitusi, ei salvestusi." },
-      { "title": "Tõelised praktikud", "desc": "Pool ruumist juurutab AI-d tootmisesse igal nädalal. Teine pool on siin, et neilt midagi küsida." }
+      {
+        "title": "Praktika, mitte teooria",
+        "desc": "Toome tegelikud probleemid, millega inimesed praegu maadlevad - mitte slaide sellest, mida AI 2030. aastal teeb."
+      },
+      {
+        "title": "Off the record",
+        "desc": "Mis ruumis öeldakse, jääb ruumi. Ei pressi, ei LinkedIn-postitusi, ei salvestusi."
+      },
+      {
+        "title": "Tõelised praktikud",
+        "desc": "Pool ruumist juurutab AI-d tootmisesse igal nädalal. Teine pool on siin, et neilt midagi küsida."
+      }
     ],
     "formatTitle": "Kuidas sessioon kulgeb",
     "timeline": [
-      { "time": "18:30", "label": "Saabumise joogid" },
-      { "time": "19:00", "label": "Tervitus ja probleemi tutvustus" },
-      { "time": "19:15", "label": "Probleemi lahkamine" },
-      { "time": "20:00", "label": "Avatud arutelu" },
-      { "time": "21:30", "label": "Kohv ja järgmised sammud" },
-      { "time": "22:00", "label": "Lõpetus" }
+      {
+        "time": "18:30",
+        "label": "Saabumise joogid"
+      },
+      {
+        "time": "19:00",
+        "label": "Tervitus ja probleemi tutvustus"
+      },
+      {
+        "time": "19:15",
+        "label": "Probleemi lahkamine"
+      },
+      {
+        "time": "20:00",
+        "label": "Avatud arutelu"
+      },
+      {
+        "time": "21:30",
+        "label": "Kohv ja järgmised sammud"
+      },
+      {
+        "time": "22:00",
+        "label": "Lõpetus"
+      }
     ],
     "nextMeetup": "Järgmine sessioon:",
     "nextDate": "Tulekul",
@@ -57,10 +109,26 @@
   "process": {
     "title": "Kuidas me koos töötame",
     "steps": [
-      { "step": "01", "title": "Räägime", "desc": "30-minutiline kõne. Mida sa tegelikult teha tahad? Mida oled proovinud? Kus on kinni jäänud?" },
-      { "step": "02", "title": "Kaardistus", "desc": "Kirjutan, mida ma teeksin, mida ei, ja kui palju see maksab. Sina otsustad, kas lähme edasi." },
-      { "step": "03", "title": "Teeme", "desc": "Juurutamine, koolitus või mõlemad. Töösessioonid sinu või su meeskonnaga. Alati tegelikel töövoogudel." },
-      { "step": "04", "title": "Üleandmine", "desc": "Sinu ja meeskonna oma. Salvestused, dokumendid ja kuu järelhooldust kaasas." }
+      {
+        "step": "01",
+        "title": "Räägime",
+        "desc": "30-minutiline kõne. Mida sa tegelikult teha tahad? Mida oled proovinud? Kus on kinni jäänud?"
+      },
+      {
+        "step": "02",
+        "title": "Kaardistus",
+        "desc": "Kirjutan, mida ma teeksin, mida ei, ja kui palju see maksab. Sina otsustad, kas lähme edasi."
+      },
+      {
+        "step": "03",
+        "title": "Teeme",
+        "desc": "Juurutamine, koolitus või mõlemad. Töösessioonid sinu või su meeskonnaga. Alati tegelikel töövoogudel."
+      },
+      {
+        "step": "04",
+        "title": "Üleandmine",
+        "desc": "Sinu ja meeskonna oma. Salvestused, dokumendid ja kuu järelhooldust kaasas."
+      }
     ]
   },
   "services": {
@@ -68,9 +136,37 @@
     "sub": "Kolm viisi koos töötamiseks.",
     "popular": "Kõige küsitavam",
     "lines": [
-      { "title": "Membership", "price": "Alates 50 €/kuu", "items": ["Juurdepääs kõikidele üritustele", "Liikmete kanal", "Kvartali kohtumise kutse"], "cta": "Vaata üritusi" },
-      { "title": "1-1 koolitus", "price": "Alates 200 €/tund", "items": ["Õpime sinu päris töövoogudel", "AI tööriistad, agendid, integratsioonid", "Salvestused sinu meeskonnale"], "cta": "Võta ühendust", "highlight": true },
-      { "title": "Konsultatsioon", "price": "Alates 3 000 €", "items": ["AI audit ja teekond", "Töövoogude automatiseerimine", "Integratsioonid ja üleandmine"], "cta": "Võta ühendust" }
+      {
+        "title": "Membership",
+        "price": "Alates 50 €/kuu",
+        "items": [
+          "Juurdepääs kõikidele üritustele",
+          "Liikmete kanal",
+          "Kvartali kohtumise kutse"
+        ],
+        "cta": "Vaata üritusi"
+      },
+      {
+        "title": "1-1 koolitus",
+        "price": "Alates 200 €/tund",
+        "items": [
+          "Õpime sinu päris töövoogudel",
+          "AI tööriistad, agendid, integratsioonid",
+          "Salvestused sinu meeskonnale"
+        ],
+        "cta": "Võta ühendust",
+        "highlight": true
+      },
+      {
+        "title": "Konsultatsioon",
+        "price": "Alates 3 000 €",
+        "items": [
+          "AI audit ja teekond",
+          "Töövoogude automatiseerimine",
+          "Integratsioonid ja üleandmine"
+        ],
+        "cta": "Võta ühendust"
+      }
     ]
   },
   "funding": {
@@ -114,6 +210,23 @@
       "cta": "Arutame taotlust"
     }
   },
+  "grantCheck": {
+    "title": "Kontrolli oma ettevõtte toetuskõlblikkust",
+    "sub": "Sisesta ettevõtte nimi, registrikood või Inforegistri link — vaatame, mis EIS-i alla mahub.",
+    "placeholder": "Ettevõtte nimi, registrikood või link",
+    "submit": "Kontrolli",
+    "checking": "Kontrollin…",
+    "errorGeneric": "Vastust ei õnnestunud saada. Proovi uuesti.",
+    "errorBadInput": "Sisesta ettevõtte nimi, 8-kohaline registrikood või Inforegistri link.",
+    "viewVerdict": "Vaata vastust",
+    "checkedLabel": "Kontrollitud:",
+    "cached": "vahemälust",
+    "modalClose": "Sulge",
+    "tryAnother": "Kontrolli teist",
+    "disclaimer": "See on heuristiline hinnang. Lõpliku otsuse teeb EIS.",
+    "takesAFewMinutes": "See päring võib võtta paar minutit — toome andmed Inforegistrist ja arvutame hinnangu.",
+    "poweredBy": "Andmed ja programmid:"
+  },
   "clients": {
     "title": "Meie kliendid",
     "sub": "Mõned ettevõtted, kellega oleme koos töötanud."
@@ -132,9 +245,18 @@
         "problem": "Laserlõikur töötas ERP-ist eraldi. Operaatorid sisestasid iga töö käsitsi — detailid, kogused, lõikeajad. Vead tellimuses, viivitused arveldamisel.",
         "solution": "Otsene integratsioon laseri CNC-kontrolleri ja ERP-süsteemi vahel. Andmed liiguvad automaatselt: lõikeplaanid sisse, tegelikud tootmisandmed tagasi.",
         "metrics": [
-          { "value": "0", "label": "käsitsi sisestust" },
-          { "value": "−40%", "label": "tellimusest arveni" },
-          { "value": "~2 100 €", "label": "säästetud kuus" }
+          {
+            "value": "0",
+            "label": "käsitsi sisestust"
+          },
+          {
+            "value": "−40%",
+            "label": "tellimusest arveni"
+          },
+          {
+            "value": "~2 100 €",
+            "label": "säästetud kuus"
+          }
         ]
       },
       {
@@ -143,9 +265,18 @@
         "problem": "Analüütikud kulutasid päevi klientide aruannete koostamisele tooruuringuandmetest. Iga aruanne järgis ranget struktuuri, aga tehti käsitsi — kopeerimine, vormindamine, ristkontroll.",
         "solution": "Automaatne aruannete genereerimise mootor, mis loeb andmestruktuuri, rakendab kliendi malli ja väljastab valmis aruande ülevaatamiseks.",
         "metrics": [
-          { "value": "Minutid", "label": "päevade asemel" },
-          { "value": "3×", "label": "rohkem aruandeid analüütiku kohta" },
-          { "value": "−90%", "label": "vormindusvigu" }
+          {
+            "value": "Minutid",
+            "label": "päevade asemel"
+          },
+          {
+            "value": "3×",
+            "label": "rohkem aruandeid analüütiku kohta"
+          },
+          {
+            "value": "−90%",
+            "label": "vormindusvigu"
+          }
         ]
       },
       {
@@ -154,9 +285,18 @@
         "problem": "Riigihanked on 50–200 lehekülge juriidilist ja tehnilist teksti. Lugemine, hindamine ja pakkumisdokumentide koostamine võttis iga hanke kohta päevi.",
         "solution": "AI-tööriist, mis analüüsib hankedokumente, hindab sobivust ettevõtte profiiliga ning genereerib vajaliku pakkumisdokumentatsiooni ja kontrollnimekirjad.",
         "metrics": [
-          { "value": "10 min", "label": "hanke analüüs (oli 2 päeva)" },
-          { "value": "100-p", "label": "automaatne skoorimudel" },
-          { "value": "80%", "label": "dokumente auto-genereeritud" }
+          {
+            "value": "10 min",
+            "label": "hanke analüüs (oli 2 päeva)"
+          },
+          {
+            "value": "100-p",
+            "label": "automaatne skoorimudel"
+          },
+          {
+            "value": "80%",
+            "label": "dokumente auto-genereeritud"
+          }
         ]
       }
     ]
@@ -195,16 +335,32 @@
   "faq": {
     "title": "Mida inimesed küsivad",
     "items": [
-      { "q": "Kas saan üritustele tulla ilma liikme olemata?", "a": "Friday Demo on avatud RSVP-ga. AI Clinic on avalduse alusel - kirjuta, vaatame, kas sobid mõnda lähenevasse sessiooni." },
-      { "q": "Mis siis, kui ma alles alustan AI-ga?", "a": "1-1 koolitus on sinu jaoks. Alustame sinu päris töövoogudest, mitte sellest 'mis on AI'. Eeltingimusi pole peale tegeliku probleemi." },
-      { "q": "Kas teete ettevõtetele AI-konsultatsiooni?", "a": "Jah, valikuliselt. Võtan korraga 3–4 projekti, et neid korralikult teha. Kui sobime, on esimene kõne tasuta ja otsekohene." },
-      { "q": "Mida sa EI tee?", "a": "Häkatone, hüpe-kõnesid, turunduslikke 'AI-strateegia' esitlusi, üldist '10 promptu, mis muudavad sinu elu' sisu. Kui kirjas on 'transformatsiooniline teekond' - ma ei vasta." }
+      {
+        "q": "Kas saan üritustele tulla ilma liikme olemata?",
+        "a": "Friday Demo on avatud RSVP-ga. AI Clinic on avalduse alusel - kirjuta, vaatame, kas sobid mõnda lähenevasse sessiooni."
+      },
+      {
+        "q": "Mis siis, kui ma alles alustan AI-ga?",
+        "a": "1-1 koolitus on sinu jaoks. Alustame sinu päris töövoogudest, mitte sellest 'mis on AI'. Eeltingimusi pole peale tegeliku probleemi."
+      },
+      {
+        "q": "Kas teete ettevõtetele AI-konsultatsiooni?",
+        "a": "Jah, valikuliselt. Võtan korraga 3–4 projekti, et neid korralikult teha. Kui sobime, on esimene kõne tasuta ja otsekohene."
+      },
+      {
+        "q": "Mida sa EI tee?",
+        "a": "Häkatone, hüpe-kõnesid, turunduslikke 'AI-strateegia' esitlusi, üldist '10 promptu, mis muudavad sinu elu' sisu. Kui kirjas on 'transformatsiooniline teekond' - ma ei vasta."
+      }
     ]
   },
   "contact": {
     "title": "Räägi, mis sul mõttes on",
     "sub": "Loen kõike. Vastan 24 tunni jooksul.",
-    "items": ["Liikmesus ja üritused", "1-1 koolitus", "Konsultatsioon"],
+    "items": [
+      "Liikmesus ja üritused",
+      "1-1 koolitus",
+      "Konsultatsioon"
+    ],
     "form": {
       "name": "Nimi *",
       "namePh": "Sinu nimi",
@@ -215,7 +371,13 @@
       "sizePh": "Vali",
       "interest": "Millest jutt?",
       "interestPh": "Vali",
-      "opts": ["Liikmesus / üritused", "1-1 koolitus", "Konsultatsioon", "Lihtsalt tere", "Muu"],
+      "opts": [
+        "Liikmesus / üritused",
+        "1-1 koolitus",
+        "Konsultatsioon",
+        "Lihtsalt tere",
+        "Muu"
+      ],
       "msg": "Sõnum",
       "msgPh": "Mida sa püüad teha…",
       "err": "Saatmise viga. Kirjuta otse:",
@@ -240,14 +402,38 @@
     "updated": "Viimati uuendatud: aprill 2026",
     "ok": "Selge",
     "sections": [
-      { "title": "1. Kes me oleme", "body": "Undercover AI - AI praktika, personaalne koolitus ja konsultatsioon. Veab Sergei Zahharenko. Osa Undercoveri projektist, Tallinn, Eesti. Kontakt: acrashik@gmail.com" },
-      { "title": "2. Milliseid andmeid kogume", "body": "Kontaktivormi kaudu: nimi, email, ettevõte, ülesande kirjeldus. Küpsiste kaudu (nõusolekul): anonüümne analüütika." },
-      { "title": "3. Kuidas andmeid kasutame", "body": "Ainult teie päringule vastamiseks. Me ei jaga kolmandate osapooltega ega kasuta reklaamiks." },
-      { "title": "4. Õiguslik alus (GDPR)", "body": "Töötlemine põhineb nõusolekul (art. 6(1)(a) GDPR) ja õigustatud huvil (art. 6(1)(f) GDPR)." },
-      { "title": "5. Säilitamine", "body": "Vormiandmed - mitte rohkem kui 2 aastat. Kustutamine nõudmisel igal ajal." },
-      { "title": "6. Teie õigused", "body": "Juurdepääs, parandamine, kustutamine, ülekantavus, nõusoleku tagasivõtmine. Kontakt: acrashik@gmail.com" },
-      { "title": "7. Küpsised", "body": "Kasutatakse ainult pärast teie selgesõnalist nõusolekut. Tagasivõtmine - bänneri kaudu või küpsiste kustutamisega." },
-      { "title": "8. Järelevalveasutus", "body": "Andmekaitse Inspektsioon (Eesti andmekaitse järelevalveasutus): aki.ee" }
+      {
+        "title": "1. Kes me oleme",
+        "body": "Undercover AI - AI praktika, personaalne koolitus ja konsultatsioon. Veab Sergei Zahharenko. Osa Undercoveri projektist, Tallinn, Eesti. Kontakt: acrashik@gmail.com"
+      },
+      {
+        "title": "2. Milliseid andmeid kogume",
+        "body": "Kontaktivormi kaudu: nimi, email, ettevõte, ülesande kirjeldus. Küpsiste kaudu (nõusolekul): anonüümne analüütika."
+      },
+      {
+        "title": "3. Kuidas andmeid kasutame",
+        "body": "Ainult teie päringule vastamiseks. Me ei jaga kolmandate osapooltega ega kasuta reklaamiks."
+      },
+      {
+        "title": "4. Õiguslik alus (GDPR)",
+        "body": "Töötlemine põhineb nõusolekul (art. 6(1)(a) GDPR) ja õigustatud huvil (art. 6(1)(f) GDPR)."
+      },
+      {
+        "title": "5. Säilitamine",
+        "body": "Vormiandmed - mitte rohkem kui 2 aastat. Kustutamine nõudmisel igal ajal."
+      },
+      {
+        "title": "6. Teie õigused",
+        "body": "Juurdepääs, parandamine, kustutamine, ülekantavus, nõusoleku tagasivõtmine. Kontakt: acrashik@gmail.com"
+      },
+      {
+        "title": "7. Küpsised",
+        "body": "Kasutatakse ainult pärast teie selgesõnalist nõusolekut. Tagasivõtmine - bänneri kaudu või küpsiste kustutamisega."
+      },
+      {
+        "title": "8. Järelevalveasutus",
+        "body": "Andmekaitse Inspektsioon (Eesti andmekaitse järelevalveasutus): aki.ee"
+      }
     ]
   }
 }

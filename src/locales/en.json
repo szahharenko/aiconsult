@@ -6,7 +6,11 @@
   "meetupBanner": "Next AI Clinic · Tallinn - by invitation →",
   "hero": {
     "location": "Tallinn, Estonia 🇪🇪",
-    "tags": ["AI Clinic · monthly", "1-on-1 Training", "Implementation"],
+    "tags": [
+      "AI Clinic · monthly",
+      "1-on-1 Training",
+      "Implementation"
+    ],
     "h1a": "AI without the bullshit.",
     "h1b": "Practice, training, consulting.",
     "p": "A quiet AI practice in Tallinn - community events for entrepreneurs and AI practitioners, 1-on-1 training, and selective consulting. @ Undercover.",
@@ -17,17 +21,36 @@
   "manifest": {
     "title": "What this is. What it isn't.",
     "principles": [
-      { "title": "Practice, not pitches.", "body": "Real problems, real implementations. No slides about 'transformation'." },
-      { "title": "Off the record.", "body": "What's said in the room stays in the room. No LinkedIn posts. No press." },
-      { "title": "Practitioners, not influencers.", "body": "We invite people who actually ship - not people who write threads about it." }
+      {
+        "title": "Practice, not pitches.",
+        "body": "Real problems, real implementations. No slides about 'transformation'."
+      },
+      {
+        "title": "Off the record.",
+        "body": "What's said in the room stays in the room. No LinkedIn posts. No press."
+      },
+      {
+        "title": "Practitioners, not influencers.",
+        "body": "We invite people who actually ship - not people who write threads about it."
+      }
     ]
   },
   "community": {
     "title": "What happens here",
     "sub": "Two paths. Pick yours.",
     "formats": [
-      { "title": "AI Clinic", "cadence": "Monthly · By invitation", "body": "8–12 people. A company brings a real problem. Practitioners work it for 90 minutes. Chatham House. No slides.", "cta": "Bring a problem" },
-      { "title": "Friday Demo", "cadence": "Monthly · Open", "body": "Three 10-minute demos of things that work in production. Drinks after.", "cta": "RSVP" }
+      {
+        "title": "AI Clinic",
+        "cadence": "Monthly · By invitation",
+        "body": "8–12 people. A company brings a real problem. Practitioners work it for 90 minutes. Chatham House. No slides.",
+        "cta": "Bring a problem"
+      },
+      {
+        "title": "Friday Demo",
+        "cadence": "Monthly · Open",
+        "body": "Three 10-minute demos of things that work in production. Drinks after.",
+        "cta": "RSVP"
+      }
     ],
     "allEvents": "All events"
   },
@@ -35,18 +58,45 @@
     "title": "AI Clinic",
     "sub": "8–12 people. A company brings a real problem. Practitioners work it for 90 minutes. Chatham House. No slides.",
     "pillars": [
-      { "title": "Practice, not theory", "desc": "We bring real cases people are wrestling with right now - not slideshows about what AI will do in 2030." },
-      { "title": "Off the record", "desc": "What's said in the room stays in the room. No press, no LinkedIn posts, no recordings." },
-      { "title": "Real practitioners", "desc": "Half the room ships AI in production every week. The other half is here to ask them anything." }
+      {
+        "title": "Practice, not theory",
+        "desc": "We bring real cases people are wrestling with right now - not slideshows about what AI will do in 2030."
+      },
+      {
+        "title": "Off the record",
+        "desc": "What's said in the room stays in the room. No press, no LinkedIn posts, no recordings."
+      },
+      {
+        "title": "Real practitioners",
+        "desc": "Half the room ships AI in production every week. The other half is here to ask them anything."
+      }
     ],
     "formatTitle": "How the session runs",
     "timeline": [
-      { "time": "18:30", "label": "Arrival drinks" },
-      { "time": "19:00", "label": "Welcome & problem briefing" },
-      { "time": "19:15", "label": "Working the problem" },
-      { "time": "20:00", "label": "Open discussion" },
-      { "time": "21:30", "label": "Coffee & next steps" },
-      { "time": "22:00", "label": "Close" }
+      {
+        "time": "18:30",
+        "label": "Arrival drinks"
+      },
+      {
+        "time": "19:00",
+        "label": "Welcome & problem briefing"
+      },
+      {
+        "time": "19:15",
+        "label": "Working the problem"
+      },
+      {
+        "time": "20:00",
+        "label": "Open discussion"
+      },
+      {
+        "time": "21:30",
+        "label": "Coffee & next steps"
+      },
+      {
+        "time": "22:00",
+        "label": "Close"
+      }
     ],
     "nextMeetup": "Next session:",
     "nextDate": "TBA",
@@ -59,10 +109,26 @@
   "process": {
     "title": "How we work together",
     "steps": [
-      { "step": "01", "title": "Talk", "desc": "A 30-minute call. What are you actually trying to do? What have you tried? Where is it stuck?" },
-      { "step": "02", "title": "Map", "desc": "I write up what I'd do, what I wouldn't, and what it costs. You decide if we keep going." },
-      { "step": "03", "title": "Build", "desc": "Implementation, training, or both. Working sessions with you or your team. Always on real workflows." },
-      { "step": "04", "title": "Hand-off", "desc": "You and your team own the result. Recordings, docs, and a month of follow-up included." }
+      {
+        "step": "01",
+        "title": "Talk",
+        "desc": "A 30-minute call. What are you actually trying to do? What have you tried? Where is it stuck?"
+      },
+      {
+        "step": "02",
+        "title": "Map",
+        "desc": "I write up what I'd do, what I wouldn't, and what it costs. You decide if we keep going."
+      },
+      {
+        "step": "03",
+        "title": "Build",
+        "desc": "Implementation, training, or both. Working sessions with you or your team. Always on real workflows."
+      },
+      {
+        "step": "04",
+        "title": "Hand-off",
+        "desc": "You and your team own the result. Recordings, docs, and a month of follow-up included."
+      }
     ]
   },
   "services": {
@@ -70,9 +136,37 @@
     "sub": "Three ways we can work together.",
     "popular": "Most asked",
     "lines": [
-      { "title": "Membership", "price": "From €50/mo", "items": ["Access to all events", "Member channel", "Quarterly retreat invite"], "cta": "See events" },
-      { "title": "1-on-1 Training", "price": "From €200/h", "items": ["Built around your real workflows", "AI tools, agents, integrations", "Recordings for your team"], "cta": "Get in touch", "highlight": true },
-      { "title": "Consulting", "price": "From €3,000", "items": ["AI audit & roadmap", "Workflow automation builds", "Integrations and hand-off"], "cta": "Get in touch" }
+      {
+        "title": "Membership",
+        "price": "From €50/mo",
+        "items": [
+          "Access to all events",
+          "Member channel",
+          "Quarterly retreat invite"
+        ],
+        "cta": "See events"
+      },
+      {
+        "title": "1-on-1 Training",
+        "price": "From €200/h",
+        "items": [
+          "Built around your real workflows",
+          "AI tools, agents, integrations",
+          "Recordings for your team"
+        ],
+        "cta": "Get in touch",
+        "highlight": true
+      },
+      {
+        "title": "Consulting",
+        "price": "From €3,000",
+        "items": [
+          "AI audit & roadmap",
+          "Workflow automation builds",
+          "Integrations and hand-off"
+        ],
+        "cta": "Get in touch"
+      }
     ]
   },
   "funding": {
@@ -116,6 +210,23 @@
       "cta": "Talk through your application"
     }
   },
+  "grantCheck": {
+    "title": "Check your company for grant eligibility",
+    "sub": "Enter a company name, registration code, or Inforegister link — we'll see what fits under EIS.",
+    "placeholder": "Company name, reg code, or link",
+    "submit": "Check",
+    "checking": "Checking…",
+    "errorGeneric": "Couldn't get a response. Try again.",
+    "errorBadInput": "Enter a company name, 8-digit registration code, or Inforegister link.",
+    "viewVerdict": "View verdict",
+    "checkedLabel": "Checked:",
+    "cached": "from cache",
+    "modalClose": "Close",
+    "tryAnother": "Check another",
+    "disclaimer": "This is a heuristic estimate. The final call is EIS's.",
+    "takesAFewMinutes": "This request may take a few minutes — we pull data from Inforegister and compute the verdict.",
+    "poweredBy": "Data and programmes:"
+  },
   "clients": {
     "title": "Our clients",
     "sub": "A few of the companies we've worked with."
@@ -134,9 +245,18 @@
         "problem": "Laser cutting machine ran disconnected from ERP. Operators re-entered every job manually — parts, quantities, cut times. Errors in production orders, delays in invoicing.",
         "solution": "Direct integration between the laser CNC controller and the ERP system. Job data flows automatically: cut plans in, actual production data back.",
         "metrics": [
-          { "value": "0", "label": "manual data entry" },
-          { "value": "−40%", "label": "order-to-invoice time" },
-          { "value": "~€2,100", "label": "saved per month" }
+          {
+            "value": "0",
+            "label": "manual data entry"
+          },
+          {
+            "value": "−40%",
+            "label": "order-to-invoice time"
+          },
+          {
+            "value": "~€2,100",
+            "label": "saved per month"
+          }
         ]
       },
       {
@@ -145,9 +265,18 @@
         "problem": "Analysts spent days assembling client reports from raw survey data. Each report followed a strict structure but was built by hand — copy-pasting, formatting, cross-referencing.",
         "solution": "Automated report generation engine that reads the data structure, applies the client's template, and outputs a finished report ready for review.",
         "metrics": [
-          { "value": "Minutes", "label": "instead of days" },
-          { "value": "3×", "label": "more reports per analyst" },
-          { "value": "−90%", "label": "formatting errors" }
+          {
+            "value": "Minutes",
+            "label": "instead of days"
+          },
+          {
+            "value": "3×",
+            "label": "more reports per analyst"
+          },
+          {
+            "value": "−90%",
+            "label": "formatting errors"
+          }
         ]
       },
       {
@@ -156,9 +285,18 @@
         "problem": "Public procurement tenders are 50–200 pages of legal and technical text. Reading, scoring, and preparing bid documents took days per tender.",
         "solution": "An AI-powered tool that analyses tender documents, scores fit against company profile, and generates the required bid documentation and compliance checklists.",
         "metrics": [
-          { "value": "10 min", "label": "tender analysis (was 2 days)" },
-          { "value": "100-pt", "label": "automated scoring" },
-          { "value": "80%", "label": "docs auto-generated" }
+          {
+            "value": "10 min",
+            "label": "tender analysis (was 2 days)"
+          },
+          {
+            "value": "100-pt",
+            "label": "automated scoring"
+          },
+          {
+            "value": "80%",
+            "label": "docs auto-generated"
+          }
         ]
       }
     ]
@@ -197,16 +335,32 @@
   "faq": {
     "title": "Things people ask",
     "items": [
-      { "q": "Can I attend events without being a member?", "a": "Friday Demo is open with RSVP. AI Clinic is by application - drop a line and we'll see if you fit a coming session." },
-      { "q": "What if I'm just starting with AI?", "a": "1-on-1 training is the answer. We start from your real workflows, not 'what is AI'. No prerequisites except a real problem." },
-      { "q": "Do you do AI consulting for companies?", "a": "Yes - selectively. I take 3–4 engagements at a time so I can do them properly. If we're a fit, the first call is free and direct." },
-      { "q": "What do you NOT do?", "a": "Hackathons, hype keynotes, 'AI strategy' decks for marketing, '10 prompts that will change your life' content. If your email mentions 'transformational journey', I won't reply." }
+      {
+        "q": "Can I attend events without being a member?",
+        "a": "Friday Demo is open with RSVP. AI Clinic is by application - drop a line and we'll see if you fit a coming session."
+      },
+      {
+        "q": "What if I'm just starting with AI?",
+        "a": "1-on-1 training is the answer. We start from your real workflows, not 'what is AI'. No prerequisites except a real problem."
+      },
+      {
+        "q": "Do you do AI consulting for companies?",
+        "a": "Yes - selectively. I take 3–4 engagements at a time so I can do them properly. If we're a fit, the first call is free and direct."
+      },
+      {
+        "q": "What do you NOT do?",
+        "a": "Hackathons, hype keynotes, 'AI strategy' decks for marketing, '10 prompts that will change your life' content. If your email mentions 'transformational journey', I won't reply."
+      }
     ]
   },
   "contact": {
     "title": "Tell me what's on your mind",
     "sub": "I read everything. Reply within 24 hours.",
-    "items": ["Membership and events questions", "1-on-1 training requests", "Consulting inquiries"],
+    "items": [
+      "Membership and events questions",
+      "1-on-1 training requests",
+      "Consulting inquiries"
+    ],
     "form": {
       "name": "Name *",
       "namePh": "Your name",
@@ -217,7 +371,13 @@
       "sizePh": "Select",
       "interest": "What's this about?",
       "interestPh": "Select",
-      "opts": ["Membership / events", "1-on-1 training", "Consulting", "Just saying hi", "Other"],
+      "opts": [
+        "Membership / events",
+        "1-on-1 training",
+        "Consulting",
+        "Just saying hi",
+        "Other"
+      ],
       "msg": "Message",
       "msgPh": "What you're trying to do…",
       "err": "Submission error. Write directly:",
@@ -242,14 +402,38 @@
     "updated": "Last updated: April 2026",
     "ok": "Got it",
     "sections": [
-      { "title": "1. Who we are", "body": "Undercover AI - AI practice room, personal training, and consulting. Run by Sergei Zahharenko. Part of Undercover, Tallinn, Estonia. Contact: acrashik@gmail.com" },
-      { "title": "2. What data we collect", "body": "Via contact form: name, email, company, task description. Via cookies (with consent): anonymous analytics." },
-      { "title": "3. How we use data", "body": "Only to respond to your inquiry. We do not share with third parties or use for advertising." },
-      { "title": "4. Legal basis (GDPR)", "body": "Processing based on consent (Art. 6(1)(a) GDPR) and legitimate interest (Art. 6(1)(f) GDPR)." },
-      { "title": "5. Retention", "body": "Form data - no more than 2 years. Deletion on request at any time." },
-      { "title": "6. Your rights", "body": "Access, correction, deletion, portability, withdrawal of consent. Contact: acrashik@gmail.com" },
-      { "title": "7. Cookies", "body": "Used only after your explicit consent. Withdrawal - via banner or clearing cookies." },
-      { "title": "8. Supervisory authority", "body": "Andmekaitse Inspektsioon (Estonian Data Protection Inspectorate): aki.ee" }
+      {
+        "title": "1. Who we are",
+        "body": "Undercover AI - AI practice room, personal training, and consulting. Run by Sergei Zahharenko. Part of Undercover, Tallinn, Estonia. Contact: acrashik@gmail.com"
+      },
+      {
+        "title": "2. What data we collect",
+        "body": "Via contact form: name, email, company, task description. Via cookies (with consent): anonymous analytics."
+      },
+      {
+        "title": "3. How we use data",
+        "body": "Only to respond to your inquiry. We do not share with third parties or use for advertising."
+      },
+      {
+        "title": "4. Legal basis (GDPR)",
+        "body": "Processing based on consent (Art. 6(1)(a) GDPR) and legitimate interest (Art. 6(1)(f) GDPR)."
+      },
+      {
+        "title": "5. Retention",
+        "body": "Form data - no more than 2 years. Deletion on request at any time."
+      },
+      {
+        "title": "6. Your rights",
+        "body": "Access, correction, deletion, portability, withdrawal of consent. Contact: acrashik@gmail.com"
+      },
+      {
+        "title": "7. Cookies",
+        "body": "Used only after your explicit consent. Withdrawal - via banner or clearing cookies."
+      },
+      {
+        "title": "8. Supervisory authority",
+        "body": "Andmekaitse Inspektsioon (Estonian Data Protection Inspectorate): aki.ee"
+      }
     ]
   }
 }

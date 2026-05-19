@@ -17,6 +17,7 @@ import { Manifest } from './components/sections/Manifest'
 import { Community } from './components/sections/Community'
 import { Services } from './components/sections/Services'
 import { AIFunding } from './components/sections/AIFunding'
+import { GrantChecker } from './components/sections/GrantChecker'
 import { Process } from './components/sections/Process'
 import { OurClients } from './components/sections/OurClients'
 import { CaseStudies } from './components/sections/CaseStudies'
@@ -80,6 +81,7 @@ export default function App() {
       <Community />
       <Services />
       <AIFunding />
+      <GrantChecker />
       <Process />
       <OurClients />
       <CaseStudies />
