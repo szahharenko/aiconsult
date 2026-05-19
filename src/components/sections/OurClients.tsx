@@ -3,19 +3,21 @@ import { useTranslation } from 'react-i18next'
 import { fadeUp, stagger } from '../../animations'
 import { Section } from '../ui/Section'
 import { SectionHeader } from '../ui/SectionHeader'
+import forstaLogo from '../../assets/logos/forsta.webp'
+import heLogo from '../../assets/logos/he.png'
+import imetLogo from '../../assets/logos/imet.png'
+import rtkLogo from '../../assets/logos/rtk.png'
+
+
 
 // Placeholder logo list. Swap each entry's `logo` for an <img src={...} />
 // or an inline <svg/> once real assets are ready.
 // Keeping a stable shape so importing real logos later is a one-line change.
 const clients: { name: string; logo?: string }[] = [
-  { name: 'Northwind' },
-  { name: 'Acme Co.' },
-  { name: 'Lumen Labs' },
-  { name: 'Kalev & Co' },
-  { name: 'Bolt Forge' },
-  { name: 'Quanta' },
-  { name: 'Helix' },
-  { name: 'Pärnu Works' },
+  { name: 'Riigi tugiteenuste keskus', logo: rtkLogo },
+  { name: 'Forsta', logo: forstaLogo },
+  { name: 'Industrial Metal', logo: imetLogo },
+  { name: 'Highway Engineering ', logo: heLogo }
 ]
 
 export function OurClients() {
@@ -38,12 +40,16 @@ export function OurClients() {
           <motion.li
             key={i}
             variants={fadeUp}
-            className="bg-slate-950 flex items-center justify-center h-24 px-6 group"
+            className="bg-slate-950 flex items-center justify-center h-24 px-2 group"
           >
-            {/* Placeholder wordmark — replace with <img/> or inline <svg/> when real logos arrive */}
-            <span className="text-slate-500 group-hover:text-slate-200 transition-colors font-semibold tracking-wide text-base md:text-lg select-none">
-              {c.name}
-            </span>
+            {c.logo && (
+              <img src={c.logo} alt={`${c.name} logo`} className="max-h-20 object-contain mix-blend-multiply dark:mix-blend-screen dark:invert transition-[filter] duration-250" />
+            )}
+            {!c.logo && (
+              <span className="text-slate-500 group-hover:text-slate-200 transition-colors font-semibold tracking-wide text-base md:text-lg select-none">
+                {c.name}
+              </span>
+            )}
           </motion.li>
         ))}
       </motion.ul>

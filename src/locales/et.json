@@ -120,43 +120,43 @@
   },
   "cases": {
     "title": "Kuidas see praktikas välja näeb",
-    "sub": "Paar projekti, kliendi soovil anonüümitud. Tõelised probleemid, tõelised numbrid.",
+    "sub": "Paar projekti. Tõelised probleemid, tõelised numbrid.",
     "problem": "Probleem",
     "solution": "Lahendus",
-    "allAnonymized": "Kõik juhtumid on kliendi soovil anonüümitud",
+    "allAnonymized": "",
     "getSimilar": "Räägime sinu juhtumist",
     "items": [
       {
-        "badge": "E-kaubandus · Tallinn",
-        "title": "Rõivaste veebipood",
-        "problem": "4 tundi päevas kulus tellimuste, tagastuste ja korduvate kliendipäringute käsitsi töötlemisele.",
-        "solution": "Assistent korduvate küsimuste jaoks pluss tagastuste voog CRM-i ühendatuna.",
-        "metrics": [
-          { "value": "3,5 t/päev", "label": "säästetud" },
-          { "value": "2 min", "label": "vastus (oli 4 t)" },
-          { "value": "~1 400 €", "label": "säästetud kuus" }
-        ]
-      },
-      {
-        "badge": "Raamatupidamine · Eesti",
-        "title": "Raamatupidamisettevõte",
-        "problem": "8-liikmeline meeskond kulutas 2 päeva kuus aruannete käsitsi koostamisele 40+ kliendile.",
-        "solution": "Aruanded genereeritakse Google Sheets'ist ajakava järgi ja saadetakse igale kliendile automaatselt.",
-        "metrics": [
-          { "value": "3 tundi", "label": "2 päeva asemel" },
-          { "value": "+15 klienti", "label": "ilma uute palkamisteta" },
-          { "value": "+37%", "label": "käibe kasv" }
-        ]
-      },
-      {
         "badge": "Tootmine · Eesti",
-        "title": "Mööblitootja",
-        "problem": "150+ hinnapäringut kuus - igaüks nõudis juhilt 30–40 minutit.",
-        "solution": "Hinnakalkulaator veebilehel, liidid lähevad otse CRM-i.",
+        "title": "Metallkonstruktsioonide tehas",
+        "problem": "Laserlõikur töötas ERP-ist eraldi. Operaatorid sisestasid iga töö käsitsi — detailid, kogused, lõikeajad. Vead tellimuses, viivitused arveldamisel.",
+        "solution": "Otsene integratsioon laseri CNC-kontrolleri ja ERP-süsteemi vahel. Andmed liiguvad automaatselt: lõikeplaanid sisse, tegelikud tootmisandmed tagasi.",
         "metrics": [
-          { "value": "80%", "label": "päringuid automatiseeritud" },
-          { "value": "+23%", "label": "konversioon müügiks" },
-          { "value": "60 t/kuu", "label": "vabastatud" }
+          { "value": "0", "label": "käsitsi sisestust" },
+          { "value": "−40%", "label": "tellimusest arveni" },
+          { "value": "~2 100 €", "label": "säästetud kuus" }
+        ]
+      },
+      {
+        "badge": "Research Tech · Global",
+        "title": "Forsta",
+        "problem": "Analüütikud kulutasid päevi klientide aruannete koostamisele tooruuringuandmetest. Iga aruanne järgis ranget struktuuri, aga tehti käsitsi — kopeerimine, vormindamine, ristkontroll.",
+        "solution": "Automaatne aruannete genereerimise mootor, mis loeb andmestruktuuri, rakendab kliendi malli ja väljastab valmis aruande ülevaatamiseks.",
+        "metrics": [
+          { "value": "Minutid", "label": "päevade asemel" },
+          { "value": "3×", "label": "rohkem aruandeid analüütiku kohta" },
+          { "value": "−90%", "label": "vormindusvigu" }
+        ]
+      },
+      {
+        "badge": "GovTech · Eesti",
+        "title": "Riigihanked AI-assistent",
+        "problem": "Riigihanked on 50–200 lehekülge juriidilist ja tehnilist teksti. Lugemine, hindamine ja pakkumisdokumentide koostamine võttis iga hanke kohta päevi.",
+        "solution": "AI-tööriist, mis analüüsib hankedokumente, hindab sobivust ettevõtte profiiliga ning genereerib vajaliku pakkumisdokumentatsiooni ja kontrollnimekirjad.",
+        "metrics": [
+          { "value": "10 min", "label": "hanke analüüs (oli 2 päeva)" },
+          { "value": "100-p", "label": "automaatne skoorimudel" },
+          { "value": "80%", "label": "dokumente auto-genereeritud" }
         ]
       }
     ]

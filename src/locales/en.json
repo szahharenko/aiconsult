@@ -122,43 +122,43 @@
   },
   "cases": {
     "title": "What this looks like in practice",
-    "sub": "A few engagements, anonymized at clients' request. Real problems, real numbers.",
+    "sub": "A few engagements. Real problems, real numbers.",
     "problem": "Problem",
     "solution": "Solution",
-    "allAnonymized": "All cases anonymized at client request",
+    "allAnonymized": "",
     "getSimilar": "Talk about your case",
     "items": [
       {
-        "badge": "E-commerce · Tallinn",
-        "title": "Online Clothing Store",
-        "problem": "4 hours daily on orders, returns, and the same customer questions over and over.",
-        "solution": "A support assistant for the repetitive questions plus a return flow wired into the CRM.",
-        "metrics": [
-          { "value": "3.5 h/day", "label": "saved" },
-          { "value": "2 min", "label": "response (was 4 h)" },
-          { "value": "~€1,400", "label": "saved per month" }
-        ]
-      },
-      {
-        "badge": "Accounting · Estonia",
-        "title": "Accounting Firm",
-        "problem": "An 8-person team spent two days every month building reports for 40+ clients by hand.",
-        "solution": "Reports generated from Google Sheets on a schedule, delivered to each client automatically.",
-        "metrics": [
-          { "value": "3 hours", "label": "instead of 2 days" },
-          { "value": "+15 clients", "label": "without new hires" },
-          { "value": "+37%", "label": "revenue growth" }
-        ]
-      },
-      {
         "badge": "Manufacturing · Estonia",
-        "title": "Furniture Manufacturer",
-        "problem": "150+ price quote requests a month, 30–40 minutes of a manager's time each.",
-        "solution": "A pricing calculator on the website, leads pushed straight into the CRM.",
+        "title": "Steel Structures Factory",
+        "problem": "Laser cutting machine ran disconnected from ERP. Operators re-entered every job manually — parts, quantities, cut times. Errors in production orders, delays in invoicing.",
+        "solution": "Direct integration between the laser CNC controller and the ERP system. Job data flows automatically: cut plans in, actual production data back.",
         "metrics": [
-          { "value": "80%", "label": "requests automated" },
-          { "value": "+23%", "label": "conversion to sale" },
-          { "value": "60 h/mo", "label": "freed up" }
+          { "value": "0", "label": "manual data entry" },
+          { "value": "−40%", "label": "order-to-invoice time" },
+          { "value": "~€2,100", "label": "saved per month" }
+        ]
+      },
+      {
+        "badge": "Research Tech · Global",
+        "title": "Forsta",
+        "problem": "Analysts spent days assembling client reports from raw survey data. Each report followed a strict structure but was built by hand — copy-pasting, formatting, cross-referencing.",
+        "solution": "Automated report generation engine that reads the data structure, applies the client's template, and outputs a finished report ready for review.",
+        "metrics": [
+          { "value": "Minutes", "label": "instead of days" },
+          { "value": "3×", "label": "more reports per analyst" },
+          { "value": "−90%", "label": "formatting errors" }
+        ]
+      },
+      {
+        "badge": "GovTech · Estonia",
+        "title": "Riigihanked AI Assistant",
+        "problem": "Public procurement tenders are 50–200 pages of legal and technical text. Reading, scoring, and preparing bid documents took days per tender.",
+        "solution": "An AI-powered tool that analyses tender documents, scores fit against company profile, and generates the required bid documentation and compliance checklists.",
+        "metrics": [
+          { "value": "10 min", "label": "tender analysis (was 2 days)" },
+          { "value": "100-pt", "label": "automated scoring" },
+          { "value": "80%", "label": "docs auto-generated" }
         ]
       }
     ]
