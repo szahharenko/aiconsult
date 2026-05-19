@@ -8,17 +8,30 @@ import { SectionHeader } from '../ui/SectionHeader'
 import { EISLogo } from '../ui/EISLogo'
 
 const API_URL = 'https://ai.undercover.ee/geetfunds/score'
-const CACHE_KEY = 'grantCheck.cache.v1'
+const CACHE_KEY = 'grantCheck.cache.v2'
+
+type ApiLang = 'en' | 'ru' | 'et'
 
 interface GrantResponse {
   reg_code: string
   company_name: string
   source_url?: string
   verdict_markdown: string
+  language?: ApiLang
   model?: string
   usage?: { input_tokens: number; output_tokens: number }
   cached?: boolean
   cached_at?: string
+}
+
+function buildCacheKey(regCode: string, language: ApiLang): string {
+  return `${regCode}__${language}`
+}
+
+function resolveApiLang(raw: string | undefined): ApiLang {
+  const norm = (raw || '').toLowerCase().split('-')[0]
+  if (norm === 'ru' || norm === 'et') return norm
+  return 'en'
 }
 
 type CacheMap = Record<string, GrantResponse>
@@ -330,12 +343,12 @@ export function GrantChecker() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
   const [cache, setCache] = useState<CacheMap>(() => loadCache())
-  const [openRegCode, setOpenRegCode] = useState<string | null>(null)
+  const [openKey, setOpenKey] = useState<string | null>(null)
 
   // The order in which we checked things this session, newest first
   const [order, setOrder] = useState<string[]>(() => Object.keys(loadCache()))
 
-  const apiLanguage = i18n.language === 'ru' ? 'ru' : 'en'
+  const apiLanguage: ApiLang = resolveApiLang(i18n.language)
 
   const handleCheck = useCallback(async () => {
     const trimmed = value.trim()
@@ -345,14 +358,18 @@ export function GrantChecker() {
       return
     }
 
-    // If user typed an 8-digit reg-code we already have, just open it
+    // If user typed an 8-digit reg-code we already have cached for the
+    // current language, just open it without re-fetching.
     const maybeRegCode = trimmed.match(/^\d{8}$/) ? trimmed : null
-    if (maybeRegCode && cache[maybeRegCode]) {
-      setOpenRegCode(maybeRegCode)
-      setStatus('idle')
-      setErrorMsg(null)
-      setValue('')
-      return
+    if (maybeRegCode) {
+      const key = buildCacheKey(maybeRegCode, apiLanguage)
+      if (cache[key]) {
+        setOpenKey(key)
+        setStatus('idle')
+        setErrorMsg(null)
+        setValue('')
+        return
+      }
     }
 
     setStatus('loading')
@@ -369,13 +386,15 @@ export function GrantChecker() {
         throw new Error('Bad response shape')
       }
 
+      const stored: GrantResponse = { ...data, language: apiLanguage }
+      const key = buildCacheKey(stored.reg_code, apiLanguage)
       setCache(prev => {
-        const next = { ...prev, [data.reg_code]: data }
+        const next = { ...prev, [key]: stored }
         saveCache(next)
         return next
       })
-      setOrder(prev => [data.reg_code, ...prev.filter(r => r !== data.reg_code)])
-      setOpenRegCode(data.reg_code)
+      setOrder(prev => [key, ...prev.filter(k => k !== key)])
+      setOpenKey(key)
       setStatus('idle')
       setValue('')
     } catch (err) {
@@ -385,11 +404,19 @@ export function GrantChecker() {
     }
   }, [value, apiLanguage, t, cache])
 
-  const openCached = (regCode: string) => setOpenRegCode(regCode)
-  const closeModal = () => setOpenRegCode(null)
+  const openCached = (key: string) => setOpenKey(key)
+  const closeModal = () => setOpenKey(null)
 
   const loading = status === 'loading'
-  const active = openRegCode ? cache[openRegCode] : null
+  const active = openKey ? cache[openKey] : null
+
+  // Show only pills that match the current UI language. Items checked in
+  // another language are still in cache and will reappear if the user
+  // switches back.
+  const visibleOrder = order.filter(k => {
+    const item = cache[k]
+    return item && (item.language || 'en') === apiLanguage
+  })
 
   return (
     <Section id="grant-check">
@@ -449,31 +476,29 @@ export function GrantChecker() {
           </div>
         )}
 
-        {order.length > 0 && (
+        {visibleOrder.length > 0 && (
           <div className="mt-5">
             <div className="text-xs text-slate-500 font-mono uppercase tracking-wide mb-2">
               {t('grantCheck.checkedLabel')}
             </div>
             <div className="flex flex-wrap gap-2">
-              {order
-                .filter(rc => cache[rc])
-                .map(rc => {
-                  const item = cache[rc]
-                  return (
-                    <button
-                      key={rc}
-                      type="button"
-                      onClick={() => openCached(rc)}
-                      className="group inline-flex items-center gap-2 bg-sage-green/10 hover:bg-sage-green/20 border border-sage-green/40 hover:border-sage-green/60 text-slate-200 hover:text-white text-sm rounded-full pl-2.5 pr-3.5 py-1.5 transition-colors"
-                      title={item.reg_code}
-                    >
-                      <CheckCircle2 size={14} className="text-sage-green flex-shrink-0" />
-                      <span className="truncate max-w-[14rem] sm:max-w-[20rem]">
-                        {item.company_name}
-                      </span>
-                    </button>
-                  )
-                })}
+              {visibleOrder.map(key => {
+                const item = cache[key]
+                return (
+                  <button
+                    key={key}
+                    type="button"
+                    onClick={() => openCached(key)}
+                    className="group inline-flex items-center gap-2 bg-sage-green/10 hover:bg-sage-green/20 border border-sage-green/40 hover:border-sage-green/60 text-slate-200 hover:text-white text-sm rounded-full pl-2.5 pr-3.5 py-1.5 transition-colors"
+                    title={item.reg_code}
+                  >
+                    <CheckCircle2 size={14} className="text-sage-green flex-shrink-0" />
+                    <span className="truncate max-w-[14rem] sm:max-w-[20rem]">
+                      {item.company_name}
+                    </span>
+                  </button>
+                )
+              })}
             </div>
           </div>
         )}
