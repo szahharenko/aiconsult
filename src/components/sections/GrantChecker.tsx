@@ -240,13 +240,6 @@ function VerdictModal({ data, onClose, closeLabel }: VerdictModalProps) {
     [data.verdict_markdown],
   )
 
-  const components = {
-  code: ({node, inline, ...props}) =>
-    inline
-      ? <code style={{background: '#f4f4f4'}} {...props} />
-      : <pre><code {...props} /></pre>,
-};
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
