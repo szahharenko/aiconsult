@@ -435,7 +435,7 @@ export function GrantChecker() {
         >
           <div className="relative flex-1">
             <input
-              type="text"
+              type="number"
               value={value}
               onChange={e => { setValue(e.target.value); if (status === 'error') { setStatus('idle'); setErrorMsg(null) } }}
               disabled={loading}
