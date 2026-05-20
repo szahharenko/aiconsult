@@ -85,46 +85,80 @@ function normalizeMarkdown(md: string): string {
   s = s.replace(/\\'/g, "'")
   s = s.replace(/\\\\/g, '\\')
   s = s.replace(/\r\n/g, '\n')
+  s = s.trim()
 
   // 3. Strip an outer fenced code block if the whole answer is wrapped in
   //    \`\`\` ... \`\`\` (or ~~~ ... ~~~). Models often do this to format their
-  //    entire reply — which turns embedded GFM tables into a code block.
-  //    Only strip if the open/close pair encloses the entire content.
-  s = s.trim()
-  const fenceMatch = s.match(/^(```+|~~~+)([^\n]*)\n([\s\S]*?)\n\1\s*$/)
-  if (fenceMatch) {
-    const info = (fenceMatch[2] || '').trim().toLowerCase()
-    // Keep the fence only if the info-string names a real programming
-    // language (json, js, ts, python, sh, bash…). For markdown/text/empty,
-    // strip the fence so tables and other markdown render properly.
-    const looksLikeCode = /^(json|js|ts|tsx|jsx|javascript|typescript|py|python|sh|bash|shell|yaml|yml|sql|html|css|scss|c|cpp|java|rust|go|php|rb|ruby|toml|ini|dockerfile|diff)$/.test(info)
-    if (!looksLikeCode) {
-      s = fenceMatch[3]
+  //    entire reply — which turns embedded GFM tables into one big code block.
+  //
+  //    Be lenient: allow stray text/whitespace after the closing fence,
+  //    different fence lengths, missing trailing newline, etc.
+  const codeLangs = /^(json|js|ts|tsx|jsx|javascript|typescript|py|python|sh|bash|shell|zsh|yaml|yml|sql|html|css|scss|c|cpp|java|rust|go|php|rb|ruby|toml|ini|dockerfile|diff|xml)$/
+  const openFence = s.match(/^(`{3,}|~{3,})([^\n]*)\n/)
+  if (openFence) {
+    const info = (openFence[2] || '').trim().toLowerCase()
+    if (!codeLangs.test(info)) {
+      const afterOpen = s.slice(openFence[0].length)
+      // Find a closing fence (same fence char, >= length) somewhere later,
+      // preferably as the last fence in the string.
+      const fenceChar = openFence[1][0]
+      const closeRe = new RegExp('\\n(' + (fenceChar === '`' ? '`' : '~') + '{3,})\\s*$')
+      const tailMatch = afterOpen.match(closeRe)
+      if (tailMatch && typeof tailMatch.index === 'number') {
+        s = afterOpen.slice(0, tailMatch.index)
+      } else {
+        // No clean closing — strip the last occurrence of a fence anywhere.
+        const lastIdx = afterOpen.lastIndexOf(openFence[1])
+        if (lastIdx !== -1) {
+          s = (afterOpen.slice(0, lastIdx) + afterOpen.slice(lastIdx + openFence[1].length)).trim()
+        } else {
+          s = afterOpen
+        }
+      }
+      s = s.trim()
     }
   }
 
-  // 4. Some models wrap *just* the table in a fence. Detect a ``` block whose
-  //    body looks like a GFM table and unfence it in place.
+  // 4. Strip inner fenced blocks whose info-string is empty or markdown-ish.
+  //    Models often wrap a whole sub-section (heading + paragraphs + table)
+  //    in one fence; if it's not tagged with a real programming language,
+  //    treat the body as plain markdown instead of code.
   s = s.replace(
-    /(^|\n)(```+|~~~+)([^\n]*)\n([\s\S]*?)\n\2(?=\n|$)/g,
-    (full, lead: string, _fence, info: string, body: string) => {
-      const bodyTrim = body.trim()
-      const firstLine = bodyTrim.split('\n')[0] || ''
-      const secondLine = bodyTrim.split('\n')[1] || ''
-      const looksLikeTable =
-        /^\s*\|.*\|\s*$/.test(firstLine) &&
-        /^\s*\|?[\s:|-]+\|?\s*$/.test(secondLine) &&
-        /[-]/.test(secondLine)
+    /(^|\n)(`{3,}|~{3,})([^\n]*)\n([\s\S]*?)\n\2(?=\n|$)/g,
+    (full, lead: string, _fence: string, info: string, body: string) => {
       const infoStr = (info || '').trim().toLowerCase()
-      const isMarkdownInfo = infoStr === '' || infoStr === 'markdown' || infoStr === 'md' || infoStr === 'text'
-      if (looksLikeTable && isMarkdownInfo) {
-        return `${lead}\n${bodyTrim}\n`
+      const isMarkdownInfo =
+        infoStr === '' || infoStr === 'markdown' || infoStr === 'md' || infoStr === 'text'
+      if (isMarkdownInfo) {
+        return `${lead}\n${body.trim()}\n`
       }
       return full
     },
   )
 
-  // 5. If a markdown table ended up flattened onto a single line (no newlines
+  // 5. Strip uniform leading indentation. If every non-blank line begins with
+  //    the same prefix of 4+ spaces (or a tab), markdown would render the
+  //    whole thing as an indented code block. Dedent to recover real content.
+  {
+    const lines = s.split('\n')
+    const nonEmpty = lines.filter(l => l.trim().length > 0)
+    if (nonEmpty.length > 0) {
+      let minIndent = Infinity
+      for (const l of nonEmpty) {
+        const m = l.match(/^(\s+)/)
+        const w = m ? m[1].length : 0
+        if (w < minIndent) minIndent = w
+      }
+      if (minIndent === Infinity) minIndent = 0
+      // Only dedent if every non-empty line has 4+ leading spaces (or a tab),
+      // which is what markdown treats as a code block.
+      if (minIndent >= 4 || nonEmpty.every(l => /^\t/.test(l))) {
+        s = lines.map(l => l.replace(new RegExp(`^\\s{0,${minIndent}}`), '')).join('\n')
+      }
+    }
+  }
+
+  // 6. If a markdown table ended up flattened onto a single line (no newlines
   //    between rows), split rows on the closing-pipe / opening-pipe boundary.
   if (s.includes('|') && !s.includes('\n|')) {
     s = s.replace(/\|\s+\|/g, (m) => (m.includes('\n') ? m : '|\n|'))
@@ -252,7 +286,7 @@ function VerdictModal({ data, onClose, closeLabel }: VerdictModalProps) {
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.95, opacity: 0 }}
-        className="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8"
+        className="bg-slate-900 border border-slate-700 rounded-2xl max-w-[1000px] w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8"
         onClick={e => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-4 mb-5 pb-4 border-b border-slate-800">
