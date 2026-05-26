@@ -13,7 +13,6 @@ import { PrivacyPolicyModal } from './components/layout/PrivacyPolicyModal'
 
 // Sections
 import { Hero } from './components/sections/Hero'
-import { Manifest } from './components/sections/Manifest'
 import { Community } from './components/sections/Community'
 import { Services } from './components/sections/Services'
 import { AIFunding } from './components/sections/AIFunding'
@@ -77,9 +76,8 @@ export default function App() {
       <MeetupBanner />
       <Nav />
       <Hero />
-      <Manifest />
-      <Community />
       <Services />
+      <Community />
       <AIFunding />
       <GrantChecker />
       <Process />

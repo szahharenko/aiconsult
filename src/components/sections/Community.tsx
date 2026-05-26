@@ -1,28 +1,29 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Stethoscope, Presentation } from 'lucide-react'
+import { ArrowRight, Users } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useParams, Link } from 'react-router-dom'
 import { fadeUp, stagger } from '../../animations'
+import { useMeetup } from '../../contexts/MeetupContext'
 import { Section } from '../ui/Section'
 import { SectionHeader } from '../ui/SectionHeader'
 
 type Format = { title: string; cadence: string; body: string; cta: string }
 
 const formatIcons = [
-  <Stethoscope size={22} className="text-coffee" />,
-  <Presentation size={22} className="text-coffee" />,
+  <Users size={22} className="text-coffee" />,
 ]
 
 export function Community() {
   const { t } = useTranslation()
   const { lang } = useParams<{ lang: string }>()
+  const { openMeetup } = useMeetup()
   const formats = t('community.formats', { returnObjects: true }) as Format[]
 
   return (
     <Section dark id="community">
       <SectionHeader title={t('community.title')} sub={t('community.sub')} />
       <motion.div
-        className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto"
+        className="grid gap-5 max-w-md mx-auto"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -42,12 +43,13 @@ export function Community() {
             </div>
             <p className="text-coffee/80 font-mono text-xs mb-3 tracking-tight">{f.cadence}</p>
             <p className="text-slate-300 text-sm leading-relaxed mb-6 flex-1">{f.body}</p>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-between gap-2 text-coffee hover:text-coffee/80 font-semibold text-sm transition-colors"
+            <button
+              type="button"
+              onClick={openMeetup}
+              className="inline-flex items-center justify-center gap-2 bg-coffee hover:bg-coffee/80 text-white py-3 rounded-xl font-semibold text-sm transition-colors w-full"
             >
               {f.cta} <ArrowRight size={16} />
-            </a>
+            </button>
           </motion.div>
         ))}
       </motion.div>

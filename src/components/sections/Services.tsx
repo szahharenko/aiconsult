@@ -7,15 +7,13 @@ import { SectionHeader } from '../ui/SectionHeader'
 
 interface ServiceLine {
   title: string
-  price: string
   items: string[]
   cta: string
   highlight?: boolean
 }
 
-// Each line maps to a fixed in-page anchor.
-// Order in i18n must match: [Membership, 1-on-1 Training, Consulting].
-const lineHrefs = ['#community', '#contact', '#contact']
+// Every service leads to the free consultation funnel.
+const lineHrefs = ['#contact', '#contact', '#contact']
 
 export function Services() {
   const { t } = useTranslation()
@@ -46,9 +44,8 @@ export function Services() {
                 {t('services.popular')}
               </span>
             )}
-            <h3 className="text-lg font-bold mb-1">{line.title}</h3>
-            <div className="text-xl font-extrabold text-coffee font-mono my-3">{line.price}</div>
-            <ul className="space-y-2 mb-6 flex-1">
+            <h3 className="text-lg font-bold mb-1 mt-1">{line.title}</h3>
+            <ul className="space-y-2 mb-6 mt-3 flex-1">
               {line.items.map(item => (
                 <li key={item} className="flex items-start gap-2 text-slate-300 text-sm">
                   <CheckCircle2 size={14} className="text-sage-green flex-shrink-0 mt-0.5" />

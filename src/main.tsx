@@ -5,6 +5,7 @@ import './i18n'
 import './index.css'
 import App from './App'
 import { ThemeProvider } from './contexts/ThemeContext'
+import { MeetupProvider } from './contexts/MeetupContext'
 
 
 const EventsPage = lazy(() => import('./pages/EventsPage'))
@@ -26,7 +27,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>
-      <RouterProvider router={router} />
+      <MeetupProvider>
+        <RouterProvider router={router} />
+      </MeetupProvider>
     </ThemeProvider>
   </StrictMode>,
 )

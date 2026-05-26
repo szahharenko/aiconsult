@@ -5,9 +5,11 @@ import { motion } from 'framer-motion'
 import { Lightbulb, Users, Zap, MessageCircle, Target, ChevronRight, Calendar, ArrowRight, ArrowLeft } from 'lucide-react'
 import { SUPPORTED_LANGS, DEFAULT_LANG, type Lang } from '../config'
 import { fadeUp, stagger } from '../animations'
+import { useMeetup } from '../contexts/MeetupContext'
 import { Nav } from '../components/layout/Nav'
 import { MeetupBanner } from '../components/layout/MeetupBanner'
 import { Footer } from '../components/layout/Footer'
+import { MeetupSignupForm } from '../components/sections/MeetupSignupForm'
 
 const pillarIcons = [
   <Lightbulb size={24} className="text-coffee" />,
@@ -28,6 +30,7 @@ export default function EventsPage() {
   const { lang } = useParams<{ lang: string }>()
   const navigate = useNavigate()
   const { t, i18n } = useTranslation()
+  const { openMeetup } = useMeetup()
 
   useEffect(() => {
     const validLang = SUPPORTED_LANGS.includes(lang as Lang) ? (lang as Lang) : DEFAULT_LANG
@@ -143,15 +146,33 @@ export default function EventsPage() {
             <p className="text-slate-400 text-sm mb-5">
               {t('club.spots', { left: SPOTS_LEFT, total: SPOTS_TOTAL })}
             </p>
-            <a
-              href={`/${lang || 'en'}#contact`}
+            <button
+              type="button"
+              onClick={openMeetup}
               className="inline-flex items-center gap-2 bg-coffee hover:bg-coffee/80 text-white px-8 py-3.5 rounded-2xl font-bold transition-colors"
             >
               {t('club.cta')} <ArrowRight size={18} />
-            </a>
+            </button>
             <p className="text-slate-500 text-xs mt-4">
               {t('club.location')}
             </p>
+          </motion.div>
+
+          {/* Embedded signup form */}
+          <motion.div
+            id="signup"
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="mt-16 max-w-lg mx-auto"
+          >
+            <div className="text-center mb-6">
+              <h2 className="text-white font-bold text-2xl mb-2">{t('meetupForm.title')}</h2>
+              <p className="text-slate-400 text-sm">{t('meetupForm.sub')}</p>
+            </div>
+            <div className="bg-slate-900/80 border border-slate-700 rounded-2xl p-7">
+              <MeetupSignupForm />
+            </div>
           </motion.div>
         </div>
       </section>

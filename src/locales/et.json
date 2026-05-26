@@ -1,110 +1,104 @@
 {
-  "brandTagline": "AI ilma bullshitita",
+  "brandTagline": "Tehisintellekt lihtsate sõnadega",
   "nav": {
-    "cta": "Räägi minuga"
+    "cta": "Tasuta konsultatsioon"
   },
-  "meetupBanner": "Järgmine AI Clinic · Tallinn - kutsega →",
+  "meetupBanner": "Järgmine AI-kohtumine · Tallinn →",
   "hero": {
     "location": "Tallinn, Eesti 🇪🇪",
     "tags": [
-      "AI Clinic · igakuiselt",
-      "1-1 koolitus",
-      "Juurutamine"
+      "AI-kohtumine — kord kuus",
+      "Üks-ühele koolitus",
+      "Valmis lahendus"
     ],
-    "h1a": "AI ilma bullshitita.",
-    "h1b": "Praktika, koolitus, konsultatsioon.",
-    "p": "Vaikne AI-praktika Tallinnas - kogukonna üritused ettevõtjatele ja AI-praktikutele, isiklik koolitus ja valitud konsultatsioon. @ Undercover'ist.",
-    "cta": "Räägi minuga",
-    "club": "Järgmine üritus",
-    "how": "Kuidas see töötab"
-  },
-  "manifest": {
-    "title": "Mis see on. Mis ei ole.",
-    "principles": [
-      {
-        "title": "Praktika, mitte pitchid.",
-        "body": "Tõelised probleemid, tõelised juurutamised. Ei slaide 'transformatsioonist'."
-      },
-      {
-        "title": "Off the record.",
-        "body": "Mis ruumis öeldakse, jääb ruumi. Ei LinkedIn-postitusi. Ei pressi."
-      },
-      {
-        "title": "Praktikud, mitte influencerid.",
-        "body": "Kutsume neid, kes tegelikult ehitavad - mitte neid, kes sellest säutsuvad."
-      }
-    ]
+    "h1a": "Undercover AI —",
+    "h1b": "aitan ettevõtetel tehisintellektiga sõbraks saada",
+    "p": "Näitan, kus tehisintellekt ja automatiseerimine säästavad teie aega ja raha. Ilma keeruliste sõnade ja moeterminiteta. Esimene vestlus on tasuta.",
+    "cta": "Broneeri tasuta konsultatsioon",
+    "club": "Järgmine kohtumine",
+    "how": "Kuidas see käib"
   },
   "community": {
-    "title": "Mis siin toimub",
-    "sub": "Kaks ruumi. Vali endale sobiv.",
+    "title": "AI-kohtumine — kord kuus",
+    "sub": "Avatud kohtumine ettevõtjatele ja kõigile, kes tehisintellektiga töötavad.",
     "formats": [
       {
-        "title": "AI Clinic",
-        "cadence": "Igakuiselt · Kutsega",
-        "body": "8–12 inimest. Ettevõte tuleb tegeliku probleemiga. Praktikud töötavad sellega 90 minutit. Chatham House. Ei slaide.",
-        "cta": "Too probleem"
-      },
-      {
-        "title": "Friday Demo",
-        "cadence": "Igakuiselt · Avatud",
-        "body": "Kolm 10-minutilist demo asjadest, mis tootmises töötavad. Pärast joogid.",
-        "cta": "Registreeri"
+        "title": "AI-kohtumine",
+        "cadence": "Tallinn · kord kuus · tasuta",
+        "body": "Kord kuus saame kokku Undercoveris. Paar lühikest ettekannet sellest, mis tegelikult töötab, ja vaba suhtlus kohvi kõrvale. Tule kuulama, küsima või näitama, mida ise teed.",
+        "cta": "Registreeru kohtumisele"
       }
     ],
-    "allEvents": "Kõik üritused"
+    "allEvents": "Loe kohtumisest lähemalt"
+  },
+  "meetupForm": {
+    "title": "Registreeru AI-kohtumisele",
+    "sub": "Jäta oma kontaktid — saadan järgmise kohtumise üksikasjad.",
+    "name": "Nimi *",
+    "namePh": "Sinu nimi",
+    "email": "Email *",
+    "company": "Ettevõte",
+    "companyPh": "Ettevõtte nimi (valikuline)",
+    "note": "Millest soovid rääkida?",
+    "notePh": "Küsimus või teema — valikuline",
+    "btn": "Registreeru kohtumisele",
+    "sending": "Saadan…",
+    "sent": "Valmis, oled registreeritud!",
+    "sentSub": "Saadan järgmise kohtumise üksikasjad sinu emailile.",
+    "err": "Saatmise viga. Kirjuta otse:",
+    "note2": "Tasuta · tuletame enne kohtumist meelde · spämmi ei saada"
   },
   "club": {
-    "title": "AI Clinic",
-    "sub": "8–12 inimest. Ettevõte tuleb tegeliku probleemiga. Praktikud töötavad sellega 90 minutit. Chatham House. Ei slaide.",
+    "title": "AI-kohtumine",
+    "sub": "Avatud kohtumine kord kuus ettevõtjatele ja tehisintellektiga töötavatele inimestele. Ilma keeruliste sõnadeta.",
     "pillars": [
       {
-        "title": "Praktika, mitte teooria",
-        "desc": "Toome tegelikud probleemid, millega inimesed praegu maadlevad - mitte slaide sellest, mida AI 2030. aastal teeb."
+        "title": "Kasulik, mitte teoreetiline",
+        "desc": "Räägime sellest, mis tegelikult töötab, lihtsas keeles — ilma teaduslike terminite ja kaugesse tulevikku ulatuvate lubadusteta."
       },
       {
-        "title": "Off the record",
-        "desc": "Mis ruumis öeldakse, jääb ruumi. Ei pressi, ei LinkedIn-postitusi, ei salvestusi."
+        "title": "Elav suhtlus",
+        "desc": "Tule lihtsalt kuulama, küsi küsimus või näita, mida ise teed. Kohtud nendega, kes sama teemaga tegelevad."
       },
       {
-        "title": "Tõelised praktikud",
-        "desc": "Pool ruumist juurutab AI-d tootmisesse igal nädalal. Teine pool on siin, et neilt midagi küsida."
+        "title": "Tasuta osaleda",
+        "desc": "Osalemine on tasuta, vaja on ainult registreeruda. Tule üksi või kolleegiga."
       }
     ],
-    "formatTitle": "Kuidas sessioon kulgeb",
+    "formatTitle": "Kuidas kohtumine kulgeb",
     "timeline": [
       {
         "time": "18:30",
-        "label": "Saabumise joogid"
+        "label": "Saabumine ja kohv"
       },
       {
         "time": "19:00",
-        "label": "Tervitus ja probleemi tutvustus"
+        "label": "Tervitus"
       },
       {
         "time": "19:15",
-        "label": "Probleemi lahkamine"
+        "label": "Lühiettekanded"
       },
       {
         "time": "20:00",
-        "label": "Avatud arutelu"
+        "label": "Küsimused ja suhtlus"
       },
       {
         "time": "21:30",
-        "label": "Kohv ja järgmised sammud"
+        "label": "Vaba suhtlus"
       },
       {
         "time": "22:00",
         "label": "Lõpetus"
       }
     ],
-    "nextMeetup": "Järgmine sessioon:",
+    "nextMeetup": "Järgmine kohtumine:",
     "nextDate": "Tulekul",
-    "spots": "{{left}} / {{total}} kohta · Esita avaldus",
-    "cta": "Esita avaldus",
+    "spots": "{{left}} / {{total}} kohta · Registreeru",
+    "cta": "Registreeru",
     "learnMore": "Loe lähemalt",
     "backToHome": "Tagasi avalehele",
-    "location": "Tallinn · Igakuiselt · Kutsega"
+    "location": "Tallinn · kord kuus · tasuta"
   },
   "process": {
     "title": "Kuidas me koos töötame",
@@ -112,124 +106,121 @@
       {
         "step": "01",
         "title": "Räägime",
-        "desc": "30-minutiline kõne. Mida sa tegelikult teha tahad? Mida oled proovinud? Kus on kinni jäänud?"
+        "desc": "Tasuta 30–40-minutiline vestlus — video teel või minu kontoris coworking-ruumis. Mida soovid korda saada? Mida oled proovinud? Kus on kinni jäänud?"
       },
       {
         "step": "02",
-        "title": "Kaardistus",
-        "desc": "Kirjutan, mida ma teeksin, mida ei, ja kui palju see maksab. Sina otsustad, kas lähme edasi."
+        "title": "Plaan",
+        "desc": "Kirjutan, mida ma teeksin, mida ei tasu teha ja kui palju see maksab. Sina otsustad, kas läheme edasi."
       },
       {
         "step": "03",
         "title": "Teeme",
-        "desc": "Juurutamine, koolitus või mõlemad. Töösessioonid sinu või su meeskonnaga. Alati tegelikel töövoogudel."
+        "desc": "Juurutan, koolitan või töötan koos sinu meeskonnaga. Alati sinu päris ülesannetel."
       },
       {
         "step": "04",
-        "title": "Üleandmine",
-        "desc": "Sinu ja meeskonna oma. Salvestused, dokumendid ja kuu järelhooldust kaasas."
+        "title": "Annan üle",
+        "desc": "Tulemus jääb sulle ja su meeskonnale. Salvestused, juhendid ja kuu tuge kaasas."
       }
     ]
   },
   "services": {
-    "title": "Mida ma teen",
-    "sub": "Kolm viisi koos töötamiseks.",
-    "popular": "Kõige küsitavam",
+    "title": "Kuidas saan aidata",
+    "sub": "Kolm viisi koos töötamiseks. Alustame alati tasuta vestlusest.",
+    "popular": "Kõige sagedasem",
     "lines": [
       {
-        "title": "Membership",
-        "price": "Alates 50 €/kuu",
+        "title": "Korrasta protsessid",
         "items": [
-          "Juurdepääs kõikidele üritustele",
-          "Liikmete kanal",
-          "Kvartali kohtumise kutse"
+          "Vaatame, kuidas töö ettevõttes liigub",
+          "Leiame, mis aega raiskab",
+          "Lihtsustame ja viskame liigse välja"
         ],
-        "cta": "Vaata üritusi"
+        "cta": "Aruta tasuta kõnel"
       },
       {
-        "title": "1-1 koolitus",
-        "price": "Alates 200 €/tund",
+        "title": "Pane tehisintellekt tööle",
         "items": [
-          "Õpime sinu päris töövoogudel",
-          "AI tööriistad, agendid, integratsioonid",
-          "Salvestused sinu meeskonnale"
+          "Valin AI-tööriistad sinu päris ülesannetele",
+          "Assistendid, vestlusrobotid, automaatsed aruanded",
+          "Õpetan su meeskonna neid kasutama"
         ],
-        "cta": "Võta ühendust",
+        "cta": "Aruta tasuta kõnel",
         "highlight": true
       },
       {
-        "title": "Konsultatsioon",
-        "price": "Alates 3 000 €",
+        "title": "Üks-ühele koolitus",
         "items": [
-          "AI audit ja teekond",
-          "Töövoogude automatiseerimine",
-          "Integratsioonid ja üleandmine"
+          "Töötame sinu päris ülesannetel",
+          "Ilma kuiva teooriata",
+          "Salvestused jäävad su meeskonnale"
         ],
-        "cta": "Võta ühendust"
+        "cta": "Aruta tasuta kõnel"
       }
     ]
   },
   "funding": {
-    "title": "EIS toetused AI-le ja automatiseerimisele",
-    "sub": "Eesti kaasrahastab tööd, mida me niikuinii teeme. Aktiivsed meetmed 2026 jaoks.",
+    "title": "Riik maksab tehisintellekti ja automatiseerimise eest peale",
+    "sub": "Eesti tagastab osa rahast töö eest, mida me niikuinii teeme. Summad 2026 jaoks.",
     "linkLabel": "Loe lähemalt eis.ee",
-    "disclaimer": "Tingimused muutuvad. Kontrolli eis.ee enne taotlemist. Põhinõue: Eesti juriidiline isik, 2 aasta keskmine müügitulu ≥ 50 000 €.",
+    "disclaimer": "Tingimused muutuvad — kontrolli eis.ee enne taotlemist. Põhinõue: Eesti ettevõte, mille 2 aasta keskmine müügitulu on vähemalt 50 000 €.",
     "grants": [
       {
-        "title": "Valmis tarkvara kasutuselevõtt",
+        "title": "Osta ja seadista valmis tarkvara",
         "amount": "kuni 5 000 €",
         "timing": "Avatud · alates 4. märts 2026",
-        "fit": "Valmis SaaS-tööriistade ost ja integreerimine: CRM, assistendid, agendid, raamatupidamine. Kiireim meede — hea esimene samm alustajatele.",
+        "fit": "Sobib, kui on vaja osta ja seadistada valmis tööriist: CRM, assistent, robot, raamatupidamine. Kõige kiirem ja lihtsam esimene samm.",
         "url": "https://eis.ee/en/"
       },
       {
         "title": "Protsesside automatiseerimine",
         "amount": "kuni 150 000 €",
         "timing": "Avatud · alates 30. märts 2026",
-        "fit": "Kohandatud arendus: AI-agendid, back-office'i automatiseerimine, andmeteenused. Enamik meie reaalselt tehtud AI-projektidest mahub siia.",
+        "fit": "Sobib kohandatud arenduseks: AI-assistendid, kontorirutiini automatiseerimine, andmetega töö. Enamik meie projektidest mahub siia.",
         "url": "https://eis.ee/en/"
       },
       {
         "title": "Digitaliseerimise teekaart",
         "amount": "kuni 10 000 €",
         "timing": "Avatud aastaringselt",
-        "fit": "Väike toetus digiteekonna kaardistamiseks koos konsultandiga. Puhas sisenemispunkt — pärast on lihtsam suurematele meetmetele taotleda.",
+        "fit": "Väike toetus, et koos konsultandiga plaan koostada. Mugav sisenemispilet — pärast on lihtsam suuremat toetust taotleda.",
         "url": "https://eis.ee/en/services/digital-roadmap/"
       },
       {
         "title": "Rakendusuuringud",
         "amount": "250 000 – 2 000 000 €",
-        "timing": "Tsükliline · järgmine voor 2027 alguses",
-        "fit": "R&D-projektidele: oma mudel, kohandatud ML-süsteemid, uurimispartner. Taotlus nõuab ettevalmistust — alusta 2–3 kuud enne tähtaega.",
+        "timing": "Järgmine voor — 2027 alguses",
+        "fit": "Tõsistele projektidele, mis ehitavad oma mudeli. Taotlus valmistatakse ette, 2–3 kuud varem.",
         "url": "https://eis.ee/en/services/programme-for-applied-research/"
       }
     ],
     "help": {
       "title": "Aitan taotlusega",
-      "body": "Pool tööst on AI-projekti sõnastamine nii, et see vastaks EIS-i kriteeriumitele. Kuulub konsultatsiooni hulka.",
+      "body": "Pool tööst on projekti õigesti kirjeldada, et see EIS-i kriteeriumitele vastaks. Selles ma aitan.",
       "cta": "Arutame taotlust"
     }
   },
   "grantCheck": {
-    "title": "Kontrolli oma ettevõtte toetuskõlblikkust",
-    "sub": "Sisesta ettevõtte registrikood — vaatame, mis EIS-i alla mahub.",
+    "title": "Vaata, millise toetuse alla su ettevõte sobib",
+    "sub": "Sisesta registrikood — näitan, mis EIS-i all sulle saadaval on.",
     "placeholder": "Registrikood",
     "submit": "Kontrolli",
     "checking": "Kontrollin…",
     "errorGeneric": "Vastust ei õnnestunud saada. Proovi uuesti.",
     "errorBadInput": "Sisesta 8-kohaline registrikood.",
-    "viewVerdict": "Vaata vastust",
+    "viewVerdict": "Vaata tulemust",
     "checkedLabel": "Kontrollitud:",
     "cached": "vahemälust",
     "modalClose": "Sulge",
     "tryAnother": "Kontrolli teist",
-    "disclaimer": "See on heuristiline hinnang. Lõpliku otsuse teeb EIS.",
-    "takesAFewMinutes": "See päring võib võtta paar minutit — toome andmed Inforegistrist ja arvutame hinnangu.",
+    "disclaimer": "See on ligikaudne hinnang. Lõpliku otsuse teeb EIS.",
+    "takesAFewMinutes": "See päring võib võtta paar minutit — toome andmed Inforegistrist ja arvutame tulemuse.",
     "poweredBy": "Andmed ja programmid:"
   },
   "clients": {
-    "title": "Meie kliendid",
-    "sub": "Mõned ettevõtted, kellega oleme koos töötanud."
+    "title": "Kellega olen koos töötanud",
+    "sub": "Mõned ettevõtted, keda olen aidanud."
   },
   "cases": {
     "title": "Kuidas see praktikas välja näeb",
@@ -242,8 +233,8 @@
       {
         "badge": "Tootmine · Eesti",
         "title": "Metallkonstruktsioonide tehas",
-        "problem": "Laserlõikur töötas ERP-ist eraldi. Operaatorid sisestasid iga töö käsitsi — detailid, kogused, lõikeajad. Vead tellimuses, viivitused arveldamisel.",
-        "solution": "Otsene integratsioon laseri CNC-kontrolleri ja ERP-süsteemi vahel. Andmed liiguvad automaatselt: lõikeplaanid sisse, tegelikud tootmisandmed tagasi.",
+        "problem": "Masin töötas arvestussüsteemist eraldi. Operaatorid sisestasid iga tellimuse käsitsi — sellest vead ja viivitused arveldamisel.",
+        "solution": "Ühendasin masina ja arvestussüsteemi otse. Andmed liiguvad ise: tööd sisse, tegelik tulemus tagasi.",
         "metrics": [
           {
             "value": "0",
@@ -262,8 +253,8 @@
       {
         "badge": "Research Tech · Global",
         "title": "Forsta",
-        "problem": "Analüütikud kulutasid päevi klientide aruannete koostamisele tooruuringuandmetest. Iga aruanne järgis ranget struktuuri, aga tehti käsitsi — kopeerimine, vormindamine, ristkontroll.",
-        "solution": "Automaatne aruannete genereerimise mootor, mis loeb andmestruktuuri, rakendab kliendi malli ja väljastab valmis aruande ülevaatamiseks.",
+        "problem": "Analüütikud kulutasid päevi klientide aruannete koostamisele käsitsi — kopeerimine, vormindamine, ristkontroll.",
+        "solution": "Programm koostab aruande kliendi malli järgi ise ja annab ülevaatamiseks üle.",
         "metrics": [
           {
             "value": "Minutid",
@@ -271,7 +262,7 @@
           },
           {
             "value": "3×",
-            "label": "rohkem aruandeid analüütiku kohta"
+            "label": "rohkem aruandeid inimese kohta"
           },
           {
             "value": "−90%",
@@ -281,29 +272,29 @@
       },
       {
         "badge": "GovTech · Eesti",
-        "title": "Riigihanked AI-assistent",
-        "problem": "Riigihanked on 50–200 lehekülge juriidilist ja tehnilist teksti. Lugemine, hindamine ja pakkumisdokumentide koostamine võttis iga hanke kohta päevi.",
-        "solution": "AI-tööriist, mis analüüsib hankedokumente, hindab sobivust ettevõtte profiiliga ning genereerib vajaliku pakkumisdokumentatsiooni ja kontrollnimekirjad.",
+        "title": "Riigihangete assistent",
+        "problem": "Üks hange on 50–200 lehekülge teksti. Lugemine ja ettevalmistus võttis päevi.",
+        "solution": "Tööriist loeb hankedokumendid, hindab, kas see ettevõttele sobib, ja koostab paberite mustandid.",
         "metrics": [
           {
             "value": "10 min",
-            "label": "hanke analüüs (oli 2 päeva)"
+            "label": "hanke ülevaatus (oli 2 päeva)"
           },
           {
             "value": "100-p",
-            "label": "automaatne skoorimudel"
+            "label": "automaatne hinnang"
           },
           {
             "value": "80%",
-            "label": "dokumente auto-genereeritud"
+            "label": "dokumente koostatakse ise"
           }
         ]
       }
     ]
   },
   "roi": {
-    "title": "Toores arvutus",
-    "sub": "Mida rutiini automatiseerimine võiks säästa - umbkaudne hinnang.",
+    "title": "Hindame kokkuhoidu",
+    "sub": "Ligikaudne hinnang, kui palju rutiini automatiseerimine tagasi annaks. Umbkaudu.",
     "employees": "Töötajaid",
     "salary": "Keskm. palk (€/kuu)",
     "hours": "Tundi/päev rutiinile",
@@ -312,54 +303,53 @@
     "monthly": "kokkuhoid / kuu",
     "annual": "kokkuhoid / aasta",
     "freed": "tundi/aastas vabastatud",
-    "estimate": "Toores hinnang. Tõelised numbrid tulevad vestluses.",
+    "estimate": "Ligikaudne hinnang. Tõelised numbrid tulevad vestluses.",
     "getCta": "Räägime sinu numbritest"
   },
   "about": {
     "title": "Kes seda veab",
-    "role": "Praktik, koolitaja, vahel ka konsultant",
+    "role": "Aitan ettevõtetel protsesse korrastada ja tehisintellekti tööle panna",
     "items": [
-      "Full-stack arendaja. Juurutan AI-d tootmisesse alates GPT-3 ajast.",
-      "Ehitanud ja integreerinud AI-d tegelikesse tootmissüsteemidesse - mitte demosid.",
-      "Taust fintechis ja tootmises. Igavad valdkonnad, kus loetakse raha.",
-      "Vene, eesti, inglise keel. Tallinnas."
+      "Üle 10 aasta ehitan ja juurutan tarkvarasüsteeme.",
+      "Ehitan tehisintellekti ettevõtete päris töösse — mitte ilusatesse esitlustesse.",
+      "Taust rahanduses ja tootmises — kohtades, kus loetakse iga eurot.",
+      "Räägin vene, eesti ja inglise keelt."
     ],
     "cardTitle": "Miks just praegu",
     "cardItems": [
-      "Iga oluline tehnoloogia - kirjast internetini - on muutnud mitte ainult tööriistu, vaid ka inimese rolli töös ja otsuste tegemisel.",
-      "AI on esimene tehnoloogia, mis ei lihtsalt täida käske, vaid osaleb mõtlemises. See nihutab väärtuse keskpunkti: info omamiselt selle suunamise oskuseni.",
-      "Konkurentsieelis liigub neilt, kes teavad vastust, nendele, kes oskavad esitada õige küsimuse ja tulemust hinnata.",
-      "Tänane ülesanne pole tehnoloogiale järele jõuda, vaid kokku panna protsessid ja kompetentsid uue 'inimene + AI' tööloogika järgi."
+      "Tehisintellekt pole moeasi, vaid uus töövahend.",
+      "See ei asenda inimest, vaid võtab rutiini enda peale ja aitab kiiremini otsustada.",
+      "Ei võida see, kes tehisintellektist kõige rohkem räägib, vaid see, kes esimesena seda päriselt kasutama hakkas."
     ]
   },
   "faq": {
-    "title": "Mida inimesed küsivad",
+    "title": "Korduvad küsimused",
     "items": [
       {
-        "q": "Kas saan üritustele tulla ilma liikme olemata?",
-        "a": "Friday Demo on avatud RSVP-ga. AI Clinic on avalduse alusel - kirjuta, vaatame, kas sobid mõnda lähenevasse sessiooni."
+        "q": "Kui palju esimene konsultatsioon maksab?",
+        "a": "Mitte midagi. Esimene 30–40-minutiline vestlus on tasuta. Saame ülesandest aru ja vaatame, kas saan aidata."
       },
       {
-        "q": "Mis siis, kui ma alles alustan AI-ga?",
-        "a": "1-1 koolitus on sinu jaoks. Alustame sinu päris töövoogudest, mitte sellest 'mis on AI'. Eeltingimusi pole peale tegeliku probleemi."
+        "q": "Olen tehisintellektis täiesti algaja. Kas see on okei?",
+        "a": "Jah. Alustame sinu päris ülesannetest, mitte teooriast 'mis on tehisintellekt'. Ettevalmistust pole vaja."
       },
       {
-        "q": "Kas teete ettevõtetele AI-konsultatsiooni?",
-        "a": "Jah, valikuliselt. Võtan korraga 3–4 projekti, et neid korralikult teha. Kui sobime, on esimene kõne tasuta ja otsekohene."
+        "q": "Kas töötad ettevõtetega?",
+        "a": "Jah. Võtan korraga paar projekti, et neid hästi teha. Esimene vestlus on alati tasuta."
       },
       {
         "q": "Mida sa EI tee?",
-        "a": "Häkatone, hüpe-kõnesid, turunduslikke 'AI-strateegia' esitlusi, üldist '10 promptu, mis muudavad sinu elu' sisu. Kui kirjas on 'transformatsiooniline teekond' - ma ei vasta."
+        "a": "Valju kõnesid hüpe pärast, turunduslikke 'AI-strateegia' esitlusi ja '10 promptu, mis muudavad su elu' postitusi. Ma tegelen päris tööga."
       }
     ]
   },
   "contact": {
-    "title": "Räägi, mis sul mõttes on",
+    "title": "Räägi, mille kallal töötad",
     "sub": "Loen kõike. Vastan 24 tunni jooksul.",
     "items": [
-      "Liikmesus ja üritused",
-      "1-1 koolitus",
-      "Konsultatsioon"
+      "Tasuta konsultatsioon",
+      "Tehisintellekti töölepanek",
+      "Üks-ühele koolitus"
     ],
     "form": {
       "name": "Nimi *",
@@ -372,9 +362,9 @@
       "interest": "Millest jutt?",
       "interestPh": "Vali",
       "opts": [
-        "Liikmesus / üritused",
-        "1-1 koolitus",
-        "Konsultatsioon",
+        "Tasuta konsultatsioon",
+        "Tehisintellekti töölepanek",
+        "Üks-ühele koolitus",
         "Lihtsalt tere",
         "Muu"
       ],

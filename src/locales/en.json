@@ -1,239 +1,230 @@
 {
-  "brandTagline": "AI without the bullshit",
+  "brandTagline": "AI in plain words",
   "nav": {
-    "cta": "Talk to me"
+    "cta": "Free consultation"
   },
-  "meetupBanner": "Next AI Clinic · Tallinn - by invitation →",
+  "meetupBanner": "Next AI meetup · Tallinn →",
   "hero": {
     "location": "Tallinn, Estonia 🇪🇪",
     "tags": [
-      "AI Clinic · monthly",
-      "1-on-1 Training",
-      "Implementation"
+      "AI meetup — monthly",
+      "One-on-one training",
+      "Done-for-you setup"
     ],
-    "h1a": "AI without the bullshit.",
-    "h1b": "Practice, training, consulting.",
-    "p": "A quiet AI practice in Tallinn - community events for entrepreneurs and AI practitioners, 1-on-1 training, and selective consulting. @ Undercover.",
-    "cta": "Talk to me",
-    "club": "Next event",
+    "h1a": "Undercover AI —",
+    "h1b": "helping businesses make friends with artificial intelligence",
+    "p": "I'll show you where AI and automation will actually save you time and money. No jargon, no buzzwords. The first conversation is free.",
+    "cta": "Book a free consultation",
+    "club": "Next meetup",
     "how": "How it works"
   },
-  "manifest": {
-    "title": "What this is. What it isn't.",
-    "principles": [
-      {
-        "title": "Practice, not pitches.",
-        "body": "Real problems, real implementations. No slides about 'transformation'."
-      },
-      {
-        "title": "Off the record.",
-        "body": "What's said in the room stays in the room. No LinkedIn posts. No press."
-      },
-      {
-        "title": "Practitioners, not influencers.",
-        "body": "We invite people who actually ship - not people who write threads about it."
-      }
-    ]
-  },
   "community": {
-    "title": "What happens here",
-    "sub": "Two paths. Pick yours.",
+    "title": "AI meetup — once a month",
+    "sub": "An open meetup for business owners and anyone working with AI.",
     "formats": [
       {
-        "title": "AI Clinic",
-        "cadence": "Monthly · By invitation",
-        "body": "8–12 people. A company brings a real problem. Practitioners work it for 90 minutes. Chatham House. No slides.",
-        "cta": "Bring a problem"
-      },
-      {
-        "title": "Friday Demo",
-        "cadence": "Monthly · Open",
-        "body": "Three 10-minute demos of things that work in production. Drinks after.",
-        "cta": "RSVP"
+        "title": "AI meetup",
+        "cadence": "Tallinn · monthly · free",
+        "body": "Once a month we get together at Undercover. A few short talks about what actually works, plus easy conversation over coffee. Come to listen, ask a question, or show what you're building.",
+        "cta": "Sign up for the meetup"
       }
     ],
-    "allEvents": "All events"
+    "allEvents": "More about the meetup"
+  },
+  "meetupForm": {
+    "title": "Sign up for the AI meetup",
+    "sub": "Leave your details — I'll send you the details of the next meetup.",
+    "name": "Name *",
+    "namePh": "Your name",
+    "email": "Email *",
+    "company": "Company",
+    "companyPh": "Company name (optional)",
+    "note": "What would you like to talk about?",
+    "notePh": "A question or topic — optional",
+    "btn": "Sign up for the meetup",
+    "sending": "Sending…",
+    "sent": "Done, you're signed up!",
+    "sentSub": "I'll send the details of the next meetup to your email.",
+    "err": "Submission error. Write directly:",
+    "note2": "Free · we'll remind you before the meetup · no spam"
   },
   "club": {
-    "title": "AI Clinic",
-    "sub": "8–12 people. A company brings a real problem. Practitioners work it for 90 minutes. Chatham House. No slides.",
+    "title": "AI meetup",
+    "sub": "An open meetup once a month for business owners and people working with AI. No jargon.",
     "pillars": [
       {
-        "title": "Practice, not theory",
-        "desc": "We bring real cases people are wrestling with right now - not slideshows about what AI will do in 2030."
+        "title": "Useful, not theoretical",
+        "desc": "We talk about what actually works in practice, in plain language — no scientific terms, no promises about the distant future."
       },
       {
-        "title": "Off the record",
-        "desc": "What's said in the room stays in the room. No press, no LinkedIn posts, no recordings."
+        "title": "Real conversation",
+        "desc": "Come just to listen, ask a question, or show what you're doing yourself. Meet the people working on the same things."
       },
       {
-        "title": "Real practitioners",
-        "desc": "Half the room ships AI in production every week. The other half is here to ask them anything."
+        "title": "Free to attend",
+        "desc": "Taking part is free, you only need to sign up. Come alone or bring a colleague."
       }
     ],
-    "formatTitle": "How the session runs",
+    "formatTitle": "How the meetup runs",
     "timeline": [
       {
         "time": "18:30",
-        "label": "Arrival drinks"
+        "label": "Arrival & coffee"
       },
       {
         "time": "19:00",
-        "label": "Welcome & problem briefing"
+        "label": "Welcome"
       },
       {
         "time": "19:15",
-        "label": "Working the problem"
+        "label": "Short talks"
       },
       {
         "time": "20:00",
-        "label": "Open discussion"
+        "label": "Questions & chat"
       },
       {
         "time": "21:30",
-        "label": "Coffee & next steps"
+        "label": "Open conversation"
       },
       {
         "time": "22:00",
-        "label": "Close"
+        "label": "Wrap-up"
       }
     ],
-    "nextMeetup": "Next session:",
-    "nextDate": "TBA",
-    "spots": "{{left}} of {{total}} seats · Apply to attend",
-    "cta": "Apply",
+    "nextMeetup": "Next meetup:",
+    "nextDate": "Soon",
+    "spots": "{{left}} of {{total}} seats · Sign up",
+    "cta": "Sign up",
     "learnMore": "Learn more",
     "backToHome": "Back to home",
-    "location": "Tallinn · Monthly · By invitation"
+    "location": "Tallinn · monthly · free"
   },
   "process": {
     "title": "How we work together",
     "steps": [
       {
         "step": "01",
-        "title": "Talk",
-        "desc": "A 30-minute call. What are you actually trying to do? What have you tried? Where is it stuck?"
+        "title": "We talk",
+        "desc": "A free 30–40 minute chat — by video or at my coworking space. What do you want to fix? What have you tried? Where are you stuck?"
       },
       {
         "step": "02",
-        "title": "Map",
-        "desc": "I write up what I'd do, what I wouldn't, and what it costs. You decide if we keep going."
+        "title": "A plan",
+        "desc": "I write down what I'd do, what isn't worth doing, and what it costs. You decide if we keep going."
       },
       {
         "step": "03",
-        "title": "Build",
-        "desc": "Implementation, training, or both. Working sessions with you or your team. Always on real workflows."
+        "title": "We build",
+        "desc": "I implement, train, or work alongside your team. Always on your real tasks."
       },
       {
         "step": "04",
-        "title": "Hand-off",
-        "desc": "You and your team own the result. Recordings, docs, and a month of follow-up included."
+        "title": "I hand it over",
+        "desc": "The result stays with you and your team. Recordings, instructions, and a month of support included."
       }
     ]
   },
   "services": {
-    "title": "What I do",
-    "sub": "Three ways we can work together.",
-    "popular": "Most asked",
+    "title": "How I can help",
+    "sub": "Three ways to work together. We always start with a free chat.",
+    "popular": "Most common",
     "lines": [
       {
-        "title": "Membership",
-        "price": "From €50/mo",
+        "title": "Tidy up your processes",
         "items": [
-          "Access to all events",
-          "Member channel",
-          "Quarterly retreat invite"
+          "We look at how work flows in your company",
+          "We find what wastes time",
+          "We simplify and cut the extra"
         ],
-        "cta": "See events"
+        "cta": "Discuss on a free call"
       },
       {
-        "title": "1-on-1 Training",
-        "price": "From €200/h",
+        "title": "Put AI to work",
         "items": [
-          "Built around your real workflows",
-          "AI tools, agents, integrations",
-          "Recordings for your team"
+          "I pick AI tools for your real tasks",
+          "Assistants, chatbots, automatic reports",
+          "I teach your team to use them"
         ],
-        "cta": "Get in touch",
+        "cta": "Discuss on a free call",
         "highlight": true
       },
       {
-        "title": "Consulting",
-        "price": "From €3,000",
+        "title": "One-on-one training",
         "items": [
-          "AI audit & roadmap",
-          "Workflow automation builds",
-          "Integrations and hand-off"
+          "We work on your real tasks",
+          "No dry theory",
+          "You keep the recordings for your team"
         ],
-        "cta": "Get in touch"
+        "cta": "Discuss on a free call"
       }
     ]
   },
   "funding": {
-    "title": "EIS grants for AI and automation",
-    "sub": "Estonia co-funds the work we already do. Active programmes for 2026.",
+    "title": "The state co-pays for AI and automation",
+    "sub": "Estonia gives back part of the money for work we already do. Amounts for 2026.",
     "linkLabel": "Read more on eis.ee",
-    "disclaimer": "Terms change. Check eis.ee before applying. Baseline requirement: Estonian legal entity, 2-year average revenue ≥ €50,000.",
+    "disclaimer": "Terms change — check eis.ee before applying. Baseline requirement: an Estonian company with 2-year average revenue of at least €50,000.",
     "grants": [
       {
-        "title": "Off-the-shelf software adoption",
+        "title": "Buy and set up ready-made software",
         "amount": "up to €5,000",
         "timing": "Open · since March 4, 2026",
-        "fit": "Buying and integrating ready SaaS tools: CRM, assistants, agents, bookkeeping. The fastest measure — a good first step if you're starting out.",
+        "fit": "A good fit if you need to buy and set up a ready tool: CRM, an assistant, a bot, accounting. The fastest and simplest first step.",
         "url": "https://eis.ee/en/"
       },
       {
         "title": "Process automation",
         "amount": "up to €150,000",
         "timing": "Open · since March 30, 2026",
-        "fit": "Custom builds: AI agents, back-office automation, data services. Most of the AI projects we actually deliver fit here.",
+        "fit": "A fit for custom builds: AI assistants, office routine automation, working with data. Most of our projects fit here.",
         "url": "https://eis.ee/en/"
       },
       {
         "title": "Digitalisation roadmap",
         "amount": "up to €10,000",
         "timing": "Open year-round",
-        "fit": "A small grant for drafting a digital roadmap with a consultant. A clean entry point — easier to apply for the bigger measures afterwards.",
+        "fit": "A small grant to draw up a plan together with a consultant. A handy entry ticket — it's easier to apply for a bigger grant afterwards.",
         "url": "https://eis.ee/en/services/digital-roadmap/"
       },
       {
         "title": "Applied research",
         "amount": "€250,000 – €2,000,000",
-        "timing": "Cyclical · next round early 2027",
-        "fit": "For R&D projects: your own model, custom ML systems, research partner. Applications take prep — start 2–3 months before the deadline.",
+        "timing": "Next round — early 2027",
+        "fit": "For serious projects that build their own model. Applications are prepared in advance, 2–3 months ahead.",
         "url": "https://eis.ee/en/services/programme-for-applied-research/"
       }
     ],
     "help": {
-      "title": "I can help you apply",
-      "body": "Half the work is framing the AI project so it fits EIS criteria. Comes as part of consulting.",
-      "cta": "Talk through your application"
+      "title": "I'll help with the application",
+      "body": "Half the job is describing the project the right way so it fits the EIS criteria. I help with that.",
+      "cta": "Talk about your application"
     }
   },
   "grantCheck": {
-    "title": "Check your company for grant eligibility",
-    "sub": "Enter a company registration code — we'll see what fits under EIS.",
+    "title": "See which grant your company qualifies for",
+    "sub": "Enter a registration code — I'll show what's available to you under EIS.",
     "placeholder": "Registration code",
     "submit": "Check",
     "checking": "Checking…",
     "errorGeneric": "Couldn't get a response. Try again.",
     "errorBadInput": "Enter an 8-digit registration code.",
-    "viewVerdict": "View verdict",
+    "viewVerdict": "View result",
     "checkedLabel": "Checked:",
     "cached": "from cache",
     "modalClose": "Close",
     "tryAnother": "Check another",
-    "disclaimer": "This is a heuristic estimate. The final call is EIS's.",
-    "takesAFewMinutes": "This request may take a few minutes — we pull data from Inforegister and compute the verdict.",
+    "disclaimer": "This is a rough estimate. The final call is EIS's.",
+    "takesAFewMinutes": "This request may take a few minutes — we pull data from Inforegister and compute the result.",
     "poweredBy": "Data and programmes:"
   },
   "clients": {
-    "title": "Our clients",
-    "sub": "A few of the companies we've worked with."
+    "title": "Who I've worked with",
+    "sub": "A few of the companies I've helped."
   },
   "cases": {
     "title": "What this looks like in practice",
-    "sub": "A few engagements. Real problems, real numbers.",
+    "sub": "A few projects. Real problems, real numbers.",
     "problem": "Problem",
     "solution": "Solution",
     "allAnonymized": "",
@@ -241,9 +232,9 @@
     "items": [
       {
         "badge": "Manufacturing · Estonia",
-        "title": "Steel Structures Factory",
-        "problem": "Laser cutting machine ran disconnected from ERP. Operators re-entered every job manually — parts, quantities, cut times. Errors in production orders, delays in invoicing.",
-        "solution": "Direct integration between the laser CNC controller and the ERP system. Job data flows automatically: cut plans in, actual production data back.",
+        "title": "Steel structures factory",
+        "problem": "The machine ran separately from the accounting system. Operators typed in every order by hand — which meant mistakes and delays in invoicing.",
+        "solution": "I connected the machine and the accounting system directly. Data flows on its own: jobs in, actuals back.",
         "metrics": [
           {
             "value": "0",
@@ -262,8 +253,8 @@
       {
         "badge": "Research Tech · Global",
         "title": "Forsta",
-        "problem": "Analysts spent days assembling client reports from raw survey data. Each report followed a strict structure but was built by hand — copy-pasting, formatting, cross-referencing.",
-        "solution": "Automated report generation engine that reads the data structure, applies the client's template, and outputs a finished report ready for review.",
+        "problem": "Analysts spent days building client reports by hand — copying, formatting, cross-checking.",
+        "solution": "A program builds the report from the client's template on its own and hands it over for review.",
         "metrics": [
           {
             "value": "Minutes",
@@ -271,7 +262,7 @@
           },
           {
             "value": "3×",
-            "label": "more reports per analyst"
+            "label": "more reports per person"
           },
           {
             "value": "−90%",
@@ -281,29 +272,29 @@
       },
       {
         "badge": "GovTech · Estonia",
-        "title": "Riigihanked AI Assistant",
-        "problem": "Public procurement tenders are 50–200 pages of legal and technical text. Reading, scoring, and preparing bid documents took days per tender.",
-        "solution": "An AI-powered tool that analyses tender documents, scores fit against company profile, and generates the required bid documentation and compliance checklists.",
+        "title": "Public procurement assistant",
+        "problem": "One tender is 50–200 pages of text. Reading and preparing it took days.",
+        "solution": "A tool reads the tender documents, checks whether it fits the company, and drafts the paperwork.",
         "metrics": [
           {
             "value": "10 min",
-            "label": "tender analysis (was 2 days)"
+            "label": "tender review (was 2 days)"
           },
           {
             "value": "100-pt",
-            "label": "automated scoring"
+            "label": "automatic scoring"
           },
           {
             "value": "80%",
-            "label": "docs auto-generated"
+            "label": "docs drafted on their own"
           }
         ]
       }
     ]
   },
   "roi": {
-    "title": "Rough math",
-    "sub": "What automating routine work might save you - back-of-envelope estimate.",
+    "title": "Let's estimate the savings",
+    "sub": "A rough estimate of what automating routine work could give back. Back-of-envelope.",
     "employees": "Employees",
     "salary": "Avg salary (€/mo)",
     "hours": "Hours/day on routine",
@@ -317,49 +308,48 @@
   },
   "about": {
     "title": "Who's running this",
-    "role": "Practitioner, trainer, occasional consultant",
+    "role": "I help businesses tidy up processes and put AI to work",
     "items": [
-      "Full-stack developer. Been shipping AI in production since GPT-3.",
-      "Built and integrated AI into real production systems - not demos.",
-      "Background in fintech and manufacturing. Boring industries that pay attention to ROI.",
-      "Russian, Estonian, English. Based in Tallinn."
+      "Over 10 years building and rolling out software systems.",
+      "I build AI into the real work of companies — not into pretty slide decks.",
+      "Background in finance and manufacturing — places that count every euro.",
+      "I speak Russian, Estonian, and English."
     ],
     "cardTitle": "Why now",
     "cardItems": [
-      "Every major technology - from writing to the internet - has changed not just the tools we use, but the role humans play in work and decision-making.",
-      "AI is the first technology that doesn't just execute commands - it participates in reasoning. That shifts the center of value: from owning information to knowing how to direct it.",
-      "Competitive advantage moves from those who know the answer to those who can ask the right question and judge the result.",
-      "The task today isn't to catch up with the technology - it's to redesign processes and skills around a new logic of work: 'human + AI'."
+      "AI isn't a trendy toy — it's a new work tool.",
+      "It doesn't replace people; it takes the routine off your plate and helps you decide faster.",
+      "The winner isn't the one who talks about AI the most, but the one who started using it for real first."
     ]
   },
   "faq": {
-    "title": "Things people ask",
+    "title": "Common questions",
     "items": [
       {
-        "q": "Can I attend events without being a member?",
-        "a": "Friday Demo is open with RSVP. AI Clinic is by application - drop a line and we'll see if you fit a coming session."
+        "q": "How much does the first consultation cost?",
+        "a": "Nothing. The first 30–40 minute chat is free. We figure out the task and whether I can help."
       },
       {
-        "q": "What if I'm just starting with AI?",
-        "a": "1-on-1 training is the answer. We start from your real workflows, not 'what is AI'. No prerequisites except a real problem."
+        "q": "I'm completely new to AI. Is that OK?",
+        "a": "Yes. We start with your real tasks, not 'what is AI' theory. No preparation needed."
       },
       {
-        "q": "Do you do AI consulting for companies?",
-        "a": "Yes - selectively. I take 3–4 engagements at a time so I can do them properly. If we're a fit, the first call is free and direct."
+        "q": "Do you work with companies?",
+        "a": "Yes. I take on a few projects at a time so I can do them well. The first chat is always free."
       },
       {
         "q": "What do you NOT do?",
-        "a": "Hackathons, hype keynotes, 'AI strategy' decks for marketing, '10 prompts that will change your life' content. If your email mentions 'transformational journey', I won't reply."
+        "a": "Loud talks for the hype, marketing decks about 'AI strategy', and '10 prompts that will change your life' posts. I'm about real work."
       }
     ]
   },
   "contact": {
-    "title": "Tell me what's on your mind",
+    "title": "Tell me what you're working on",
     "sub": "I read everything. Reply within 24 hours.",
     "items": [
-      "Membership and events questions",
-      "1-on-1 training requests",
-      "Consulting inquiries"
+      "Free consultation",
+      "Putting AI to work",
+      "One-on-one training"
     ],
     "form": {
       "name": "Name *",
@@ -372,9 +362,9 @@
       "interest": "What's this about?",
       "interestPh": "Select",
       "opts": [
-        "Membership / events",
-        "1-on-1 training",
-        "Consulting",
+        "Free consultation",
+        "Putting AI to work",
+        "One-on-one training",
         "Just saying hi",
         "Other"
       ],
@@ -404,7 +394,7 @@
     "sections": [
       {
         "title": "1. Who we are",
-        "body": "Undercover AI - AI practice room, personal training, and consulting. Run by Sergei Zahharenko. Part of Undercover, Tallinn, Estonia. Contact: acrashik@gmail.com"
+        "body": "Undercover AI - AI practice, personal training, and consulting. Run by Sergei Zahharenko. Part of Undercover, Tallinn, Estonia. Contact: acrashik@gmail.com"
       },
       {
         "title": "2. What data we collect",
