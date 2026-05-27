@@ -129,9 +129,12 @@
     "title": "How I can help",
     "sub": "Three ways to work together. We always start with a free chat.",
     "popular": "Most common",
+    "grantNote": "Indicative prices — every project is scoped on the free call. Most work qualifies for EIS grants, so the state can cover up to 70% of the cost.",
     "lines": [
       {
         "title": "Tidy up your processes",
+        "price": "from €[XXX]",
+        "priceNote": "process audit + roadmap · fixed fee",
         "items": [
           "We look at how work flows in your company",
           "We find what wastes time",
@@ -141,6 +144,8 @@
       },
       {
         "title": "Put AI to work",
+        "price": "€[X,XXX]–[XX,XXX]",
+        "priceNote": "per project · scoped on the call",
         "items": [
           "I pick AI tools for your real tasks",
           "Assistants, chatbots, automatic reports",
@@ -151,6 +156,8 @@
       },
       {
         "title": "One-on-one training",
+        "price": "€[XXX]",
+        "priceNote": "per session · packages available",
         "items": [
           "We work on your real tasks",
           "No dry theory",
@@ -221,6 +228,32 @@
   "clients": {
     "title": "Who I've worked with",
     "sub": "A few of the companies I've helped."
+  },
+  "testimonials": {
+    "title": "What clients say",
+    "sub": "A few words from the companies I've worked with.",
+    "items": [
+      {
+        "quote": "What used to take our team two days now takes ten minutes. The tool reads a tender, tells us whether it fits, and drafts the paperwork — and Sergei made sure we actually understood how it works.",
+        "name": "[Name Surname]",
+        "role": "[Title], Riigi Tugiteenuste Keskus"
+      },
+      {
+        "quote": "Reports our analysts built by hand for days are now ready in minutes, formatted to our template. The rollout was calm and practical — no hype, just working software.",
+        "name": "[Name Surname]",
+        "role": "[Title], Forsta"
+      },
+      {
+        "quote": "Our machine and our accounting finally talk to each other. No more manual order entry, no more invoicing delays. Sergei found the saving and built it without disrupting the floor.",
+        "name": "[Name Surname]",
+        "role": "[Title], Industrial Metal"
+      },
+      {
+        "quote": "He looked at how we actually work, cut the busywork, and trained the team to keep it running. Straightforward and honest the whole way through.",
+        "name": "[Name Surname]",
+        "role": "[Title], Highway Engineering"
+      }
+    ]
   },
   "cases": {
     "title": "What this looks like in practice",
@@ -309,6 +342,13 @@
   "about": {
     "title": "Who's running this",
     "role": "I help businesses tidy up processes and put AI to work",
+    "linkedin": "View LinkedIn profile",
+    "intro": "I'm Sergei Zahharenko. For over a decade I've built software for companies that count every euro — and now I bring AI into their day-to-day work, not their slide decks. I take on a handful of projects at a time so each one gets done properly.",
+    "stats": [
+      { "value": "10+", "label": "years in software" },
+      { "value": "[NN]+", "label": "AI & automation projects" },
+      { "value": "[N]", "label": "industries served" }
+    ],
     "items": [
       "Over 10 years building and rolling out software systems.",
       "I build AI into the real work of companies — not into pretty slide decks.",

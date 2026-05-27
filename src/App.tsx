@@ -19,6 +19,7 @@ import { AIFunding } from './components/sections/AIFunding'
 import { GrantChecker } from './components/sections/GrantChecker'
 import { Process } from './components/sections/Process'
 import { OurClients } from './components/sections/OurClients'
+import { Testimonials } from './components/sections/Testimonials'
 import { CaseStudies } from './components/sections/CaseStudies'
 import { ROICalculator } from './components/sections/ROICalculator'
 import { About } from './components/sections/About'
@@ -82,6 +83,7 @@ export default function App() {
       <GrantChecker />
       <Process />
       <OurClients />
+      <Testimonials />
       <CaseStudies />
       <ROICalculator />
       <About />

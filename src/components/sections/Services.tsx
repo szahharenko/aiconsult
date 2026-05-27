@@ -7,6 +7,8 @@ import { SectionHeader } from '../ui/SectionHeader'
 
 interface ServiceLine {
   title: string
+  price: string
+  priceNote: string
   items: string[]
   cta: string
   highlight?: boolean
@@ -45,7 +47,11 @@ export function Services() {
               </span>
             )}
             <h3 className="text-lg font-bold mb-1 mt-1">{line.title}</h3>
-            <ul className="space-y-2 mb-6 mt-3 flex-1">
+            <div className="mt-2 mb-1">
+              <span className="text-white font-bold text-2xl">{line.price}</span>
+              <p className="text-slate-400 text-xs mt-1">{line.priceNote}</p>
+            </div>
+            <ul className="space-y-2 mb-6 mt-4 flex-1 border-t border-slate-700/60 pt-4">
               {line.items.map(item => (
                 <li key={item} className="flex items-start gap-2 text-slate-300 text-sm">
                   <CheckCircle2 size={14} className="text-sage-green flex-shrink-0 mt-0.5" />
@@ -66,6 +72,7 @@ export function Services() {
           </motion.div>
         ))}
       </motion.div>
+      <p className="text-center text-slate-400 text-sm mt-6 max-w-2xl mx-auto">{t('services.grantNote')}</p>
     </Section>
   )
 }

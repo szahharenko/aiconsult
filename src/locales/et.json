@@ -129,9 +129,12 @@
     "title": "Kuidas saan aidata",
     "sub": "Kolm viisi koos töötamiseks. Alustame alati tasuta vestlusest.",
     "popular": "Kõige sagedasem",
+    "grantNote": "Hinnad on orienteeruvad — iga projekti täpsustame tasuta kõnes. Enamik töid kvalifitseerub EIS-i toetustele, nii et riik võib katta kuni 70% maksumusest.",
     "lines": [
       {
         "title": "Korrasta protsessid",
+        "price": "alates €[XXX]",
+        "priceNote": "protsessianalüüs + plaan · fikseeritud",
         "items": [
           "Vaatame, kuidas töö ettevõttes liigub",
           "Leiame, mis aega raiskab",
@@ -141,6 +144,8 @@
       },
       {
         "title": "Pane tehisintellekt tööle",
+        "price": "€[X XXX]–[XX XXX]",
+        "priceNote": "projekti kohta · täpsustame kõnes",
         "items": [
           "Valin AI-tööriistad sinu päris ülesannetele",
           "Assistendid, vestlusrobotid, automaatsed aruanded",
@@ -151,6 +156,8 @@
       },
       {
         "title": "Üks-ühele koolitus",
+        "price": "€[XXX]",
+        "priceNote": "sessiooni kohta · paketid saadaval",
         "items": [
           "Töötame sinu päris ülesannetel",
           "Ilma kuiva teooriata",
@@ -221,6 +228,32 @@
   "clients": {
     "title": "Kellega olen koos töötanud",
     "sub": "Mõned ettevõtted, keda olen aidanud."
+  },
+  "testimonials": {
+    "title": "Mida kliendid ütlevad",
+    "sub": "Mõned tagasisided ettevõtetelt, kellega olen koostööd teinud.",
+    "items": [
+      {
+        "quote": "See, mis võttis meeskonnal varem kaks päeva, käib nüüd kümne minutiga. Tööriist loeb hanke läbi, ütleb, kas see meile sobib, ja koostab dokumendid — ja Sergei tagas, et me ka päriselt mõistame, kuidas see töötab.",
+        "name": "[Eesnimi Perekonnanimi]",
+        "role": "[ametinimetus], Riigi Tugiteenuste Keskus"
+      },
+      {
+        "quote": "Aruanded, mida analüütikud koostasid käsitsi päevade kaupa, on nüüd minutitega valmis ja kohe meie mallis. Juurutamine oli rahulik ja asjalik — ilma hüpeta, lihtsalt toimiv tarkvara.",
+        "name": "[Eesnimi Perekonnanimi]",
+        "role": "[ametinimetus], Forsta"
+      },
+      {
+        "quote": "Masin ja raamatupidamine lõpuks 'räägivad' omavahel. Enam ei pea tellimusi käsitsi sisestama ega arveldamisega viivitama. Sergei leidis kokkuhoiukoha ja ehitas selle nii, et tootmist ei häirinud.",
+        "name": "[Eesnimi Perekonnanimi]",
+        "role": "[ametinimetus], Industrial Metal"
+      },
+      {
+        "quote": "Ta vaatas, kuidas me päriselt töötame, lõikas üleliigse rutiini välja ja õpetas meeskonna seda ise üleval hoidma. Algusest lõpuni aus ja arusaadav.",
+        "name": "[Eesnimi Perekonnanimi]",
+        "role": "[ametinimetus], Highway Engineering"
+      }
+    ]
   },
   "cases": {
     "title": "Kuidas see praktikas välja näeb",
@@ -309,6 +342,13 @@
   "about": {
     "title": "Kes seda veab",
     "role": "Aitan ettevõtetel protsesse korrastada ja tehisintellekti tööle panna",
+    "linkedin": "Vaata LinkedIni profiili",
+    "intro": "Olen Sergei Zahharenko. Üle kümne aasta olen ehitanud tarkvara ettevõtetele, kes loevad iga eurot — ja nüüd toon tehisintellekti nende igapäevatöösse, mitte ilusatesse slaididesse. Võtan korraga vaid mõne projekti, et iga töö korralikult lõpuni viia.",
+    "stats": [
+      { "value": "10+", "label": "aastat tarkvaraarenduses" },
+      { "value": "[NN]+", "label": "AI- ja automatiseerimisprojekti" },
+      { "value": "[N]", "label": "valdkonda" }
+    ],
     "items": [
       "Üle 10 aasta ehitan ja juurutan tarkvarasüsteeme.",
       "Ehitan tehisintellekti ettevõtete päris töösse — mitte ilusatesse esitlustesse.",
