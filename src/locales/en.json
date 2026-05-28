@@ -11,7 +11,7 @@
       "One-on-one training",
       "Done-for-you setup"
     ],
-    "h1a": "Undercover AI —",
+    "h1a": "Tarkratt —",
     "h1b": "helping businesses make friends with artificial intelligence",
     "p": "I'll show you where AI and automation will actually save you time and money. No jargon, no buzzwords. The first conversation is free.",
     "cta": "Book a free consultation",
@@ -257,23 +257,23 @@
     "items": [
       {
         "quote": "What used to take our team two days now takes ten minutes. The tool reads a tender, tells us whether it fits, and drafts the paperwork — and Sergei made sure we actually understood how it works.",
-        "name": "[Name Surname]",
-        "role": "[Title], Riigi Tugiteenuste Keskus"
+        "name": "Our tools",
+        "role": "for: Riigi Tugiteenuste Keskus"
       },
       {
-        "quote": "Reports our analysts built by hand for days are now ready in minutes, formatted to our template. The rollout was calm and practical — no hype, just working software.",
-        "name": "[Name Surname]",
-        "role": "[Title], Forsta"
+        "quote": "Based on report data analysis, reports our analysts built by hand for days are now ready in minutes, formatted to our template. The rollout was calm and practical — no hype, just working software.",
+        "name": "Kent Hanson",
+        "role": "Head of development, Forsta"
       },
       {
-        "quote": "Our machine and our accounting finally talk to each other. No more manual order entry, no more invoicing delays. Sergei found the saving and built it without disrupting the floor.",
-        "name": "[Name Surname]",
-        "role": "[Title], Industrial Metal"
+        "quote": "Our laser cutting machine and our accounting finally talk to each other. No more manual order entry, no more invoicing delays. Sergei found the saving and built it without disrupting the floor.",
+        "name": "Aleksei Saareväli",
+        "role": "Head of operations, Industrial Metal"
       },
       {
-        "quote": "He looked at how we actually work, cut the busywork, and trained the team to keep it running. Straightforward and honest the whole way through.",
-        "name": "[Name Surname]",
-        "role": "[Title], Highway Engineering"
+        "quote": "After creating new AI tools our reporting services over all of Estonia, reports, analytics, procurement, and communication with Roads registry became much faster and more efficient. Sergei is a great partner to work with — he understands the needs of the business and finds the right solution.",
+        "name": "Andrei Anisimov",
+        "role": "CEO, Highway Engineering"
       }
     ]
   },
@@ -368,8 +368,8 @@
     "intro": "I'm Sergei Zahharenko. For over a decade I've built software for companies that count every euro — and now I bring AI into their day-to-day work, not their slide decks. I take on a handful of projects at a time so each one gets done properly.",
     "stats": [
       { "value": "10+", "label": "years in software" },
-      { "value": "[NN]+", "label": "AI & automation projects" },
-      { "value": "[N]", "label": "industries served" }
+      { "value": "20+", "label": "AI & automation projects" },
+      { "value": "5", "label": "industries served" }
     ],
     "items": [
       "Over 10 years building and rolling out software systems.",
@@ -456,7 +456,7 @@
     "sections": [
       {
         "title": "1. Who we are",
-        "body": "Undercover AI - AI practice, personal training, and consulting. Run by Sergei Zahharenko. Part of Undercover, Tallinn, Estonia. Contact: acrashik@gmail.com"
+        "body": "Tarkratt - AI practice, personal training, and consulting. Run by Sergei Zahharenko. Part of Undercover, Tallinn, Estonia. Contact: acrashik@gmail.com"
       },
       {
         "title": "2. What data we collect",

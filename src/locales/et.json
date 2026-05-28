@@ -11,7 +11,7 @@
       "Üks-ühele koolitus",
       "Valmis lahendus"
     ],
-    "h1a": "Undercover AI —",
+    "h1a": "Tarkratt —",
     "h1b": "aitan ettevõtetel tehisintellektiga sõbraks saada",
     "p": "Näitan, kus tehisintellekt ja automatiseerimine säästavad teie aega ja raha. Ilma keeruliste sõnade ja moeterminiteta. Esimene vestlus on tasuta.",
     "cta": "Broneeri tasuta konsultatsioon",
@@ -256,24 +256,24 @@
     "sub": "Mõned tagasisided ettevõtetelt, kellega olen koostööd teinud.",
     "items": [
       {
-        "quote": "See, mis võttis meeskonnal varem kaks päeva, käib nüüd kümne minutiga. Tööriist loeb hanke läbi, ütleb, kas see meile sobib, ja koostab dokumendid — ja Sergei tagas, et me ka päriselt mõistame, kuidas see töötab.",
-        "name": "[Eesnimi Perekonnanimi]",
-        "role": "[ametinimetus], Riigi Tugiteenuste Keskus"
+        "quote": "Mis varem võttis meie meeskonnal kaks päeva, võtab nüüd kümme minutit. Tööriist loeb hankedokumendid, ütleb, kas need sobivad, ja koostab paberite mustandid — ja Sergei veendus, et me tegelikult mõistame, kuidas see töötab.",
+        "name": "Meie tööriistad",
+        "role": "Riigi Tugiteenuste Keskus ja EIS"
       },
       {
-        "quote": "Aruanded, mida analüütikud koostasid käsitsi päevade kaupa, on nüüd minutitega valmis ja kohe meie mallis. Juurutamine oli rahulik ja asjalik — ilma hüpeta, lihtsalt toimiv tarkvara.",
-        "name": "[Eesnimi Perekonnanimi]",
-        "role": "[ametinimetus], Forsta"
+        "quote": "Põhinedes aruandedata analüüsil, on aruanded, mida meie analüütikud varem käsitsi ehitasid päevade kaupa, nüüd valmis minutitega, vormindatud meie mallile. Käivitamine oli rahulik ja praktiline — pole mingit hype'i, lihtsalt töötav tarkvara.",
+        "name": "Kent Hanson",
+        "role": "Head of development, Forsta"
       },
       {
-        "quote": "Masin ja raamatupidamine lõpuks 'räägivad' omavahel. Enam ei pea tellimusi käsitsi sisestama ega arveldamisega viivitama. Sergei leidis kokkuhoiukoha ja ehitas selle nii, et tootmist ei häirinud.",
-        "name": "[Eesnimi Perekonnanimi]",
-        "role": "[ametinimetus], Industrial Metal"
+        "quote": "Meie laserlõikur ja raamatupidamine lõpuks omavahel räägivad. Käsitsi tellimuste sisestamine ja arveldamise viivitused on lõppenud. Sergei leidis säästu ja ehitas lahenduse ilma tootmist häirimata.",
+        "name": "Aleksei Saareväli",
+        "role": "Head of operations, Industrial Metal"
       },
       {
-        "quote": "Ta vaatas, kuidas me päriselt töötame, lõikas üleliigse rutiini välja ja õpetas meeskonna seda ise üleval hoidma. Algusest lõpuni aus ja arusaadav.",
-        "name": "[Eesnimi Perekonnanimi]",
-        "role": "[ametinimetus], Highway Engineering"
+        "quote": "Põhinedes aruandedata analüüsil, on aruanded, mida meie analüütikud varem käsitsi ehitasid päevade kaupa, nüüd valmis minutitega, vormindatud meie mallile. Käivitamine oli rahulik ja praktiline — pole mingit hype'i, lihtsalt töötav tarkvara.",
+        "name": "Andrei Anisimov",
+        "role": "CEO, Highway Engineering"
       }
     ]
   },
@@ -368,8 +368,8 @@
     "intro": "Olen Sergei Zahharenko. Üle kümne aasta olen ehitanud tarkvara ettevõtetele, kes loevad iga eurot — ja nüüd toon tehisintellekti nende igapäevatöösse, mitte ilusatesse slaididesse. Võtan korraga vaid mõne projekti, et iga töö korralikult lõpuni viia.",
     "stats": [
       { "value": "10+", "label": "aastat tarkvaraarenduses" },
-      { "value": "[NN]+", "label": "AI- ja automatiseerimisprojekti" },
-      { "value": "[N]", "label": "valdkonda" }
+      { "value": "20+", "label": "AI- ja automatiseerimisprojekti" },
+      { "value": "5", "label": "valdkonda" }
     ],
     "items": [
       "Üle 10 aasta ehitan ja juurutan tarkvarasüsteeme.",
@@ -456,7 +456,7 @@
     "sections": [
       {
         "title": "1. Kes me oleme",
-        "body": "Undercover AI - AI praktika, personaalne koolitus ja konsultatsioon. Veab Sergei Zahharenko. Osa Undercoveri projektist, Tallinn, Eesti. Kontakt: acrashik@gmail.com"
+        "body": "Tarkratt - AI praktika, personaalne koolitus ja konsultatsioon. Veab Sergei Zahharenko. Osa Undercoveri projektist, Tallinn, Eesti. Kontakt: acrashik@gmail.com"
       },
       {
         "title": "2. Milliseid andmeid kogume",

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate, useParams } from 'react-router-dom'
 import { BRAND_NAME, SUPPORTED_LANGS, type Lang } from '../../config'
 import { useTheme } from '../../contexts/ThemeContext'
-import logoUrl from '../../assets/logo.png'
+import logoUrl from '../../assets/tkr-logo.png'
 
 export function Nav() {
   const { t, i18n } = useTranslation()
@@ -37,7 +37,7 @@ export function Nav() {
             src={logoUrl}
             alt={BRAND_NAME}
             className={`rounded-full object-contain transition-all duration-300 ${
-              scrolled ? 'h-8 w-8 opacity-90' : 'h-26 w-26'
+              scrolled ? 'h-8 opacity-90' : 'h-20'
             }`}
           />
           <span

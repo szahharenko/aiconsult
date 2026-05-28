@@ -1,4 +1,4 @@
-export const BRAND_NAME = "Undercover AI"
+export const BRAND_NAME = "Tarkratt"
 export const BRAND_TAGLINE_KEY = "brandTagline"
 export const PARENT_BRAND = "Undercover"
 export const PARENT_URL = "https://undercover.ee"

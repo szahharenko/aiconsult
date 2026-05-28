@@ -46,7 +46,7 @@ export function LeadMagnet() {
           <span className="inline-flex items-center gap-2 text-coffee text-xs font-bold uppercase tracking-wide mb-3">
             <FileDown size={15} />{t('leadMagnet.eyebrow')}
           </span>
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 leading-tight">{t('leadMagnet.title')}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight">{t('leadMagnet.title')}</h2>
           <p className="text-slate-300 mb-5">{t('leadMagnet.sub')}</p>
           <ul className="space-y-2">
             {bullets.map(b => (

@@ -48,7 +48,6 @@ export function Services() {
             )}
             <h3 className="text-lg font-bold mb-1 mt-1">{line.title}</h3>
             <div className="mt-2 mb-1">
-              <span className="text-white font-bold text-2xl">{line.price}</span>
               <p className="text-slate-400 text-xs mt-1">{line.priceNote}</p>
             </div>
             <ul className="space-y-2 mb-6 mt-4 flex-1 border-t border-slate-700/60 pt-4">

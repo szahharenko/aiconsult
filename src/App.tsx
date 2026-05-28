@@ -19,7 +19,6 @@ import { AIFunding } from './components/sections/AIFunding'
 import { GrantChecker } from './components/sections/GrantChecker'
 import { LeadMagnet } from './components/sections/LeadMagnet'
 import { Process } from './components/sections/Process'
-import { OurClients } from './components/sections/OurClients'
 import { Testimonials } from './components/sections/Testimonials'
 import { CaseStudies } from './components/sections/CaseStudies'
 import { ROICalculator } from './components/sections/ROICalculator'
@@ -84,7 +83,6 @@ export default function App() {
       <GrantChecker />
       <LeadMagnet />
       <Process />
-      <OurClients />
       <Testimonials />
       <CaseStudies />
       <ROICalculator />

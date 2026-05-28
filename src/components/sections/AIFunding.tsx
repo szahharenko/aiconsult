@@ -45,7 +45,7 @@ export function AIFunding() {
               {grant.timing}
             </div>
             {grant.urgency && (
-              <div className="inline-flex items-center gap-1.5 self-start mb-4 px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-medium">
+              <div className="inline-flex items-center gap-1.5 self-start mb-4 px-2.5 py-1 rounded-full bg-amber-900/10 border border-amber-900/30 text-amber-900 text-xs font-medium">
                 <Clock size={12} className="flex-shrink-0" />
                 {grant.urgency}
               </div>
