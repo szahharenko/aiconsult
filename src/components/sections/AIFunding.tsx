@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ExternalLink, ArrowRight } from 'lucide-react'
+import { ExternalLink, ArrowRight, Clock } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { fadeUp, stagger } from '../../animations'
 import { Section } from '../ui/Section'
@@ -10,6 +10,7 @@ interface FundingGrant {
   title: string
   amount: string
   timing: string
+  urgency?: string
   fit: string
   url: string
 }
@@ -43,6 +44,12 @@ export function AIFunding() {
             <div className="text-xs font-mono text-slate-400 uppercase tracking-wide mb-3">
               {grant.timing}
             </div>
+            {grant.urgency && (
+              <div className="inline-flex items-center gap-1.5 self-start mb-4 px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-medium">
+                <Clock size={12} className="flex-shrink-0" />
+                {grant.urgency}
+              </div>
+            )}
             <p className="text-slate-300 text-sm mb-5 flex-1">{grant.fit}</p>
             <a
               href={grant.url}

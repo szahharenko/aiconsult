@@ -177,6 +177,7 @@
         "title": "Osta ja seadista valmis tarkvara",
         "amount": "kuni 5 000 €",
         "timing": "Avatud · alates 4. märts 2026",
+        "urgency": "Avatud praegu · eelarve on piiratud",
         "fit": "Sobib, kui on vaja osta ja seadistada valmis tööriist: CRM, assistent, robot, raamatupidamine. Kõige kiirem ja lihtsam esimene samm.",
         "url": "https://eis.ee/en/"
       },
@@ -184,6 +185,7 @@
         "title": "Protsesside automatiseerimine",
         "amount": "kuni 150 000 €",
         "timing": "Avatud · alates 30. märts 2026",
+        "urgency": "Avatud praegu · taotle varakult",
         "fit": "Sobib kohandatud arenduseks: AI-assistendid, kontorirutiini automatiseerimine, andmetega töö. Enamik meie projektidest mahub siia.",
         "url": "https://eis.ee/en/"
       },
@@ -191,6 +193,7 @@
         "title": "Digitaliseerimise teekaart",
         "amount": "kuni 10 000 €",
         "timing": "Avatud aastaringselt",
+        "urgency": "Parim esimene samm enne suuremat toetust",
         "fit": "Väike toetus, et koos konsultandiga plaan koostada. Mugav sisenemispilet — pärast on lihtsam suuremat toetust taotleda.",
         "url": "https://eis.ee/en/services/digital-roadmap/"
       },
@@ -198,6 +201,7 @@
         "title": "Rakendusuuringud",
         "amount": "250 000 – 2 000 000 €",
         "timing": "Järgmine voor — 2027 alguses",
+        "urgency": "Aken avaneb 2027 alguses · valmistu ette",
         "fit": "Tõsistele projektidele, mis ehitavad oma mudeli. Taotlus valmistatakse ette, 2–3 kuud varem.",
         "url": "https://eis.ee/en/services/programme-for-applied-research/"
       }
@@ -224,6 +228,24 @@
     "disclaimer": "See on ligikaudne hinnang. Lõpliku otsuse teeb EIS.",
     "takesAFewMinutes": "See päring võib võtta paar minutit — toome andmed Inforegistrist ja arvutame tulemuse.",
     "poweredBy": "Andmed ja programmid:"
+  },
+  "leadMagnet": {
+    "eyebrow": "Tasuta juhend",
+    "title": "Pole veel kõneks valmis? Võta AI-toetuste 2026 juhend",
+    "sub": "Lühike PDF lihtsas keeles: millised AI- ja automatiseerimistoetused on Eestis 2026 ja kuidas kvalifitseeruda — ilma kõneta.",
+    "bullets": [
+      "Kõik 2026 EIS-i toetused ühel lehel, lihtsas keeles",
+      "Kes kvalifitseerub ja tüüpilised summad",
+      "Esimene samm iga toetuse jaoks"
+    ],
+    "emailLabel": "E-post",
+    "btn": "Saada juhend e-postile",
+    "sending": "Saadan…",
+    "note": "Üks kiri juhendiga · ei mingit rämpsposti · saad alati loobuda",
+    "sentTitle": "Sinu juhend on valmis",
+    "sentSub": "Laadi see alla — salvestasin ka su e-posti, et saata uuendus, kui reeglid muutuvad.",
+    "download": "Laadi juhend alla (PDF)",
+    "err": "Midagi läks valesti. Kirjuta mulle otse:"
   },
   "clients": {
     "title": "Kellega olen koos töötanud",

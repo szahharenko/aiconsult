@@ -7,6 +7,8 @@ export const YOUR_FULL_NAME = "Sergei Zahharenko"
 export const CONTACT_EMAIL = "acrashik@gmail.com"
 export const LINKEDIN_URL = "https://www.linkedin.com/in/sergei-zahharenko/"
 export const FORMSPREE_ID = "mdapryan"
+// Lead magnet: drop the real guide PDF into /public with this filename to replace the placeholder.
+export const LEAD_MAGNET_URL = "/ai-grants-2026.pdf"
 export const SUPPORTED_LANGS = ['en', 'ru', 'et'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
 export const DEFAULT_LANG: Lang = 'en'

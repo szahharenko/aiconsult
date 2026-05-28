@@ -177,6 +177,7 @@
         "title": "Buy and set up ready-made software",
         "amount": "up to €5,000",
         "timing": "Open · since March 4, 2026",
+        "urgency": "Open now · budget is limited",
         "fit": "A good fit if you need to buy and set up a ready tool: CRM, an assistant, a bot, accounting. The fastest and simplest first step.",
         "url": "https://eis.ee/en/"
       },
@@ -184,6 +185,7 @@
         "title": "Process automation",
         "amount": "up to €150,000",
         "timing": "Open · since March 30, 2026",
+        "urgency": "Open now · apply early",
         "fit": "A fit for custom builds: AI assistants, office routine automation, working with data. Most of our projects fit here.",
         "url": "https://eis.ee/en/"
       },
@@ -191,6 +193,7 @@
         "title": "Digitalisation roadmap",
         "amount": "up to €10,000",
         "timing": "Open year-round",
+        "urgency": "Best first step before a bigger grant",
         "fit": "A small grant to draw up a plan together with a consultant. A handy entry ticket — it's easier to apply for a bigger grant afterwards.",
         "url": "https://eis.ee/en/services/digital-roadmap/"
       },
@@ -198,6 +201,7 @@
         "title": "Applied research",
         "amount": "€250,000 – €2,000,000",
         "timing": "Next round — early 2027",
+        "urgency": "Window opens early 2027 · prepare ahead",
         "fit": "For serious projects that build their own model. Applications are prepared in advance, 2–3 months ahead.",
         "url": "https://eis.ee/en/services/programme-for-applied-research/"
       }
@@ -224,6 +228,24 @@
     "disclaimer": "This is a rough estimate. The final call is EIS's.",
     "takesAFewMinutes": "This request may take a few minutes — we pull data from Inforegister and compute the result.",
     "poweredBy": "Data and programmes:"
+  },
+  "leadMagnet": {
+    "eyebrow": "Free guide",
+    "title": "Not ready to talk yet? Get the AI Grants 2026 guide",
+    "sub": "A short, plain-language PDF: which Estonian AI & automation grants exist in 2026 and how to qualify — no call required.",
+    "bullets": [
+      "All 2026 EIS grants on one page, in plain words",
+      "Who qualifies and the typical amounts",
+      "The first step to take for each one"
+    ],
+    "emailLabel": "Email",
+    "btn": "Email me the guide",
+    "sending": "Sending…",
+    "note": "One email with the guide · no spam · unsubscribe anytime",
+    "sentTitle": "Your guide is ready",
+    "sentSub": "Download it below — I've also noted your email so I can send updates if the rules change.",
+    "download": "Download the guide (PDF)",
+    "err": "Something went wrong. Write to me directly:"
   },
   "clients": {
     "title": "Who I've worked with",

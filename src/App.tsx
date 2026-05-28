@@ -17,6 +17,7 @@ import { Community } from './components/sections/Community'
 import { Services } from './components/sections/Services'
 import { AIFunding } from './components/sections/AIFunding'
 import { GrantChecker } from './components/sections/GrantChecker'
+import { LeadMagnet } from './components/sections/LeadMagnet'
 import { Process } from './components/sections/Process'
 import { OurClients } from './components/sections/OurClients'
 import { Testimonials } from './components/sections/Testimonials'
@@ -81,6 +82,7 @@ export default function App() {
       <Community />
       <AIFunding />
       <GrantChecker />
+      <LeadMagnet />
       <Process />
       <OurClients />
       <Testimonials />
