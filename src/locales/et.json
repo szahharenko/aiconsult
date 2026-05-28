@@ -13,7 +13,7 @@
     ],
     "h1a": "Tarkratt —",
     "h1b": "aitan ettevõtetel tehisintellektiga sõbraks saada",
-    "p": "Näitan, kus tehisintellekt ja automatiseerimine säästavad teie aega ja raha. Ilma keeruliste sõnade ja moeterminiteta. Esimene vestlus on tasuta.",
+    "p": "Näitan, kus tehisintellekt ja automatiseerimine säästavad teie aega ja raha. Ilma keeruliste sõnade ja moeterminiteta. Esimene konsultatsioon on tasuta.",
     "cta": "Broneeri tasuta konsultatsioon",
     "club": "Järgmine kohtumine",
     "how": "Kuidas see käib"
@@ -106,7 +106,7 @@
       {
         "step": "01",
         "title": "Räägime",
-        "desc": "Tasuta 30–40-minutiline vestlus — video teel või minu kontoris coworking-ruumis. Mida soovid korda saada? Mida oled proovinud? Kus on kinni jäänud?"
+        "desc": "Tasuta 30–40-minutiline konsultatsioon — video teel või minu kontoris coworking-ruumis. Mida soovid korda saada? Mida oled proovinud? Kus on kinni jäänud?"
       },
       {
         "step": "02",
@@ -127,9 +127,9 @@
   },
   "services": {
     "title": "Kuidas saan aidata",
-    "sub": "Kolm viisi koos töötamiseks. Alustame alati tasuta vestlusest.",
+    "sub": "Kolm viisi koos töötamiseks. Alustame alati tasuta konsultatsiooniga.",
     "popular": "Kõige sagedasem",
-    "grantNote": "Hinnad on orienteeruvad — iga projekti täpsustame tasuta kõnes. Enamik töid kvalifitseerub EIS-i toetustele, nii et riik võib katta kuni 70% maksumusest.",
+    "grantNote": "Hinnad on orienteeruvad — iga projekti täpsustame tasuta konsultatsioonil. Enamik töid kvalifitseerub EIS-i toetustele, nii et riik võib katta kuni 70% maksumusest.",
     "lines": [
       {
         "title": "Korrasta protsessid",
@@ -140,18 +140,18 @@
           "Leiame, mis aega raiskab",
           "Lihtsustame ja viskame liigse välja"
         ],
-        "cta": "Aruta tasuta kõnel"
+        "cta": "Aruta tasuta konsultatsioonil"
       },
       {
         "title": "Pane tehisintellekt tööle",
         "price": "€[X XXX]–[XX XXX]",
-        "priceNote": "projekti kohta · täpsustame kõnes",
+        "priceNote": "projekti kohta · täpsustame konsultatsioonil",
         "items": [
           "Valin AI-tööriistad sinu päris ülesannetele",
           "Assistendid, vestlusrobotid, automaatsed aruanded",
           "Õpetan su meeskonna neid kasutama"
         ],
-        "cta": "Aruta tasuta kõnel",
+        "cta": "Aruta tasuta konsultatsioonil",
         "highlight": true
       },
       {
@@ -163,7 +163,7 @@
           "Ilma kuiva teooriata",
           "Salvestused jäävad su meeskonnale"
         ],
-        "cta": "Aruta tasuta kõnel"
+        "cta": "Aruta tasuta konsultatsioonil"
       }
     ]
   },
@@ -231,8 +231,8 @@
   },
   "leadMagnet": {
     "eyebrow": "Tasuta juhend",
-    "title": "Pole veel kõneks valmis? Võta AI-toetuste 2026 juhend",
-    "sub": "Lühike PDF lihtsas keeles: millised AI- ja automatiseerimistoetused on Eestis 2026 ja kuidas kvalifitseeruda — ilma kõneta.",
+    "title": "Pole veel konsultatsiooniks valmis? Võta AI-toetuste 2026 juhend",
+    "sub": "Lühike PDF lihtsas keeles: millised AI- ja automatiseerimistoetused on Eestis 2026 ja kuidas kvalifitseeruda — ilma konsultatsioonita.",
     "bullets": [
       "Kõik 2026 EIS-i toetused ühel lehel, lihtsas keeles",
       "Kes kvalifitseerub ja tüüpilised summad",
@@ -358,7 +358,7 @@
     "monthly": "kokkuhoid / kuu",
     "annual": "kokkuhoid / aasta",
     "freed": "tundi/aastas vabastatud",
-    "estimate": "Ligikaudne hinnang. Tõelised numbrid tulevad vestluses.",
+    "estimate": "Ligikaudne hinnang. Tõelised numbrid tulevad konsultatsioonil.",
     "getCta": "Räägime sinu numbritest"
   },
   "about": {
@@ -389,7 +389,7 @@
     "items": [
       {
         "q": "Kui palju esimene konsultatsioon maksab?",
-        "a": "Mitte midagi. Esimene 30–40-minutiline vestlus on tasuta. Saame ülesandest aru ja vaatame, kas saan aidata."
+        "a": "Mitte midagi. Esimene 30–40-minutiline konsultatsioon on tasuta. Saame ülesandest aru ja vaatame, kas saan aidata."
       },
       {
         "q": "Olen tehisintellektis täiesti algaja. Kas see on okei?",
@@ -397,7 +397,7 @@
       },
       {
         "q": "Kas töötad ettevõtetega?",
-        "a": "Jah. Võtan korraga paar projekti, et neid hästi teha. Esimene vestlus on alati tasuta."
+        "a": "Jah. Võtan korraga paar projekti, et neid hästi teha. Esimene konsultatsioon on alati tasuta."
       },
       {
         "q": "Mida sa EI tee?",

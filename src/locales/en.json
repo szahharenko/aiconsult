@@ -13,7 +13,7 @@
     ],
     "h1a": "Tarkratt —",
     "h1b": "helping businesses make friends with artificial intelligence",
-    "p": "I'll show you where AI and automation will actually save you time and money. No jargon, no buzzwords. The first conversation is free.",
+    "p": "I'll show you where AI and automation will actually save you time and money. No jargon, no buzzwords. The first consultation is free.",
     "cta": "Book a free consultation",
     "club": "Next meetup",
     "how": "How it works"
@@ -106,7 +106,7 @@
       {
         "step": "01",
         "title": "We talk",
-        "desc": "A free 30–40 minute chat — by video or at my coworking space. What do you want to fix? What have you tried? Where are you stuck?"
+        "desc": "A free 30–40 minute consultation — by video or at my coworking space. What do you want to fix? What have you tried? Where are you stuck?"
       },
       {
         "step": "02",
@@ -127,9 +127,9 @@
   },
   "services": {
     "title": "How I can help",
-    "sub": "Three ways to work together. We always start with a free chat.",
+    "sub": "Three ways to work together. We always start with a free consultation.",
     "popular": "Most common",
-    "grantNote": "Indicative prices — every project is scoped on the free call. Most work qualifies for EIS grants, so the state can cover up to 70% of the cost.",
+    "grantNote": "Indicative prices — every project is scoped on the free consultation. Most work qualifies for EIS grants, so the state can cover up to 70% of the cost.",
     "lines": [
       {
         "title": "Tidy up your processes",
@@ -140,18 +140,18 @@
           "We find what wastes time",
           "We simplify and cut the extra"
         ],
-        "cta": "Discuss on a free call"
+        "cta": "Discuss on a free consultation"
       },
       {
         "title": "Put AI to work",
         "price": "€[X,XXX]–[XX,XXX]",
-        "priceNote": "per project · scoped on the call",
+        "priceNote": "per project · scoped on the consultation",
         "items": [
           "I pick AI tools for your real tasks",
           "Assistants, chatbots, automatic reports",
           "I teach your team to use them"
         ],
-        "cta": "Discuss on a free call",
+        "cta": "Discuss on a free consultation",
         "highlight": true
       },
       {
@@ -163,7 +163,7 @@
           "No dry theory",
           "You keep the recordings for your team"
         ],
-        "cta": "Discuss on a free call"
+        "cta": "Discuss on a free consultation"
       }
     ]
   },
@@ -231,8 +231,8 @@
   },
   "leadMagnet": {
     "eyebrow": "Free guide",
-    "title": "Not ready to talk yet? Get the AI Grants 2026 guide",
-    "sub": "A short, plain-language PDF: which Estonian AI & automation grants exist in 2026 and how to qualify — no call required.",
+    "title": "Not ready for a consultation yet? Get the AI Grants 2026 guide",
+    "sub": "A short, plain-language PDF: which Estonian AI & automation grants exist in 2026 and how to qualify — no consultation required.",
     "bullets": [
       "All 2026 EIS grants on one page, in plain words",
       "Who qualifies and the typical amounts",
@@ -358,7 +358,7 @@
     "monthly": "savings / month",
     "annual": "savings / year",
     "freed": "hours/year freed",
-    "estimate": "A rough estimate. Real numbers come out of a conversation.",
+    "estimate": "A rough estimate. Real numbers come out of a consultation.",
     "getCta": "Talk through your numbers"
   },
   "about": {
@@ -389,7 +389,7 @@
     "items": [
       {
         "q": "How much does the first consultation cost?",
-        "a": "Nothing. The first 30–40 minute chat is free. We figure out the task and whether I can help."
+        "a": "Nothing. The first 30–40 minute consultation is free. We figure out the task and whether I can help."
       },
       {
         "q": "I'm completely new to AI. Is that OK?",
@@ -397,7 +397,7 @@
       },
       {
         "q": "Do you work with companies?",
-        "a": "Yes. I take on a few projects at a time so I can do them well. The first chat is always free."
+        "a": "Yes. I take on a few projects at a time so I can do them well. The first consultation is always free."
       },
       {
         "q": "What do you NOT do?",

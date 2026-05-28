@@ -4,18 +4,20 @@ import { FileDown, Download, CheckCircle2, Loader2, Check } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { fadeUp } from '../../animations'
 import { Section } from '../ui/Section'
-import { FORMSPREE_ID, CONTACT_EMAIL, LEAD_MAGNET_URL } from '../../config'
+import { FORMSPREE_ID, CONTACT_EMAIL, LEAD_MAGNET_URLS, DEFAULT_LANG, type Lang } from '../../config'
 
 /**
  * Lower-commitment conversion rung for visitors who aren't ready to book a call.
  * Captures an email in exchange for the free "AI Grants 2026" guide, submitted to
  * the same Formspree endpoint (tagged form_type=lead_magnet). On success it reveals
- * the download link. Replace the guide file via LEAD_MAGNET_URL in config.ts.
+ * the download link. Replace the guide files via LEAD_MAGNET_URLS in config.ts.
  */
 export function LeadMagnet() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const bullets = t('leadMagnet.bullets', { returnObjects: true }) as string[]
+  const lang = (i18n.language?.split('-')[0] as Lang) || DEFAULT_LANG
+  const downloadUrl = LEAD_MAGNET_URLS[lang] ?? LEAD_MAGNET_URLS[DEFAULT_LANG]
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -62,10 +64,10 @@ export function LeadMagnet() {
           {status === 'sent' ? (
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-2">
               <CheckCircle2 size={40} className="text-sage-green mx-auto mb-3" />
-              <h3 className="text-white font-bold text-lg mb-1.5">{t('leadMagnet.sentTitle')}</h3>
+              <h3 className="font-bold text-lg mb-1.5">{t('leadMagnet.sentTitle')}</h3>
               <p className="text-slate-400 text-sm mb-5">{t('leadMagnet.sentSub')}</p>
               <a
-                href={LEAD_MAGNET_URL}
+                href={downloadUrl}
                 download
                 className="w-full bg-coffee hover:bg-coffee/80 text-white px-6 py-3 rounded-2xl font-bold transition-colors inline-flex items-center justify-center gap-2"
               >
