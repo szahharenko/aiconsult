@@ -42,12 +42,12 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkBreaks from 'remark-breaks'
 
-// Realistic recreation of the user's screenshot — whole response wrapped
+// Realistic recreation of the user's screenshot - whole response wrapped
 // in a single fence with no language tag.
 const realistic =
   '```\n' +
   '🏢 KEELEKESKUS GAME OÜ (12345678)\n' +
-  'Сектор: 85599 — Прочие учебные\n\n' +
+  'Сектор: 85599 - Прочие учебные\n\n' +
   'Участие в госзакупках: множественное (мосты, дорожное обслуживание)\n\n' +
   '📋 Оценка соответствия программам\n\n' +
   '| Программа | Статус | Причина |\n' +

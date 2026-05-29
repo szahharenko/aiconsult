@@ -7,19 +7,19 @@
   "hero": {
     "location": "Tallinn, Eesti 🇪🇪",
     "tags": [
-      "AI-kohtumine — kord kuus",
+      "AI-kohtumine - kord kuus",
       "Üks-ühele koolitus",
       "Valmis lahendus"
     ],
-    "h1a": "Tarkratt —",
-    "h1b": "aitan ettevõtetel tehisintellektiga sõbraks saada",
+    "h1a": "Tarkratt -",
+    "h1b": "aitame ettevõtetel tehisintellektiga sõbraks saada",
     "p": "Näitan, kus tehisintellekt ja automatiseerimine säästavad teie aega ja raha. Ilma keeruliste sõnade ja moeterminiteta. Esimene konsultatsioon on tasuta.",
     "cta": "Broneeri tasuta konsultatsioon",
     "club": "Järgmine kohtumine",
     "how": "Kuidas see käib"
   },
   "community": {
-    "title": "AI-kohtumine — kord kuus",
+    "title": "AI-kohtumine - kord kuus",
     "sub": "Avatud kohtumine ettevõtjatele ja kõigile, kes tehisintellektiga töötavad.",
     "formats": [
       {
@@ -33,14 +33,14 @@
   },
   "meetupForm": {
     "title": "Registreeru AI-kohtumisele",
-    "sub": "Jäta oma kontaktid — saadan järgmise kohtumise üksikasjad.",
+    "sub": "Jäta oma kontaktid - saadan järgmise kohtumise üksikasjad.",
     "name": "Nimi *",
     "namePh": "Sinu nimi",
     "email": "Email *",
     "company": "Ettevõte",
     "companyPh": "Ettevõtte nimi (valikuline)",
     "note": "Millest soovid rääkida?",
-    "notePh": "Küsimus või teema — valikuline",
+    "notePh": "Küsimus või teema - valikuline",
     "btn": "Registreeru kohtumisele",
     "sending": "Saadan…",
     "sent": "Valmis, oled registreeritud!",
@@ -54,7 +54,7 @@
     "pillars": [
       {
         "title": "Kasulik, mitte teoreetiline",
-        "desc": "Räägime sellest, mis tegelikult töötab, lihtsas keeles — ilma teaduslike terminite ja kaugesse tulevikku ulatuvate lubadusteta."
+        "desc": "Räägime sellest, mis tegelikult töötab, lihtsas keeles - ilma teaduslike terminite ja kaugesse tulevikku ulatuvate lubadusteta."
       },
       {
         "title": "Elav suhtlus",
@@ -106,7 +106,7 @@
       {
         "step": "01",
         "title": "Räägime",
-        "desc": "Tasuta 30–40-minutiline konsultatsioon — video teel või minu kontoris coworking-ruumis. Mida soovid korda saada? Mida oled proovinud? Kus on kinni jäänud?"
+        "desc": "Tasuta 30–40-minutiline konsultatsioon - video teel või minu kontoris coworking-ruumis. Mida soovid korda saada? Mida oled proovinud? Kus on kinni jäänud?"
       },
       {
         "step": "02",
@@ -129,7 +129,7 @@
     "title": "Kuidas saan aidata",
     "sub": "Kolm viisi koos töötamiseks. Alustame alati tasuta konsultatsiooniga.",
     "popular": "Kõige sagedasem",
-    "grantNote": "Hinnad on orienteeruvad — iga projekti täpsustame tasuta konsultatsioonil. Enamik töid kvalifitseerub EIS-i toetustele, nii et riik võib katta kuni 70% maksumusest.",
+    "grantNote": "Hinnad on orienteeruvad - iga projekti täpsustame tasuta konsultatsioonil. Enamik töid kvalifitseerub EIS-i toetustele, nii et riik võib katta kuni 70% maksumusest.",
     "lines": [
       {
         "title": "Korrasta protsessid",
@@ -171,7 +171,7 @@
     "title": "Riik maksab tehisintellekti ja automatiseerimise eest peale",
     "sub": "Eesti tagastab osa rahast töö eest, mida me niikuinii teeme. Summad 2026 jaoks.",
     "linkLabel": "Loe lähemalt eis.ee",
-    "disclaimer": "Tingimused muutuvad — kontrolli eis.ee enne taotlemist. Põhinõue: Eesti ettevõte, mille 2 aasta keskmine müügitulu on vähemalt 50 000 €.",
+    "disclaimer": "Tingimused muutuvad - kontrolli eis.ee enne taotlemist. Põhinõue: Eesti ettevõte, mille 2 aasta keskmine müügitulu on vähemalt 50 000 €.",
     "grants": [
       {
         "title": "Osta ja seadista valmis tarkvara",
@@ -194,13 +194,13 @@
         "amount": "kuni 10 000 €",
         "timing": "Avatud aastaringselt",
         "urgency": "Parim esimene samm enne suuremat toetust",
-        "fit": "Väike toetus, et koos konsultandiga plaan koostada. Mugav sisenemispilet — pärast on lihtsam suuremat toetust taotleda.",
+        "fit": "Väike toetus, et koos konsultandiga plaan koostada. Mugav sisenemispilet - pärast on lihtsam suuremat toetust taotleda.",
         "url": "https://eis.ee/en/services/digital-roadmap/"
       },
       {
         "title": "Rakendusuuringud",
         "amount": "250 000 – 2 000 000 €",
-        "timing": "Järgmine voor — 2027 alguses",
+        "timing": "Järgmine voor - 2027 alguses",
         "urgency": "Aken avaneb 2027 alguses · valmistu ette",
         "fit": "Tõsistele projektidele, mis ehitavad oma mudeli. Taotlus valmistatakse ette, 2–3 kuud varem.",
         "url": "https://eis.ee/en/services/programme-for-applied-research/"
@@ -214,7 +214,7 @@
   },
   "grantCheck": {
     "title": "Vaata, millise toetuse alla su ettevõte sobib",
-    "sub": "Sisesta registrikood — näitan, mis EIS-i all sulle saadaval on.",
+    "sub": "Sisesta registrikood - näitan, mis EIS-i all sulle saadaval on.",
     "placeholder": "Registrikood",
     "submit": "Kontrolli",
     "checking": "Kontrollin…",
@@ -226,13 +226,13 @@
     "modalClose": "Sulge",
     "tryAnother": "Kontrolli teist",
     "disclaimer": "See on ligikaudne hinnang. Lõpliku otsuse teeb EIS.",
-    "takesAFewMinutes": "See päring võib võtta paar minutit — toome andmed Inforegistrist ja arvutame tulemuse.",
+    "takesAFewMinutes": "See päring võib võtta paar minutit - toome andmed Inforegistrist ja arvutame tulemuse.",
     "poweredBy": "Andmed ja programmid:"
   },
   "leadMagnet": {
     "eyebrow": "Tasuta juhend",
     "title": "Pole veel konsultatsiooniks valmis? Võta AI-toetuste 2026 juhend",
-    "sub": "Lühike PDF lihtsas keeles: millised AI- ja automatiseerimistoetused on Eestis 2026 ja kuidas kvalifitseeruda — ilma konsultatsioonita.",
+    "sub": "Lühike PDF lihtsas keeles: millised AI- ja automatiseerimistoetused on Eestis 2026 ja kuidas kvalifitseeruda - ilma konsultatsioonita.",
     "bullets": [
       "Kõik 2026 EIS-i toetused ühel lehel, lihtsas keeles",
       "Kes kvalifitseerub ja tüüpilised summad",
@@ -243,7 +243,7 @@
     "sending": "Saadan…",
     "note": "Üks kiri juhendiga · ei mingit rämpsposti · saad alati loobuda",
     "sentTitle": "Sinu juhend on valmis",
-    "sentSub": "Laadi see alla — salvestasin ka su e-posti, et saata uuendus, kui reeglid muutuvad.",
+    "sentSub": "Laadi see alla - salvestasin ka su e-posti, et saata uuendus, kui reeglid muutuvad.",
     "download": "Laadi juhend alla (PDF)",
     "err": "Midagi läks valesti. Kirjuta mulle otse:"
   },
@@ -256,12 +256,12 @@
     "sub": "Mõned tagasisided ettevõtetelt, kellega olen koostööd teinud.",
     "items": [
       {
-        "quote": "Mis varem võttis meie meeskonnal kaks päeva, võtab nüüd kümme minutit. Tööriist loeb hankedokumendid, ütleb, kas need sobivad, ja koostab paberite mustandid — ja Sergei veendus, et me tegelikult mõistame, kuidas see töötab.",
+        "quote": "Mis varem võttis meie meeskonnal kaks päeva, võtab nüüd kümme minutit. Tööriist loeb hankedokumendid, ütleb, kas need sobivad, ja koostab paberite mustandid - ja Sergei veendus, et me tegelikult mõistame, kuidas see töötab.",
         "name": "Meie tööriistad",
         "role": "Riigi Tugiteenuste Keskus ja EIS"
       },
       {
-        "quote": "Põhinedes aruandedata analüüsil, on aruanded, mida meie analüütikud varem käsitsi ehitasid päevade kaupa, nüüd valmis minutitega, vormindatud meie mallile. Käivitamine oli rahulik ja praktiline — pole mingit hype'i, lihtsalt töötav tarkvara.",
+        "quote": "Põhinedes aruandedata analüüsil, on aruanded, mida meie analüütikud varem käsitsi ehitasid päevade kaupa, nüüd valmis minutitega, vormindatud meie mallile. Käivitamine oli rahulik ja praktiline - pole mingit hype'i, lihtsalt töötav tarkvara.",
         "name": "Kent Hanson",
         "role": "Head of development, Forsta"
       },
@@ -271,7 +271,7 @@
         "role": "Head of operations, Industrial Metal"
       },
       {
-        "quote": "Põhinedes aruandedata analüüsil, on aruanded, mida meie analüütikud varem käsitsi ehitasid päevade kaupa, nüüd valmis minutitega, vormindatud meie mallile. Käivitamine oli rahulik ja praktiline — pole mingit hype'i, lihtsalt töötav tarkvara.",
+        "quote": "Põhinedes aruandedata analüüsil, on aruanded, mida meie analüütikud varem käsitsi ehitasid päevade kaupa, nüüd valmis minutitega, vormindatud meie mallile. Käivitamine oli rahulik ja praktiline - pole mingit hype'i, lihtsalt töötav tarkvara.",
         "name": "Andrei Anisimov",
         "role": "CEO, Highway Engineering"
       }
@@ -288,7 +288,7 @@
       {
         "badge": "Tootmine · Eesti",
         "title": "Metallkonstruktsioonide tehas",
-        "problem": "Masin töötas arvestussüsteemist eraldi. Operaatorid sisestasid iga tellimuse käsitsi — sellest vead ja viivitused arveldamisel.",
+        "problem": "Masin töötas arvestussüsteemist eraldi. Operaatorid sisestasid iga tellimuse käsitsi - sellest vead ja viivitused arveldamisel.",
         "solution": "Ühendasin masina ja arvestussüsteemi otse. Andmed liiguvad ise: tööd sisse, tegelik tulemus tagasi.",
         "metrics": [
           {
@@ -308,7 +308,7 @@
       {
         "badge": "Research Tech · Global",
         "title": "Forsta",
-        "problem": "Analüütikud kulutasid päevi klientide aruannete koostamisele käsitsi — kopeerimine, vormindamine, ristkontroll.",
+        "problem": "Analüütikud kulutasid päevi klientide aruannete koostamisele käsitsi - kopeerimine, vormindamine, ristkontroll.",
         "solution": "Programm koostab aruande kliendi malli järgi ise ja annab ülevaatamiseks üle.",
         "metrics": [
           {
@@ -365,7 +365,7 @@
     "title": "Kes seda veab",
     "role": "Aitan ettevõtetel protsesse korrastada ja tehisintellekti tööle panna",
     "linkedin": "Vaata LinkedIni profiili",
-    "intro": "Olen Sergei Zahharenko. Üle kümne aasta olen ehitanud tarkvara ettevõtetele, kes loevad iga eurot — ja nüüd toon tehisintellekti nende igapäevatöösse, mitte ilusatesse slaididesse. Võtan korraga vaid mõne projekti, et iga töö korralikult lõpuni viia.",
+    "intro": "Olen Sergei Zahharenko. Üle kümne aasta olen ehitanud tarkvara ettevõtetele, kes loevad iga eurot - ja nüüd toon tehisintellekti nende igapäevatöösse, mitte ilusatesse slaididesse. Võtan korraga vaid mõne projekti, et iga töö korralikult lõpuni viia.",
     "stats": [
       { "value": "10+", "label": "aastat tarkvaraarenduses" },
       { "value": "20+", "label": "AI- ja automatiseerimisprojekti" },
@@ -373,8 +373,8 @@
     ],
     "items": [
       "Üle 10 aasta ehitan ja juurutan tarkvarasüsteeme.",
-      "Ehitan tehisintellekti ettevõtete päris töösse — mitte ilusatesse esitlustesse.",
-      "Taust rahanduses ja tootmises — kohtades, kus loetakse iga eurot.",
+      "Ehitan tehisintellekti ettevõtete päris töösse - mitte ilusatesse esitlustesse.",
+      "Taust rahanduses ja tootmises - kohtades, kus loetakse iga eurot.",
       "Räägin vene, eesti ja inglise keelt."
     ],
     "cardTitle": "Miks just praegu",

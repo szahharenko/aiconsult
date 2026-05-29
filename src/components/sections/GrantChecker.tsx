@@ -54,7 +54,7 @@ function saveCache(cache: CacheMap) {
   try {
     localStorage.setItem(CACHE_KEY, JSON.stringify(cache))
   } catch {
-    /* quota or unavailable — silently ignore */
+    /* quota or unavailable - silently ignore */
   }
 }
 
@@ -89,7 +89,7 @@ function normalizeMarkdown(md: string): string {
 
   // 3. Strip an outer fenced code block if the whole answer is wrapped in
   //    \`\`\` ... \`\`\` (or ~~~ ... ~~~). Models often do this to format their
-  //    entire reply — which turns embedded GFM tables into one big code block.
+  //    entire reply - which turns embedded GFM tables into one big code block.
   //
   //    Be lenient: allow stray text/whitespace after the closing fence,
   //    different fence lengths, missing trailing newline, etc.
@@ -107,7 +107,7 @@ function normalizeMarkdown(md: string): string {
       if (tailMatch && typeof tailMatch.index === 'number') {
         s = afterOpen.slice(0, tailMatch.index)
       } else {
-        // No clean closing — strip the last occurrence of a fence anywhere.
+        // No clean closing - strip the last occurrence of a fence anywhere.
         const lastIdx = afterOpen.lastIndexOf(openFence[1])
         if (lastIdx !== -1) {
           s = (afterOpen.slice(0, lastIdx) + afterOpen.slice(lastIdx + openFence[1].length)).trim()

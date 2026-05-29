@@ -7,9 +7,9 @@ import { SectionHeader } from '../ui/SectionHeader'
 
 // Hardcoded metric icons per case (3 cases x 3 metrics)
 const metricIcons = [
-  // Case 0: Steel factory — laser→ERP
+  // Case 0: Steel factory - laser→ERP
   [<Zap size={16} className="text-coffee" />, <Clock size={16} className="text-sage-green" />, <Euro size={16} className="text-blue-400" />],
-  // Case 1: Forsta — report generation
+  // Case 1: Forsta - report generation
   [<Clock size={16} className="text-coffee" />, <TrendingUp size={16} className="text-sage-green" />, <Bot size={16} className="text-blue-400" />],
   // Case 2: Riigihanked AI assistant
   [<Clock size={16} className="text-coffee" />, <Bot size={16} className="text-sage-green" />, <TrendingUp size={16} className="text-blue-400" />],

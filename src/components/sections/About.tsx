@@ -41,7 +41,7 @@ export function About() {
 
           <p className="text-slate-300 leading-relaxed mb-5">{t('about.intro')}</p>
 
-          {/* Credibility stats — swap the placeholder values for real numbers */}
+          {/* Credibility stats - swap the placeholder values for real numbers */}
           <div className="grid grid-cols-3 gap-3 mb-6">
             {stats.map(stat => (
               <div key={stat.label} className="bg-slate-900 border border-slate-700 rounded-2xl p-4 text-center">

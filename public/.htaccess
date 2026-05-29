@@ -1,14 +1,14 @@
-# SPA fallback — отдаём index.html для всех client-side маршрутов (/ru, /en, /et и т.д.)
+# SPA fallback - отдаём index.html для всех client-side маршрутов (/ru, /en, /et и т.д.)
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Если запрошенный путь — реальный файл или директория, отдаём как есть
+  # Если запрошенный путь - реальный файл или директория, отдаём как есть
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # Всё остальное — на index.html (React Router сам разберётся)
+  # Всё остальное - на index.html (React Router сам разберётся)
   RewriteRule ^ index.html [L]
 </IfModule>
 
@@ -22,7 +22,7 @@
   AddType font/woff .woff
 </IfModule>
 
-# Кэширование статики (хэшированные файлы Vite — на год)
+# Кэширование статики (хэшированные файлы Vite - на год)
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/html "access plus 0 seconds"

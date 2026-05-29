@@ -1,5 +1,5 @@
 /**
- * Prerender script — runs after `vite build`.
+ * Prerender script - runs after `vite build`.
  *
  * Boots vite preview, then drives headless Chromium across a fixed list of
  * routes and writes the fully-rendered HTML back into dist/<route>/index.html
@@ -58,7 +58,7 @@ async function snapshot(browser, baseUrl, route) {
 
   try {
     // Pre-seed localStorage so the cookie banner / theme don't appear in the
-    // prerendered HTML. Real users will still see them — React re-renders on
+    // prerendered HTML. Real users will still see them - React re-renders on
     // mount and reads their (empty) localStorage.
     await page.evaluateOnNewDocument(() => {
       try {
