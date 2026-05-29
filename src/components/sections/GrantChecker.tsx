@@ -10,7 +10,7 @@ import { Section } from '../ui/Section'
 import { SectionHeader } from '../ui/SectionHeader'
 import { EISLogo } from '../ui/EISLogo'
 
-const API_URL = 'https://ai.undercover.ee/geetfunds/score'
+const API_URL = '/geetfunds/score'
 const CACHE_KEY = 'grantCheck.cache.v2'
 
 type ApiLang = 'en' | 'ru' | 'et'
