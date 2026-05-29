@@ -13,7 +13,7 @@
     ],
     "h1a": "Tarkratt -",
     "h1b": "aitame ettevõtetel tehisintellektiga sõbraks saada",
-    "p": "Näitan, kus tehisintellekt ja automatiseerimine säästavad teie aega ja raha. Ilma keeruliste sõnade ja moeterminiteta. Esimene konsultatsioon on tasuta.",
+    "p": "Äri muutub. Aitan ümber kujundada mõtteviisi ja protsessid nii, et tehisintellekt oleks teie eelis, mitte oht: vähem rutiini, rohkem kiirust, tugevamad otsused ja vastupidavam äri. Ilma moesõnade ja liigse keerukuseta. Esimene konsultatsioon on tasuta.",
     "cta": "Broneeri tasuta konsultatsioon",
     "club": "Järgmine kohtumine",
     "how": "Kuidas see käib"
@@ -126,44 +126,47 @@
     ]
   },
   "services": {
-    "title": "Kuidas saan aidata",
+    "title": "Kuidas saan kasulik olla",
     "sub": "Kolm viisi koos töötamiseks. Alustame alati tasuta konsultatsiooniga.",
     "popular": "Kõige sagedasem",
     "grantNote": "Hinnad on orienteeruvad - iga projekti täpsustame tasuta konsultatsioonil. Enamik töid kvalifitseerub EIS-i toetustele, nii et riik võib katta kuni 70% maksumusest.",
     "lines": [
       {
-        "title": "Korrasta protsessid",
+        "title": "Korrasta protsessid ja mõtteviis",
         "price": "alates €[XXX]",
-        "priceNote": "protsessianalüüs + plaan · fikseeritud",
+        "priceNote": "protsessianalüüs",
         "items": [
           "Vaatame, kuidas töö ettevõttes liigub",
           "Leiame, mis aega raiskab",
-          "Lihtsustame ja viskame liigse välja"
+          "Lihtsustame ja viskame liigse välja",
+          "Muudame mõtteviisi nii, et AI saaks abimeheks, mitte probleemiks"
         ],
-        "cta": "Aruta tasuta konsultatsioonil"
+        "cta": "Aruta konsultatsioonil"
       },
       {
-        "title": "Pane tehisintellekt tööle",
+        "title": "Tehisintellekti lisamine protsessidesse",
         "price": "€[X XXX]–[XX XXX]",
-        "priceNote": "projekti kohta · täpsustame konsultatsioonil",
+        "priceNote": "projektitöö",
         "items": [
-          "Valin AI-tööriistad sinu päris ülesannetele",
+          "Põhjalik ülesannete ja protsesside analüüs",
+          "Valin AI-tööriistad sinu ülesannetele",
           "Assistendid, vestlusrobotid, automaatsed aruanded",
-          "Õpetan su meeskonna neid kasutama"
+          "Meeskonna koolitamine uute tööriistadega töötamiseks"
         ],
-        "cta": "Aruta tasuta konsultatsioonil",
+        "cta": "Aruta konsultatsioonil",
         "highlight": true
       },
       {
         "title": "Üks-ühele koolitus",
         "price": "€[XXX]",
-        "priceNote": "sessiooni kohta · paketid saadaval",
+        "priceNote": "personaalne koolitus",
         "items": [
-          "Töötame sinu päris ülesannetel",
-          "Ilma kuiva teooriata",
-          "Salvestused jäävad su meeskonnale"
+          "Ärimõtlemise alused tehisintellekti ajastul",
+          "Planeerimine ja tööriistad",
+          "Personaalsed agendid ja oskused",
+          "Ilma kuiva teooriata"
         ],
-        "cta": "Aruta tasuta konsultatsioonil"
+        "cta": "Aruta konsultatsioonil"
       }
     ]
   },

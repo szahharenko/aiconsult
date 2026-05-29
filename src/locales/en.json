@@ -13,7 +13,7 @@
     ],
     "h1a": "Tarkratt -",
     "h1b": "AI, made business-friendly",
-    "p": "I'll show you where AI and automation will actually save you time and money. No jargon, no buzzwords. The first consultation is free.",
+    "p": "Business is changing. I help reshape mindset and processes so that AI becomes your advantage, not a threat: less routine, more speed, stronger decisions, and a more resilient business. No buzzwords or unnecessary complexity. First consultation is free.",
     "cta": "Book a free consultation",
     "club": "Next meetup",
     "how": "How it works"
@@ -126,44 +126,47 @@
     ]
   },
   "services": {
-    "title": "How I can help",
+    "title": "How I can be useful",
     "sub": "Three ways to work together. We always start with a free consultation.",
     "popular": "Most common",
     "grantNote": "Indicative prices - every project is scoped on the free consultation. Most work qualifies for EIS grants, so the state can cover up to 70% of the cost.",
     "lines": [
       {
-        "title": "Tidy up your processes",
+        "title": "Sort out your processes and mindset",
         "price": "from €[XXX]",
-        "priceNote": "process audit + roadmap · fixed fee",
+        "priceNote": "process audit",
         "items": [
           "We look at how work flows in your company",
-          "We find what wastes time",
-          "We simplify and cut the extra"
+          "We find what's wasting time",
+          "We simplify and cut the extra",
+          "We shift the mindset so AI becomes a helper, not a problem"
         ],
-        "cta": "Discuss on a free consultation"
+        "cta": "Discuss on a consultation"
       },
       {
-        "title": "Put AI to work",
+        "title": "Adding AI to your processes",
         "price": "€[X,XXX]–[XX,XXX]",
-        "priceNote": "per project · scoped on the consultation",
+        "priceNote": "project work",
         "items": [
-          "I pick AI tools for your real tasks",
+          "Deep dive into your tasks and processes",
+          "I pick AI tools to fit your tasks",
           "Assistants, chatbots, automatic reports",
-          "I teach your team to use them"
+          "Training your team to work with the new tools"
         ],
-        "cta": "Discuss on a free consultation",
+        "cta": "Discuss on a consultation",
         "highlight": true
       },
       {
         "title": "One-on-one training",
         "price": "€[XXX]",
-        "priceNote": "per session · packages available",
+        "priceNote": "personal training",
         "items": [
-          "We work on your real tasks",
-          "No dry theory",
-          "You keep the recordings for your team"
+          "Foundations of business thinking in the AI era",
+          "Planning and tools",
+          "Personal agents and skills",
+          "No dry theory"
         ],
-        "cta": "Discuss on a free consultation"
+        "cta": "Discuss on a consultation"
       }
     ]
   },
