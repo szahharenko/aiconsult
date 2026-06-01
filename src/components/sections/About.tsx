@@ -19,7 +19,7 @@ export function About() {
   const items = t('about.items', { returnObjects: true }) as string[]
   const cardItems = t('about.cardItems', { returnObjects: true }) as string[]
   const stats = t('about.stats', { returnObjects: true }) as Stat[]
-  const showFounderVideo = i18n.language?.startsWith('ru')
+  const showFounderVideo = i18n.language?.startsWith('xx')
 
   return (
     <Section id="about">
