@@ -1,0 +1,20 @@
+# Netlify-style redirects. Cloudflare Pages reads the same file.
+#
+# Bare root → default language. Real 301 served by the edge, not a soft SPA hop.
+/                /en                              301
+/club            /en/events                       301
+/en/club         /en/events                       301
+/et/club         /et/events                       301
+/ru/club         /ru/events                       301
+
+# Prerendered HTML for known SPA routes — served as 200.
+/en              /en/index.html                   200
+/et              /et/index.html                   200
+/ru              /ru/index.html                   200
+/en/events       /en/events/index.html            200
+/et/events       /et/events/index.html            200
+/ru/events       /ru/events/index.html            200
+
+# Everything else: serve the prerendered 404 page with a real HTTP 404.
+# This is what fixes the soft-404 problem on unknown URLs.
+/*               /404.html                        404

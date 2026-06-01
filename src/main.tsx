@@ -9,6 +9,7 @@ import { MeetupProvider } from './contexts/MeetupContext'
 
 
 const EventsPage = lazy(() => import('./pages/EventsPage'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 
 // Legacy redirect: /:lang/club → /:lang/events
 // Kept for backward compatibility with shared links / old indexing.
@@ -17,11 +18,19 @@ function LegacyClubRedirect() {
   return <Navigate to={`/${lang || 'en'}/events`} replace />
 }
 
+// Bare root '/' → default language home, so /en gets indexed (not /) and
+// hreflang stays internally consistent.
+function RootRedirect() {
+  return <Navigate to="/en" replace />
+}
+
 const router = createBrowserRouter([
+  { path: '/', element: <RootRedirect /> },
   { path: '/:lang/events', element: <Suspense fallback={null}><EventsPage /></Suspense> },
   { path: '/:lang/club', element: <LegacyClubRedirect /> },
   { path: '/:lang', element: <App /> },
-  { path: '*', element: <App /> },
+  { path: '/404', element: <Suspense fallback={null}><NotFound /></Suspense> },
+  { path: '*', element: <Suspense fallback={null}><NotFound /></Suspense> },
 ])
 
 createRoot(document.getElementById('root')!).render(

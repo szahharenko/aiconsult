@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useMemo } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
@@ -10,6 +10,9 @@ import { Nav } from '../components/layout/Nav'
 import { MeetupBanner } from '../components/layout/MeetupBanner'
 import { Footer } from '../components/layout/Footer'
 import { MeetupSignupForm } from '../components/sections/MeetupSignupForm'
+import { Seo } from '../components/seo/Seo'
+import { JsonLd } from '../components/seo/JsonLd'
+import { businessSchema, breadcrumbSchema } from '../components/seo/schemas'
 
 const pillarIcons = [
   <Lightbulb size={24} className="text-coffee" />,
@@ -53,8 +56,30 @@ export default function EventsPage() {
   const SPOTS_TOTAL = 20
   const SPOTS_LEFT = 6
 
+  const activeLang: Lang = SUPPORTED_LANGS.includes(lang as Lang) ? (lang as Lang) : DEFAULT_LANG
+  const seoDescription = t('seo.eventsDescription')
+  const schemas = useMemo(
+    () => [
+      businessSchema(activeLang, seoDescription),
+      breadcrumbSchema(activeLang, [
+        { name: 'TarKratt', path: '' },
+        { name: t('club.title'), path: '/events' },
+      ]),
+    ],
+    [activeLang, seoDescription, t],
+  )
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans">
+      <Seo
+        lang={activeLang}
+        title={t('seo.eventsTitle')}
+        description={seoDescription}
+        pathAfterLang="/events"
+      />
+      <JsonLd id="business" data={schemas[0]} />
+      <JsonLd id="breadcrumb" data={schemas[1]} />
+
       <MeetupBanner />
       <Nav />
 

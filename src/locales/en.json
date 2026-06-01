@@ -453,6 +453,21 @@
     "accept": "Accept",
     "decline": "Decline"
   },
+  "seo": {
+    "homeTitle": "TarKratt — AI in plain words for Estonian businesses",
+    "homeDescription": "Hands-on AI consulting in Tallinn: process audit, integrating AI into your workflow, one-on-one training. First consultation is free.",
+    "eventsTitle": "AI meetup in Tallinn — TarKratt",
+    "eventsDescription": "An open monthly AI meetup at Undercover, Tallinn. For business owners and people using AI in real work. No jargon.",
+    "notFoundTitle": "Page not found — TarKratt",
+    "notFoundDescription": "This page doesn't exist. Head back to the home page.",
+    "imgAltClientLogo": "{{name}} logo",
+    "ogImageAlt": "TarKratt — AI in plain words"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you're looking for doesn't exist or has moved.",
+    "cta": "Back to home"
+  },
   "privacy": {
     "title": "Privacy Policy",
     "updated": "Last updated: April 2026",

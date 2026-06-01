@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { AnimatePresence } from 'framer-motion'
@@ -10,6 +10,11 @@ import { MeetupBanner } from './components/layout/MeetupBanner'
 import { Footer } from './components/layout/Footer'
 import { CookieBanner } from './components/layout/CookieBanner'
 import { PrivacyPolicyModal } from './components/layout/PrivacyPolicyModal'
+
+// SEO
+import { Seo } from './components/seo/Seo'
+import { JsonLd } from './components/seo/JsonLd'
+import { businessSchema, personSchema, faqPageSchema } from './components/seo/schemas'
 
 // Sections
 import { Hero } from './components/sections/Hero'
@@ -29,7 +34,20 @@ import { Contact } from './components/sections/Contact'
 export default function App() {
   const { lang } = useParams<{ lang: string }>()
   const navigate = useNavigate()
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
+
+  const activeLang: Lang = SUPPORTED_LANGS.includes(lang as Lang) ? (lang as Lang) : DEFAULT_LANG
+
+  const faqItems = t('faq.items', { returnObjects: true }) as { q: string; a: string }[]
+  const seoDescription = t('seo.homeDescription')
+  const schemas = useMemo(
+    () => [
+      businessSchema(activeLang, seoDescription),
+      personSchema(),
+      faqPageSchema(faqItems),
+    ],
+    [activeLang, seoDescription, faqItems],
+  )
 
   const [showPrivacy, setShowPrivacy] = useState(false)
   const [cookieConsent, setCookieConsent] = useState<string | null>(() => {
@@ -60,6 +78,16 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans">
+      <Seo
+        lang={activeLang}
+        title={t('seo.homeTitle')}
+        description={seoDescription}
+        pathAfterLang=""
+      />
+      <JsonLd id="business" data={schemas[0]} />
+      <JsonLd id="person" data={schemas[1]} />
+      <JsonLd id="faq" data={schemas[2]} />
+
       <AnimatePresence>
         {!cookieConsent && (
           <CookieBanner

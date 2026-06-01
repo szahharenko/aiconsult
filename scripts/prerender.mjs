@@ -21,13 +21,17 @@ const ROOT = path.resolve(__dirname, '..')
 const DIST = path.join(ROOT, 'dist')
 
 // Routes to snapshot. Keep this in sync with src/main.tsx router.
+// `outFile` overrides the default `<route>/index.html` output path — used for
+// /404 so it lands at dist/404.html (which Netlify/nginx serve with a real
+// 404 status code; fixes the soft-404 problem on unknown URLs).
 const ROUTES = [
-  '/en',
-  '/ru',
-  '/et',
-  '/en/events',
-  '/ru/events',
-  '/et/events',
+  { path: '/en' },
+  { path: '/ru' },
+  { path: '/et' },
+  { path: '/en/events' },
+  { path: '/ru/events' },
+  { path: '/et/events' },
+  { path: '/404', outFile: '404.html' },
 ]
 
 // How long to wait for animations / lazy chunks to settle before snapshotting.
@@ -50,11 +54,11 @@ async function ensureDistExists() {
 }
 
 async function snapshot(browser, baseUrl, route) {
-  const url = baseUrl + route
+  const url = baseUrl + route.path
   const page = await browser.newPage()
 
   // Suppress noisy console output from the page during prerender.
-  page.on('pageerror', (err) => log(`  page error on ${route}: ${err.message}`))
+  page.on('pageerror', (err) => log(`  page error on ${route.path}: ${err.message}`))
 
   try {
     // Pre-seed localStorage so the cookie banner / theme don't appear in the
@@ -68,7 +72,9 @@ async function snapshot(browser, baseUrl, route) {
 
     await page.goto(url, { waitUntil: 'networkidle0', timeout: NAV_TIMEOUT_MS })
 
-    // Give framer-motion / i18n http backend a moment to settle.
+    // Give framer-motion / i18n http backend / SEO effects a moment to settle.
+    // The <Seo> and <JsonLd> components mutate <head> from useEffect, so we
+    // need React's commit phase to complete before we snapshot the DOM.
     await new Promise((r) => setTimeout(r, SETTLE_MS))
 
     // Mark the document so we can tell prerendered HTML apart at runtime.
@@ -77,12 +83,14 @@ async function snapshot(browser, baseUrl, route) {
     })
 
     const html = await page.content()
-    const outPath = path.join(DIST, route.replace(/^\//, ''), 'index.html')
+    const outPath = route.outFile
+      ? path.join(DIST, route.outFile)
+      : path.join(DIST, route.path.replace(/^\//, ''), 'index.html')
     await fs.mkdir(path.dirname(outPath), { recursive: true })
     await fs.writeFile(outPath, html, 'utf8')
 
     const sizeKb = (Buffer.byteLength(html, 'utf8') / 1024).toFixed(1)
-    log(`  ✓ ${route.padEnd(16)}  →  ${path.relative(ROOT, outPath)}  (${sizeKb} KB)`)
+    log(`  ✓ ${route.path.padEnd(16)}  →  ${path.relative(ROOT, outPath)}  (${sizeKb} KB)`)
   } finally {
     await page.close()
   }
@@ -112,7 +120,7 @@ async function main() {
         await snapshot(browser, baseUrl, route)
       } catch (err) {
         failed += 1
-        log(`  ✗ ${route}: ${err.message}`)
+        log(`  ✗ ${route.path}: ${err.message}`)
       }
     }
   } finally {

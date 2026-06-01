@@ -453,6 +453,21 @@
     "accept": "Nõustu",
     "decline": "Keeldu"
   },
+  "seo": {
+    "homeTitle": "TarKratt — tehisintellekt arusaadavas keeles Eesti ettevõtetele",
+    "homeDescription": "Praktiline AI-konsultatsioon Tallinnas: protsesside audit, tehisintellekti integreerimine töövoogu, üks-ühele koolitus. Esimene konsultatsioon on tasuta.",
+    "eventsTitle": "AI-kohtumine Tallinnas — TarKratt",
+    "eventsDescription": "Avatud igakuine AI-kohtumine Undercoveris Tallinnas. Ettevõtjatele ja inimestele, kes kasutavad tehisintellekti päristöös. Ilma žargoonita.",
+    "notFoundTitle": "Lehte ei leitud — TarKratt",
+    "notFoundDescription": "Seda lehte pole olemas. Mine tagasi avalehele.",
+    "imgAltClientLogo": "{{name}} logo",
+    "ogImageAlt": "TarKratt — tehisintellekt arusaadavas keeles"
+  },
+  "notFound": {
+    "title": "Lehte ei leitud",
+    "body": "Seda lehte pole olemas või see on kolitud.",
+    "cta": "Tagasi avalehele"
+  },
   "privacy": {
     "title": "Privaatsuspoliitika",
     "updated": "Viimati uuendatud: aprill 2026",

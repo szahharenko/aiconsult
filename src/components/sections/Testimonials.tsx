@@ -18,6 +18,14 @@ interface TestimonialContent {
 // The locale file holds quote + author text (with placeholders to swap later).
 // Logos are matched here by index so each quote shows the company it came from.
 const logos = [rtkLogo, forstaLogo, imetLogo, heLogo]
+// Used for image alt text — kept untranslated since these are proper nouns
+// (registered company names) and matter for accessibility / SEO consistency.
+const logoCompanies = [
+  'Riigi Tugiteenuste Keskus',
+  'Forsta',
+  'Industrial Metal',
+  'Highway Engineering',
+]
 
 export function Testimonials() {
   const { t } = useTranslation()
@@ -49,7 +57,7 @@ export function Testimonials() {
               {logos[i] && (
                 <img
                   src={logos[i]}
-                  alt=""
+                  alt={t('seo.imgAltClientLogo', { name: logoCompanies[i] ?? 'client' })}
                   className="max-h-9 max-w-[120px] object-contain opacity-80 mix-blend-multiply dark:mix-blend-screen dark:invert"
                 />
               )}

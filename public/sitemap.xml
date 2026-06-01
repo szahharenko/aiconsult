@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://tarkratt.eu/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarkratt.eu/en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://tarkratt.eu/et"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarkratt.eu/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarkratt.eu/en"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://tarkratt.eu/et</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarkratt.eu/en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://tarkratt.eu/et"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarkratt.eu/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarkratt.eu/en"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://tarkratt.eu/ru</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarkratt.eu/en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://tarkratt.eu/et"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarkratt.eu/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarkratt.eu/en"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://tarkratt.eu/en/events</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarkratt.eu/en/events"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://tarkratt.eu/et/events"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarkratt.eu/ru/events"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarkratt.eu/en/events"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tarkratt.eu/et/events</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarkratt.eu/en/events"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://tarkratt.eu/et/events"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarkratt.eu/ru/events"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarkratt.eu/en/events"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tarkratt.eu/ru/events</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarkratt.eu/en/events"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://tarkratt.eu/et/events"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarkratt.eu/ru/events"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarkratt.eu/en/events"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
