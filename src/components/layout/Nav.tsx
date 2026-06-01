@@ -12,6 +12,7 @@ export function Nav() {
   const { lang } = useParams<{ lang: string }>()
   const { theme, toggleTheme } = useTheme()
   const [scrolled, setScrolled] = useState(false)
+  const useDarkTheme = false
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -29,7 +30,7 @@ export function Nav() {
     <nav className="sticky top-0 z-40 bg-slate-950/90 backdrop-blur border-b border-slate-800">
       <div
         className={`max-w-5xl mx-auto px-6 flex items-center justify-between gap-4 transition-all duration-300 ${
-          scrolled ? 'h-14' : 'h-20'
+          scrolled ? 'h-12' : 'h-16'
         }`}
       >
         <div className="flex items-center gap-3 min-w-0">
@@ -37,7 +38,7 @@ export function Nav() {
             src={logoUrl}
             alt={BRAND_NAME}
             className={`rounded-full object-contain transition-all duration-300 ${
-              scrolled ? 'h-8 opacity-90' : 'h-20'
+              scrolled ? 'h-10 opacity-90' : 'h-16'
             }`}
           />
           <span
@@ -47,7 +48,7 @@ export function Nav() {
           </span>
         </div>
         <div className="flex items-center gap-3">
-          <button
+          { useDarkTheme && <button
             type="button"
             onClick={toggleTheme}
             aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
@@ -56,6 +57,7 @@ export function Nav() {
           >
             {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
           </button>
+          }
           <div className="flex bg-slate-800 border border-slate-700 rounded-lg overflow-hidden text-xs font-semibold">
             {SUPPORTED_LANGS.map(l => (
               <button key={l} onClick={() => switchLang(l)}

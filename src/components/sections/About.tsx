@@ -5,6 +5,9 @@ import { fadeUp, stagger } from '../../animations'
 import { YOUR_FULL_NAME, LINKEDIN_URL } from '../../config'
 import { Section } from '../ui/Section'
 import { PhotoPlaceholder } from '../ui/PhotoPlaceholder'
+import { YouTubeEmbed } from '../ui/YouTubeEmbed'
+
+const FOUNDER_VIDEO_ID = 'cHAIl8ZgLhA'
 
 interface Stat {
   value: string
@@ -12,10 +15,11 @@ interface Stat {
 }
 
 export function About() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const items = t('about.items', { returnObjects: true }) as string[]
   const cardItems = t('about.cardItems', { returnObjects: true }) as string[]
   const stats = t('about.stats', { returnObjects: true }) as Stat[]
+  const showFounderVideo = i18n.language?.startsWith('ru')
 
   return (
     <Section id="about">
@@ -71,6 +75,26 @@ export function About() {
           </ul>
         </motion.div>
       </motion.div>
+      {showFounderVideo && (
+        <motion.div
+          className="mt-12 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <p className="text-coffee/80 text-xs font-semibold uppercase tracking-widest mb-3 text-center">
+            {t('about.video.kicker')}
+          </p>
+          <h3 className="text-2xl font-bold text-white mb-4 text-center">
+            {t('about.video.title')}
+          </h3>
+          <YouTubeEmbed videoId={FOUNDER_VIDEO_ID} title={t('about.video.title')} />
+          <p className="text-slate-400 text-sm mt-4 text-center max-w-xl mx-auto">
+            {t('about.video.caption')}
+          </p>
+        </motion.div>
+      )}
     </Section>
   )
 }
