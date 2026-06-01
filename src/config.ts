@@ -17,7 +17,7 @@ export const SITE_URL = "https://tarkratt.eu"
 // Default social-card image. Falls back to the 512×512 favicon — works,
 // but for a proper LinkedIn/Twitter card produce a real 1200×630 PNG and
 // drop it into public/ as og-image.png, then change this constant.
-export const DEFAULT_OG_IMAGE = "/favicon-512.png"
+export const DEFAULT_OG_IMAGE = "/og-image.jpg"
 // Maps app language codes to BCP-47 hreflang tags.
 export const HREFLANG_MAP: Record<Lang, string> = { en: 'en', et: 'et', ru: 'ru' }
 // Maps app language codes to OG locale codes.
