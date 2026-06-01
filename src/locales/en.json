@@ -12,8 +12,8 @@
       "Done-for-you setup"
     ],
     "h1a": "TarKratt -",
-    "h1b": "AI, made business-friendly",
-    "p": "Business is changing. I help reshape mindset and processes so that AI becomes your advantage, not a threat: less routine, more speed, stronger decisions, and a more resilient business. No buzzwords or unnecessary complexity. First consultation is free.",
+    "h1b": "helping businesses befriend AI",
+    "p": "Business is changing. I'll help reshape your mindset and processes so AI becomes your advantage. Less routine, more control and speed, a sharper customer focus. No buzzwords or complexity. First consultation is free.",
     "cta": "Book a free consultation",
     "club": "Next meetup",
     "how": "How it works"
@@ -129,7 +129,7 @@
     "title": "How I can be useful",
     "sub": "Three ways to work together. We always start with a free consultation.",
     "popular": "Most common",
-    "grantNote": "Indicative prices - every project is scoped on the free consultation. Most work qualifies for EIS grants, so the state can cover up to 70% of the cost.",
+    "grantNote": "Every project is scoped on a free consultation. Most work qualifies for EIS grants, so the state can cover up to 70% of the cost.",
     "lines": [
       {
         "title": "Sort out your processes and mindset",
@@ -261,7 +261,7 @@
       {
         "quote": "What used to take our team two days now takes ten minutes. The tool reads a tender, tells us whether it fits, and drafts the paperwork - and Sergei made sure we actually understood how it works.",
         "name": "Our tools",
-        "role": "for: Riigi Tugiteenuste Keskus"
+        "role": "Riigi Tugiteenuste Keskus and EIS"
       },
       {
         "quote": "Based on report data analysis, reports our analysts built by hand for days are now ready in minutes, formatted to our template. The rollout was calm and practical - no hype, just working software.",
@@ -269,7 +269,7 @@
         "role": "Head of development, Forsta"
       },
       {
-        "quote": "Our laser cutting machine and our accounting finally talk to each other. No more manual order entry, no more invoicing delays. Sergei found the saving and built it without disrupting the floor.",
+        "quote": "Our laser cutter and our accounting finally talk to each other. No more manual order entry, no more invoicing delays. Sergei found the saving and built a great solution.",
         "name": "Aleksei Saareväli",
         "role": "Head of operations, Industrial Metal"
       },
@@ -368,23 +368,24 @@
     "title": "Who's running this",
     "role": "I help businesses tidy up processes and put AI to work",
     "linkedin": "View LinkedIn profile",
-    "intro": "I'm Sergei Zahharenko. For over a decade I've built software for companies that count every euro - and now I bring AI into their day-to-day work, not their slide decks. I take on a handful of projects at a time so each one gets done properly.",
+    "intro": "I'm Sergei Zahharenko. For over 20 years I've built software for all kinds of companies and corporations. Fintech, sales, and real manufacturing.",
     "stats": [
-      { "value": "10+", "label": "years in software" },
+      { "value": "20+", "label": "years in development" },
       { "value": "20+", "label": "AI & automation projects" },
-      { "value": "5", "label": "industries served" }
+      { "value": "5", "label": "industries" }
     ],
     "items": [
-      "Over 10 years building and rolling out software systems.",
+      "Over 20 years building and rolling out software systems.",
       "I build AI into the real work of companies - not into pretty slide decks.",
       "Background in finance and manufacturing - places that count every euro.",
+      "Data security is my priority.",
       "I speak Russian, Estonian, and English."
     ],
     "cardTitle": "Why now",
     "cardItems": [
       "AI isn't a trendy toy - it's a new work tool.",
-      "It doesn't replace people; it takes the routine off your plate and helps you decide faster.",
-      "The winner isn't the one who talks about AI the most, but the one who started using it for real first."
+      "It doesn't just take routine off your plate and help you decide - it changes the way you work.",
+      "The world is changing; in 3-5 years business will look completely different. Better to start that journey now."
     ]
   },
   "faq": {

@@ -13,7 +13,7 @@
     ],
     "h1a": "TarKratt -",
     "h1b": "aitame ettevõtetel tehisintellektiga sõbraks saada",
-    "p": "Äri muutub. Aitan ümber kujundada mõtteviisi ja protsessid nii, et tehisintellekt oleks teie eelis, mitte oht: vähem rutiini, rohkem kiirust, tugevamad otsused ja vastupidavam äri. Ilma moesõnade ja liigse keerukuseta. Esimene konsultatsioon on tasuta.",
+    "p": "Äri muutub. Aitan ümber kujundada mõtteviisi ja protsesse nii, et tehisintellekt saaks sinu eeliseks. Vähem rutiini, rohkem kontrolli ja kiirust, tugevam kliendikesksus. Ilma moesõnade ja keerukuseta. Esimene konsultatsioon on tasuta.",
     "cta": "Broneeri tasuta konsultatsioon",
     "club": "Järgmine kohtumine",
     "how": "Kuidas see käib"
@@ -129,7 +129,7 @@
     "title": "Kuidas saan kasulik olla",
     "sub": "Kolm viisi koos töötamiseks. Alustame alati tasuta konsultatsiooniga.",
     "popular": "Kõige sagedasem",
-    "grantNote": "Hinnad on orienteeruvad - iga projekti täpsustame tasuta konsultatsioonil. Enamik töid kvalifitseerub EIS-i toetustele, nii et riik võib katta kuni 70% maksumusest.",
+    "grantNote": "Iga projekti hindame tasuta konsultatsioonil. Enamik töid kvalifitseerub EIS-i toetustele, nii et riik võib katta kuni 70% maksumusest.",
     "lines": [
       {
         "title": "Korrasta protsessid ja mõtteviis",
@@ -269,12 +269,12 @@
         "role": "Head of development, Forsta"
       },
       {
-        "quote": "Meie laserlõikur ja raamatupidamine lõpuks omavahel räägivad. Käsitsi tellimuste sisestamine ja arveldamise viivitused on lõppenud. Sergei leidis säästu ja ehitas lahenduse ilma tootmist häirimata.",
+        "quote": "Meie laserlõikur ja raamatupidamine räägivad lõpuks omavahel. Käsitsi tellimuste sisestamist ja arveldamise viivitusi enam pole. Sergei leidis säästu ja ehitas suurepärase lahenduse.",
         "name": "Aleksei Saareväli",
         "role": "Head of operations, Industrial Metal"
       },
       {
-        "quote": "Põhinedes aruandedata analüüsil, on aruanded, mida meie analüütikud varem käsitsi ehitasid päevade kaupa, nüüd valmis minutitega, vormindatud meie mallile. Käivitamine oli rahulik ja praktiline - pole mingit hype'i, lihtsalt töötav tarkvara.",
+        "quote": "Pärast uute AI-tööriistade loomist on meie aruandlusteenused üle kogu Eesti - aruanded, analüütika, hanked ja suhtlus teederegistriga - muutunud palju kiiremaks ja tõhusamaks. Sergei on suurepärane partner - ta mõistab ettevõtte vajadusi ja leiab õige lahenduse.",
         "name": "Andrei Anisimov",
         "role": "CEO, Highway Engineering"
       }
@@ -368,23 +368,24 @@
     "title": "Kes seda veab",
     "role": "Aitan ettevõtetel protsesse korrastada ja tehisintellekti tööle panna",
     "linkedin": "Vaata LinkedIni profiili",
-    "intro": "Olen Sergei Zahharenko. Üle kümne aasta olen ehitanud tarkvara ettevõtetele, kes loevad iga eurot - ja nüüd toon tehisintellekti nende igapäevatöösse, mitte ilusatesse slaididesse. Võtan korraga vaid mõne projekti, et iga töö korralikult lõpuni viia.",
+    "intro": "Olen Sergei Zahharenko. Üle 20 aasta olen arendanud tarkvara erinevatele ettevõtetele ja korporatsioonidele. Fintech, müük ja päris tootmine.",
     "stats": [
-      { "value": "10+", "label": "aastat tarkvaraarenduses" },
+      { "value": "20+", "label": "aastat arenduses" },
       { "value": "20+", "label": "AI- ja automatiseerimisprojekti" },
       { "value": "5", "label": "valdkonda" }
     ],
     "items": [
-      "Üle 10 aasta ehitan ja juurutan tarkvarasüsteeme.",
+      "Üle 20 aasta ehitan ja juurutan tarkvarasüsteeme.",
       "Ehitan tehisintellekti ettevõtete päris töösse - mitte ilusatesse esitlustesse.",
       "Taust rahanduses ja tootmises - kohtades, kus loetakse iga eurot.",
+      "Andmeturvalisus on minu prioriteet.",
       "Räägin vene, eesti ja inglise keelt."
     ],
     "cardTitle": "Miks just praegu",
     "cardItems": [
       "Tehisintellekt pole moeasi, vaid uus töövahend.",
-      "See ei asenda inimest, vaid võtab rutiini enda peale ja aitab kiiremini otsustada.",
-      "Ei võida see, kes tehisintellektist kõige rohkem räägib, vaid see, kes esimesena seda päriselt kasutama hakkas."
+      "See mitte ainult ei võta rutiini enda peale ja aita otsuseid teha - see muudab ka töö tegemise viisi.",
+      "Maailm muutub - 3-5 aasta pärast on äri täiesti teistsugune. Parem alustada seda teed juba praegu."
     ]
   },
   "faq": {
