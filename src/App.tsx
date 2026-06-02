@@ -26,9 +26,7 @@ import { LeadMagnet } from './components/sections/LeadMagnet'
 import { Process } from './components/sections/Process'
 import { Testimonials } from './components/sections/Testimonials'
 import { CaseStudies } from './components/sections/CaseStudies'
-import { ROICalculator } from './components/sections/ROICalculator'
 import { About } from './components/sections/About'
-import { FAQ } from './components/sections/FAQ'
 import { Contact } from './components/sections/Contact'
 
 export default function App() {
@@ -113,9 +111,7 @@ export default function App() {
       <Process />
       <Testimonials />
       <CaseStudies />
-      <ROICalculator />
       <About />
-      <FAQ />
       <Contact />
 
       <Footer onShowPrivacy={() => setShowPrivacy(true)} />
