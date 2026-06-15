@@ -16,17 +16,17 @@ const CACHE_KEY = 'grantCheck.cache.v2'
 
 /**
  * Fire-and-forget notification: e-mail the site owner whenever a visitor
- * checks a company against the grant database. Reuses the Formspree form
- * already configured for the contact form. Never blocks or breaks the UX.
+ * submits a company / registration code to the grant checker. Fires BEFORE
+ * the backend lookup so the e-mail is sent even if the lookup fails, is slow,
+ * or the result is served from cache. Reuses the Formspree form already
+ * configured for the contact form. Never blocks or breaks the UX.
  */
-function notifyGrantCheck(data: GrantResponse, language: ApiLang) {
+function notifyGrantCheck(identifier: string, language: ApiLang) {
   if (!FORMSPREE_ID) return
   try {
     const payload = new FormData()
-    payload.append('_subject', `Grant check: ${data.company_name} (${data.reg_code})`)
-    payload.append('reg_code', data.reg_code)
-    payload.append('company', data.company_name)
-    if (data.source_url) payload.append('source_url', data.source_url)
+    payload.append('_subject', `Grant check: ${identifier}`)
+    payload.append('reg_code', identifier)
     payload.append('language', language)
     payload.append('source', 'Grant checker (See which grant your company qualifies for)')
     void fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
@@ -378,6 +378,10 @@ export function GrantChecker() {
       return
     }
 
+    // Notify the site owner up-front, before the backend lookup, so the
+    // e-mail is sent even on cache hits, slow responses, or backend errors.
+    notifyGrantCheck(trimmed, apiLanguage)
+
     // If user typed an 8-digit reg-code we already have cached for the
     // current language, just open it without re-fetching.
     const maybeRegCode = trimmed.match(/^\d{8}$/) ? trimmed : null
@@ -408,8 +412,6 @@ export function GrantChecker() {
 
       const stored: GrantResponse = { ...data, language: apiLanguage }
       const key = buildCacheKey(stored.reg_code, apiLanguage)
-      // Notify the site owner by e-mail about this lookup.
-      notifyGrantCheck(stored, apiLanguage)
       setCache(prev => {
         const next = { ...prev, [key]: stored }
         saveCache(next)
