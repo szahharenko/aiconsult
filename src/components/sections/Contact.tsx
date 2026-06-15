@@ -5,6 +5,18 @@ import { useTranslation } from 'react-i18next'
 import { fadeUp, stagger } from '../../animations'
 import { FORMSPREE_ID, CONTACT_EMAIL } from '../../config'
 
+// Google Ads conversion: "Заявка на консультацию" (AW-987668566)
+function trackConsultationConversion() {
+  const w = window as unknown as { gtag?: (...args: unknown[]) => void }
+  if (typeof w.gtag === 'function') {
+    w.gtag('event', 'conversion', {
+      send_to: 'AW-987668566/PSDmCLWdqL8cENbA-tYD',
+      value: 1.0,
+      currency: 'EUR',
+    })
+  }
+}
+
 function ContactForm() {
   const { t } = useTranslation()
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
@@ -17,7 +29,7 @@ function ContactForm() {
       const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: 'POST', body: data, headers: { Accept: 'application/json' },
       })
-      if (res.ok) { setStatus('sent'); (e.target as HTMLFormElement).reset() }
+      if (res.ok) { setStatus('sent'); trackConsultationConversion(); (e.target as HTMLFormElement).reset() }
       else setStatus('error')
     } catch { setStatus('error') }
   }

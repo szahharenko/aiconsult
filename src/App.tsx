@@ -29,6 +29,19 @@ import { CaseStudies } from './components/sections/CaseStudies'
 import { About } from './components/sections/About'
 import { Contact } from './components/sections/Contact'
 
+// Google Consent Mode v2 — relay the cookie banner choice to the Google tag
+function updateAdsConsent(granted: boolean) {
+  const w = window as unknown as { gtag?: (...args: unknown[]) => void }
+  if (typeof w.gtag !== 'function') return
+  const state = granted ? 'granted' : 'denied'
+  w.gtag('consent', 'update', {
+    ad_storage: state,
+    ad_user_data: state,
+    ad_personalization: state,
+    analytics_storage: state,
+  })
+}
+
 export default function App() {
   const { lang } = useParams<{ lang: string }>()
   const navigate = useNavigate()
@@ -55,11 +68,13 @@ export default function App() {
   const acceptCookies = useCallback(() => {
     localStorage.setItem('cookie_consent', 'accepted')
     setCookieConsent('accepted')
+    updateAdsConsent(true)
   }, [])
 
   const declineCookies = useCallback(() => {
     localStorage.setItem('cookie_consent', 'declined')
     setCookieConsent('declined')
+    updateAdsConsent(false)
   }, [])
 
   // Sync i18n language with URL param
