@@ -9,9 +9,35 @@ import { fadeUp } from '../../animations'
 import { Section } from '../ui/Section'
 import { SectionHeader } from '../ui/SectionHeader'
 import { EISLogo } from '../ui/EISLogo'
+import { FORMSPREE_ID } from '../../config'
 
 const API_URL = '/geetfunds/score'
 const CACHE_KEY = 'grantCheck.cache.v2'
+
+/**
+ * Fire-and-forget notification: e-mail the site owner whenever a visitor
+ * checks a company against the grant database. Reuses the Formspree form
+ * already configured for the contact form. Never blocks or breaks the UX.
+ */
+function notifyGrantCheck(data: GrantResponse, language: ApiLang) {
+  if (!FORMSPREE_ID) return
+  try {
+    const payload = new FormData()
+    payload.append('_subject', `Grant check: ${data.company_name} (${data.reg_code})`)
+    payload.append('reg_code', data.reg_code)
+    payload.append('company', data.company_name)
+    if (data.source_url) payload.append('source_url', data.source_url)
+    payload.append('language', language)
+    payload.append('source', 'Grant checker (See which grant your company qualifies for)')
+    void fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      method: 'POST',
+      body: payload,
+      headers: { Accept: 'application/json' },
+    }).catch(() => { /* ignore network/quota errors */ })
+  } catch {
+    /* never let notification failure affect the check */
+  }
+}
 
 type ApiLang = 'en' | 'ru' | 'et'
 
@@ -382,6 +408,8 @@ export function GrantChecker() {
 
       const stored: GrantResponse = { ...data, language: apiLanguage }
       const key = buildCacheKey(stored.reg_code, apiLanguage)
+      // Notify the site owner by e-mail about this lookup.
+      notifyGrantCheck(stored, apiLanguage)
       setCache(prev => {
         const next = { ...prev, [key]: stored }
         saveCache(next)
