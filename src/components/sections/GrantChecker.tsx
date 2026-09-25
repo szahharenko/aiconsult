@@ -444,7 +444,7 @@ export function GrantChecker() {
 
   return (
     <Section id="grant-check">
-      <SectionHeader title={t('grantCheck.title')} sub={t('grantCheck.sub')} />
+      <SectionHeader align="center" title={t("grantCheck.title")} sub={t("grantCheck.sub")} />
 
       <motion.div
         initial="hidden"

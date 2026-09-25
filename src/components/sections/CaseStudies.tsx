@@ -1,19 +1,9 @@
 import { motion } from 'framer-motion'
-import { Clock, Zap, Euro, Bot, TrendingUp, ChevronRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { fadeUp, stagger } from '../../animations'
 import { Section } from '../ui/Section'
 import { SectionHeader } from '../ui/SectionHeader'
-
-// Hardcoded metric icons per case (3 cases x 3 metrics)
-const metricIcons = [
-  // Case 0: Steel factory - laser→ERP
-  [<Zap size={16} className="text-coffee" />, <Clock size={16} className="text-sage-green" />, <Euro size={16} className="text-blue-400" />],
-  // Case 1: Forsta - report generation
-  [<Clock size={16} className="text-coffee" />, <TrendingUp size={16} className="text-sage-green" />, <Bot size={16} className="text-blue-400" />],
-  // Case 2: Riigihanked AI assistant
-  [<Clock size={16} className="text-coffee" />, <Bot size={16} className="text-sage-green" />, <TrendingUp size={16} className="text-blue-400" />],
-]
 
 interface CaseData {
   badge: string
@@ -29,57 +19,34 @@ export function CaseStudies() {
 
   return (
     <Section id="cases">
-      <SectionHeader
-        title={t('cases.title')}
-        sub={t('cases.sub')}
-      />
-      <motion.div className="grid md:grid-cols-3 gap-6" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+      <SectionHeader title={t('cases.title')} sub={t('cases.sub')} />
+      <motion.div className="grid md:grid-cols-3 gap-10 md:gap-6" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
         {cases.map((c, i) => (
-          <motion.div key={i} variants={fadeUp}
-            className="bg-slate-900 border border-slate-700 rounded-2xl p-6 flex flex-col hover:border-slate-500 transition-colors">
-            <span className="self-start bg-slate-800 border border-slate-600 text-slate-300 text-xs font-medium px-3 py-1 rounded-full mb-4">
-              {c.badge}
-            </span>
-            <h3 className="text-white font-bold text-lg mb-3">{c.title}</h3>
-
-            {/* Problem */}
-            <div className="mb-3">
-              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">
-                {t('cases.problem')}
-              </p>
-              <p className="text-slate-400 text-sm leading-relaxed">{c.problem}</p>
+          <motion.article key={i} variants={fadeUp} className="border-t-[1.5px] border-ink pt-6 flex flex-col gap-4">
+            <span className="text-xs font-bold uppercase tracking-[0.06em] text-muted">{c.badge}</span>
+            <h3 className="text-2xl font-bold tracking-tight">{c.title}</h3>
+            <div className="flex flex-col gap-1">
+              <span className="text-xs font-bold uppercase tracking-[0.06em] text-slate-500">{t('cases.problem')}</span>
+              <p className="text-[15px] leading-relaxed text-slate-400">{c.problem}</p>
             </div>
-
-            {/* Solution */}
-            <div className="mb-5">
-              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">
-                {t('cases.solution')}
-              </p>
-              <p className="text-slate-300 text-sm leading-relaxed">{c.solution}</p>
+            <div className="flex flex-col gap-1">
+              <span className="text-xs font-bold uppercase tracking-[0.06em] text-slate-500">{t('cases.solution')}</span>
+              <p className="text-[15px] leading-relaxed text-slate-300">{c.solution}</p>
             </div>
-
-            {/* Metrics */}
-            <div className="mt-auto border-t border-slate-700 pt-4 grid grid-cols-3 gap-2">
+            <div className="mt-auto pt-4 grid grid-cols-3 gap-3 border-t border-line">
               {c.metrics.map((m, j) => (
-                <div key={j} className="text-center">
-                  <div className="flex justify-center mb-1">{metricIcons[i]?.[j]}</div>
-                  <p className="text-white font-bold text-sm">{m.value}</p>
-                  <p className="text-slate-500 text-xs leading-tight">{m.label}</p>
+                <div key={j} className="flex flex-col gap-1">
+                  <span className="font-serif text-2xl md:text-[28px] leading-tight">{m.value}</span>
+                  <span className="text-xs leading-snug text-muted">{m.label}</span>
                 </div>
               ))}
             </div>
-          </motion.div>
+          </motion.article>
         ))}
       </motion.div>
-
-      {/* CTA under cases */}
-      <motion.div className="mt-8 text-center" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-        <p className="text-slate-400 text-sm mb-3">
-          {t('cases.allAnonymized')}
-        </p>
-        <a href="#contact"
-          className="inline-flex items-center gap-2 text-coffee hover:text-coffee/80 font-semibold text-sm transition-colors">
-          {t('cases.getSimilar')} <ChevronRight size={16} />
+      <motion.div className="mt-12" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+        <a href="#contact" className="inline-flex items-center gap-2 text-coffee hover:text-ink font-semibold transition-colors">
+          {t('cases.getSimilar')} <ArrowRight size={16} />
         </a>
       </motion.div>
     </Section>

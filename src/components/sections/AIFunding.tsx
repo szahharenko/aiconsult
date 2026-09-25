@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion'
-import { ExternalLink, ArrowRight, Clock } from 'lucide-react'
+import { ArrowRight, ExternalLink } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { fadeUp, stagger } from '../../animations'
 import { Section } from '../ui/Section'
-import { SectionHeader } from '../ui/SectionHeader'
-import { EISLogo } from '../ui/EISLogo'
 
 interface FundingGrant {
   title: string
@@ -18,73 +16,47 @@ interface FundingGrant {
 export function AIFunding() {
   const { t } = useTranslation()
   const grants = t('funding.grants', { returnObjects: true }) as FundingGrant[]
+  const parts = t('funding.title').split(/\*([^*]+)\*/)
 
   return (
-    <Section dark id="funding">
-      <SectionHeader title={t('funding.title')} sub={t('funding.sub')} />
-
-      <motion.div
-        className="grid md:grid-cols-2 gap-5"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={stagger}
-      >
-        {grants.map((grant, i) => (
-          <motion.div
-            key={i}
-            variants={fadeUp}
-            className="rounded-2xl p-6 border bg-slate-800 border-slate-700 flex flex-col"
-          >
-            <div className="flex items-start justify-between gap-3 mb-3">
-              <h3 className="text-lg font-bold text-white leading-snug">{grant.title}</h3>
-              <EISLogo className="h-7 w-auto text-slate-300 flex-shrink-0" />
-            </div>
-            <div className="text-2xl font-extrabold text-coffee font-mono mb-2">{grant.amount}</div>
-            <div className="text-xs font-mono text-slate-400 uppercase tracking-wide mb-3">
-              {grant.timing}
-            </div>
-            {grant.urgency && (
-              <div className="inline-flex items-center gap-1.5 self-start mb-4 px-2.5 py-1 rounded-full bg-amber-900/10 border border-amber-900/30 text-amber-900 text-xs font-medium">
-                <Clock size={12} className="flex-shrink-0" />
-                {grant.urgency}
-              </div>
-            )}
-            <p className="text-slate-300 text-sm mb-5 flex-1">{grant.fit}</p>
-            <a
-              href={grant.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-slate-300 hover:text-coffee transition-colors inline-flex items-center gap-1.5 self-start"
-            >
-              {t('funding.linkLabel')} <ExternalLink size={13} />
+    <Section tone="sand" id="funding">
+      <div className="grid lg:grid-cols-12 gap-12 lg:gap-6">
+        <motion.div className="lg:col-span-5 flex flex-col gap-6" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+          <p className="text-xs md:text-sm font-bold uppercase tracking-[0.08em] text-coffee">EIS · 2026</p>
+          <h2 className="font-serif font-normal text-4xl md:text-6xl leading-[1.04]">
+            {parts.map((p, i) => (i % 2 ? <span key={i} className="italic text-coffee">{p}</span> : <span key={i}>{p}</span>))}
+          </h2>
+          <p className="text-base md:text-lg leading-relaxed text-slate-300">{t('funding.sub')}</p>
+          <div className="mt-2 flex flex-col gap-3 border-t border-line-strong pt-6">
+            <h3 className="font-bold text-lg">{t('funding.help.title')}</h3>
+            <p className="text-[15px] leading-relaxed text-slate-300">{t('funding.help.body')}</p>
+            <a href="#contact" className="self-start mt-1 bg-ink text-paper hover:bg-ink/85 rounded-full px-6 py-3.5 text-[15px] font-semibold inline-flex items-center gap-2 transition-colors">
+              {t('funding.help.cta')} <ArrowRight size={15} />
             </a>
-          </motion.div>
-        ))}
-      </motion.div>
+          </div>
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-        className="mt-8 rounded-2xl p-6 border border-olive/40 bg-olive/10 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
-      >
-        <div className="flex-1">
-          <h3 className="font-bold mb-1.5">{t('funding.help.title')}</h3>
-          <p className="text-slate-300 text-sm">{t('funding.help.body')}</p>
-        </div>
-        <a
-          href="#contact"
-          className="bg-coffee hover:bg-coffee/80 text-white text-sm font-semibold px-5 py-3 rounded-xl inline-flex items-center justify-center gap-2 whitespace-nowrap"
-        >
-          {t('funding.help.cta')} <ArrowRight size={14} />
-        </a>
-      </motion.div>
-
-      <p className="text-xs text-slate-500 mt-6 text-center font-mono">
-        {t('funding.disclaimer')}
-      </p>
+        <motion.div className="lg:col-start-7 lg:col-span-6 flex flex-col" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+          {grants.map((g, i) => (
+            <motion.div
+              key={i}
+              variants={fadeUp}
+              className={`py-6 flex flex-col gap-2.5 ${i === 0 ? 'border-t-[1.5px] border-ink' : 'border-t border-line-strong'} ${i === grants.length - 1 ? 'border-b border-line-strong' : ''}`}
+            >
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <h3 className="text-lg md:text-xl font-bold">{g.title}</h3>
+                <span className="font-serif text-2xl md:text-3xl whitespace-nowrap">{g.amount}</span>
+              </div>
+              <p className="text-xs font-bold uppercase tracking-[0.06em] text-coffee">{g.urgency || g.timing}</p>
+              <p className="text-[15px] leading-relaxed text-slate-300">{g.fit}</p>
+              <a href={g.url} target="_blank" rel="noopener noreferrer" className="self-start text-sm font-semibold text-slate-400 hover:text-coffee inline-flex items-center gap-1.5 transition-colors">
+                {t('funding.linkLabel')} <ExternalLink size={13} />
+              </a>
+            </motion.div>
+          ))}
+          <p className="text-xs text-muted mt-5 leading-relaxed">{t('funding.disclaimer')}</p>
+        </motion.div>
+      </div>
     </Section>
   )
 }

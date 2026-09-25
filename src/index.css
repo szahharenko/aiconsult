@@ -1,19 +1,33 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400;1,7..72,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap");
 
 /* Enable the `dark:` variant via a `.dark` class on the html element. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-cream: #F5F5DC;
-  --color-coffee: #6F4E37;
-  --color-sage-green: #8A9A5B;
-  --color-charcoal: #36454F;
+  /* Design A "Kratt" - warm paper, navy ink, teal from the logo.
+   * `coffee` is kept as the token name for the primary accent so existing
+   * utilities (bg-coffee, text-coffee...) pick up the new teal. */
+  --color-cream: #F5F1E8;
+  --color-coffee: #00758A;
+  --color-sage-green: #00758A;
+  --color-charcoal: #0B1B2B;
+  --color-ink: #0B1B2B;
+  --color-paper: #F5F1E8;
+  --color-sand: #EAE4D6;
+  --color-card: #FFFDF8;
+  --color-line: #DDD5C4;
+  --color-line-strong: #B9AE97;
+  --color-muted: #6B6457;
+  --color-teal: #00758A;
+  --color-teal-bright: #00AECB;
+  --color-mint: #5FD3E6;
   /* Deep olive - Tarkratt sub-brand accent, borrowed from the
    * parent brand's mobile menu (undercover.ee). Reserved for AI-line
    * signals like the meetup banner, event markers, and technical chips. */
-  --color-olive: #333F33;
-  --font-sans: "Inter", sans-serif;
+  --color-olive: #0B1B2B;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-serif: "Literata", Georgia, serif;
   /* Technical accent font - applied to numbers, step labels, event times,
    * prices. Adds a precise, practitioner-y texture without affecting body
    * copy. Use sparingly via the `font-mono` utility. */
@@ -36,9 +50,9 @@ html.dark {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  background-color: #f8fafc;
-  color: #0f172a;
+  font-family: "Manrope", system-ui, sans-serif;
+  background-color: #F5F1E8;
+  color: #0B1B2B;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
@@ -55,30 +69,54 @@ html.dark body {
  * is enough.
  */
 html:not(.dark) {
-  --color-slate-50: #020617;
-  --color-slate-100: #0f172a;
-  --color-slate-200: #1e293b;
-  --color-slate-300: #334155;
-  --color-slate-400: #475569;
-  --color-slate-500: #64748b;
-  --color-slate-600: #94a3b8;
-  --color-slate-700: #cbd5e1;
-  --color-slate-800: #e2e8f0;
-  --color-slate-900: #f1f5f9;
-  --color-slate-950: #f8fafc;
+  /* Warm "paper" scale: light backgrounds, navy ink for text. */
+  --color-slate-50: #06111C;
+  --color-slate-100: #0B1B2B;
+  --color-slate-200: #1E2A38;
+  --color-slate-300: #3D4652;
+  --color-slate-400: #4A5563;
+  --color-slate-500: #6B6457;
+  --color-slate-600: #B9AE97;
+  --color-slate-700: #DDD5C4;
+  --color-slate-800: #FFFDF8;
+  --color-slate-900: #EAE4D6;
+  --color-slate-950: #F5F1E8;
 
-  /* `text-white` is widely used for headings - flip it to near-black in light
-   * mode so they remain readable on the now-light backgrounds. */
-  --color-white: #0f172a;
+  /* `text-white` is widely used for headings - flip it to navy ink in light
+   * mode so they remain readable on the paper backgrounds. */
+  --color-white: #0B1B2B;
+}
+
+/* Navy "ink" blocks: flip the scale back to dark so any reused component
+ * (forms, lists) reads correctly on the dark background. */
+html:not(.dark) .ink-scope {
+  --color-white: #F5F1E8;
+  --color-slate-100: #F5F1E8;
+  --color-slate-200: #E3E8EE;
+  --color-slate-300: #C9D2DB;
+  --color-slate-400: #9FB0C0;
+  --color-slate-500: #7F90A1;
+  --color-slate-600: #3A5068;
+  --color-slate-700: #22364A;
+  --color-slate-800: #13283B;
+  --color-slate-900: #0F2233;
+  --color-slate-950: #0B1B2B;
+  --color-coffee: #5FD3E6;
+}
+html:not(.dark) .ink-scope [class*="bg-coffee"] {
+  --color-white: #0B1B2B;
 }
 
 /* Restore real white inside coffee- and olive-colored elements (CTAs / pills /
  * AI-line banners), where the label is supposed to stay white regardless of
  * theme. */
 html:not(.dark) [class*="bg-coffee"],
-html:not(.dark) [class*="bg-olive"] {
+html:not(.dark) [class*="bg-olive"],
+html:not(.dark) [class*="bg-ink"] {
   --color-white: #ffffff;
 }
+
+.font-serif { font-feature-settings: "kern", "liga"; letter-spacing: -0.015em; }
 
 /* Smooth theme switch on common color-bearing utilities. */
 [class*="bg-slate-"],

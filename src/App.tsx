@@ -17,7 +17,7 @@ import { JsonLd } from './components/seo/JsonLd'
 import { businessSchema, personSchema, faqPageSchema } from './components/seo/schemas'
 
 // Sections
-import { Hero } from './components/sections/Hero'
+import { Hero, ResultsStrip, KrattStory } from './components/sections/Hero'
 import { Community } from './components/sections/Community'
 import { Services } from './components/sections/Services'
 import { AIFunding } from './components/sections/AIFunding'
@@ -92,7 +92,7 @@ export default function App() {
   }, [lang, i18n, navigate])
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans">
+    <div id="top" className="min-h-screen bg-paper text-ink font-sans">
       <Seo
         lang={activeLang}
         title={t('seo.homeTitle')}
@@ -120,6 +120,8 @@ export default function App() {
       <MeetupBanner />
       <Nav />
       <Hero />
+      <ResultsStrip />
+      <KrattStory />
       <Services />
       <Community />
       <AIFunding />

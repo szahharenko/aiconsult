@@ -1,13 +1,10 @@
 import { motion } from 'framer-motion'
-import { TrendingUp, Sparkles, Linkedin } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { fadeUp, stagger } from '../../animations'
 import { YOUR_FULL_NAME, LINKEDIN_URL } from '../../config'
 import { Section } from '../ui/Section'
-import { PhotoPlaceholder } from '../ui/PhotoPlaceholder'
-import { YouTubeEmbed } from '../ui/YouTubeEmbed'
-
-const FOUNDER_VIDEO_ID = 'cHAIl8ZgLhA'
+import sergeiPhoto from '../../assets/sergei.png'
 
 interface Stat {
   value: string
@@ -15,86 +12,58 @@ interface Stat {
 }
 
 export function About() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const items = t('about.items', { returnObjects: true }) as string[]
   const cardItems = t('about.cardItems', { returnObjects: true }) as string[]
   const stats = t('about.stats', { returnObjects: true }) as Stat[]
-  const showFounderVideo = i18n.language?.startsWith('xx')
 
   return (
     <Section id="about">
-      <h2 className="text-3xl font-bold text-white mb-5">{t('about.title')}</h2>
-      <motion.div className="grid md:grid-cols-2 gap-10 items-start" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-        <motion.div variants={fadeUp}>
-          <div className="flex items-center gap-4 mb-5 bg-slate-900 border border-slate-700 rounded-2xl p-4">
-            <PhotoPlaceholder />
-            <div>
-              <p className="text-white font-bold text-lg">{YOUR_FULL_NAME}</p>
-              <p className="text-coffee text-sm font-medium">{t('about.role')}</p>
-              <p className="text-slate-400 text-sm mt-1">Tallinn, Estonia</p>
-              <a
-                href={LINKEDIN_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-coffee transition-colors"
-              >
-                <Linkedin size={15} />{t('about.linkedin')}
-              </a>
-            </div>
+      <motion.div className="grid lg:grid-cols-12 gap-10 lg:gap-6 items-center" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.img
+          variants={fadeUp}
+          src={sergeiPhoto}
+          alt={YOUR_FULL_NAME}
+          className="lg:col-span-5 w-full aspect-square object-cover rounded-[28px]"
+        />
+        <motion.div variants={fadeUp} className="lg:col-start-7 lg:col-span-6 flex flex-col gap-6">
+          <p className="text-xs md:text-sm font-bold uppercase tracking-[0.08em] text-coffee">{t('about.title')}</p>
+          <div>
+            <h2 className="font-serif font-normal text-4xl md:text-[56px] leading-[1.05]">{YOUR_FULL_NAME}</h2>
+            <p className="mt-2 text-base md:text-lg text-coffee font-medium">{t('about.role')}</p>
           </div>
-
-          <p className="text-slate-300 leading-relaxed mb-5">{t('about.intro')}</p>
-
-          {/* Credibility stats - swap the placeholder values for real numbers */}
-          <div className="grid grid-cols-3 gap-3 mb-6">
+          <p className="text-base md:text-lg leading-relaxed text-slate-300">{t('about.intro')}</p>
+          <div className="grid grid-cols-3 gap-4 pt-1">
             {stats.map(stat => (
-              <div key={stat.label} className="bg-slate-900 border border-slate-700 rounded-2xl p-4 text-center">
-                <p className="text-coffee font-bold text-2xl leading-none">{stat.value}</p>
-                <p className="text-slate-400 text-xs mt-2 leading-tight">{stat.label}</p>
+              <div key={stat.label} className="flex flex-col gap-1">
+                <span className="font-serif text-4xl md:text-5xl leading-none">{stat.value}</span>
+                <span className="text-sm text-muted leading-snug">{stat.label}</span>
               </div>
             ))}
           </div>
-
-          <ul className="space-y-3">
+          <ul className="flex flex-col gap-2.5 border-t border-line pt-5">
             {items.map(item => (
-              <li key={item} className="flex items-start gap-3 text-slate-300">
-                <TrendingUp size={17} className="text-sage-green flex-shrink-0 mt-0.5" />{item}
+              <li key={item} className="flex gap-3 text-[15px] leading-relaxed text-slate-300">
+                <span className="mt-[11px] h-px w-3 shrink-0 bg-coffee" aria-hidden="true" />{item}
               </li>
             ))}
           </ul>
-        </motion.div>
-        <motion.div variants={fadeUp} className="bg-slate-900 border border-slate-700 rounded-2xl p-7 text-slate-300 leading-relaxed">
-          <h3 className="text-white font-bold text-lg mb-4">{t('about.cardTitle')}</h3>
-          <ul className="space-y-3">
-            {cardItems.map(item => (
-              <li key={item} className="flex items-start gap-3">
-                <Sparkles size={17} className="text-coffee flex-shrink-0 mt-1" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="self-start inline-flex items-center gap-2 font-semibold text-coffee hover:text-ink transition-colors">
+            {t('about.linkedin')} <ArrowRight size={16} />
+          </a>
         </motion.div>
       </motion.div>
-      {showFounderVideo && (
-        <motion.div
-          className="mt-12 max-w-3xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <p className="text-coffee/80 text-xs font-semibold uppercase tracking-widest mb-3 text-center">
-            {t('about.video.kicker')}
-          </p>
-          <h3 className="text-2xl font-bold text-white mb-4 text-center">
-            {t('about.video.title')}
-          </h3>
-          <YouTubeEmbed videoId={FOUNDER_VIDEO_ID} title={t('about.video.title')} />
-          <p className="text-slate-400 text-sm mt-4 text-center max-w-xl mx-auto">
-            {t('about.video.caption')}
-          </p>
-        </motion.div>
-      )}
+
+      <motion.div className="mt-16 md:mt-20 bg-sand rounded-3xl p-8 md:p-12 grid lg:grid-cols-12 gap-6" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+        <h3 className="lg:col-span-4 font-serif font-normal text-3xl md:text-4xl leading-tight">{t('about.cardTitle')}</h3>
+        <ul className="lg:col-start-6 lg:col-span-7 flex flex-col gap-3">
+          {cardItems.map(item => (
+            <li key={item} className="flex gap-3 text-base md:text-lg leading-relaxed text-slate-300">
+              <span className="mt-[13px] h-px w-4 shrink-0 bg-coffee" aria-hidden="true" />{item}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
     </Section>
   )
 }

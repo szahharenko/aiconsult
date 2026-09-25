@@ -1,18 +1,19 @@
 import { useEffect, useState } from 'react'
-import { Sun, Moon } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { BRAND_NAME, SUPPORTED_LANGS, type Lang } from '../../config'
-import { useTheme } from '../../contexts/ThemeContext'
 import logoUrl from '../../assets/tkr-logo.png'
+
+const anchors = ['services', 'funding', 'cases', 'about'] as const
 
 export function Nav() {
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()
   const { lang } = useParams<{ lang: string }>()
-  const { theme, toggleTheme } = useTheme()
+  const current = (lang || i18n.language) as Lang
   const [scrolled, setScrolled] = useState(false)
-  const useDarkTheme = false
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -26,51 +27,60 @@ export function Nav() {
     navigate(`/${newLang}`, { replace: true })
   }
 
+  const linkCls = 'text-ink/85 hover:text-coffee transition-colors'
+
   return (
-    <nav className="sticky top-0 z-40 bg-slate-950/90 backdrop-blur border-b border-slate-800">
-      <div
-        className={`max-w-5xl mx-auto px-6 flex items-center justify-between gap-4 transition-all duration-300 ${
-          scrolled ? 'h-12' : 'h-16'
-        }`}
-      >
-        <div className="flex items-center gap-3 min-w-0">
-          <img
-            src={logoUrl}
-            alt={BRAND_NAME}
-            className={`rounded-full object-contain transition-all duration-300 ${
-              scrolled ? 'h-10 opacity-90' : 'h-16'
-            }`}
-          />
-          <span
-            className={`hidden sm:inline text-slate-500 font-normal transition-all duration-300`}
-          >
-          {t('brandTagline')}
-          </span>
+    <nav className={`sticky top-0 z-40 border-b transition-colors ${scrolled ? 'bg-paper/92 backdrop-blur border-line' : 'bg-paper border-line'}`}>
+      <div className={`max-w-6xl mx-auto px-5 md:px-10 flex items-center justify-between gap-6 transition-all duration-300 ${scrolled ? 'h-16' : 'h-20'}`}>
+        <a href="#top" className="flex items-center shrink-0" aria-label={BRAND_NAME}>
+          <img src={logoUrl} alt={BRAND_NAME} className={`w-auto transition-all duration-300 ${scrolled ? 'h-8' : 'h-10'}`} />
+        </a>
+
+        <div className="hidden lg:flex items-center gap-8 text-[15px] font-medium">
+          {anchors.map(a => (
+            <a key={a} href={`#${a}`} className={linkCls}>{t(`nav.links.${a}`)}</a>
+          ))}
+          <Link to={`/${current}/events`} className={linkCls}>{t('nav.links.events')}</Link>
         </div>
-        <div className="flex items-center gap-3">
-          { useDarkTheme && <button
-            type="button"
-            onClick={toggleTheme}
-            aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
-            title={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
-            className="p-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-coffee hover:border-coffee/50 transition-colors"
-          >
-            {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
-          </button>
-          }
-          <div className="flex bg-slate-800 border border-slate-700 rounded-lg overflow-hidden text-xs font-semibold">
+
+        <div className="flex items-center gap-4">
+          <div className="flex text-[13px] font-semibold" role="group" aria-label="Language">
             {SUPPORTED_LANGS.map(l => (
-              <button key={l} onClick={() => switchLang(l)}
-                className={`px-3 py-1.5 transition-colors ${(lang || i18n.language) === l ? 'bg-coffee text-white' : 'text-slate-400 hover:text-white'}`}>
+              <button
+                key={l}
+                type="button"
+                onClick={() => switchLang(l)}
+                aria-pressed={current === l}
+                className={`px-2 py-2 border-b-2 transition-colors ${current === l ? 'border-ink text-ink' : 'border-transparent text-muted hover:text-ink'}`}
+              >
                 {l.toUpperCase()}
               </button>
             ))}
           </div>
-          <a href="#contact" className="hidden sm:inline-block bg-coffee hover:bg-coffee/80 text-white px-5 py-2 rounded-xl text-sm font-semibold transition-colors">
+          <a href="#contact" className="hidden sm:inline-flex bg-ink hover:bg-ink/85 text-paper px-5 py-3 rounded-full text-[15px] font-semibold transition-colors">
             {t('nav.cta')}
           </a>
+          <button
+            type="button"
+            onClick={() => setOpen(o => !o)}
+            aria-label="Menu"
+            aria-expanded={open}
+            className="lg:hidden w-11 h-11 -mr-2 flex items-center justify-center text-ink"
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </div>
+
+      {open && (
+        <div className="lg:hidden border-t border-line bg-paper px-5 py-4 flex flex-col text-lg font-medium">
+          {anchors.map(a => (
+            <a key={a} href={`#${a}`} onClick={() => setOpen(false)} className="py-3 border-b border-line text-ink">{t(`nav.links.${a}`)}</a>
+          ))}
+          <Link to={`/${current}/events`} onClick={() => setOpen(false)} className="py-3 border-b border-line text-ink">{t('nav.links.events')}</Link>
+          <a href="#contact" onClick={() => setOpen(false)} className="mt-4 bg-ink text-paper rounded-full py-3.5 text-center font-semibold">{t('nav.cta')}</a>
+        </div>
+      )}
     </nav>
   )
 }

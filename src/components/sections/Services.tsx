@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { CheckCircle2, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { fadeUp, stagger } from '../../animations'
 import { Section } from '../ui/Section'
@@ -7,71 +7,58 @@ import { SectionHeader } from '../ui/SectionHeader'
 
 interface ServiceLine {
   title: string
-  price: string
   priceNote: string
   items: string[]
   cta: string
+  result?: string
   highlight?: boolean
 }
-
-// Every service leads to the free consultation funnel.
-const lineHrefs = ['#contact', '#contact', '#contact']
 
 export function Services() {
   const { t } = useTranslation()
   const lines = t('services.lines', { returnObjects: true }) as ServiceLine[]
 
   return (
-    <Section dark id="services">
-      <SectionHeader title={t('services.title')} sub={t('services.sub')} />
-      <motion.div
-        className="grid md:grid-cols-3 gap-5"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={stagger}
-      >
-        {lines.map((line, i) => (
-          <motion.div
-            key={i}
-            variants={fadeUp}
-            className={`rounded-2xl p-6 border flex flex-col ${
-              line.highlight
-                ? 'bg-coffee/10 border-coffee'
-                : 'bg-slate-800 border-slate-700'
-            }`}
-          >
-            {line.highlight && (
-              <span className="self-start bg-coffee text-white text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wide">
-                {t('services.popular')}
-              </span>
-            )}
-            <h3 className="text-lg font-bold mb-1 mt-1">{line.title}</h3>
-            <div className="mt-2 mb-1">
-              <p className="text-slate-400 text-xs mt-1">{line.priceNote}</p>
-            </div>
-            <ul className="space-y-2 mb-6 mt-4 flex-1 border-t border-slate-700/60 pt-4">
-              {line.items.map(item => (
-                <li key={item} className="flex items-start gap-2 text-slate-300 text-sm">
-                  <CheckCircle2 size={14} className="text-sage-green flex-shrink-0 mt-0.5" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <a
-              href={lineHrefs[i]}
-              className={`text-center py-3 rounded-xl font-semibold transition-colors text-sm inline-flex items-center justify-center gap-2 ${
-                line.highlight
-                  ? 'bg-coffee hover:bg-coffee/80 text-white'
-                  : 'border border-slate-600 hover:border-coffee/60 text-slate-300 hover:text-coffee'
-              }`}
+    <Section id="services">
+      <SectionHeader title={t('services.title')} sub={t('services.grantNote')} />
+      <motion.div className="grid md:grid-cols-3 gap-5 md:gap-6" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        {lines.map((line, i) => {
+          const hi = !!line.highlight
+          return (
+            <motion.article
+              key={i}
+              variants={fadeUp}
+              className={`rounded-3xl p-7 md:p-9 flex flex-col gap-5 ${hi ? 'bg-ink ink-scope text-paper' : 'bg-card border border-line'}`}
             >
-              {line.cta} <ArrowRight size={14} />
-            </a>
-          </motion.div>
-        ))}
+              <div className="flex items-center justify-between gap-3">
+                <span className={`font-serif italic text-xl ${hi ? 'text-mint' : 'text-coffee'}`}>{String(i + 1).padStart(2, '0')}</span>
+                {hi && <span className="text-xs font-bold bg-mint text-ink px-2.5 py-1 rounded-full">{t('services.popular')}</span>}
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <span className={`text-xs font-bold uppercase tracking-[0.08em] ${hi ? 'text-slate-400' : 'text-muted'}`}>{line.priceNote}</span>
+                <h3 className="text-2xl font-bold tracking-tight leading-snug">{line.title}</h3>
+              </div>
+              <ul className="flex flex-col gap-2.5 flex-1">
+                {line.items.map(item => (
+                  <li key={item} className="flex gap-3 text-[15px] leading-relaxed text-slate-300">
+                    <span className={`mt-[11px] h-px w-3 shrink-0 ${hi ? 'bg-mint' : 'bg-coffee'}`} aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              {line.result && <p className={`text-sm font-semibold ${hi ? 'text-slate-400' : 'text-muted'}`}>{line.result}</p>}
+              <a
+                href="#contact"
+                className={`rounded-full py-3.5 px-5 text-[15px] font-semibold inline-flex items-center justify-center gap-2 transition-colors ${
+                  hi ? 'bg-mint text-ink hover:bg-paper' : 'border-[1.5px] border-ink text-ink hover:bg-ink hover:text-paper'
+                }`}
+              >
+                {line.cta} <ArrowRight size={15} />
+              </a>
+            </motion.article>
+          )
+        })}
       </motion.div>
-      <p className="text-center text-slate-400 text-sm mt-6 max-w-2xl mx-auto">{t('services.grantNote')}</p>
     </Section>
   )
 }

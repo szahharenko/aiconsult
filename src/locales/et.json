@@ -1,7 +1,14 @@
 {
   "brandTagline": "Tehisintellekt lihtsate sõnadega",
   "nav": {
-    "cta": "Tasuta konsultatsioon"
+    "cta": "Tasuta konsultatsioon",
+    "links": {
+      "services": "Teenused",
+      "funding": "Toetused",
+      "cases": "Näited",
+      "about": "Minust",
+      "events": "AI-kohtumine"
+    }
   },
   "meetupBanner": "Järgmine AI-kohtumine · Tallinn →",
   "hero": {
@@ -11,13 +18,27 @@
       "Üks-ühele koolitus",
       "Valmis lahendus"
     ],
-    "h1a": "AI-automatiseerimine Eesti ettevõtetele.",
-    "h1b": "Riik katab kuni 70%.",
-    "p": "Päevad käsitööd muutuvad minutiteks: aruanded, hanked, tellimuste sisestamine, klientide päringud. Leian, kus meeskond aega kaotab, ehitan AI-tööriistad ja aitan taotleda EIS-i toetust, mis katab suurema osa kuludest. Esimene konsultatsioon on tasuta.",
+    "h1a": "Päevade käsitöö -",
+    "h1b": "minutitega.",
+    "p": "Leian, kus teie meeskond aega kaotab, ehitan AI-tööriistad teie ülesannete jaoks ja aitan taotleda EIS-i toetust. Riik katab kuni 70% kuludest.",
     "cta": "Broneeri tasuta konsultatsioon",
     "club": "Järgmine kohtumine",
     "how": "Kuidas see käib",
-    "grantCta": "Kontrolli oma toetust"
+    "grantCta": "Kontrolli oma toetust",
+    "eyebrow": "AI-nõustamine ettevõtetele · Tallinn",
+    "trust": "Esimene kohtumine on tasuta · 30-40 minutit · ET / RU / EN",
+    "worked": "Olen töötanud",
+    "calc": {
+      "label": "Näidisarvutus",
+      "badge": "EIS-i toetus",
+      "project": "Automatiseerimisprojekt",
+      "projectAmount": "20 000 €",
+      "grant": "Riik katab",
+      "grantAmount": "−14 000 €",
+      "pay": "Teie maksate",
+      "payAmount": "6 000 €",
+      "check": "Kontrolli registrikoodi järgi"
+    }
   },
   "community": {
     "title": "AI-kohtumine - kord kuus",
@@ -102,7 +123,7 @@
     "location": "Tallinn · kord kuus · tasuta"
   },
   "process": {
-    "title": "Kuidas me koos töötame",
+    "title": "Kuidas me *koos töötame*",
     "steps": [
       {
         "step": "01",
@@ -127,7 +148,7 @@
     ]
   },
   "services": {
-    "title": "Kuidas saan kasulik olla",
+    "title": "Kolm viisi *alustada*",
     "sub": "Kolm viisi koos töötamiseks. Alustame alati tasuta konsultatsiooniga.",
     "popular": "Kõige sagedasem",
     "grantNote": "Iga projekti hindame tasuta konsultatsioonil. Enamik töid kvalifitseerub EIS-i toetustele, nii et riik võib katta kuni 70% maksumusest.",
@@ -142,7 +163,8 @@
           "Lihtsustame ja viskame liigse välja",
           "Muudame mõtteviisi nii, et AI saaks abimeheks, mitte probleemiks"
         ],
-        "cta": "Aruta konsultatsioonil"
+        "cta": "Aruta konsultatsioonil",
+        "result": "Tulemus: protsessikaart ja plaan"
       },
       {
         "title": "Tehisintellekti lisamine protsessidesse",
@@ -155,7 +177,8 @@
           "Meeskonna koolitamine uute tööriistadega töötamiseks"
         ],
         "cta": "Aruta konsultatsioonil",
-        "highlight": true
+        "highlight": true,
+        "result": "Tulemus: töötav tööriist + kuu tuge"
       },
       {
         "title": "Üks-ühele koolitus",
@@ -167,12 +190,13 @@
           "Personaalsed agendid ja oskused",
           "Ilma kuiva teooriata"
         ],
-        "cta": "Aruta konsultatsioonil"
+        "cta": "Aruta konsultatsioonil",
+        "result": "Tulemus: oma assistent ja oskus"
       }
     ]
   },
   "funding": {
-    "title": "Riik maksab tehisintellekti ja automatiseerimise eest peale",
+    "title": "Riik *maksab peale* tehisintellekti ja automatiseerimise eest",
     "sub": "Eesti tagastab osa rahast töö eest, mida me niikuinii teeme. Summad 2026 jaoks.",
     "linkLabel": "Loe lähemalt eis.ee",
     "disclaimer": "Tingimused muutuvad - kontrolli eis.ee enne taotlemist. Põhinõue: Eesti ettevõte, mille 2 aasta keskmine müügitulu on vähemalt 50 000 €.",
@@ -256,7 +280,7 @@
     "sub": "Mõned ettevõtted, keda olen aidanud."
   },
   "testimonials": {
-    "title": "Mida kliendid ütlevad",
+    "title": "Mida *kliendid* ütlevad",
     "sub": "Mõned tagasisided ettevõtetelt, kellega olen koostööd teinud.",
     "items": [
       {
@@ -282,7 +306,7 @@
     ]
   },
   "cases": {
-    "title": "Kuidas see praktikas välja näeb",
+    "title": "Kuidas see *päriselt* välja näeb",
     "sub": "Paar projekti. Tõelised probleemid, tõelised numbrid.",
     "problem": "Probleem",
     "solution": "Lahendus",
@@ -371,9 +395,18 @@
     "linkedin": "Vaata LinkedIni profiili",
     "intro": "Olen Sergei Zahharenko. Üle 20 aasta olen arendanud tarkvara erinevatele ettevõtetele ja korporatsioonidele: fintech, müük, tootmine, avalik sektor ja teadusuuringud.",
     "stats": [
-      { "value": "20+", "label": "aastat arenduses" },
-      { "value": "20+", "label": "AI- ja automatiseerimisprojekti" },
-      { "value": "5", "label": "valdkonda" }
+      {
+        "value": "20+",
+        "label": "aastat arenduses"
+      },
+      {
+        "value": "20+",
+        "label": "AI- ja automatiseerimisprojekti"
+      },
+      {
+        "value": "5",
+        "label": "valdkonda"
+      }
     ],
     "items": [
       "Üle 20 aasta ehitan ja juurutan tarkvarasüsteeme.",
@@ -411,7 +444,7 @@
     ]
   },
   "contact": {
-    "title": "Räägi, mille kallal töötad",
+    "title": "Rääkige, mis *võtab teie aega*",
     "sub": "Loen kõike. Vastan 24 tunni jooksul.",
     "items": [
       "Tasuta konsultatsioon",
@@ -507,5 +540,31 @@
         "body": "Andmekaitse Inspektsioon (Eesti andmekaitse järelevalveasutus): aki.ee"
       }
     ]
+  },
+  "results": [
+    {
+      "value": "2 päeva",
+      "accent": "→ 10 min",
+      "label": "50-200-leheküljelise hanke läbivaatus"
+    },
+    {
+      "value": "3×",
+      "label": "rohkem aruandeid analüütiku kohta Forstas"
+    },
+    {
+      "value": "−40%",
+      "label": "tellimusest arveni terasetehases"
+    },
+    {
+      "value": "2 100 €",
+      "label": "kuus kokkuhoidu käsitsisisestuselt"
+    }
+  ],
+  "kratt": {
+    "kicker": "Miks TarKratt",
+    "title": "Kratt on abiline, kes",
+    "accent": "teeb töö teie eest",
+    "p1": "Eesti rahvapärimuses on kratt olend, kelle peremees meisterdab käepärasest kraamist ja ellu äratab, et see tema eest tööd teeks.",
+    "p2": "Mina teen sama - ainult teie andmetest, dokumentidest ja tehisintellektist. Tark kratt loeb hankeid, koostab aruandeid ja kannab tellimusi üle, samal ajal kui meeskond tegeleb klientidega."
   }
 }

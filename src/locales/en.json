@@ -1,7 +1,14 @@
 {
   "brandTagline": "AI in plain words",
   "nav": {
-    "cta": "Free consultation"
+    "cta": "Free consultation",
+    "links": {
+      "services": "Services",
+      "funding": "Grants",
+      "cases": "Cases",
+      "about": "About",
+      "events": "AI meetup"
+    }
   },
   "meetupBanner": "Next AI meetup · Tallinn →",
   "hero": {
@@ -11,13 +18,27 @@
       "One-on-one training",
       "Done-for-you setup"
     ],
-    "h1a": "AI automation for Estonian businesses.",
-    "h1b": "The state covers up to 70%.",
-    "p": "Days of manual work turn into minutes: reports, tenders, order entry, customer requests. I find where your team loses time, build the AI tools, and help you apply for an EIS grant to cover most of the cost. First consultation is free.",
+    "h1a": "Days of manual work -",
+    "h1b": "done in minutes.",
+    "p": "I find where your team loses time, build AI tools around your tasks, and help you get an EIS grant. The state covers up to 70% of the cost.",
     "cta": "Book a free consultation",
     "club": "Next meetup",
     "how": "How it works",
-    "grantCta": "Check your grant"
+    "grantCta": "Check your grant",
+    "eyebrow": "AI consulting for business · Tallinn",
+    "trust": "First meeting is free · 30-40 minutes · EN / ET / RU",
+    "worked": "Worked with",
+    "calc": {
+      "label": "Example calculation",
+      "badge": "EIS grant",
+      "project": "Automation project",
+      "projectAmount": "€20,000",
+      "grant": "Covered by the state",
+      "grantAmount": "−€14,000",
+      "pay": "You pay",
+      "payAmount": "€6,000",
+      "check": "Check by registration code"
+    }
   },
   "community": {
     "title": "AI meetup - once a month",
@@ -102,7 +123,7 @@
     "location": "Tallinn · monthly · free"
   },
   "process": {
-    "title": "How we work together",
+    "title": "How we *work together*",
     "steps": [
       {
         "step": "01",
@@ -127,7 +148,7 @@
     ]
   },
   "services": {
-    "title": "How I can be useful",
+    "title": "Three ways to *start*",
     "sub": "Three ways to work together. We always start with a free consultation.",
     "popular": "Most common",
     "grantNote": "Every project is scoped on a free consultation. Most work qualifies for EIS grants, so the state can cover up to 70% of the cost.",
@@ -142,7 +163,8 @@
           "We simplify and cut the extra",
           "We shift the mindset so AI becomes a helper, not a problem"
         ],
-        "cta": "Discuss in a free consultation"
+        "cta": "Discuss in a free consultation",
+        "result": "Result: a process map and a plan"
       },
       {
         "title": "Adding AI to your processes",
@@ -155,7 +177,8 @@
           "Training your team to work with the new tools"
         ],
         "cta": "Discuss in a free consultation",
-        "highlight": true
+        "highlight": true,
+        "result": "Result: a working tool + a month of support"
       },
       {
         "title": "One-on-one training",
@@ -167,12 +190,13 @@
           "Personal agents and skills",
           "No dry theory"
         ],
-        "cta": "Discuss in a free consultation"
+        "cta": "Discuss in a free consultation",
+        "result": "Result: your own assistant and the skill"
       }
     ]
   },
   "funding": {
-    "title": "The state co-pays for AI and automation",
+    "title": "The state *co-pays* for AI and automation",
     "sub": "Estonia gives back part of the money for work we already do. Amounts for 2026.",
     "linkLabel": "Read more on eis.ee",
     "disclaimer": "Terms change - check eis.ee before applying. Baseline requirement: an Estonian company with 2-year average revenue of at least €50,000.",
@@ -256,7 +280,7 @@
     "sub": "A few of the companies I've helped."
   },
   "testimonials": {
-    "title": "What clients say",
+    "title": "What *clients* say",
     "sub": "A few words from the companies I've worked with.",
     "items": [
       {
@@ -282,7 +306,7 @@
     ]
   },
   "cases": {
-    "title": "What this looks like in practice",
+    "title": "What this looks like *in practice*",
     "sub": "A few projects. Real problems, real numbers.",
     "problem": "Problem",
     "solution": "Solution",
@@ -371,9 +395,18 @@
     "linkedin": "View LinkedIn profile",
     "intro": "I'm Sergei Zahharenko. For over 20 years I've built software for all kinds of companies and corporations: fintech, sales, manufacturing, the public sector, and research.",
     "stats": [
-      { "value": "20+", "label": "years in development" },
-      { "value": "20+", "label": "AI & automation projects" },
-      { "value": "5", "label": "industries" }
+      {
+        "value": "20+",
+        "label": "years in development"
+      },
+      {
+        "value": "20+",
+        "label": "AI & automation projects"
+      },
+      {
+        "value": "5",
+        "label": "industries"
+      }
     ],
     "items": [
       "Over 20 years building and rolling out software systems.",
@@ -411,7 +444,7 @@
     ]
   },
   "contact": {
-    "title": "Tell me what you're working on",
+    "title": "Tell me what *takes up your time*",
     "sub": "I read everything. Reply within 24 hours.",
     "items": [
       "Free consultation",
@@ -507,5 +540,31 @@
         "body": "Andmekaitse Inspektsioon (Estonian Data Protection Inspectorate): aki.ee"
       }
     ]
+  },
+  "results": [
+    {
+      "value": "2 days",
+      "accent": "→ 10 min",
+      "label": "to review a 50-200 page tender"
+    },
+    {
+      "value": "3×",
+      "label": "more reports per analyst at Forsta"
+    },
+    {
+      "value": "−40%",
+      "label": "order-to-invoice time at a steel plant"
+    },
+    {
+      "value": "€2,100",
+      "label": "saved per month on manual entry"
+    }
+  ],
+  "kratt": {
+    "kicker": "Why TarKratt",
+    "title": "A kratt is a helper that",
+    "accent": "works for you",
+    "p1": "In Estonian folklore, a kratt is a creature its master builds from whatever is at hand and brings to life to do the work for him.",
+    "p2": "I do the same - only from your data, documents and AI. A smart kratt, a tark kratt, reads tenders, builds reports and moves orders while your team focuses on customers."
   }
 }
