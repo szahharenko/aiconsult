@@ -11,12 +11,13 @@
       "One-on-one training",
       "Done-for-you setup"
     ],
-    "h1a": "TarKratt -",
-    "h1b": "helping businesses befriend AI",
-    "p": "Business is changing. I'll help reshape your mindset and processes so AI becomes your advantage. Less routine, more control and speed, a sharper customer focus. No buzzwords or complexity. First consultation is free.",
+    "h1a": "AI automation for Estonian businesses.",
+    "h1b": "The state covers up to 70%.",
+    "p": "Days of manual work turn into minutes: reports, tenders, order entry, customer requests. I find where your team loses time, build the AI tools, and help you apply for an EIS grant to cover most of the cost. First consultation is free.",
     "cta": "Book a free consultation",
     "club": "Next meetup",
-    "how": "How it works"
+    "how": "How it works",
+    "grantCta": "Check your grant"
   },
   "community": {
     "title": "AI meetup - once a month",
@@ -141,7 +142,7 @@
           "We simplify and cut the extra",
           "We shift the mindset so AI becomes a helper, not a problem"
         ],
-        "cta": "Discuss on a consultation"
+        "cta": "Discuss in a free consultation"
       },
       {
         "title": "Adding AI to your processes",
@@ -153,7 +154,7 @@
           "Assistants, chatbots, automatic reports",
           "Training your team to work with the new tools"
         ],
-        "cta": "Discuss on a consultation",
+        "cta": "Discuss in a free consultation",
         "highlight": true
       },
       {
@@ -166,7 +167,7 @@
           "Personal agents and skills",
           "No dry theory"
         ],
-        "cta": "Discuss on a consultation"
+        "cta": "Discuss in a free consultation"
       }
     ]
   },
@@ -179,7 +180,7 @@
       {
         "title": "Buy and set up ready-made software",
         "amount": "up to €5,000",
-        "timing": "Open · since March 4, 2026",
+        "timing": "Open now",
         "urgency": "Open now · budget is limited",
         "fit": "A good fit if you need to buy and set up a ready tool: CRM, an assistant, a bot, accounting. The fastest and simplest first step.",
         "url": "https://eis.ee/en/"
@@ -187,7 +188,7 @@
       {
         "title": "Process automation",
         "amount": "up to €150,000",
-        "timing": "Open · since March 30, 2026",
+        "timing": "Open now",
         "urgency": "Open now · apply early",
         "fit": "A fit for custom builds: AI assistants, office routine automation, working with data. Most of our projects fit here.",
         "url": "https://eis.ee/en/"
@@ -260,11 +261,11 @@
     "items": [
       {
         "quote": "What used to take our team two days now takes ten minutes. The tool reads a tender, tells us whether it fits, and drafts the paperwork - and Sergei made sure we actually understood how it works.",
-        "name": "Our tools",
-        "role": "Riigi Tugiteenuste Keskus and EIS"
+        "name": "Procurement team",
+        "role": "Riigi Tugiteenuste Keskus"
       },
       {
-        "quote": "Based on report data analysis, reports our analysts built by hand for days are now ready in minutes, formatted to our template. The rollout was calm and practical - no hype, just working software.",
+        "quote": "Reports our analysts used to build by hand over several days are now ready in minutes, formatted to our template. The rollout was calm and practical - no hype, just working software.",
         "name": "Kent Hanson",
         "role": "Head of development, Forsta"
       },
@@ -274,7 +275,7 @@
         "role": "Head of operations, Industrial Metal"
       },
       {
-        "quote": "After creating new AI tools our reporting services over all of Estonia, reports, analytics, procurement, and communication with Roads registry became much faster and more efficient. Sergei is a great partner to work with - he understands the needs of the business and finds the right solution.",
+        "quote": "Since we started using the new AI tools, our reporting services across Estonia - reports, analytics, procurement, and communication with the road registry - have become much faster and more efficient. Sergei is a great partner: he understands what the business needs and finds the right solution.",
         "name": "Andrei Anisimov",
         "role": "CEO, Highway Engineering"
       }
@@ -368,7 +369,7 @@
     "title": "Who's running this",
     "role": "I help businesses tidy up processes and put AI to work",
     "linkedin": "View LinkedIn profile",
-    "intro": "I'm Sergei Zahharenko. For over 20 years I've built software for all kinds of companies and corporations. Fintech, sales, and real manufacturing.",
+    "intro": "I'm Sergei Zahharenko. For over 20 years I've built software for all kinds of companies and corporations: fintech, sales, manufacturing, the public sector, and research.",
     "stats": [
       { "value": "20+", "label": "years in development" },
       { "value": "20+", "label": "AI & automation projects" },

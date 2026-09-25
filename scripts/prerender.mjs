@@ -39,6 +39,35 @@ const SETTLE_MS = 1200
 const NAV_TIMEOUT_MS = 30_000
 const PREVIEW_PORT = 4173
 
+// Third-party trackers must never run during prerender: they inject extra
+// <script> tags into the DOM (which then get baked into the snapshot and load
+// twice for real visitors) and send hits with a 127.0.0.1 URL to Google Ads /
+// Meta, polluting conversion data.
+const TRACKER_HOSTS = [
+  'googletagmanager.com',
+  'google-analytics.com',
+  'googleadservices.com',
+  'doubleclick.net',
+  'connect.facebook.net',
+  'facebook.com',
+]
+
+function isTracker(url) {
+  try {
+    const host = new URL(url).hostname
+    return TRACKER_HOSTS.some((h) => host === h || host.endsWith('.' + h))
+  } catch {
+    return false
+  }
+}
+
+// Script srcs that legitimately live in the built dist/index.html. Anything
+// else found in the rendered DOM was injected at runtime and gets stripped.
+async function readAllowedScriptSrcs() {
+  const html = await fs.readFile(path.join(DIST, 'index.html'), 'utf8')
+  return [...html.matchAll(/<script[^>]*\ssrc="([^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, '&'))
+}
+
 function log(msg) {
   process.stdout.write(`[prerender] ${msg}\n`)
 }
@@ -53,12 +82,18 @@ async function ensureDistExists() {
   }
 }
 
-async function snapshot(browser, baseUrl, route) {
+async function snapshot(browser, baseUrl, route, allowedScriptSrcs) {
   const url = baseUrl + route.path
   const page = await browser.newPage()
 
   // Suppress noisy console output from the page during prerender.
   page.on('pageerror', (err) => log(`  page error on ${route.path}: ${err.message}`))
+
+  await page.setRequestInterception(true)
+  page.on('request', (req) => {
+    if (isTracker(req.url())) req.abort()
+    else req.continue()
+  })
 
   try {
     // Pre-seed localStorage so the cookie banner / theme don't appear in the
@@ -78,9 +113,18 @@ async function snapshot(browser, baseUrl, route) {
     await new Promise((r) => setTimeout(r, SETTLE_MS))
 
     // Mark the document so we can tell prerendered HTML apart at runtime.
-    await page.evaluate(() => {
+    const removed = await page.evaluate((allowed) => {
       document.documentElement.setAttribute('data-prerendered', 'true')
-    })
+      let n = 0
+      for (const el of document.querySelectorAll('script[src]')) {
+        if (!allowed.includes(el.getAttribute('src'))) {
+          el.remove()
+          n += 1
+        }
+      }
+      return n
+    }, allowedScriptSrcs)
+    if (removed) log(`  stripped ${removed} runtime-injected script(s) from ${route.path}`)
 
     const html = await page.content()
     const outPath = route.outFile
@@ -98,6 +142,7 @@ async function snapshot(browser, baseUrl, route) {
 
 async function main() {
   await ensureDistExists()
+  const allowedScriptSrcs = await readAllowedScriptSrcs()
 
   log('starting vite preview server…')
   const server = await preview({
@@ -117,7 +162,7 @@ async function main() {
   try {
     for (const route of ROUTES) {
       try {
-        await snapshot(browser, baseUrl, route)
+        await snapshot(browser, baseUrl, route, allowedScriptSrcs)
       } catch (err) {
         failed += 1
         log(`  ✗ ${route.path}: ${err.message}`)

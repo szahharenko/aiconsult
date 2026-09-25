@@ -32,14 +32,16 @@ import { Contact } from './components/sections/Contact'
 // Google Consent Mode v2 — relay the cookie banner choice to the Google tag
 function updateAdsConsent(granted: boolean) {
   const w = window as unknown as { gtag?: (...args: unknown[]) => void }
-  if (typeof w.gtag !== 'function') return
   const state = granted ? 'granted' : 'denied'
-  w.gtag('consent', 'update', {
+  if (typeof w.gtag === 'function') w.gtag('consent', 'update', {
     ad_storage: state,
     ad_user_data: state,
     ad_personalization: state,
     analytics_storage: state,
   })
+  // Meta Pixel consent - revoked by default in index.html
+  const f = window as unknown as { fbq?: (...args: unknown[]) => void }
+  if (typeof f.fbq === 'function') f.fbq('consent', granted ? 'grant' : 'revoke')
 }
 
 export default function App() {

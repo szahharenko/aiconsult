@@ -11,12 +11,13 @@
       "Üks-ühele koolitus",
       "Valmis lahendus"
     ],
-    "h1a": "TarKratt -",
-    "h1b": "aitame ettevõtetel tehisintellektiga sõbraks saada",
-    "p": "Äri muutub. Aitan ümber kujundada mõtteviisi ja protsesse nii, et tehisintellekt saaks sinu eeliseks. Vähem rutiini, rohkem kontrolli ja kiirust, tugevam kliendikesksus. Ilma moesõnade ja keerukuseta. Esimene konsultatsioon on tasuta.",
+    "h1a": "AI-automatiseerimine Eesti ettevõtetele.",
+    "h1b": "Riik katab kuni 70%.",
+    "p": "Päevad käsitööd muutuvad minutiteks: aruanded, hanked, tellimuste sisestamine, klientide päringud. Leian, kus meeskond aega kaotab, ehitan AI-tööriistad ja aitan taotleda EIS-i toetust, mis katab suurema osa kuludest. Esimene konsultatsioon on tasuta.",
     "cta": "Broneeri tasuta konsultatsioon",
     "club": "Järgmine kohtumine",
-    "how": "Kuidas see käib"
+    "how": "Kuidas see käib",
+    "grantCta": "Kontrolli oma toetust"
   },
   "community": {
     "title": "AI-kohtumine - kord kuus",
@@ -179,7 +180,7 @@
       {
         "title": "Osta ja seadista valmis tarkvara",
         "amount": "kuni 5 000 €",
-        "timing": "Avatud · alates 4. märts 2026",
+        "timing": "Avatud praegu",
         "urgency": "Avatud praegu · eelarve on piiratud",
         "fit": "Sobib, kui on vaja osta ja seadistada valmis tööriist: CRM, assistent, robot, raamatupidamine. Kõige kiirem ja lihtsam esimene samm.",
         "url": "https://eis.ee/en/"
@@ -187,7 +188,7 @@
       {
         "title": "Protsesside automatiseerimine",
         "amount": "kuni 150 000 €",
-        "timing": "Avatud · alates 30. märts 2026",
+        "timing": "Avatud praegu",
         "urgency": "Avatud praegu · taotle varakult",
         "fit": "Sobib kohandatud arenduseks: AI-assistendid, kontorirutiini automatiseerimine, andmetega töö. Enamik meie projektidest mahub siia.",
         "url": "https://eis.ee/en/"
@@ -260,8 +261,8 @@
     "items": [
       {
         "quote": "Mis varem võttis meie meeskonnal kaks päeva, võtab nüüd kümme minutit. Tööriist loeb hankedokumendid, ütleb, kas need sobivad, ja koostab paberite mustandid - ja Sergei veendus, et me tegelikult mõistame, kuidas see töötab.",
-        "name": "Meie tööriistad",
-        "role": "Riigi Tugiteenuste Keskus ja EIS"
+        "name": "Hankemeeskond",
+        "role": "Riigi Tugiteenuste Keskus"
       },
       {
         "quote": "Põhinedes aruandedata analüüsil, on aruanded, mida meie analüütikud varem käsitsi ehitasid päevade kaupa, nüüd valmis minutitega, vormindatud meie mallile. Käivitamine oli rahulik ja praktiline - pole mingit hype'i, lihtsalt töötav tarkvara.",
@@ -368,7 +369,7 @@
     "title": "Kes seda veab",
     "role": "Aitan ettevõtetel protsesse korrastada ja tehisintellekti tööle panna",
     "linkedin": "Vaata LinkedIni profiili",
-    "intro": "Olen Sergei Zahharenko. Üle 20 aasta olen arendanud tarkvara erinevatele ettevõtetele ja korporatsioonidele. Fintech, müük ja päris tootmine.",
+    "intro": "Olen Sergei Zahharenko. Üle 20 aasta olen arendanud tarkvara erinevatele ettevõtetele ja korporatsioonidele: fintech, müük, tootmine, avalik sektor ja teadusuuringud.",
     "stats": [
       { "value": "20+", "label": "aastat arenduses" },
       { "value": "20+", "label": "AI- ja automatiseerimisprojekti" },

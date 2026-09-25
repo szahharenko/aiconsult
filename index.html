@@ -66,6 +66,10 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
+    // GDPR: Meta Pixel stays revoked until the visitor accepts cookies
+    try {
+      fbq('consent', localStorage.getItem('cookie_consent') === 'accepted' ? 'grant' : 'revoke');
+    } catch (e) { fbq('consent', 'revoke'); }
     fbq('init', '1495692858311018');
     fbq('track', 'PageView');
     </script>
